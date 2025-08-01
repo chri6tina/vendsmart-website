@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - VendSmart | Vending Machines, Micro-Markets & Coffee Services</title>
     <meta name="description" content="VendSmart offers comprehensive vending solutions including smart vending machines, micro-markets, coffee services, and 24/7 emergency delivery in Jacksonville, Florida.">
-    <link rel="stylesheet" href="styles.css?v=7.0">
+    <link rel="stylesheet" href="styles.css?v=8.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -51,7 +51,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero services-hero">
         <div class="hero-background">
             <img src="Miro Market.jpg" alt="VendSmart Micro-Market" class="hero-bg-image">
             <div class="hero-overlay"></div>
@@ -59,118 +59,103 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1>Our Services</h1>
-                <p>Comprehensive vending solutions tailored to your business needs</p>
+                <p class="hero-subtitle">Comprehensive vending solutions tailored to your business needs</p>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Smart Technology</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Local Expertise</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Services Overview -->
-    <section class="services-detailed">
+    <section class="services-overview">
         <div class="container">
-            <div class="service-item" id="vending">
-                <div class="service-content">
-                    <div class="service-text">
-                        <h2>Smart Vending Machines</h2>
-                        <p>Modern, intelligent vending machines equipped with cutting-edge technology to maximize convenience and profitability.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Contactless payment systems (Apple Pay, Google Pay, credit cards)</li>
-                            <li><i class="fas fa-check"></i> Real-time inventory monitoring and alerts</li>
-                            <li><i class="fas fa-check"></i> Mobile app integration for remote management</li>
-                            <li><i class="fas fa-check"></i> Energy-efficient LED lighting and cooling systems</li>
-                            <li><i class="fas fa-check"></i> Customizable product selection based on location demographics</li>
-                            <li><i class="fas fa-check"></i> 24/7 remote monitoring and maintenance alerts</li>
-                        </ul>
-                        <div class="service-cta">
-                            <a href="get-a-free-vending-machine-in-jacksonville-florida.html" class="btn btn-primary">Get Free Machine</a>
-                            <a href="contact.html" class="btn btn-outline">Request Quote</a>
-                        </div>
+            <div class="section-header">
+                <h2>Comprehensive Vending Solutions</h2>
+                <p class="section-subtitle">From smart vending machines to micro-markets, we provide everything your business needs for modern convenience services.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" id="vending">
+                    <div class="service-icon">
+                        <i class="fas fa-vending-machine"></i>
                     </div>
-                    <div class="service-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-vending-machine"></i>
-                            <p>Smart Vending Machine</p>
-                        </div>
+                    <h3>Smart Vending Machines</h3>
+                    <p>Modern, intelligent vending machines equipped with cutting-edge technology to maximize convenience and profitability.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Contactless payment systems</li>
+                        <li><i class="fas fa-check"></i> Real-time inventory monitoring</li>
+                        <li><i class="fas fa-check"></i> Mobile app integration</li>
+                        <li><i class="fas fa-check"></i> Energy-efficient systems</li>
+                    </ul>
+                    <div class="service-actions">
+                        <a href="get-a-free-vending-machine-in-jacksonville-florida.html" class="btn btn-primary">Get Free Machine</a>
+                        <a href="contact.html" class="btn btn-outline">Request Quote</a>
                     </div>
                 </div>
-            </div>
 
-            <div class="service-item" id="micro-markets">
-                <div class="service-content reverse">
-                    <div class="service-text">
-                        <h2>Micro-Markets</h2>
-                        <p>Self-service markets that transform your break room into a modern convenience store with healthy options and seamless checkout.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Self-checkout kiosks with touch-screen technology</li>
-                            <li><i class="fas fa-check"></i> Fresh food and healthy snack options</li>
-                            <li><i class="fas fa-check"></i> Smart coolers with temperature monitoring</li>
-                            <li><i class="fas fa-check"></i> Employee loyalty programs and rewards</li>
-                            <li><i class="fas fa-check"></i> Customizable layouts for any space</li>
-                            <li><i class="fas fa-check"></i> Detailed sales analytics and reporting</li>
-                        </ul>
-                        <div class="service-cta">
-                            <a href="setting-up-micro-market.html" class="btn btn-primary">Learn More</a>
-                            <a href="contact.html" class="btn btn-outline">Get Started</a>
-                        </div>
+                <div class="service-card" id="micro-markets">
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
                     </div>
-                    <div class="service-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-store"></i>
-                            <p>Micro-Market Setup</p>
-                        </div>
+                    <h3>Micro-Markets</h3>
+                    <p>Self-service markets that transform your break room into a modern convenience store with healthy options and seamless checkout.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Self-checkout kiosks</li>
+                        <li><i class="fas fa-check"></i> Fresh food options</li>
+                        <li><i class="fas fa-check"></i> Smart coolers</li>
+                        <li><i class="fas fa-check"></i> Employee loyalty programs</li>
+                    </ul>
+                    <div class="service-actions">
+                        <a href="setting-up-a-micro-market-in-your-jacksonville-office.html" class="btn btn-primary">Learn More</a>
+                        <a href="contact.html" class="btn btn-outline">Get Started</a>
                     </div>
                 </div>
-            </div>
 
-            <div class="service-item" id="coffee">
-                <div class="service-content">
-                    <div class="service-text">
-                        <h2>Coffee Services</h2>
-                        <p>Premium coffee and beverage solutions that keep your team energized and satisfied throughout the workday.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Single-serve coffee machines with premium beans</li>
-                            <li><i class="fas fa-check"></i> Hot and cold beverage options</li>
-                            <li><i class="fas fa-check"></i> Regular maintenance and cleaning services</li>
-                            <li><i class="fas fa-check"></i> Customizable drink menus</li>
-                            <li><i class="fas fa-check"></i> Eco-friendly cups and supplies</li>
-                            <li><i class="fas fa-check"></i> Flexible pricing and payment options</li>
-                        </ul>
-                        <div class="service-cta">
-                            <a href="coffeeservices.html" class="btn btn-primary">View Coffee Options</a>
-                            <a href="contact.html" class="btn btn-outline">Request Demo</a>
-                        </div>
+                <div class="service-card" id="coffee">
+                    <div class="service-icon">
+                        <i class="fas fa-coffee"></i>
                     </div>
-                    <div class="service-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-coffee"></i>
-                            <p>Coffee Service</p>
-                        </div>
+                    <h3>Coffee Services</h3>
+                    <p>Premium coffee and beverage solutions that keep your team energized and satisfied throughout the workday.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Single-serve coffee machines</li>
+                        <li><i class="fas fa-check"></i> Hot and cold beverages</li>
+                        <li><i class="fas fa-check"></i> Regular maintenance</li>
+                        <li><i class="fas fa-check"></i> Customizable menus</li>
+                    </ul>
+                    <div class="service-actions">
+                        <a href="coffeeservices.html" class="btn btn-primary">View Coffee Options</a>
+                        <a href="contact.html" class="btn btn-outline">Request Demo</a>
                     </div>
                 </div>
-            </div>
 
-            <div class="service-item" id="emergency">
-                <div class="service-content reverse">
-                    <div class="service-text">
-                        <h2>Emergency Delivery Services</h2>
-                        <p>24/7 emergency delivery services for hurricanes, natural disasters, and urgent situations to keep your business running.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> 24/7 emergency hotline</li>
-                            <li><i class="fas fa-check"></i> Hurricane preparedness and response</li>
-                            <li><i class="fas fa-check"></i> Rapid deployment of temporary vending solutions</li>
-                            <li><i class="fas fa-check"></i> Essential supplies and emergency kits</li>
-                            <li><i class="fas fa-check"></i> Mobile vending units for disaster relief</li>
-                            <li><i class="fas fa-check"></i> Priority service for existing clients</li>
-                        </ul>
-                        <div class="service-cta">
-                            <a href="contact.html" class="btn btn-primary">Emergency Contact</a>
-                            <a href="tel:+1234567890" class="btn btn-outline">Call Now</a>
-                        </div>
+                <div class="service-card" id="emergency">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
                     </div>
-                    <div class="service-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-truck"></i>
-                            <p>Emergency Delivery</p>
-                        </div>
+                    <h3>Emergency Delivery</h3>
+                    <p>24/7 emergency delivery services for hurricanes, natural disasters, and urgent situations to keep your business running.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 24/7 emergency hotline</li>
+                        <li><i class="fas fa-check"></i> Hurricane preparedness</li>
+                        <li><i class="fas fa-check"></i> Rapid deployment</li>
+                        <li><i class="fas fa-check"></i> Priority service</li>
+                    </ul>
+                    <div class="service-actions">
+                        <a href="contact.html" class="btn btn-primary">Emergency Contact</a>
+                        <a href="tel:904-456-3851" class="btn btn-outline">Call Now</a>
                     </div>
                 </div>
             </div>
@@ -180,56 +165,90 @@
     <!-- Additional Services -->
     <section class="additional-services">
         <div class="container">
-            <h2>Additional Services</h2>
+            <div class="section-header">
+                <h2>Supporting Services</h2>
+                <p class="section-subtitle">Complete solutions to keep your vending operations running smoothly and efficiently.</p>
+            </div>
+            
             <div class="services-grid">
                 <div class="service-card">
-                    <i class="fas fa-tools"></i>
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
                     <h3>Maintenance & Repair</h3>
-                    <p>Regular maintenance, repairs, and technical support to keep your machines running smoothly.</p>
+                    <p>Regular maintenance, repairs, and technical support to keep your machines running smoothly and efficiently.</p>
+                    <a href="vendingmachine-service.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
+                
                 <div class="service-card">
-                    <i class="fas fa-chart-bar"></i>
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
                     <h3>Analytics & Reporting</h3>
-                    <p>Detailed performance reports, sales analytics, and insights to optimize your vending operations.</p>
+                    <p>Detailed performance reports, sales analytics, and insights to optimize your vending operations and maximize profits.</p>
+                    <a href="contact.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
+                
                 <div class="service-card">
-                    <i class="fas fa-leaf"></i>
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
                     <h3>Sustainable Solutions</h3>
-                    <p>Eco-friendly options with locally sourced products and compostable packaging.</p>
+                    <p>Eco-friendly options with locally sourced products and compostable packaging to reduce your environmental impact.</p>
+                    <a href="contact.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
+                
                 <div class="service-card">
-                    <i class="fas fa-mobile-alt"></i>
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
                     <h3>Mobile App</h3>
-                    <p>Our mobile app for easy ordering, loyalty rewards, and real-time machine status.</p>
+                    <p>Our mobile app for easy ordering, loyalty rewards, and real-time machine status monitoring.</p>
+                    <a href="contact.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Why Choose VendSmart -->
-    <section class="why-choose-services">
+    <section class="why-choose">
         <div class="container">
-            <h2>Why Choose VendSmart Services?</h2>
-            <div class="benefits-grid">
-                <div class="benefit">
-                    <i class="fas fa-clock"></i>
+            <div class="section-header">
+                <h2>Why Choose VendSmart Services?</h2>
+                <p class="section-subtitle">Experience the difference that local expertise, modern technology, and dedicated support can make for your business.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
                     <h3>24/7 Support</h3>
-                    <p>Round-the-clock customer support with guaranteed response times for all your vending needs.</p>
+                    <p>Round-the-clock customer support with guaranteed response times for all your vending needs and emergencies.</p>
                 </div>
-                <div class="benefit">
-                    <i class="fas fa-shield-alt"></i>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
                     <h3>Reliable Equipment</h3>
-                    <p>High-quality, modern equipment with comprehensive warranties and maintenance programs.</p>
+                    <p>High-quality, modern equipment with comprehensive warranties and proactive maintenance programs.</p>
                 </div>
-                <div class="benefit">
-                    <i class="fas fa-dollar-sign"></i>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
                     <h3>Competitive Pricing</h3>
-                    <p>Transparent pricing with no hidden fees and flexible payment options to fit your budget.</p>
+                    <p>Transparent pricing with no hidden fees and flexible payment options to fit your budget and business needs.</p>
                 </div>
-                <div class="benefit">
-                    <i class="fas fa-users"></i>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
                     <h3>Local Expertise</h3>
-                    <p>Jacksonville-based team with deep knowledge of local business needs and regulations.</p>
+                    <p>Jacksonville-based team with deep knowledge of local business needs, regulations, and community requirements.</p>
                 </div>
             </div>
         </div>
@@ -253,41 +272,41 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>VendSmart</h3>
-                    <p>Premium vending solutions for Jacksonville, Florida.</p>
+                    <p>Premium vending solutions for Jacksonville, Florida. Smart technology, healthy options, and 24/7 support.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/vendsmart" target="_blank"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Services</h4>
+                    <h3>Services</h3>
                     <ul>
-                        <li><a href="services.html#vending">Vending Machines</a></li>
-                        <li><a href="services.html#micro-markets">Micro-Markets</a></li>
-                        <li><a href="services.html#coffee">Coffee Services</a></li>
-                        <li><a href="services.html#emergency">Emergency Delivery</a></li>
+                        <li><a href="services.html">Smart Vending Machines</a></li>
+                        <li><a href="setting-up-a-micro-market-in-your-jacksonville-office.html">Micro-Markets</a></li>
+                        <li><a href="coffeeservices.html">Coffee Services</a></li>
+                        <li><a href="vendingmachine-service.html">Vending Machine Service</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Locations</h4>
+                    <h3>Locations</h3>
                     <ul>
-                        <li><a href="downtown-jacksonville.html">Downtown</a></li>
+                        <li><a href="downtown-jacksonville.html">Downtown Jacksonville</a></li>
                         <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
                         <li><a href="orange-park.html">Orange Park</a></li>
                         <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Jacksonville, Florida</p>
-                    <p>24/7 Support Available</p>
-                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-phone"></i> 904-456-3851</p>
+                    <p><i class="fas fa-envelope"></i> vendsmartjacksonville@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Jacksonville, Florida</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 VendSmart. All rights reserved.</p>
+                <p>&copy; 2024 VendSmart. All rights reserved. | Premium vending solutions in Jacksonville, Florida.</p>
             </div>
         </div>
     </footer>
