@@ -359,6 +359,13 @@ body {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.hamburger:hover {
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .hamburger span {
@@ -367,6 +374,7 @@ body {
     background: #333;
     margin: 3px 0;
     transition: 0.3s;
+    border-radius: 2px;
 }
 
 /* Hero Section */
@@ -1131,11 +1139,20 @@ body {
         left: 0;
         right: 0;
         z-index: 1000;
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
     }
     
     /* Adjust hero section to account for fixed navbar */
     .hero {
         margin-top: 70px;
+    }
+    
+    /* Ensure hamburger menu is visible and properly positioned */
+    .hamburger {
+        display: flex !important;
+        z-index: 1001;
+        position: relative;
     }
 }
 
