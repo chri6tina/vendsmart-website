@@ -65,12 +65,12 @@
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
     border: 1px solid #f1f5f9;
-    max-width: 900px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -94,7 +94,7 @@
 }
 
 .featured-post-content {
-    padding: 1.25rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,8 +125,8 @@
 }
 
 .featured-post-content h2 {
-    font-size: 1.75rem;
-    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     line-height: 1.3;
     color: #1f2937;
 }
