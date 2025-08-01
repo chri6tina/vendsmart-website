@@ -1223,6 +1223,65 @@ body {
     .navbar {
         padding: 10px 0;
     }
+    
+    /* Enhanced mobile styles for area cards */
+    .areas-grid {
+        gap: 0.75rem;
+    }
+    
+    .area-card {
+        padding: 1.25rem;
+        border-radius: 10px;
+    }
+    
+    .area-icon {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 0.75rem;
+    }
+    
+    .area-icon i {
+        font-size: 1.1rem;
+    }
+    
+    .area-card h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .area-card p {
+        font-size: 0.85rem;
+        margin-bottom: 0.75rem;
+        line-height: 1.3;
+    }
+    
+    .area-card ul {
+        margin-bottom: 0.75rem;
+    }
+    
+    .area-card ul li {
+        font-size: 0.8rem;
+        margin-bottom: 0.2rem;
+        padding-left: 1rem;
+    }
+    
+    .area-card ul li:before {
+        font-size: 0.7rem;
+    }
+    
+    .area-actions {
+        gap: 0.4rem;
+    }
+    
+    .area-actions .btn {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.85rem;
+    }
+    
+    .overview-stats {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
 }
 
 /* Animations */
@@ -3218,22 +3277,79 @@ html {
 @media (max-width: 768px) {
     .overview-stats {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
     
     .areas-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .area-card {
+        padding: 1.5rem;
+        border-radius: 12px;
+        margin-bottom: 0;
     }
     
     .area-card.featured {
         transform: none;
+        border: 1px solid #e2e8f0;
     }
     
     .area-card.featured:hover {
-        transform: translateY(-5px);
+        transform: translateY(-2px);
+    }
+    
+    .area-card:hover {
+        transform: translateY(-2px);
+    }
+    
+    .area-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1rem;
+    }
+    
+    .area-icon i {
+        font-size: 1.25rem;
+    }
+    
+    .area-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .area-card p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        line-height: 1.4;
+    }
+    
+    .area-card ul {
+        margin-bottom: 1rem;
+    }
+    
+    .area-card ul li {
+        font-size: 0.85rem;
+        margin-bottom: 0.25rem;
+        padding-left: 1.25rem;
+    }
+    
+    .area-card ul li:before {
+        font-size: 0.75rem;
     }
     
     .area-actions {
         flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .area-actions .btn {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+        text-align: center;
     }
 }
 
