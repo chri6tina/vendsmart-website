@@ -3,11 +3,504 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Services for Jacksonville Businesses | VendSmart</title>
-    <meta name="description" content="VendSmart provides premium coffee services for Jacksonville businesses. Fresh coffee, espresso, and beverage solutions with free installation and maintenance.">
+    <title>Premium Coffee Services Jacksonville | VendSmart Vending Solutions</title>
+    <meta name="description" content="Professional coffee services for Jacksonville businesses. Fresh espresso, specialty drinks, and premium coffee solutions with free installation and 24/7 support.">
     <link rel="stylesheet" href="styles.css?v=4.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Coffee Services Specific Styles */
+        .coffee-hero {
+            background: linear-gradient(135deg, #2c1810 0%, #4a2c1a 50%, #6b4423 100%);
+            color: white;
+            padding: 120px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .coffee-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="coffee-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23coffee-pattern)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .coffee-hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .coffee-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #f4a261 0%, #e76f51 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .coffee-hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .coffee-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .coffee-feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .coffee-feature i {
+            font-size: 2.5rem;
+            color: #f4a261;
+            margin-bottom: 1rem;
+        }
+
+        .coffee-feature h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: #f4a261;
+        }
+
+        .coffee-feature p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .coffee-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .coffee-cta .btn {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .coffee-cta .btn-primary {
+            background: linear-gradient(135deg, #f4a261 0%, #e76f51 100%);
+            color: white;
+        }
+
+        .coffee-cta .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(244, 162, 97, 0.4);
+        }
+
+        .coffee-cta .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .coffee-cta .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Coffee Solutions Section */
+        .coffee-solutions {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        }
+
+        .solutions-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .solutions-header h2 {
+            font-size: 2.5rem;
+            color: #2c1810;
+            margin-bottom: 1rem;
+        }
+
+        .solutions-header p {
+            font-size: 1.2rem;
+            color: #6c757d;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .solution-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .solution-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, #f4a261 0%, #e76f51 100%);
+        }
+
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+        }
+
+        .solution-card.featured {
+            border: 2px solid #f4a261;
+            transform: scale(1.05);
+        }
+
+        .solution-card i {
+            font-size: 3rem;
+            color: #f4a261;
+            margin-bottom: 1.5rem;
+        }
+
+        .solution-card h3 {
+            font-size: 1.5rem;
+            color: #2c1810;
+            margin-bottom: 1rem;
+        }
+
+        .solution-card p {
+            color: #6c757d;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .solution-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .solution-card li {
+            padding: 0.5rem 0;
+            color: #495057;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .solution-card li::before {
+            content: '☕';
+            position: absolute;
+            left: 0;
+            color: #f4a261;
+        }
+
+        /* Benefits Section */
+        .coffee-benefits {
+            padding: 80px 0;
+            background: #2c1810;
+            color: white;
+        }
+
+        .benefits-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .benefits-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #f4a261;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .benefit-item {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .benefit-item i {
+            font-size: 2.5rem;
+            color: #f4a261;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #f4a261;
+        }
+
+        .benefit-item p {
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        /* Industries Section */
+        .coffee-industries {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .industries-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .industries-header h2 {
+            font-size: 2.5rem;
+            color: #2c1810;
+            margin-bottom: 1rem;
+        }
+
+        .industries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .industry-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+
+        .industry-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .industry-card h3 {
+            font-size: 1.3rem;
+            color: #2c1810;
+            margin-bottom: 1rem;
+        }
+
+        .industry-card p {
+            color: #6c757d;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .industry-card .btn {
+            background: linear-gradient(135deg, #f4a261 0%, #e76f51 100%);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .industry-card .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(244, 162, 97, 0.4);
+        }
+
+        /* Free Service Section */
+        .free-coffee-service {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f4a261 0%, #e76f51 100%);
+            color: white;
+        }
+
+        .free-service-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .free-service-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .free-service-text p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .free-service-benefits {
+            margin: 2rem 0;
+        }
+
+        .free-service-benefit {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+
+        .free-service-benefit i {
+            color: #2c1810;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .free-service-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .free-service-cta .btn {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .free-service-cta .btn-primary {
+            background: #2c1810;
+            color: white;
+        }
+
+        .free-service-cta .btn-primary:hover {
+            background: #1a0f0a;
+            transform: translateY(-2px);
+        }
+
+        .free-service-cta .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .free-service-cta .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .free-service-image {
+            text-align: center;
+        }
+
+        .free-service-image .coffee-icon {
+            font-size: 8rem;
+            color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Final CTA */
+        .coffee-final-cta {
+            padding: 80px 0;
+            background: #2c1810;
+            color: white;
+            text-align: center;
+        }
+
+        .coffee-final-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #f4a261;
+        }
+
+        .coffee-final-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .coffee-final-cta .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .coffee-final-cta .btn {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .coffee-final-cta .btn-primary {
+            background: linear-gradient(135deg, #f4a261 0%, #e76f51 100%);
+            color: white;
+        }
+
+        .coffee-final-cta .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(244, 162, 97, 0.4);
+        }
+
+        .coffee-final-cta .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .coffee-final-cta .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .coffee-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .coffee-features {
+                grid-template-columns: 1fr;
+            }
+
+            .free-service-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .coffee-cta,
+            .free-service-cta,
+            .coffee-final-cta .cta-buttons {
+                flex-direction: column;
+            }
+
+            .solution-card.featured {
+                transform: none;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Contact Bar -->
@@ -49,31 +542,37 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-background">
-            <img src="Miro Market.jpg" alt="VendSmart Micro-Market" class="hero-bg-image">
-            <div class="hero-overlay"></div>
-        </div>
-        <div class="hero-container">
+    <!-- Coffee Hero Section -->
+    <section class="coffee-hero">
+        <div class="container">
             <div class="hero-content">
-                <h1>Coffee Services Jacksonville, Florida</h1>
-                <p class="hero-subtitle">Premium coffee and beverage solutions for Jacksonville businesses. Fresh coffee, espresso, and specialty drinks with professional installation and maintenance.</p>
-                <div class="hero-features">
-                    <div class="hero-feature">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Free Installation</span>
+                <h1>Premium Coffee Services Jacksonville</h1>
+                <p class="subtitle">Transform your workplace with professional coffee solutions. Fresh espresso, specialty drinks, and premium coffee service with free installation and 24/7 support.</p>
+                
+                <div class="coffee-features">
+                    <div class="coffee-feature">
+                        <i class="fas fa-gift"></i>
+                        <h3>Free Installation</h3>
+                        <p>No upfront costs or installation fees</p>
                     </div>
-                    <div class="hero-feature">
-                        <i class="fas fa-check-circle"></i>
-                        <span>24/7 Support</span>
+                    <div class="coffee-feature">
+                        <i class="fas fa-headset"></i>
+                        <h3>24/7 Support</h3>
+                        <p>Round-the-clock maintenance and service</p>
                     </div>
-                    <div class="hero-feature">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Premium Coffee</span>
+                    <div class="coffee-feature">
+                        <i class="fas fa-coffee"></i>
+                        <h3>Premium Quality</h3>
+                        <p>Fresh beans and professional equipment</p>
+                    </div>
+                    <div class="coffee-feature">
+                        <i class="fas fa-tools"></i>
+                        <h3>Full Maintenance</h3>
+                        <p>Regular cleaning and supply restocking</p>
                     </div>
                 </div>
-                <div class="hero-buttons">
+
+                <div class="coffee-cta">
                     <a href="get-a-free-vending-machine-in-jacksonville-florida.html" class="btn btn-primary">Get Free Coffee Service</a>
                     <a href="contact.html" class="btn btn-secondary">Request Quote</a>
                 </div>
@@ -81,215 +580,172 @@
         </div>
     </section>
 
-    <!-- Coffee Services Overview -->
-    <section class="coffee-overview">
+    <!-- Coffee Solutions Section -->
+    <section class="coffee-solutions">
         <div class="container">
-            <div class="overview-content">
-                <div class="overview-text">
-                    <h2>Premium Coffee Solutions</h2>
-                    <p>VendSmart's coffee services provide Jacksonville businesses with premium coffee, espresso, and beverage solutions. From single-serve machines to full-service coffee stations, we have the perfect solution for your workplace.</p>
-                    
-                    <div class="coffee-features">
-                        <div class="feature-item">
-                            <i class="fas fa-coffee"></i>
-                            <div>
-                                <h3>Fresh Coffee</h3>
-                                <p>Premium coffee beans with multiple brewing options</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-mug-hot"></i>
-                            <div>
-                                <h3>Espresso & Specialty Drinks</h3>
-                                <p>Cappuccinos, lattes, and other specialty beverages</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-leaf"></i>
-                            <div>
-                                <h3>Healthy Options</h3>
-                                <p>Tea, hot chocolate, and healthy beverage alternatives</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-tools"></i>
-                            <div>
-                                <h3>Maintenance Included</h3>
-                                <p>Regular cleaning, maintenance, and supply restocking</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="overview-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-coffee"></i>
-                        <p>Coffee Services</p>
-                    </div>
-                </div>
+            <div class="solutions-header">
+                <h2>Professional Coffee Solutions</h2>
+                <p>From single-serve convenience to full-service coffee stations, we provide the perfect coffee solution for your Jacksonville business.</p>
             </div>
-        </div>
-    </section>
 
-    <!-- Coffee Service Types -->
-    <section class="coffee-types">
-        <div class="container">
-            <h2>Coffee Service Options</h2>
-            <div class="types-grid">
-                <div class="type-card">
+            <div class="solutions-grid">
+                <div class="solution-card">
                     <i class="fas fa-coffee"></i>
                     <h3>Single-Serve Coffee</h3>
-                    <p>Individual coffee pods with multiple flavor options</p>
+                    <p>Perfect for offices that want variety and convenience with minimal maintenance.</p>
                     <ul>
                         <li>Keurig-compatible machines</li>
-                        <li>Variety of coffee brands</li>
-                        <li>Easy maintenance</li>
+                        <li>Multiple coffee brands and flavors</li>
+                        <li>Easy maintenance and operation</li>
                         <li>Cost-effective solution</li>
+                        <li>Quick brewing time</li>
                     </ul>
                 </div>
-                
-                <div class="type-card featured">
+
+                <div class="solution-card featured">
                     <i class="fas fa-mug-hot"></i>
                     <h3>Espresso Machines</h3>
-                    <p>Professional espresso machines for premium coffee</p>
+                    <p>Professional-grade espresso machines for businesses that demand premium coffee quality.</p>
                     <ul>
-                        <li>Espresso, cappuccino, latte</li>
-                        <li>Fresh ground coffee</li>
+                        <li>Espresso, cappuccino, and latte</li>
+                        <li>Fresh ground coffee beans</li>
                         <li>Milk frothing capability</li>
-                        <li>Professional quality</li>
+                        <li>Professional barista quality</li>
+                        <li>Customizable drink options</li>
                     </ul>
                 </div>
-                
-                <div class="type-card">
+
+                <div class="solution-card">
                     <i class="fas fa-utensils"></i>
                     <h3>Full Coffee Stations</h3>
-                    <p>Complete coffee service with multiple options</p>
+                    <p>Complete coffee service solutions with multiple brewing methods and professional presentation.</p>
                     <ul>
                         <li>Multiple brewing methods</li>
                         <li>Cream, sugar, and condiments</li>
                         <li>Disposable cups and supplies</li>
                         <li>Professional presentation</li>
+                        <li>Custom branding options</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Coffee Benefits -->
+    <!-- Benefits Section -->
     <section class="coffee-benefits">
         <div class="container">
-            <h2>Benefits of Coffee Services</h2>
+            <div class="benefits-header">
+                <h2>Why Choose Coffee Services?</h2>
+            </div>
+
             <div class="benefits-grid">
-                <div class="benefit-card">
+                <div class="benefit-item">
                     <i class="fas fa-users"></i>
                     <h3>Employee Satisfaction</h3>
-                    <p>Quality coffee improves workplace morale and productivity</p>
+                    <p>Quality coffee improves workplace morale, productivity, and employee retention.</p>
                 </div>
-                
-                <div class="benefit-card">
+
+                <div class="benefit-item">
                     <i class="fas fa-dollar-sign"></i>
                     <h3>Cost Savings</h3>
-                    <p>Reduce employee trips to coffee shops and increase productivity</p>
+                    <p>Reduce employee trips to coffee shops and increase productivity with on-site coffee.</p>
                 </div>
-                
-                <div class="benefit-card">
+
+                <div class="benefit-item">
                     <i class="fas fa-clock"></i>
-                    <h3>Convenience</h3>
-                    <p>24/7 access to quality coffee and beverages</p>
+                    <h3>24/7 Convenience</h3>
+                    <p>Provide coffee access around the clock for all shifts and schedules.</p>
                 </div>
-                
-                <div class="benefit-card">
+
+                <div class="benefit-item">
                     <i class="fas fa-star"></i>
                     <h3>Professional Image</h3>
-                    <p>Impress clients and visitors with quality coffee service</p>
+                    <p>Impress clients and visitors with quality coffee service and professional presentation.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Coffee Applications -->
-    <section class="coffee-applications">
+    <!-- Industries Section -->
+    <section class="coffee-industries">
         <div class="container">
-            <h2>Perfect for Jacksonville Businesses</h2>
-            <div class="applications-grid">
-                <div class="application-card">
+            <div class="industries-header">
+                <h2>Perfect for Jacksonville Businesses</h2>
+            </div>
+
+            <div class="industries-grid">
+                <div class="industry-card">
                     <h3>Office Buildings</h3>
-                    <p>Keep employees energized throughout the workday</p>
-                    <a href="downtown-jacksonville.html" class="btn btn-outline">Downtown Offices</a>
+                    <p>Keep employees energized and productive throughout the workday with quality coffee service.</p>
+                    <a href="downtown-jacksonville.html" class="btn">Downtown Offices</a>
                 </div>
-                
-                <div class="application-card">
+
+                <div class="industry-card">
                     <h3>Healthcare Facilities</h3>
-                    <p>Quality coffee for staff and visitors</p>
-                    <a href="orange-park.html" class="btn btn-outline">Healthcare Centers</a>
+                    <p>Provide quality coffee for staff, patients, and visitors in hospitals and medical centers.</p>
+                    <a href="orange-park.html" class="btn">Healthcare Centers</a>
                 </div>
-                
-                <div class="application-card">
+
+                <div class="industry-card">
                     <h3>Educational Institutions</h3>
-                    <p>Coffee service for faculty and staff</p>
-                    <a href="mandarin.html" class="btn btn-outline">Schools & Universities</a>
+                    <p>Coffee service for faculty, staff, and students in schools and universities.</p>
+                    <a href="mandarin.html" class="btn">Schools & Universities</a>
                 </div>
-                
-                <div class="application-card">
+
+                <div class="industry-card">
                     <h3>Manufacturing Facilities</h3>
-                    <p>24/7 coffee access for shift workers</p>
-                    <a href="orange-park.html" class="btn btn-outline">Manufacturing</a>
+                    <p>24/7 coffee access for shift workers in manufacturing and industrial facilities.</p>
+                    <a href="orange-park.html" class="btn">Manufacturing</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Free Coffee Service -->
-    <section class="free-placement">
+    <!-- Free Coffee Service Section -->
+    <section class="free-coffee-service">
         <div class="container">
-            <div class="placement-content">
-                <div class="placement-text">
+            <div class="free-service-content">
+                <div class="free-service-text">
                     <h2>Free Coffee Service Installation</h2>
-                    <p>Qualified Jacksonville businesses can receive free coffee service installation with no upfront costs. We provide the equipment, supplies, and maintenance while you enjoy quality coffee.</p>
+                    <p>Qualified Jacksonville businesses can receive free coffee service installation with no upfront costs. We provide the equipment, supplies, and maintenance while you enjoy premium coffee.</p>
                     
-                    <div class="placement-benefits">
-                        <div class="benefit-item">
-                            <i class="fas fa-check"></i>
+                    <div class="free-service-benefits">
+                        <div class="free-service-benefit">
+                            <i class="fas fa-check-circle"></i>
                             <span>No upfront costs or installation fees</span>
                         </div>
-                        <div class="benefit-item">
-                            <i class="fas fa-check"></i>
+                        <div class="free-service-benefit">
+                            <i class="fas fa-check-circle"></i>
                             <span>Professional installation and setup</span>
                         </div>
-                        <div class="benefit-item">
-                            <i class="fas fa-check"></i>
+                        <div class="free-service-benefit">
+                            <i class="fas fa-check-circle"></i>
                             <span>Regular maintenance and supply restocking</span>
                         </div>
-                        <div class="benefit-item">
-                            <i class="fas fa-check"></i>
-                            <span>24/7 support and maintenance</span>
+                        <div class="free-service-benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 support and emergency service</span>
                         </div>
                     </div>
                     
-                    <div class="placement-cta">
+                    <div class="free-service-cta">
                         <a href="get-a-free-vending-machine-in-jacksonville-florida.html" class="btn btn-primary">Apply for Free Coffee Service</a>
-                        <a href="contact.html" class="btn btn-outline">Learn More</a>
+                        <a href="contact.html" class="btn btn-secondary">Learn More</a>
                     </div>
                 </div>
                 
-                <div class="placement-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-gift"></i>
-                        <p>Free Coffee Service</p>
-                    </div>
+                <div class="free-service-image">
+                    <i class="fas fa-coffee coffee-icon"></i>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
+    <!-- Final CTA Section -->
+    <section class="coffee-final-cta">
         <div class="container">
             <h2>Ready for Premium Coffee Service?</h2>
-            <p>Contact VendSmart today for a free consultation and coffee service quote</p>
+            <p>Contact VendSmart today for a free consultation and coffee service quote for your Jacksonville business.</p>
             <div class="cta-buttons">
                 <a href="contact.html" class="btn btn-primary">Get Free Quote</a>
                 <a href="get-a-free-vending-machine-in-jacksonville-florida.html" class="btn btn-secondary">Get Free Coffee Service</a>
@@ -318,7 +774,7 @@
                         <li><a href="setting-up-a-micro-market-in-your-jacksonville-office.html">Micro-Markets</a></li>
                         <li><a href="coffeeservices.html">Coffee Services</a></li>
                         <li><a href="vendingmachine-service.html">Vending Machine Service</a></li>
-                                                <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
