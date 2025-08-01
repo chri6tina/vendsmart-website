@@ -211,45 +211,4 @@ function createBackToTopButton() {
 // Initialize back to top button - TEMPORARILY DISABLED
 // document.addEventListener('DOMContentLoaded', createBackToTopButton);
 
-// Add CSS for mobile menu
-const mobileMenuCSS = `
-    @media (max-width: 768px) {
-        .nav-menu {
-            position: fixed;
-            left: -100%;
-            top: 70px;
-            flex-direction: column;
-            background-color: white;
-            width: 100%;
-            text-align: center;
-            transition: 0.3s;
-            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-            padding: 2rem 0;
-        }
-        
-        .nav-menu.active {
-            left: 0;
-        }
-        
-        .nav-menu li {
-            margin: 1rem 0;
-        }
-        
-        .hamburger.active span:nth-child(2) {
-            opacity: 0;
-        }
-        
-        .hamburger.active span:nth-child(1) {
-            transform: translateY(8px) rotate(45deg);
-        }
-        
-        .hamburger.active span:nth-child(3) {
-            transform: translateY(-8px) rotate(-45deg);
-        }
-    }
-`;
-
-// Inject mobile menu CSS
-const style = document.createElement('style');
-style.textContent = mobileMenuCSS;
-document.head.appendChild(style); 
+// Mobile menu CSS is now handled in the main styles.css file 
