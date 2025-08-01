@@ -469,6 +469,7 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    loading: lazy;
 }
 
 .hero-overlay {
@@ -572,6 +573,29 @@ body {
     gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.hero-links {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.hero-links p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.hero-links a {
+    color: #fbbf24;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.hero-links a:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 .btn {
