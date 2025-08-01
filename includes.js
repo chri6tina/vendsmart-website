@@ -52,5 +52,36 @@ function initializeMobileNav() {
                 navMenu.classList.remove('active');
             });
         });
+
+        // Initialize dropdown functionality for mobile
+        initializeDropdowns();
+    }
+}
+
+// Initialize dropdown functionality
+function initializeDropdowns() {
+    const dropdowns = document.querySelectorAll('.dropdown');
+    
+    dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector('.dropdown-toggle');
+        
+        if (toggle) {
+            toggle.addEventListener('click', function(e) {
+                // Only handle clicks on mobile
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                    
+                    // Close other dropdowns
+                    dropdowns.forEach(otherDropdown => {
+                        if (otherDropdown !== dropdown) {
+                            otherDropdown.classList.remove('active');
+                        }
+                    });
+                }
+            });
+        }
+    });
+}
     }
 } 
