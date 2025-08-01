@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# Redirect old WordPress URLs to new GitHub Pages URLs
+RewriteRule ^mandarin/$ /mandarin.html [R=301,L]
+RewriteRule ^blog/$ /blog.html [R=301,L]
+RewriteRule ^contact/$ /contact.html [R=301,L]
+RewriteRule ^services/$ /services.html [R=301,L]
+RewriteRule ^locations/$ /locations.html [R=301,L]
+RewriteRule ^portfolio/$ /portfolio.html [R=301,L]
+
+# Redirect other common WordPress patterns
+RewriteRule ^([^/]+)/$ /$1.html [R=301,L] 
