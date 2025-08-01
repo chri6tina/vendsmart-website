@@ -3089,13 +3089,14 @@ html {
 }
 
 .area-card.featured {
-    border: 2px solid #10b981;
-    background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+    border: 1px solid #e2e8f0;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .area-card.featured:hover {
-    border-color: #059669;
-    box-shadow: 0 12px 30px rgba(16, 185, 129, 0.1);
+    border-color: #cbd5e1;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
 .area-icon {
@@ -3126,11 +3127,11 @@ html {
 }
 
 .area-card.featured .area-icon {
-    background: #dcfce7;
+    background: #f8fafc;
 }
 
 .area-card.featured .area-icon i {
-    color: #10b981;
+    color: #64748b;
 }
 
 .area-card h3 {
