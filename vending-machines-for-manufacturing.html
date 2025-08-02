@@ -472,7 +472,7 @@
     <section class="manufacturing-hero">
         <div class="container">
             <div class="manufacturing-hero-content">
-                <h1>Vending Machines for Manufacturing</h1>
+                <h1>Manufacturing Vending Machines Jacksonville FL</h1>
                 <p>Industrial vending solutions designed specifically for manufacturing facilities. 24/7 access for shift workers, safety-compliant systems, and productivity-focused options for Jacksonville manufacturing plants.</p>
                 
                 <div class="hero-stats">
@@ -499,6 +499,53 @@
                         <i class="fas fa-phone"></i>
                         Get Free Quote
                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="toc-section">
+        <div class="container">
+            <div class="toc-content">
+                <h2>What You'll Find in This Guide</h2>
+                <div class="toc-grid">
+                    <div class="toc-item">
+                        <a href="#overview">
+                            <i class="fas fa-industry"></i>
+                            <span>Manufacturing Overview</span>
+                        </a>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#solutions">
+                            <i class="fas fa-cogs"></i>
+                            <span>Industrial Solutions</span>
+                        </a>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#benefits">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Benefits for Your Facility</span>
+                        </a>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#safety">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Safety & Compliance</span>
+                        </a>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#faq">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Frequently Asked Questions</span>
+                        </a>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#contact">
+                            <i class="fas fa-phone"></i>
+                            <span>Get Started Today</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -730,8 +777,80 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common questions about manufacturing vending machines and our services</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What types of products do you offer for manufacturing facilities?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer energy-boosting snacks, hydration solutions, quick meal options, and essential items for workers. Our selection is designed to support productivity and meet the needs of workers on all shifts.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How much does it cost to install vending machines in my facility?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer free installation and equipment placement for qualified manufacturing facilities. There are no upfront costs - we handle all installation, maintenance, and stocking. Revenue is shared between your facility and VendSmart.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are your machines safe for industrial environments?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Our industrial vending machines are designed to meet OSHA safety standards and withstand harsh manufacturing environments. They feature durable construction, safety compliance, and emergency protocols.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do you handle 24/7 shift operations?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our machines are designed for 24/7 operation and we provide round-the-clock support. We monitor inventory remotely and restock based on usage patterns across all shifts, including overnight and weekend operations.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can workers use their employee IDs or mobile payments?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Our machines accept credit cards, mobile payments, and can integrate with employee ID systems. We can also set up shift-based access and usage analytics for your facility management.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What if a machine breaks down during production hours?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide 24/7 emergency support and maintenance. If a machine malfunctions, we'll respond quickly to fix the issue. Our smart technology also alerts us to potential problems before they affect your workers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
-    <section class="cta-section">
+    <section id="contact" class="cta-section">
         <div class="container">
             <h2>Ready to Upgrade Your Manufacturing Facility's Vending?</h2>
             <p>Get industrial vending solutions designed specifically for manufacturing environments</p>
@@ -744,5 +863,28 @@
 
     <!-- Footer will be loaded by includes.js -->
     <script src="includes.js"></script>
+    
+    <script>
+        // FAQ Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // Close other FAQ items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html> 
