@@ -222,59 +222,49 @@
             line-height: 1.6;
         }
         
-        .roi-section {
+        .benefits-section {
             padding: 4rem 0;
             background: linear-gradient(135deg, #f8fafc, #e2e8f0);
         }
         
-        .roi-content {
+        .benefits-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
             align-items: center;
         }
         
-        .roi-text h2 {
+        .benefits-text h2 {
             font-size: 2.5rem;
             color: #1f2937;
             margin-bottom: 1.5rem;
         }
         
-        .roi-text p {
+        .benefits-text p {
             font-size: 1.1rem;
             color: #6b7280;
             line-height: 1.6;
             margin-bottom: 2rem;
         }
         
-        .roi-stats {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
+        .benefits-list {
             margin-bottom: 2rem;
         }
         
-        .roi-stat {
-            text-align: center;
-            padding: 1.5rem;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        .benefits-list .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            color: #374151;
         }
         
-        .roi-stat-number {
-            font-size: 2rem;
-            font-weight: bold;
+        .benefits-list .benefit-item i {
             color: #00C5F5;
-            margin-bottom: 0.5rem;
+            font-weight: bold;
         }
         
-        .roi-stat-label {
-            color: #6b7280;
-            font-size: 0.9rem;
-        }
-        
-        .roi-cta {
+        .benefits-cta {
             display: flex;
             gap: 1rem;
             flex-wrap: wrap;
@@ -282,7 +272,7 @@
         
         @media (max-width: 768px) {
             .overview-content,
-            .roi-content {
+            .benefits-content {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
@@ -290,19 +280,15 @@
             .overview-text h2,
             .setup-process h2,
             .market-features h2,
-            .roi-text h2 {
+            .benefits-text h2 {
                 font-size: 2rem;
             }
             
-            .roi-stats {
-                grid-template-columns: 1fr;
-            }
-            
-            .roi-cta {
+            .benefits-cta {
                 flex-direction: column;
             }
             
-            .roi-cta .btn {
+            .benefits-cta .btn {
                 width: 100%;
             }
         }
@@ -506,34 +492,42 @@
         </div>
     </section>
 
-    <!-- ROI Section -->
-    <section class="roi-section">
+    <!-- Benefits Section -->
+    <section class="benefits-section">
         <div class="container">
-            <div class="roi-content">
-                <div class="roi-text">
-                    <h2>Return on Investment</h2>
-                    <p>Micro-markets typically generate 30-50% more revenue than traditional vending machines while providing better employee satisfaction and workplace culture.</p>
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <h2>Benefits for Your Business</h2>
+                    <p>Micro-markets provide numerous advantages for your workplace, from improved employee satisfaction to enhanced convenience and modern amenities.</p>
                     
-                    <div class="roi-stats">
-                        <div class="roi-stat">
-                            <div class="roi-stat-number">40%</div>
-                            <div class="roi-stat-label">Average Revenue Increase</div>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Improved employee satisfaction and workplace culture</span>
                         </div>
-                        <div class="roi-stat">
-                            <div class="roi-stat-number">85%</div>
-                            <div class="roi-stat-label">Employee Satisfaction</div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Reduced time employees spend leaving for lunch</span>
                         </div>
-                        <div class="roi-stat">
-                            <div class="roi-stat-number">$0</div>
-                            <div class="roi-stat-label">Upfront Costs</div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Healthy food options for better productivity</span>
                         </div>
-                        <div class="roi-stat">
-                            <div class="roi-stat-number">24/7</div>
-                            <div class="roi-stat-label">Access</div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Modern, professional break room appearance</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>24/7 access to refreshments and snacks</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>No upfront costs or installation fees</span>
                         </div>
                     </div>
                     
-                    <div class="roi-cta">
+                    <div class="benefits-cta">
                         <a href="contact.html" class="btn btn-primary">Get Free Consultation</a>
                         <a href="portfolio.html" class="btn btn-outline">View Examples</a>
                     </div>
@@ -541,8 +535,8 @@
                 
                 <div class="overview-image">
                     <div class="image-placeholder">
-                        <i class="fas fa-chart-line"></i>
-                        <p>ROI Analysis</p>
+                        <i class="fas fa-users"></i>
+                        <p>Employee Benefits</p>
                     </div>
                 </div>
             </div>
