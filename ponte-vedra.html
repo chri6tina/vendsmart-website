@@ -3,11 +3,413 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ponte Vedra Vending Machines | VendSmart</title>
-    <meta name="description" content="VendSmart provides premium vending machines and micro-markets in Ponte Vedra, Florida. Upscale vending solutions with 24/7 support.">
+    <title>Ponte Vedra Vending Machines & Micro-Markets | VendSmart</title>
+    <meta name="description" content="Free vending machines and micro-markets for Ponte Vedra businesses. Smart vending solutions for luxury resorts, golf courses, and upscale businesses. 100% free installation.">
+    <meta name="keywords" content="ponte vedra vending machines, luxury resort vending, golf course vending, upscale business vending, free vending machines ponte vedra">
+    <link rel="canonical" href="https://jacksonvillevendingmachines.com/ponte-vedra.html">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "VendSmart Ponte Vedra",
+        "description": "Free vending machines and micro-markets for Ponte Vedra businesses",
+        "url": "https://jacksonvillevendingmachines.com/ponte-vedra.html",
+        "telephone": "904-456-3851",
+        "email": "vendsmartjacksonville@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ponte Vedra",
+            "addressRegion": "FL",
+            "addressCountry": "US"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Ponte Vedra"
+        },
+        "serviceArea": {
+            "@type": "City",
+            "name": "Ponte Vedra"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Vending Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Free Vending Machine Placement"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Micro-Markets"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Coffee Services"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <style>
+        .location-overview {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .location-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .location-text h2 {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .location-text p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .location-features {
+            display: grid;
+            gap: 1.5rem;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: 12px;
+            border-left: 4px solid #00C5F5;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-2px);
+        }
+        
+        .feature-item i {
+            font-size: 1.5rem;
+            color: #00C5F5;
+            margin-top: 0.25rem;
+        }
+        
+        .feature-item h3 {
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .feature-item p {
+            color: #6b7280;
+            line-height: 1.5;
+            margin: 0;
+        }
+        
+        .location-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .image-placeholder {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #cbd5e1;
+        }
+        
+        .image-placeholder i {
+            font-size: 4rem;
+            color: #00C5F5;
+            margin-bottom: 1rem;
+        }
+        
+        .image-placeholder p {
+            color: #6b7280;
+            font-weight: 600;
+        }
+        
+        .ponte-vedra-services {
+            padding: 4rem 0;
+            background: #f8fafc;
+        }
+        
+        .ponte-vedra-services h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 3rem;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-card i {
+            font-size: 2.5rem;
+            color: #00C5F5;
+            margin-bottom: 1rem;
+        }
+        
+        .service-card h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .service-card p {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .service-card li {
+            color: #6b7280;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f1f5f9;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .service-card li:before {
+            content: "✓";
+            color: #00C5F5;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .ponte-vedra-areas {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .ponte-vedra-areas h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 3rem;
+        }
+        
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .area-card {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            transition: transform 0.3s ease;
+        }
+        
+        .area-card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .area-card i {
+            font-size: 2.5rem;
+            color: #00C5F5;
+            margin-bottom: 1rem;
+        }
+        
+        .area-card h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .area-card p {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .area-card ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
+        }
+        
+        .area-card li {
+            color: #6b7280;
+            padding: 0.25rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .area-card li:before {
+            content: "•";
+            color: #00C5F5;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        
+        .ponte-vedra-benefits {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+        }
+        
+        .benefits-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .benefits-text h2 {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+        }
+        
+        .benefits-text p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .benefits-list {
+            margin-bottom: 2rem;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            color: #374151;
+        }
+        
+        .benefit-item i {
+            color: #00C5F5;
+            font-weight: bold;
+        }
+        
+        .benefits-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .ponte-vedra-stats {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .ponte-vedra-stats h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 3rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #00C5F5;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: #6b7280;
+            font-size: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .location-content,
+            .benefits-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .location-text h2,
+            .ponte-vedra-services h2,
+            .ponte-vedra-areas h2,
+            .ponte-vedra-benefits h2,
+            .ponte-vedra-stats h2 {
+                font-size: 2rem;
+            }
+            
+            .benefits-cta {
+                flex-direction: column;
+            }
+            
+            .benefits-cta .btn {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Contact Bar -->
@@ -68,52 +470,62 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Ponte Vedra Vending Solutions</h1>
-            <p>Premium vending machines and micro-markets for Ponte Vedra businesses</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="jacksonville-vending-micro-market.jpg" alt="Ponte Vedra vending machines and micro-markets" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Ponte Vedra Vending Solutions</h1>
+                <p>Free vending machines and micro-markets for Ponte Vedra businesses. Perfect for luxury resorts, golf courses, and upscale businesses in this prestigious community.</p>
+                <div class="hero-buttons">
+                    <a href="#overview" class="btn btn-primary">Learn More</a>
+                    <a href="contact.html" class="btn btn-outline">Get Free Machine</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Location Overview -->
-    <section class="location-overview">
+    <section id="overview" class="location-overview">
         <div class="container">
             <div class="location-content">
                 <div class="location-text">
                     <h2>Vending Solutions for Ponte Vedra</h2>
-                    <p>Ponte Vedra Beach is an upscale coastal community known for its luxury resorts, world-class golf courses, and sophisticated business environment. VendSmart provides premium vending solutions tailored to the high standards and discerning tastes of Ponte Vedra businesses and their clientele.</p>
+                    <p>Ponte Vedra is an exclusive coastal community known for its world-class golf courses, luxury resorts, and upscale businesses. VendSmart provides premium vending solutions tailored to the sophisticated needs of Ponte Vedra's prestigious establishments and their discerning clientele.</p>
                     
                     <div class="location-features">
                         <div class="feature-item">
-                            <i class="fas fa-hotel"></i>
+                            <i class="fas fa-golf-ball"></i>
                             <div>
-                                <h3>Luxury Resorts</h3>
-                                <p>Premium vending solutions for high-end hotels and resorts</p>
+                                <h3>Golf Courses & Country Clubs</h3>
+                                <p>Premium vending solutions for world-class golf courses, country clubs, and golf resorts serving elite members and guests</p>
                             </div>
                         </div>
                         
                         <div class="feature-item">
-                            <i class="fas fa-golf-ball"></i>
+                            <i class="fas fa-hotel"></i>
                             <div>
-                                <h3>Golf Courses</h3>
-                                <p>Upscale vending for world-class golf facilities and clubs</p>
+                                <h3>Luxury Resorts & Hotels</h3>
+                                <p>Upscale vending for luxury resorts, boutique hotels, and premium accommodations catering to high-end travelers</p>
                             </div>
                         </div>
                         
                         <div class="feature-item">
                             <i class="fas fa-building"></i>
                             <div>
-                                <h3>Corporate Offices</h3>
-                                <p>Smart vending for executive offices and corporate headquarters</p>
+                                <h3>Professional Offices</h3>
+                                <p>Sophisticated vending for professional offices, medical practices, and service businesses in the Ponte Vedra area</p>
                             </div>
                         </div>
                         
                         <div class="feature-item">
-                            <i class="fas fa-spa"></i>
+                            <i class="fas fa-utensils"></i>
                             <div>
-                                <h3>Wellness Centers</h3>
-                                <p>Healthy vending options for spas and wellness facilities</p>
+                                <h3>Fine Dining & Hospitality</h3>
+                                <p>Premium vending for fine dining establishments, upscale restaurants, and hospitality venues</p>
                             </div>
                         </div>
                     </div>
@@ -121,7 +533,7 @@
                 
                 <div class="location-image">
                     <div class="image-placeholder">
-                        <i class="fas fa-gem"></i>
+                        <i class="fas fa-golf-ball"></i>
                         <p>Ponte Vedra</p>
                     </div>
                 </div>
@@ -132,86 +544,62 @@
     <!-- Ponte Vedra Services -->
     <section class="ponte-vedra-services">
         <div class="container">
-            <h2>Premium Vending Services in Ponte Vedra</h2>
+            <h2>Vending Services in Ponte Vedra</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <i class="fas fa-vending-machine"></i>
-                    <h3>Luxury Vending Machines</h3>
-                    <p>Premium machines with elegant design and high-end product selections perfect for Ponte Vedra's sophisticated environment.</p>
+                    <i class="fas fa-robot"></i>
+                    <h3>Smart Vending Machines</h3>
+                    <p>Premium vending machines with contactless payments, real-time monitoring, and upscale snack options perfect for sophisticated Ponte Vedra locations.</p>
                     <ul>
-                        <li>Elegant, custom-designed exteriors</li>
-                        <li>Premium product selections</li>
-                        <li>Contactless payment systems</li>
-                        <li>24/7 concierge support</li>
+                        <li>Contactless payment systems (Apple Pay, Google Pay, credit cards)</li>
+                        <li>Real-time inventory monitoring and alerts</li>
+                        <li>Premium and organic snack options</li>
+                        <li>High-end beverages and energy drinks</li>
+                        <li>24/7 remote support and maintenance</li>
+                        <li>Mobile app integration for easy ordering</li>
                     </ul>
                 </div>
                 
                 <div class="service-card">
                     <i class="fas fa-store"></i>
-                    <h3>Premium Micro-Markets</h3>
-                    <p>Upscale self-service markets with gourmet food options and sophisticated technology for luxury locations.</p>
+                    <h3>Micro-Markets</h3>
+                    <p>Elegant self-service convenience stores that transform your space into a sophisticated retail experience with premium food and smart checkout.</p>
                     <ul>
-                        <li>Gourmet food selections</li>
-                        <li>Premium beverage options</li>
-                        <li>Elegant self-checkout systems</li>
-                        <li>Custom luxury branding</li>
+                        <li>Self-checkout kiosks with touch-screen technology</li>
+                        <li>Premium food options including gourmet selections</li>
+                        <li>Smart coolers with temperature monitoring</li>
+                        <li>Member loyalty programs and exclusive discounts</li>
+                        <li>Detailed sales analytics and reporting</li>
+                        <li>Professional installation and setup</li>
                     </ul>
                 </div>
                 
                 <div class="service-card">
                     <i class="fas fa-coffee"></i>
-                    <h3>Artisan Coffee Services</h3>
-                    <p>Premium coffee and beverage solutions featuring locally roasted beans and artisanal selections.</p>
+                    <h3>Coffee Services</h3>
+                    <p>Premium coffee solutions including high-end single-serve machines, traditional coffee makers, and luxury coffee products for your establishment.</p>
                     <ul>
-                        <li>Locally roasted premium beans</li>
-                        <li>Artisanal beverage options</li>
-                        <li>Luxury coffee equipment</li>
-                        <li>Concierge maintenance service</li>
+                        <li>Premium single-serve coffee machines (Keurig, Nespresso)</li>
+                        <li>Traditional coffee makers and supplies</li>
+                        <li>Gourmet coffee beans and premium tea selections</li>
+                        <li>High-quality creamers, sweeteners, and condiments</li>
+                        <li>Regular maintenance and cleaning service</li>
+                        <li>Custom coffee programs for your brand</li>
                     </ul>
                 </div>
                 
                 <div class="service-card">
-                    <i class="fas fa-truck"></i>
-                    <h3>Priority Emergency Delivery</h3>
-                    <p>24/7 priority emergency delivery services with dedicated support for Ponte Vedra's luxury establishments.</p>
+                    <i class="fas fa-snowflake"></i>
+                    <h3>Smart Coolers</h3>
+                    <p>Advanced cooling technology with real-time monitoring, inventory tracking, and contactless payments for premium food and beverages.</p>
                     <ul>
-                        <li>Priority emergency hotline</li>
-                        <li>Dedicated luxury support team</li>
-                        <li>Expedited service response</li>
-                        <li>VIP client treatment</li>
+                        <li>Temperature monitoring with real-time alerts</li>
+                        <li>Automated inventory tracking and restocking</li>
+                        <li>Contactless payment integration</li>
+                        <li>Premium food storage for gourmet selections</li>
+                        <li>Energy-efficient cooling systems</li>
+                        <li>Analytics dashboard for sales insights</li>
                     </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Ponte Vedra Benefits -->
-    <section class="ponte-vedra-benefits">
-        <div class="container">
-            <h2>Why Choose VendSmart for Ponte Vedra?</h2>
-            <div class="benefits-grid">
-                <div class="benefit">
-                    <i class="fas fa-crown"></i>
-                    <h3>Luxury Standards</h3>
-                    <p>Premium service standards that match Ponte Vedra's sophisticated business environment and client expectations.</p>
-                </div>
-                
-                <div class="benefit">
-                    <i class="fas fa-clock"></i>
-                    <h3>Concierge Support</h3>
-                    <p>24/7 concierge-level support with dedicated service teams for Ponte Vedra's luxury establishments.</p>
-                </div>
-                
-                <div class="benefit">
-                    <i class="fas fa-leaf"></i>
-                    <h3>Premium Products</h3>
-                    <p>Curated selection of premium, organic, and locally sourced products perfect for discerning clientele.</p>
-                </div>
-                
-                <div class="benefit">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Advanced Technology</h3>
-                    <p>State-of-the-art technology and mobile integration for modern luxury businesses.</p>
                 </div>
             </div>
         </div>
@@ -220,133 +608,166 @@
     <!-- Ponte Vedra Areas -->
     <section class="ponte-vedra-areas">
         <div class="container">
-            <h2>Ponte Vedra Service Areas</h2>
+            <h2>Ponte Vedra Business Areas We Serve</h2>
             <div class="areas-grid">
                 <div class="area-card">
-                    <h3>Ponte Vedra Beach</h3>
-                    <p>Premium vending solutions for Ponte Vedra Beach luxury establishments</p>
+                    <i class="fas fa-golf-ball"></i>
+                    <h3>Golf Courses & Country Clubs</h3>
+                    <p>Premium vending solutions for world-class golf courses and exclusive country clubs in Ponte Vedra.</p>
+                    <ul>
+                        <li>TPC Sawgrass</li>
+                        <li>Ponte Vedra Inn & Club</li>
+                        <li>Marsh Landing Country Club</li>
+                        <li>Golf course clubhouses</li>
+                        <li>Pro shops and facilities</li>
+                    </ul>
                     <a href="contact.html" class="btn btn-outline">Get Quote</a>
                 </div>
                 
                 <div class="area-card">
-                    <h3>Sawgrass</h3>
-                    <p>Upscale vending services for Sawgrass golf and resort facilities</p>
+                    <i class="fas fa-hotel"></i>
+                    <h3>Luxury Resorts & Hotels</h3>
+                    <p>Upscale vending for luxury resorts, boutique hotels, and premium accommodations.</p>
+                    <ul>
+                        <li>Ponte Vedra Inn & Club</li>
+                        <li>Luxury boutique hotels</li>
+                        <li>Resort amenities and pools</li>
+                        <li>Conference centers</li>
+                        <li>VIP guest areas</li>
+                    </ul>
                     <a href="contact.html" class="btn btn-outline">Get Quote</a>
                 </div>
                 
                 <div class="area-card">
-                    <h3>Palm Valley</h3>
-                    <p>Premium vending for Palm Valley area luxury businesses</p>
+                    <i class="fas fa-building"></i>
+                    <h3>Professional Offices</h3>
+                    <p>Sophisticated vending for professional offices, medical practices, and service businesses.</p>
+                    <ul>
+                        <li>Medical offices and clinics</li>
+                        <li>Professional service firms</li>
+                        <li>Real estate offices</li>
+                        <li>Financial services</li>
+                        <li>Consulting and advisory firms</li>
+                    </ul>
                     <a href="contact.html" class="btn btn-outline">Get Quote</a>
                 </div>
                 
                 <div class="area-card">
-                    <h3>Nocatee</h3>
-                    <p>Upscale vending solutions for Nocatee master-planned community</p>
+                    <i class="fas fa-utensils"></i>
+                    <h3>Fine Dining & Hospitality</h3>
+                    <p>Premium vending for fine dining establishments and upscale hospitality venues.</p>
+                    <ul>
+                        <li>Fine dining restaurants</li>
+                        <li>Upscale bars and lounges</li>
+                        <li>Resort dining facilities</li>
+                        <li>Private dining rooms</li>
+                        <li>Exclusive event venues</li>
+                    </ul>
                     <a href="contact.html" class="btn btn-outline">Get Quote</a>
                 </div>
                 
                 <div class="area-card">
-                    <h3>Ponte Vedra Inn & Club</h3>
-                    <p>Luxury vending services for Ponte Vedra Inn & Club area</p>
+                    <i class="fas fa-shopping-bag"></i>
+                    <h3>Upscale Retail</h3>
+                    <p>Premium vending for upscale retail locations and boutique shopping areas.</p>
+                    <ul>
+                        <li>Boutique shopping centers</li>
+                        <li>Upscale retail stores</li>
+                        <li>Luxury brand shops</li>
+                        <li>Spa and wellness centers</li>
+                        <li>Premium convenience stores</li>
+                    </ul>
                     <a href="contact.html" class="btn btn-outline">Get Quote</a>
                 </div>
                 
                 <div class="area-card">
-                    <h3>Marsh Landing</h3>
-                    <p>Premium vending for Marsh Landing golf and residential community</p>
+                    <i class="fas fa-home"></i>
+                    <h3>Residential Communities</h3>
+                    <p>Premium vending for exclusive residential communities and private clubs.</p>
+                    <ul>
+                        <li>Gated communities</li>
+                        <li>Private clubs</li>
+                        <li>Residential amenities</li>
+                        <li>Community centers</li>
+                        <li>Fitness and wellness facilities</li>
+                    </ul>
                     <a href="contact.html" class="btn btn-outline">Get Quote</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Related Locations -->
-    <section class="related-locations">
+    <!-- Ponte Vedra Benefits -->
+    <section class="ponte-vedra-benefits">
         <div class="container">
-            <h2>Other Jacksonville Service Areas</h2>
-            <p>VendSmart serves businesses throughout the greater Jacksonville area</p>
-            <div class="related-areas-grid">
-                <div class="related-area">
-                    <h3><a href="downtown-jacksonville.html">Downtown Jacksonville</a></h3>
-                    <p>Corporate offices and healthcare</p>
-                    <a href="downtown-jacksonville.html" class="btn btn-outline">Learn More</a>
-                </div>
-                <div class="related-area">
-                    <h3><a href="jacksonville-beach.html">Jacksonville Beach</a></h3>
-                    <p>Beachfront businesses and tourism</p>
-                    <a href="jacksonville-beach.html" class="btn btn-outline">Learn More</a>
-                </div>
-                <div class="related-area">
-                    <h3><a href="atlantic-beach.html">Atlantic Beach</a></h3>
-                    <p>Charming beach community</p>
-                    <a href="atlantic-beach.html" class="btn btn-outline">Learn More</a>
-                </div>
-                <div class="related-area">
-                    <h3><a href="st-augustine.html">St. Augustine</a></h3>
-                    <p>Historic city and tourism</p>
-                    <a href="st-augustine.html" class="btn btn-outline">Learn More</a>
-                </div>
-                <div class="related-area">
-                    <h3><a href="orange-park.html">Orange Park</a></h3>
-                    <p>Suburban businesses and healthcare</p>
-                    <a href="orange-park.html" class="btn btn-outline">Learn More</a>
-                </div>
-                <div class="related-area">
-                    <h3><a href="mandarin.html">Mandarin</a></h3>
-                    <p>Family-friendly suburban community</p>
-                    <a href="mandarin.html" class="btn btn-outline">Learn More</a>
-                </div>
-                <div class="related-area">
-                    <h3><a href="lakeside.html">Lakeside</a></h3>
-                    <p>Growing suburban area</p>
-                    <a href="lakeside.html" class="btn btn-outline">Learn More</a>
-                </div>
-            </div>
-            <div class="view-all-cta">
-                <a href="locations.html" class="btn btn-primary">View All Jacksonville Locations</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Free Machine Placement -->
-    <section class="free-placement">
-        <div class="container">
-            <div class="placement-content">
-                <div class="placement-text">
-                    <h2>Premium Vending Machine Placement in Ponte Vedra</h2>
-                    <p>Qualified Ponte Vedra locations can receive premium vending machine placement with no upfront costs. We handle installation, maintenance, and restocking while you earn passive income from our luxury product selections.</p>
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <h2>Why Choose VendSmart for Ponte Vedra?</h2>
+                    <p>Ponte Vedra businesses choose VendSmart for our commitment to excellence, premium service quality, and ability to meet the sophisticated standards of this prestigious community.</p>
                     
-                    <div class="placement-benefits">
+                    <div class="benefits-list">
                         <div class="benefit-item">
                             <i class="fas fa-check"></i>
-                            <span>No upfront costs or installation fees</span>
+                            <span>100% free vending machine placement with no upfront costs</span>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-check"></i>
-                            <span>Premium installation and setup</span>
+                            <span>Premium service quality matching Ponte Vedra standards</span>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-check"></i>
-                            <span>Luxury product curation and restocking</span>
+                            <span>24/7 support and emergency service available</span>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-check"></i>
-                            <span>Enhanced revenue sharing opportunities</span>
+                            <span>Professional installation with minimal disruption</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Premium product selection for discerning clientele</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Regular maintenance and restocking included</span>
                         </div>
                     </div>
                     
-                    <div class="placement-cta">
-                        <a href="get-a-free-vending-machine-in-jacksonville-florida.html" class="btn btn-primary">Apply for Premium Machine</a>
-                        <a href="contact.html" class="btn btn-outline">Learn More</a>
+                    <div class="benefits-cta">
+                        <a href="contact.html" class="btn btn-primary">Get Free Vending Machine</a>
+                        <a href="get-a-free-vending-machine-in-jacksonville-florida.html" class="btn btn-outline">Learn More</a>
                     </div>
                 </div>
                 
-                <div class="placement-image">
+                <div class="location-image">
                     <div class="image-placeholder">
-                        <i class="fas fa-gem"></i>
-                        <p>Premium Machine Placement</p>
+                        <i class="fas fa-chart-line"></i>
+                        <p>Ponte Vedra Success</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ponte Vedra Stats -->
+    <section class="ponte-vedra-stats">
+        <div class="container">
+            <h2>Ponte Vedra by the Numbers</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Ponte Vedra Businesses Served</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support Available</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Free Installation</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Customer Satisfaction</div>
                 </div>
             </div>
         </div>
@@ -355,11 +776,11 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready to Upgrade Your Ponte Vedra Vending Experience?</h2>
-            <p>Contact VendSmart today for a premium consultation and quote for your Ponte Vedra business.</p>
+            <h2>Ready for Ponte Vedra Vending Solutions?</h2>
+            <p>Get a free vending machine for your Ponte Vedra business today</p>
             <div class="cta-buttons">
-                <a href="contact.html" class="btn btn-primary">Get Premium Quote</a>
-                <a href="get-a-free-vending-machine-in-jacksonville-florida.html" class="btn btn-secondary">Get Premium Machine</a>
+                <a href="contact.html" class="btn btn-primary">Get Free Machine</a>
+                <a href="get-a-free-vending-machine-in-jacksonville-florida.html" class="btn btn-secondary">Learn More</a>
             </div>
         </div>
     </section>
@@ -370,12 +791,13 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>VendSmart</h3>
-                    <p>Premium vending solutions for Jacksonville, Florida.</p>
+                    <p>Premium vending solutions for Jacksonville, Florida & surrounding areas.</p>
+                    <p>Free Installation & Delivery</p>
+                    <p>Coffee Services Available</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/vendsmart" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_ID" target="_blank"><i class="fab fa-google"></i></a>
+                        <a href="https://www.yelp.com/biz/YOUR_YELP_ID" target="_blank"><i class="fab fa-yelp"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -403,8 +825,9 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>Jacksonville, Florida</p>
-                    <p>24/7 Support Available</p>
+                    <p><a href="tel:904-456-3851">904-456-3851</a></p>
+                    <p><a href="mailto:vendsmartjacksonville@gmail.com">vendsmartjacksonville@gmail.com</a></p>
+                    <p>Jacksonville, Florida & Surrounding Areas</p>
                     <a href="contact.html" class="btn btn-primary">Get Quote</a>
                 </div>
             </div>
@@ -414,6 +837,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="includes.js"></script>
 </body>
 </html> 
