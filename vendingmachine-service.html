@@ -5,9 +5,271 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vending Machine Service & Maintenance in Jacksonville | VendSmart</title>
     <meta name="description" content="VendSmart provides professional vending machine service, maintenance, and repair in Jacksonville, Florida. 24/7 support and emergency service available.">
-    <link rel="stylesheet" href="styles.css?v=4.0">
+    <link rel="canonical" href="https://jacksonvillevendingmachines.com/vendingmachine-service.html">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .service-overview {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .overview-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .overview-text h2 {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .overview-text p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .service-features {
+            display: grid;
+            gap: 1.5rem;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: 12px;
+            border-left: 4px solid #00C5F5;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-2px);
+        }
+        
+        .feature-item i {
+            font-size: 1.5rem;
+            color: #00C5F5;
+            margin-top: 0.25rem;
+        }
+        
+        .feature-item h3 {
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .feature-item p {
+            color: #6b7280;
+            line-height: 1.5;
+            margin: 0;
+        }
+        
+        .overview-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .image-placeholder {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #cbd5e1;
+        }
+        
+        .image-placeholder i {
+            font-size: 4rem;
+            color: #00C5F5;
+            margin-bottom: 1rem;
+        }
+        
+        .image-placeholder p {
+            color: #6b7280;
+            font-weight: 600;
+        }
+        
+        .service-benefits {
+            padding: 4rem 0;
+            background: #f8fafc;
+        }
+        
+        .service-benefits h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 3rem;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .benefit-card i {
+            font-size: 2.5rem;
+            color: #00C5F5;
+            margin-bottom: 1rem;
+        }
+        
+        .benefit-card h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .benefit-card p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        
+        .service-areas {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .service-areas h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 3rem;
+        }
+        
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .area-card {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #e5e7eb;
+            transition: transform 0.3s ease;
+        }
+        
+        .area-card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .area-card h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .area-card p {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .emergency-service {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+        }
+        
+        .emergency-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .emergency-text h2 {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+        }
+        
+        .emergency-text p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .emergency-features {
+            margin-bottom: 2rem;
+        }
+        
+        .emergency-feature {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            color: #374151;
+        }
+        
+        .emergency-feature i {
+            color: #00C5F5;
+            font-weight: bold;
+        }
+        
+        .emergency-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        @media (max-width: 768px) {
+            .overview-content,
+            .emergency-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .overview-text h2,
+            .service-benefits h2,
+            .service-areas h2,
+            .emergency-text h2 {
+                font-size: 2rem;
+            }
+            
+            .emergency-cta {
+                flex-direction: column;
+            }
+            
+            .emergency-cta .btn {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Contact Bar -->
@@ -32,16 +294,35 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="VendSmart LOGO WITH BORDER.png" alt="VendSmart Logo">
+                <a href="index.html" aria-label="VendSmart Homepage">
+                    <img src="vendsmart-logo-jacksonville-vending.png" alt="VendSmart - Jacksonville Vending Machine Company Logo">
+                </a>
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="locations.html">Locations</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="coffeeservices.html">Coffee Services</a></li>
+                        <li><a href="smart-coolers.html">Smart Coolers</a></li>
+                        <li><a href="setting-up-a-micro-market-in-your-jacksonville-office.html">Micro-Markets</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Locations <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="locations.html">All Locations</a></li>
+                        <li><a href="downtown-jacksonville.html">Downtown</a></li>
+                        <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
+                        <li><a href="orange-park.html">Orange Park</a></li>
+                        <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
+                    </ul>
+                </li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html" class="cta-button">Contact Us</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -52,19 +333,23 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-background">
-            <img src="Miro Market.jpg" alt="VendSmart Micro-Market" class="hero-bg-image">
+            <img src="jacksonville-vending-micro-market.jpg" alt="Jacksonville vending machine service and maintenance" class="hero-bg-image">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-container">
             <div class="hero-content">
                 <h1>Vending Machine Service & Maintenance</h1>
                 <p>Professional service, maintenance, and repair for all vending equipment in Jacksonville</p>
+                <div class="hero-buttons">
+                    <a href="#overview" class="btn btn-primary">Learn More</a>
+                    <a href="contact.html" class="btn btn-outline">Get Service Quote</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Service Overview -->
-    <section class="service-overview">
+    <section id="overview" class="service-overview">
         <div class="container">
             <div class="overview-content">
                 <div class="overview-text">
@@ -100,7 +385,7 @@
                             <i class="fas fa-chart-line"></i>
                             <div>
                                 <h3>Performance Monitoring</h3>
-                                <p>Real-time monitoring and performance optimization</p>
+                                <p>Real-time monitoring and analytics for optimal performance</p>
                             </div>
                         </div>
                     </div>
@@ -109,52 +394,8 @@
                 <div class="overview-image">
                     <div class="image-placeholder">
                         <i class="fas fa-tools"></i>
-                        <p>Vending Machine Service</p>
+                        <p>Service & Maintenance</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Service Types -->
-    <section class="service-types">
-        <div class="container">
-            <h2>Our Service Offerings</h2>
-            <div class="types-grid">
-                <div class="type-card">
-                    <i class="fas fa-calendar-check"></i>
-                    <h3>Preventive Maintenance</h3>
-                    <p>Regular scheduled maintenance to keep your equipment running smoothly</p>
-                    <ul>
-                        <li>Monthly service visits</li>
-                        <li>Equipment cleaning</li>
-                        <li>Performance testing</li>
-                        <li>Minor adjustments</li>
-                    </ul>
-                </div>
-                
-                <div class="type-card featured">
-                    <i class="fas fa-exclamation-triangle"></i>
-                    <h3>Emergency Repairs</h3>
-                    <p>24/7 emergency service for critical equipment failures</p>
-                    <ul>
-                        <li>Same-day response</li>
-                        <li>Emergency parts</li>
-                        <li>On-site repairs</li>
-                        <li>Priority service</li>
-                    </ul>
-                </div>
-                
-                <div class="type-card">
-                    <i class="fas fa-sync-alt"></i>
-                    <h3>Equipment Upgrades</h3>
-                    <p>Modernize your vending equipment with the latest technology</p>
-                    <ul>
-                        <li>Payment system upgrades</li>
-                        <li>Smart technology integration</li>
-                        <li>Energy efficiency improvements</li>
-                        <li>Performance enhancements</li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -167,26 +408,26 @@
             <div class="benefits-grid">
                 <div class="benefit-card">
                     <i class="fas fa-clock"></i>
-                    <h3>Minimal Downtime</h3>
-                    <p>Preventive maintenance reduces equipment failures and downtime</p>
-                </div>
-                
-                <div class="benefit-card">
-                    <i class="fas fa-dollar-sign"></i>
-                    <h3>Cost Savings</h3>
-                    <p>Regular service prevents costly repairs and extends equipment life</p>
-                </div>
-                
-                <div class="benefit-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Optimal Performance</h3>
-                    <p>Well-maintained equipment operates at peak efficiency</p>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock emergency service and support for critical equipment</p>
                 </div>
                 
                 <div class="benefit-card">
                     <i class="fas fa-shield-alt"></i>
                     <h3>Warranty Protection</h3>
-                    <p>Professional service maintains manufacturer warranties</p>
+                    <p>Maintain your equipment warranty with certified service technicians</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Cost Savings</h3>
+                    <p>Prevent expensive repairs with regular preventive maintenance</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Increased Uptime</h3>
+                    <p>Minimize downtime and maximize revenue with reliable service</p>
                 </div>
             </div>
         </div>
@@ -195,54 +436,30 @@
     <!-- Service Areas -->
     <section class="service-areas">
         <div class="container">
-            <h2>Service Coverage Throughout Jacksonville</h2>
+            <h2>Service Areas in Jacksonville</h2>
             <div class="areas-grid">
                 <div class="area-card">
-                    <h3><a href="downtown-jacksonville.html">Downtown Jacksonville</a></h3>
-                    <p>Corporate offices and healthcare facilities</p>
-                    <a href="downtown-jacksonville.html" class="btn btn-outline">Learn More</a>
+                    <h3>Downtown Jacksonville</h3>
+                    <p>Corporate offices and business districts</p>
+                    <a href="downtown-jacksonville.html" class="btn btn-outline">Downtown Service</a>
                 </div>
                 
                 <div class="area-card">
-                    <h3><a href="jacksonville-beach.html">Jacksonville Beach</a></h3>
-                    <p>Beachfront businesses and tourism</p>
-                    <a href="jacksonville-beach.html" class="btn btn-outline">Learn More</a>
+                    <h3>Jacksonville Beach</h3>
+                    <p>Beachfront businesses and tourist areas</p>
+                    <a href="jacksonville-beach.html" class="btn btn-outline">Beach Service</a>
                 </div>
                 
                 <div class="area-card">
-                    <h3><a href="orange-park.html">Orange Park</a></h3>
-                    <p>Suburban businesses and manufacturing</p>
-                    <a href="orange-park.html" class="btn btn-outline">Learn More</a>
+                    <h3>Orange Park</h3>
+                    <p>Healthcare facilities and manufacturing</p>
+                    <a href="orange-park.html" class="btn btn-outline">Orange Park Service</a>
                 </div>
                 
                 <div class="area-card">
-                    <h3><a href="ponte-vedra.html">Ponte Vedra</a></h3>
-                    <p>Luxury resorts and golf courses</p>
-                    <a href="ponte-vedra.html" class="btn btn-outline">Learn More</a>
-                </div>
-                
-                <div class="area-card">
-                    <h3><a href="atlantic-beach.html">Atlantic Beach</a></h3>
-                    <p>Charming beach community</p>
-                    <a href="atlantic-beach.html" class="btn btn-outline">Learn More</a>
-                </div>
-                
-                <div class="area-card">
-                    <h3><a href="st-augustine.html">St. Augustine</a></h3>
-                    <p>Historic city and tourism</p>
-                    <a href="st-augustine.html" class="btn btn-outline">Learn More</a>
-                </div>
-                
-                <div class="area-card">
-                    <h3><a href="mandarin.html">Mandarin</a></h3>
-                    <p>Family-friendly suburban community</p>
-                    <a href="mandarin.html" class="btn btn-outline">Learn More</a>
-                </div>
-                
-                <div class="area-card">
-                    <h3><a href="lakeside.html">Lakeside</a></h3>
-                    <p>Growing suburban area</p>
-                    <a href="lakeside.html" class="btn btn-outline">Learn More</a>
+                    <h3>Ponte Vedra</h3>
+                    <p>Upscale offices and residential areas</p>
+                    <a href="ponte-vedra.html" class="btn btn-outline">Ponte Vedra Service</a>
                 </div>
             </div>
         </div>
@@ -254,37 +471,37 @@
             <div class="emergency-content">
                 <div class="emergency-text">
                     <h2>24/7 Emergency Service</h2>
-                    <p>When your vending equipment fails, we're here to help. Our emergency service team is available 24/7 to get your equipment back online quickly.</p>
+                    <p>When your vending equipment breaks down, every minute counts. Our emergency service team is available 24/7 to get your equipment back online quickly.</p>
                     
                     <div class="emergency-features">
-                        <div class="feature-item">
-                            <i class="fas fa-phone"></i>
-                            <span>24/7 emergency hotline</span>
+                        <div class="emergency-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Same-day emergency response</span>
                         </div>
-                        <div class="feature-item">
-                            <i class="fas fa-clock"></i>
-                            <span>Same-day response</span>
+                        <div class="emergency-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Certified technicians on call</span>
                         </div>
-                        <div class="feature-item">
-                            <i class="fas fa-tools"></i>
-                            <span>On-site repairs</span>
+                        <div class="emergency-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Parts inventory on hand</span>
                         </div>
-                        <div class="feature-item">
-                            <i class="fas fa-box"></i>
-                            <span>Emergency parts</span>
+                        <div class="emergency-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Priority service for existing customers</span>
                         </div>
                     </div>
                     
                     <div class="emergency-cta">
-                        <a href="contact.html" class="btn btn-primary">Emergency Service</a>
+                        <a href="tel:904-456-3851" class="btn btn-primary">Call Emergency Service</a>
                         <a href="contact.html" class="btn btn-outline">Schedule Maintenance</a>
                     </div>
                 </div>
                 
-                <div class="emergency-image">
+                <div class="overview-image">
                     <div class="image-placeholder">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        <p>Emergency Service</p>
+                        <i class="fas fa-phone-alt"></i>
+                        <p>24/7 Emergency</p>
                     </div>
                 </div>
             </div>
@@ -294,11 +511,11 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Need Vending Machine Service?</h2>
-            <p>Contact VendSmart today for professional service and maintenance</p>
+            <h2>Ready for Professional Vending Service?</h2>
+            <p>Contact VendSmart today for reliable service and maintenance</p>
             <div class="cta-buttons">
                 <a href="contact.html" class="btn btn-primary">Get Service Quote</a>
-                <a href="contact.html" class="btn btn-secondary">Emergency Service</a>
+                <a href="tel:904-456-3851" class="btn btn-secondary">Call Now</a>
             </div>
         </div>
     </section>
@@ -309,12 +526,13 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>VendSmart</h3>
-                    <p>Premium vending solutions for Jacksonville, Florida.</p>
+                    <p>Premium vending solutions for Jacksonville, Florida & surrounding areas.</p>
+                    <p>Free Installation & Delivery</p>
+                    <p>Coffee Services Available</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/vendsmart" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_ID" target="_blank"><i class="fab fa-google"></i></a>
+                        <a href="https://www.yelp.com/biz/YOUR_YELP_ID" target="_blank"><i class="fab fa-yelp"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -342,8 +560,9 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>Jacksonville, Florida</p>
-                    <p>24/7 Support Available</p>
+                    <p><a href="tel:904-456-3851">904-456-3851</a></p>
+                    <p><a href="mailto:vendsmartjacksonville@gmail.com">vendsmartjacksonville@gmail.com</a></p>
+                    <p>Jacksonville, Florida & Surrounding Areas</p>
                     <a href="contact.html" class="btn btn-primary">Get Quote</a>
                 </div>
             </div>
@@ -353,6 +572,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="includes.js"></script>
 </body>
 </html> 
