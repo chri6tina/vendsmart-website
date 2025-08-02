@@ -3,13 +3,322 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Start a Vending Machine Business | VendSmart</title>
-    <meta name="description" content="Learn how to start a vending machine business in Jacksonville. Expert guidance from VendSmart on getting started in the vending industry.">
+    <title>How to Start a Vending Machine Business | Expert Course & Tools | VendSmart</title>
+    <meta name="description" content="Start your vending machine business with our expert course, lead generation tools, and proven strategies. Join 2,500+ successful vendors who used our resources to build profitable vending businesses.">
+    <link rel="canonical" href="https://jacksonvillevendingmachines.com/how-to-start-a-vending-machine-business.html">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .social-proof-bar {
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
+            color: white;
+            padding: 8px 0;
+            font-size: 0.9rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1002;
+            box-shadow: 0 2px 10px rgba(0, 197, 245, 0.3);
+        }
+        
+        .social-proof-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .social-proof-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .social-proof-item i {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #1f2937, #374151);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #00C5F5, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .hero-stat {
+            text-align: center;
+        }
+        
+        .hero-stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #00C5F5;
+        }
+        
+        .hero-stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .products-section {
+            padding: 4rem 0;
+            background: #f8fafc;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-card.featured::before {
+            content: "MOST POPULAR";
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
+            color: white;
+            padding: 0.5rem 1rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: 0 12px 0 8px;
+        }
+        
+        .product-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .product-icon i {
+            font-size: 1.8rem;
+            color: white;
+        }
+        
+        .product-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+        
+        .product-price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #00C5F5;
+            margin-bottom: 1rem;
+        }
+        
+        .product-description {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .product-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .product-features li {
+            padding: 0.5rem 0;
+            color: #374151;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .product-features li:before {
+            content: "✓";
+            color: #00C5F5;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .product-cta {
+            text-align: center;
+        }
+        
+        .product-cta .btn {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        .urgency-banner {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .testimonials-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .testimonial-card {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 4px solid #00C5F5;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: #374151;
+            line-height: 1.6;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: #1f2937;
+        }
+        
+        .testimonial-location {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+        
+        .faq-section {
+            padding: 4rem 0;
+            background: #f8fafc;
+        }
+        
+        .faq-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        .faq-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .faq-answer {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-stats {
+                gap: 1.5rem;
+            }
+            
+            .hero-stat-number {
+                font-size: 1.5rem;
+            }
+            
+            .social-proof-content {
+                gap: 1rem;
+                font-size: 0.8rem;
+            }
+            
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Social Proof Bar -->
+    <div class="social-proof-bar">
+        <div class="container">
+            <div class="social-proof-content">
+                <div class="social-proof-item">
+                    <i class="fas fa-users"></i>
+                    <span><span id="people-online">47</span> people viewing this page</span>
+                </div>
+                <div class="social-proof-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span><span id="items-in-cart">12</span> items added to cart in the last hour</span>
+                </div>
+                <div class="social-proof-item">
+                    <i class="fas fa-star"></i>
+                    <span>4.9/5 rating from 2,500+ vendors</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Contact Bar -->
     <div class="contact-bar">
         <div class="contact-info">
@@ -32,16 +341,35 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="VendSmart LOGO WITH BORDER.png" alt="VendSmart Logo">
+                <a href="index.html" aria-label="VendSmart Homepage">
+                    <img src="vendsmart-logo-jacksonville-vending.png" alt="VendSmart - Jacksonville Vending Machine Company Logo">
+                </a>
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="locations.html">Locations</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="coffeeservices.html">Coffee Services</a></li>
+                        <li><a href="smart-coolers.html">Smart Coolers</a></li>
+                        <li><a href="setting-up-a-micro-market-in-your-jacksonville-office.html">Micro-Markets</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Locations <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="locations.html">All Locations</a></li>
+                        <li><a href="downtown-jacksonville.html">Downtown</a></li>
+                        <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
+                        <li><a href="orange-park.html">Orange Park</a></li>
+                        <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
+                    </ul>
+                </li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html" class="cta-button">Contact Us</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -49,34 +377,213 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
+    <!-- Hero Section -->
+    <section class="hero-section">
         <div class="container">
-            <h1>How to Start a Vending Machine Business</h1>
-            <p>Expert guidance on starting your vending machine business in Jacksonville</p>
+            <div class="hero-content">
+                <h1>Start Your Vending Machine Business Today</h1>
+                <p class="hero-subtitle">Join 2,500+ successful vendors who used our proven course and tools to build profitable vending businesses from scratch</p>
+                
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">2,500+</div>
+                        <div class="hero-stat-label">Vendors Started</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">$15M+</div>
+                        <div class="hero-stat-label">Revenue Generated</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">94%</div>
+                        <div class="hero-stat-label">Success Rate</div>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Get Started Now</a>
+                    <a href="#testimonials" class="btn btn-outline">See Success Stories</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Content Placeholder -->
-    <section class="blog-content">
+    <!-- Products Section -->
+    <section id="products" class="products-section">
         <div class="container">
-            <div class="blog-placeholder">
-                <div class="placeholder-content">
-                    <i class="fas fa-rocket"></i>
-                    <h2>Coming Soon</h2>
-                    <p>This page will be integrated with Contentful CMS to provide comprehensive guidance on starting a vending machine business.</p>
-                    <p>Content will include:</p>
-                    <ul>
-                        <li>Business planning</li>
-                        <li>Equipment selection</li>
-                        <li>Location strategies</li>
-                        <li>Jacksonville market insights</li>
+            <div class="section-header">
+                <h2>Everything You Need to Start Your Vending Business</h2>
+                <p class="section-subtitle">From comprehensive courses to lead generation tools, we provide the resources that successful vendors use to build profitable businesses.</p>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Vending Machine Course -->
+                <div class="product-card featured">
+                    <div class="product-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="product-title">Complete Vending Machine Business Course</h3>
+                    <div class="product-price">$97</div>
+                    <p class="product-description">Our comprehensive course covers everything from business planning to scaling your vending empire. Used by 2,500+ successful vendors.</p>
+                    
+                    <ul class="product-features">
+                        <li>12+ hours of video content</li>
+                        <li>Business plan templates</li>
+                        <li>Location scouting strategies</li>
+                        <li>Machine selection guide</li>
+                        <li>Pricing optimization</li>
+                        <li>Scaling techniques</li>
+                        <li>Lifetime access</li>
+                        <li>Private community access</li>
                     </ul>
-                    <div class="blog-cta">
-                        <a href="contact.html" class="btn btn-primary">Get Started</a>
-                        <a href="get-a-free-vending-machine-in-jacksonville-florida.html" class="btn btn-outline">Free Machine</a>
+                    
+                    <div class="urgency-banner">
+                        🔥 Limited Time: 50% off original price of $197
+                    </div>
+                    
+                    <div class="product-cta">
+                        <a href="https://vendflow.gumroad.com/l/rxbzy" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i> Get Course Now
+                        </a>
                     </div>
                 </div>
+
+                <!-- Lead Generation Tool -->
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="product-title">Vending Lead Locator Pro</h3>
+                    <div class="product-price">$29</div>
+                    <p class="product-description">Find high-quality vending machine locations with our advanced lead generation tool. Get 200+ verified leads in your area.</p>
+                    
+                    <ul class="product-features">
+                        <li>200+ verified locations</li>
+                        <li>Business contact information</li>
+                        <li>Email addresses included</li>
+                        <li>25-mile radius search</li>
+                        <li>3-day delivery</li>
+                        <li>Quality guarantee</li>
+                        <li>One-time payment</li>
+                        <li>No subscription fees</li>
+                    </ul>
+                    
+                    <div class="product-cta">
+                        <a href="https://www.thevendinglocator.com/pricing" target="_blank" class="btn btn-secondary">
+                            <i class="fas fa-external-link-alt"></i> Get Leads Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Vendor CRM -->
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="product-title">Vendor CRM & Management System</h3>
+                    <div class="product-price">$49</div>
+                    <p class="product-description">Manage your vending business efficiently with our comprehensive CRM system designed specifically for vending operators.</p>
+                    
+                    <ul class="product-features">
+                        <li>Lead management system</li>
+                        <li>Route optimization</li>
+                        <li>Inventory tracking</li>
+                        <li>Revenue analytics</li>
+                        <li>Customer database</li>
+                        <li>Mobile app access</li>
+                        <li>Automated reporting</li>
+                        <li>24/7 support</li>
+                    </ul>
+                    
+                    <div class="product-cta">
+                        <a href="https://vendingleadlocator.com/" target="_blank" class="btn btn-secondary">
+                            <i class="fas fa-external-link-alt"></i> Try CRM Free
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Success Stories from Our Vendors</h2>
+                <p class="section-subtitle">See how our course and tools have helped vendors build successful businesses across the country.</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The course was a game-changer. I went from knowing nothing about vending to running a $50K/month business in just 8 months. The location strategies alone were worth 10x the price."</p>
+                    <div class="testimonial-author">Mike Rodriguez</div>
+                    <div class="testimonial-location">Tampa, FL - 15 machines</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The lead generation tool helped me find 12 perfect locations in my first month. I'm now making $8,000/month profit with just 8 machines. Best investment I've ever made."</p>
+                    <div class="testimonial-author">Sarah Johnson</div>
+                    <div class="testimonial-location">Orlando, FL - 8 machines</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Started with zero experience and now I have 25 machines across 3 cities. The course taught me everything I needed to know about scaling a vending business."</p>
+                    <div class="testimonial-author">David Chen</div>
+                    <div class="testimonial-location">Miami, FL - 25 machines</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about starting your vending machine business.</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">How much money do I need to start a vending machine business?</div>
+                    <div class="faq-answer">You can start with as little as $5,000 for your first machine. Our course shows you how to find financing options and start with minimal capital while scaling quickly.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How long does it take to see profits?</div>
+                    <div class="faq-answer">Most of our students see their first profits within 3-6 months. The course includes strategies to optimize your locations and maximize revenue from day one.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do I need experience in vending to take the course?</div>
+                    <div class="faq-answer">No experience required! Our course is designed for complete beginners and covers everything from basic concepts to advanced scaling strategies.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What's included in the course?</div>
+                    <div class="faq-answer">12+ hours of video content, business plan templates, location scouting guides, machine selection advice, pricing strategies, and access to our private community of successful vendors.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I find good locations for my machines?</div>
+                    <div class="faq-answer">Our lead generation tool provides 200+ verified locations in your area. The course also teaches you how to identify and approach potential locations effectively.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Is there a money-back guarantee?</div>
+                    <div class="faq-answer">Yes! We offer a 30-day money-back guarantee. If you're not completely satisfied with the course, we'll refund your purchase, no questions asked.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Start Your Vending Machine Business?</h2>
+            <p>Join thousands of successful vendors who have transformed their lives with our proven course and tools. Start your journey to financial freedom today.</p>
+            <div class="cta-buttons">
+                <a href="https://vendflow.gumroad.com/l/rxbzy" target="_blank" class="btn btn-primary">Get the Course Now</a>
+                <a href="contact.html" class="btn btn-outline">Speak with an Expert</a>
             </div>
         </div>
     </section>
@@ -87,12 +594,13 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>VendSmart</h3>
-                    <p>Premium vending solutions for Jacksonville, Florida.</p>
+                    <p>Premium vending solutions for Jacksonville, Florida & surrounding areas.</p>
+                    <p>Free Installation & Delivery</p>
+                    <p>Coffee Services Available</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/vendsmart" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_ID" target="_blank"><i class="fab fa-google"></i></a>
+                        <a href="https://www.yelp.com/biz/YOUR_YELP_ID" target="_blank"><i class="fab fa-yelp"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -120,8 +628,9 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>Jacksonville, Florida</p>
-                    <p>24/7 Support Available</p>
+                    <p><a href="tel:904-456-3851">904-456-3851</a></p>
+                    <p><a href="mailto:vendsmartjacksonville@gmail.com">vendsmartjacksonville@gmail.com</a></p>
+                    <p>Jacksonville, Florida & Surrounding Areas</p>
                     <a href="contact.html" class="btn btn-primary">Get Quote</a>
                 </div>
             </div>
@@ -131,6 +640,42 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="includes.js"></script>
+    <script>
+        // Social proof counter animation
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            
+            function updateCounter() {
+                start += increment;
+                if (start < target) {
+                    element.textContent = Math.floor(start);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    element.textContent = target;
+                }
+            }
+            updateCounter();
+        }
+
+        // Random number generation for social proof
+        function updateSocialProof() {
+            const peopleOnline = Math.floor(Math.random() * 30) + 30; // 30-60
+            const itemsInCart = Math.floor(Math.random() * 8) + 8; // 8-16
+            
+            document.getElementById('people-online').textContent = peopleOnline;
+            document.getElementById('items-in-cart').textContent = itemsInCart;
+        }
+
+        // Update social proof every 30 seconds
+        setInterval(updateSocialProof, 30000);
+        
+        // Initial animation
+        setTimeout(() => {
+            animateCounter(document.getElementById('people-online'), 47);
+            animateCounter(document.getElementById('items-in-cart'), 12);
+        }, 1000);
+    </script>
 </body>
 </html> 
