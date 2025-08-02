@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro-Market Products & Vending Machine Items | VendSmart Jacksonville</title>
+    <meta name="description" content="Explore our complete selection of micro-market products including fresh food, drinks, snacks, and healthy options. Coca-Cola, Pepsi, Red Bull, fresh sandwiches, salads, and more available in Jacksonville break rooms.">
+    <meta name="keywords" content="micro market products, vending machine items, break room snacks, fresh food vending, drinks vending, healthy snacks, coca cola, red bull, fresh sandwiches jacksonville">
+    <link rel="canonical" href="https://jacksonvillevendingmachines.com/products.html">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "VendSmart Products",
+        "description": "Complete selection of micro-market products and vending machine items",
+        "url": "https://jacksonvillevendingmachines.com/products.html",
+        "telephone": "904-456-3851",
+        "email": "vendsmartjacksonville@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Jacksonville",
+            "addressRegion": "FL",
+            "addressCountry": "US"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Micro-Market Products",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Product",
+                        "name": "Beverages"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Product",
+                        "name": "Fresh Food"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Product",
+                        "name": "Snacks"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <style>
+        .products-hero {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
+            color: white;
+            text-align: center;
+        }
+        
+        .products-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .products-hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .products-overview {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .products-intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .products-intro h2 {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        
+        .products-intro p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .product-categories {
+            padding: 4rem 0;
+            background: #f8fafc;
+        }
+        
+        .category-section {
+            margin-bottom: 4rem;
+        }
+        
+        .category-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .category-header h3 {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .category-header p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .product-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-card h4 {
+            font-size: 1.3rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .product-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .product-list li {
+            color: #6b7280;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f1f5f9;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .product-list li:before {
+            content: "✓";
+            color: #00C5F5;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .product-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .fresh-food-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .fresh-food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .fresh-food-card {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .fresh-food-card h4 {
+            font-size: 1.4rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .fresh-food-card p {
+            color: #6b7280;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .product-features {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-card i {
+            font-size: 2.5rem;
+            color: #00C5F5;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card h4 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .feature-card p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        
+        .customization-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .customization-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .customization-content h3 {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+        }
+        
+        .customization-content p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .customization-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .customization-item {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .customization-item i {
+            color: #00C5F5;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .customization-item h5 {
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        
+        .customization-item p {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .products-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .category-header h3 {
+                font-size: 2rem;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .fresh-food-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .customization-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Contact Bar -->
+    <div class="contact-bar">
+        <div class="contact-info">
+            <span class="contact-item">
+                <i class="fas fa-phone"></i>
+                904-456-3851
+            </span>
+            <span class="contact-item">
+                <i class="fas fa-envelope"></i>
+                vendsmartjacksonville@gmail.com
+            </span>
+            <a href="https://www.facebook.com/vendsmart" target="_blank" class="contact-item">
+                <i class="fab fa-facebook"></i>
+                Follow Us
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" aria-label="VendSmart Homepage">
+                    <img src="vendsmart-logo-jacksonville-vending.png" alt="VendSmart - Jacksonville Vending Machine Company Logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="coffeeservices.html">Coffee Services</a></li>
+                        <li><a href="smart-coolers.html">Smart Coolers</a></li>
+                        <li><a href="setting-up-a-micro-market-in-your-jacksonville-office.html">Micro-Markets</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Locations <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="locations.html">All Locations</a></li>
+                        <li><a href="downtown-jacksonville.html">Downtown</a></li>
+                        <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
+                        <li><a href="orange-park.html">Orange Park</a></li>
+                        <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
+                    </ul>
+                </li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="cta-button">Contact Us</a></li>
+            </ul>
+            <div class="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Hero -->
+    <section class="products-hero">
+        <div class="container">
+            <h1>Complete Micro-Market Product Selection</h1>
+            <p>Explore our extensive selection of fresh food, beverages, snacks, and healthy options available in your break room</p>
+            <div class="hero-buttons">
+                <a href="#overview" class="btn btn-outline">View All Products</a>
+                <a href="contact.html" class="btn btn-primary">Get Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Overview -->
+    <section id="overview" class="products-overview">
+        <div class="container">
+            <div class="products-intro">
+                <h2>What's Available in Your Break Room?</h2>
+                <p>Our micro-markets offer an extensive selection of products to keep your team satisfied and energized throughout the workday. From fresh sandwiches and salads to premium beverages and healthy snacks, we have everything your employees need.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="product-categories">
+        <div class="container">
+            <!-- Beverages Section -->
+            <div class="category-section">
+                <div class="category-header">
+                    <h3><i class="fas fa-glass-whiskey"></i> Beverages</h3>
+                    <p>Stay hydrated and energized with our wide selection of beverages</p>
+                </div>
+                
+                <div class="products-grid">
+                    <div class="product-card">
+                        <h4><i class="fas fa-soda"></i> Sodas</h4>
+                        <ul class="product-list">
+                            <li>Coca-Cola</li>
+                            <li>Pepsi</li>
+                            <li>Sprite</li>
+                            <li>Dr Pepper</li>
+                            <li>Mountain Dew</li>
+                            <li>Fanta (Orange, Grape, Pineapple)</li>
+                            <li>Barq's Root Beer</li>
+                            <li>Canada Dry Ginger Ale</li>
+                            <li>Sierra Mist / Starry</li>
+                            <li>7Up</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-card">
+                        <h4><i class="fas fa-tint"></i> Flavored Waters & Sparkling</h4>
+                        <ul class="product-list">
+                            <li>LaCroix</li>
+                            <li>Bubly</li>
+                            <li>Spindrift</li>
+                            <li>Perrier</li>
+                            <li>San Pellegrino</li>
+                            <li>Smartwater+</li>
+                            <li>Vitamin Water</li>
+                            <li>Hint Water</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-card">
+                        <h4><i class="fas fa-leaf"></i> Iced Teas</h4>
+                        <ul class="product-list">
+                            <li>Arizona Iced Tea</li>
+                            <li>Gold Peak Tea</li>
+                            <li>Pure Leaf</li>
+                            <li>Snapple</li>
+                            <li>Lipton Iced Tea</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-card">
+                        <h4><i class="fas fa-apple-alt"></i> Juices</h4>
+                        <ul class="product-list">
+                            <li>Tropicana (Orange, Apple)</li>
+                            <li>Minute Maid</li>
+                            <li>Ocean Spray (Cranberry)</li>
+                            <li>Simply (Lemonade, Apple)</li>
+                            <li>Naked Juice</li>
+                            <li>Capri Sun</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-card">
+                        <h4><i class="fas fa-bolt"></i> Energy Drinks</h4>
+                        <ul class="product-list">
+                            <li>Red Bull (Original, Sugar-Free, Tropical)</li>
+                            <li>Monster Energy (Original, Ultra, Rehab, Juice)</li>
+                            <li>Celsius (Peach Mango Green Tea, Arctic Vibe)</li>
+                            <li>Bang (Rainbow Unicorn, Black Cherry Vanilla)</li>
+                            <li>Ghost Energy (Warheads, Sour Patch Kids)</li>
+                            <li>Rockstar Energy (Original, Punched, Recovery)</li>
+                            <li>Reign Total Body Fuel</li>
+                            <li>Alani Nu (Cosmic Stardust, Breezeberry)</li>
+                            <li>5-Hour Energy Shots</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Snacks Section -->
+            <div class="category-section">
+                <div class="category-header">
+                    <h3><i class="fas fa-cookie-bite"></i> Snacks & Treats</h3>
+                    <p>From sweet treats to salty snacks, we have all your favorite indulgences</p>
+                </div>
+                
+                <div class="products-grid">
+                    <div class="product-card">
+                        <h4><i class="fas fa-candy-cane"></i> Candy & Chocolate</h4>
+                        <ul class="product-list">
+                            <li>Snickers</li>
+                            <li>Reese's Peanut Butter Cups</li>
+                            <li>M&M's (Peanut, Plain, Pretzel)</li>
+                            <li>Twix</li>
+                            <li>KitKat</li>
+                            <li>Milky Way</li>
+                            <li>Skittles</li>
+                            <li>Starburst</li>
+                            <li>Sour Patch Kids</li>
+                            <li>Haribo Gummy Bears</li>
+                            <li>Butterfinger</li>
+                            <li>Hershey's Chocolate Bar</li>
+                            <li>Airheads</li>
+                            <li>Swedish Fish</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-card">
+                        <h4><i class="fas fa-chips"></i> Salty Snacks</h4>
+                        <ul class="product-list">
+                            <li>Lay's (Classic, BBQ, Sour Cream)</li>
+                            <li>Doritos (Nacho Cheese, Cool Ranch)</li>
+                            <li>Cheetos (Crunchy, Flamin' Hot)</li>
+                            <li>Ruffles (Cheddar & Sour Cream)</li>
+                            <li>Pringles (Original, Pizza, Sour Cream)</li>
+                            <li>Takis</li>
+                            <li>Fritos</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-card">
+                        <h4><i class="fas fa-cookie"></i> Cookies & Baked Goods</h4>
+                        <ul class="product-list">
+                            <li>Oreo</li>
+                            <li>Chips Ahoy!</li>
+                            <li>Nutter Butter</li>
+                            <li>Little Debbie Snacks (Honey Buns, Cosmic Brownies)</li>
+                            <li>Hostess (Twinkies, Ding Dongs, Donettes)</li>
+                            <li>Nature Valley Granola Bars</li>
+                            <li>KIND Bars</li>
+                            <li>Belvita Breakfast Biscuits</li>
+                            <li>Clif Bars</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-card">
+                        <h4><i class="fas fa-seedling"></i> Healthy Options</h4>
+                        <ul class="product-list">
+                            <li>Protein Bars (RXBAR, Quest, ONE)</li>
+                            <li>Fruit Snacks (Welch's, Mott's)</li>
+                            <li>Jerky (Jack Link's, Slim Jim, Old Trapper)</li>
+                            <li>Dried Fruit (Mango, Banana Chips)</li>
+                            <li>Greek Yogurt (Chobani, Oikos drinkables)</li>
+                            <li>Apple Sauce Pouches (GoGo squeeZ)</li>
+                            <li>Hummus & Pretzel Packs</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-card">
+                        <h4><i class="fas fa-peanuts"></i> Crackers & Nuts</h4>
+                        <ul class="product-list">
+                            <li>Cheez-It</li>
+                            <li>Goldfish</li>
+                            <li>Ritz Bits</li>
+                            <li>Lance Crackers</li>
+                            <li>Planters Peanuts/Mixed Nuts</li>
+                            <li>Blue Diamond Almonds</li>
+                            <li>Trail Mix Packs</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-card">
+                        <h4><i class="fas fa-popcorn"></i> Popcorn</h4>
+                        <ul class="product-list">
+                            <li>Smartfood White Cheddar Popcorn</li>
+                            <li>SkinnyPop</li>
+                            <li>Boom Chicka Pop</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fresh Food Section -->
+    <section class="fresh-food-section">
+        <div class="container">
+            <div class="category-header">
+                <h3><i class="fas fa-utensils"></i> Fresh Food & Meals</h3>
+                <p>Fresh, delicious meals prepared daily for your convenience</p>
+            </div>
+            
+            <div class="fresh-food-grid">
+                <div class="fresh-food-card">
+                    <h4><i class="fas fa-sandwich"></i> Fresh Sandwiches</h4>
+                    <p>Made fresh daily with premium ingredients and artisan breads</p>
+                    <ul class="product-list">
+                        <li>Turkey & Swiss on Wheat</li>
+                        <li>Ham & Cheddar on Rye</li>
+                        <li>Chicken Salad on Croissant</li>
+                        <li>Veggie Delight on Multigrain</li>
+                        <li>Roast Beef & Provolone</li>
+                        <li>BLT on Sourdough</li>
+                        <li>Italian Sub with Fresh Mozzarella</li>
+                        <li>Grilled Chicken Caesar Wrap</li>
+                        <li>Mediterranean Veggie Wrap</li>
+                        <li>Classic Club Sandwich</li>
+                    </ul>
+                </div>
+                
+                <div class="fresh-food-card">
+                    <h4><i class="fas fa-leaf"></i> Fresh Salads</h4>
+                    <p>Crisp, fresh salads with premium ingredients and house-made dressings</p>
+                    <ul class="product-list">
+                        <li>Caesar Salad with Grilled Chicken</li>
+                        <li>Garden Salad with Mixed Greens</li>
+                        <li>Cobb Salad with Bacon & Avocado</li>
+                        <li>Greek Salad with Feta & Olives</li>
+                        <li>Asian Sesame Chicken Salad</li>
+                        <li>Southwest Black Bean Salad</li>
+                        <li>Caprese Salad with Fresh Mozzarella</li>
+                        <li>Spinach & Strawberry Salad</li>
+                        <li>Quinoa & Vegetable Bowl</li>
+                        <li>Kale & Cranberry Salad</li>
+                    </ul>
+                </div>
+                
+                <div class="fresh-food-card">
+                    <h4><i class="fas fa-pizza-slice"></i> Hot Food Options</h4>
+                    <p>Warm, satisfying meals perfect for lunch or dinner</p>
+                    <ul class="product-list">
+                        <li>Personal Pizzas (Margherita, Pepperoni, Veggie)</li>
+                        <li>Hot Paninis (Turkey, Ham, Veggie)</li>
+                        <li>Soup of the Day (Chicken Noodle, Tomato Basil, Broccoli Cheddar)</li>
+                        <li>Mac & Cheese with Breadcrumbs</li>
+                        <li>Chicken Tenders with Dipping Sauce</li>
+                        <li>Loaded Baked Potatoes</li>
+                        <li>Quesadillas (Chicken, Cheese, Veggie)</li>
+                        <li>Hot Dogs with All the Fixings</li>
+                        <li>Nachos with Cheese & Jalapeños</li>
+                        <li>Chili with Cornbread</li>
+                    </ul>
+                </div>
+                
+                <div class="fresh-food-card">
+                    <h4><i class="fas fa-ice-cream"></i> Desserts & Treats</h4>
+                    <p>Sweet treats to satisfy your cravings</p>
+                    <ul class="product-list">
+                        <li>Fresh Baked Cookies (Chocolate Chip, Oatmeal Raisin)</li>
+                        <li>Brownies & Blondies</li>
+                        <li>Cheesecake Slices</li>
+                        <li>Tiramisu Cups</li>
+                        <li>Chocolate Mousse</li>
+                        <li>Fruit Parfaits</li>
+                        <li>Ice Cream Sandwiches</li>
+                        <li>Pudding Cups</li>
+                        <li>Fresh Fruit Cups</li>
+                        <li>Yogurt with Granola</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features -->
+    <section class="product-features">
+        <div class="container">
+            <div class="category-header">
+                <h3><i class="fas fa-star"></i> Why Choose Our Products?</h3>
+                <p>Quality, variety, and convenience for your break room</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>Fresh Daily</h4>
+                    <p>All fresh food items are prepared and delivered daily to ensure maximum freshness and quality.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-leaf"></i>
+                    <h4>Healthy Options</h4>
+                    <p>We offer a wide selection of healthy snacks, fresh fruits, and nutritious meal options.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-tags"></i>
+                    <h4>Competitive Pricing</h4>
+                    <p>Our products are competitively priced to provide value for your employees and your budget.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-sync"></i>
+                    <h4>Regular Updates</h4>
+                    <p>We regularly update our product selection based on customer feedback and seasonal preferences.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-truck"></i>
+                    <h4>Reliable Delivery</h4>
+                    <p>Consistent delivery schedules ensure your break room is always well-stocked with fresh products.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-heart"></i>
+                    <h4>Employee Satisfaction</h4>
+                    <p>Our diverse product selection helps improve employee satisfaction and workplace morale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customization Section -->
+    <section class="customization-section">
+        <div class="container">
+            <div class="customization-content">
+                <h3>Customize Your Product Selection</h3>
+                <p>We work with you to create a product mix that perfectly matches your team's preferences and dietary needs. Our flexible approach ensures everyone in your workplace can find something they love.</p>
+                
+                <div class="customization-list">
+                    <div class="customization-item">
+                        <i class="fas fa-users"></i>
+                        <h5>Employee Surveys</h5>
+                        <p>We conduct surveys to understand your team's preferences and dietary requirements.</p>
+                    </div>
+                    
+                    <div class="customization-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h5>Sales Analytics</h5>
+                        <p>We track which products perform best and adjust our selection accordingly.</p>
+                    </div>
+                    
+                    <div class="customization-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h5>Seasonal Updates</h5>
+                        <p>We introduce seasonal products and rotate items to keep the selection fresh and exciting.</p>
+                    </div>
+                    
+                    <div class="customization-item">
+                        <i class="fas fa-allergies"></i>
+                        <h5>Dietary Accommodations</h5>
+                        <p>We offer gluten-free, vegan, and other dietary-specific options to accommodate all employees.</p>
+                    </div>
+                </div>
+                
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Customize Your Selection</a>
+                    <a href="setting-up-a-micro-market-in-your-jacksonville-office.html" class="btn btn-outline">Learn About Micro-Markets</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Stock Your Break Room?</h2>
+            <p>Get a free consultation and see how our extensive product selection can enhance your workplace</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Get Free Quote</a>
+                <a href="setting-up-a-micro-market-in-your-jacksonville-office.html" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VendSmart</h3>
+                    <p>Premium vending solutions for Jacksonville, Florida & surrounding areas.</p>
+                    <p>Free Installation & Delivery</p>
+                    <p>Coffee Services Available</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/vendsmart" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_ID" target="_blank"><i class="fab fa-google"></i></a>
+                        <a href="https://www.yelp.com/biz/YOUR_YELP_ID" target="_blank"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#vending">Vending Machines</a></li>
+                        <li><a href="services.html#micro-markets">Micro-Markets</a></li>
+                        <li><a href="services.html#coffee">Coffee Services</a></li>
+                        <li><a href="services.html#emergency">Emergency Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="downtown-jacksonville.html">Downtown Jacksonville</a></li>
+                        <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
+                        <li><a href="orange-park.html">Orange Park</a></li>
+                        <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
+                        <li><a href="atlantic-beach.html">Atlantic Beach</a></li>
+                        <li><a href="st-augustine.html">St. Augustine</a></li>
+                        <li><a href="mandarin.html">Mandarin</a></li>
+                        <li><a href="lakeside.html">Lakeside</a></li>
+                        <li><a href="locations.html">All Locations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="tel:904-456-3851">904-456-3851</a></p>
+                    <p><a href="mailto:vendsmartjacksonville@gmail.com">vendsmartjacksonville@gmail.com</a></p>
+                    <p>Jacksonville, Florida & Surrounding Areas</p>
+                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VendSmart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="includes.js"></script>
+</body>
+</html> 
