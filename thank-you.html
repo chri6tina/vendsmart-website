@@ -5,9 +5,210 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You - VendSmart | Jacksonville Vending Solutions</title>
     <meta name="description" content="Thank you for contacting VendSmart. We'll be in touch within 24 hours to discuss your vending needs.">
+    <link rel="canonical" href="https://jacksonvillevendingmachines.com/thank-you.html">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .thank-you-section {
+            padding: 6rem 0 4rem 0;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            margin-top: 120px; /* Account for fixed navbar and contact bar */
+        }
+        
+        .thank-you-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .thank-you-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            animation: pulse 2s infinite;
+        }
+        
+        .thank-you-icon i {
+            font-size: 3rem;
+            color: white;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .thank-you-content h1 {
+            font-size: 3rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .thank-you-message {
+            font-size: 1.2rem;
+            color: #6b7280;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+        
+        .next-steps {
+            background: white;
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            margin-bottom: 3rem;
+        }
+        
+        .next-steps h2 {
+            font-size: 2rem;
+            color: #1f2937;
+            margin-bottom: 2rem;
+        }
+        
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .step-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: 12px;
+            border-left: 4px solid #00C5F5;
+            transition: transform 0.3s ease;
+        }
+        
+        .step-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 1rem;
+        }
+        
+        .step-item h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .step-item p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        
+        .contact-info-thank-you {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 3rem;
+        }
+        
+        .contact-info-thank-you h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .contact-info-thank-you p {
+            color: #6b7280;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-methods-thank-you {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-method-thank-you {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 1.5rem;
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-method-thank-you:hover {
+            transform: translateY(-2px);
+            color: white;
+        }
+        
+        .contact-method-thank-you i {
+            font-size: 1.2rem;
+        }
+        
+        .thank-you-actions {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .thank-you-actions .btn {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .thank-you-content h1 {
+                font-size: 2rem;
+            }
+            
+            .next-steps {
+                padding: 2rem;
+            }
+            
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-methods-thank-you {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .thank-you-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .thank-you-actions .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Contact Bar -->
@@ -32,16 +233,35 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="VendSmart LOGO WITH BORDER.png" alt="VendSmart Logo">
+                <a href="index.html" aria-label="VendSmart Homepage">
+                    <img src="vendsmart-logo-jacksonville-vending.png" alt="VendSmart - Jacksonville Vending Machine Company Logo">
+                </a>
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="locations.html">Locations</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="coffeeservices.html">Coffee Services</a></li>
+                        <li><a href="smart-coolers.html">Smart Coolers</a></li>
+                        <li><a href="setting-up-a-micro-market-in-your-jacksonville-office.html">Micro-Markets</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Locations <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="locations.html">All Locations</a></li>
+                        <li><a href="downtown-jacksonville.html">Downtown</a></li>
+                        <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
+                        <li><a href="orange-park.html">Orange Park</a></li>
+                        <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
+                    </ul>
+                </li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html" class="cta-button">Contact Us</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -93,13 +313,13 @@
                     <h3>Need Immediate Assistance?</h3>
                     <p>For urgent matters or emergency services, please call us directly:</p>
                     <div class="contact-methods-thank-you">
-                        <a href="tel:+1234567890" class="contact-method-thank-you">
+                        <a href="tel:904-456-3851" class="contact-method-thank-you">
                             <i class="fas fa-phone"></i>
-                            <span>(123) 456-7890</span>
+                            <span>904-456-3851</span>
                         </a>
-                        <a href="mailto:info@vendsmart.com" class="contact-method-thank-you">
+                        <a href="mailto:vendsmartjacksonville@gmail.com" class="contact-method-thank-you">
                             <i class="fas fa-envelope"></i>
-                            <span>info@vendsmart.com</span>
+                            <span>vendsmartjacksonville@gmail.com</span>
                         </a>
                     </div>
                 </div>
@@ -118,12 +338,13 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>VendSmart</h3>
-                    <p>Premium vending solutions for Jacksonville, Florida.</p>
+                    <p>Premium vending solutions for Jacksonville, Florida & surrounding areas.</p>
+                    <p>Free Installation & Delivery</p>
+                    <p>Coffee Services Available</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/vendsmart" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_ID" target="_blank"><i class="fab fa-google"></i></a>
+                        <a href="https://www.yelp.com/biz/YOUR_YELP_ID" target="_blank"><i class="fab fa-yelp"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -138,16 +359,22 @@
                 <div class="footer-section">
                     <h4>Locations</h4>
                     <ul>
-                        <li><a href="downtown-jacksonville.html">Downtown</a></li>
+                        <li><a href="downtown-jacksonville.html">Downtown Jacksonville</a></li>
                         <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
                         <li><a href="orange-park.html">Orange Park</a></li>
                         <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
+                        <li><a href="atlantic-beach.html">Atlantic Beach</a></li>
+                        <li><a href="st-augustine.html">St. Augustine</a></li>
+                        <li><a href="mandarin.html">Mandarin</a></li>
+                        <li><a href="lakeside.html">Lakeside</a></li>
+                        <li><a href="locations.html">All Locations</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>Jacksonville, Florida</p>
-                    <p>24/7 Support Available</p>
+                    <p><a href="tel:904-456-3851">904-456-3851</a></p>
+                    <p><a href="mailto:vendsmartjacksonville@gmail.com">vendsmartjacksonville@gmail.com</a></p>
+                    <p>Jacksonville, Florida & Surrounding Areas</p>
                     <a href="contact.html" class="btn btn-primary">Get Quote</a>
                 </div>
             </div>
@@ -157,6 +384,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="includes.js"></script>
 </body>
 </html> 
