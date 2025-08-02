@@ -3,20 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vending Machines for Gyms Jacksonville | Fitness Center Vending | VendSmart</title>
-    <meta name="description" content="Jacksonville gym vending machines: healthy snacks, protein drinks, and fitness supplements for gyms and fitness centers. Free installation, 24/7 support. Serving Jacksonville, FL.">
+    <title>Gym Vending Machines Jacksonville FL | Fitness Center Vending Solutions | VendSmart</title>
+    <meta name="description" content="Jacksonville gym vending machines with healthy snacks, protein drinks & fitness supplements. Free installation for gyms & fitness centers. 24/7 support. Serving Jacksonville, FL.">
+    <meta name="keywords" content="gym vending machines Jacksonville, fitness center vending, health vending machines, protein drinks vending, fitness supplements vending, gym snack machines, Jacksonville fitness vending">
     <link rel="canonical" href="https://jacksonvillevendingmachines.com/vending-machines-for-gyms.html">
-    <link rel="stylesheet" href="styles.css?v=13.0">
+    <link rel="stylesheet" href="styles.css?v=14.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
-    <!-- JSON-LD Structured Data -->
+    <style>
+        /* Hero Stats */
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 2rem 0;
+        }
+        
+        .hero-stat {
+            text-align: center;
+        }
+        
+        .hero-stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0099CC;
+            display: block;
+        }
+        
+        .hero-stat-label {
+            font-size: 0.9rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Table of Contents */
+        .toc-section {
+            background: #f8fafc;
+            padding: 3rem 0;
+        }
+        
+        .toc-content h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #1f2937;
+        }
+        
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        
+        .toc-item a {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #1f2937;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .toc-item a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            color: #0099CC;
+        }
+        
+        .toc-item i {
+            font-size: 1.5rem;
+            color: #0099CC;
+        }
+        
+        /* Overview Highlights */
+        .overview-highlights {
+            margin: 2rem 0;
+        }
+        
+        .highlight-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: #f8fafc;
+            border-radius: 10px;
+        }
+        
+        .highlight-item i {
+            font-size: 1.5rem;
+            color: #0099CC;
+            margin-top: 0.25rem;
+        }
+        
+        .highlight-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+        
+        .highlight-item p {
+            color: #6b7280;
+            line-height: 1.5;
+        }
+        
+        /* Product Intro */
+        .product-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            padding: 2rem;
+            background: #f0f9ff;
+            border-radius: 15px;
+            border-left: 4px solid #0099CC;
+        }
+        
+        .product-intro p {
+            font-size: 1.1rem;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            background: #f8fafc;
+            padding: 4rem 0;
+        }
+        
+        .faq-grid {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background-color: #f8fafc;
+        }
+        
+        .faq-question h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #1f2937;
+        }
+        
+        .faq-question i {
+            color: #0099CC;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            max-height: 200px;
+        }
+        
+        .faq-answer p {
+            color: #6b7280;
+            line-height: 1.6;
+            margin: 0;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-stats {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            
+            .toc-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .highlight-item {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+    
+    <!-- Schema.org structured data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Gym Vending Machine Services",
-        "description": "Healthy vending solutions for gyms and fitness centers in Jacksonville, Florida",
+        "name": "Gym Vending Machine Solutions",
+        "description": "Healthy vending machines and micro-markets for gyms and fitness centers",
+        "url": "https://jacksonvillevendingmachines.com/vending-machines-for-gyms.html",
         "provider": {
             "@type": "LocalBusiness",
             "name": "VendSmart",
@@ -24,15 +227,37 @@
                 "@type": "PostalAddress",
                 "addressLocality": "Jacksonville",
                 "addressRegion": "FL"
-            },
-            "telephone": "904-456-3851"
+            }
         },
-        "areaServed": {
-            "@type": "City",
-            "name": "Jacksonville"
-        },
-        "url": "https://jacksonvillevendingmachines.com/vending-machines-for-gyms.html",
-        "serviceType": "Vending Machine Services"
+        "serviceType": "Fitness Vending Solutions",
+        "areaServed": "Jacksonville, FL",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Gym Vending Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Healthy Snack Vending"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Protein Drink Vending"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Fitness Supplements"
+                    }
+                }
+            ]
+        }
     }
     </script>
 </head>
@@ -69,8 +294,24 @@
         </div>
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Vending Machines for Gyms Jacksonville</h1>
-                <p class="hero-subtitle">Healthy vending solutions designed specifically for gyms and fitness centers. Protein drinks, healthy snacks, and fitness supplements to support your members' wellness journey.</p>
+                <h1>Gym Vending Machines Jacksonville FL</h1>
+                <p class="hero-subtitle">Premium vending solutions designed specifically for gyms and fitness centers. Healthy snacks, protein drinks, and fitness supplements to support your members' wellness journey and boost your revenue.</p>
+                
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">100+</span>
+                        <span class="hero-stat-label">Gyms Served</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">24/7</span>
+                        <span class="hero-stat-label">Member Access</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">50+</span>
+                        <span class="hero-stat-label">Healthy Products</span>
+                    </div>
+                </div>
+                
                 <div class="hero-features">
                     <div class="hero-feature">
                         <i class="fas fa-check-circle"></i>
@@ -93,13 +334,84 @@
         </div>
     </section>
 
+    <!-- Table of Contents -->
+    <section class="toc-section">
+        <div class="container">
+            <div class="toc-content">
+                <h2>What You'll Find in This Guide</h2>
+                <div class="toc-grid">
+                    <div class="toc-item">
+                        <a href="#overview">
+                            <i class="fas fa-dumbbell"></i>
+                            <span>Gym Vending Overview</span>
+                        </a>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#products">
+                            <i class="fas fa-apple-alt"></i>
+                            <span>Healthy Product Selection</span>
+                        </a>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#benefits">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Benefits for Your Gym</span>
+                        </a>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#facilities">
+                            <i class="fas fa-building"></i>
+                            <span>Fitness Facility Types</span>
+                        </a>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#faq">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Frequently Asked Questions</span>
+                        </a>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#contact">
+                            <i class="fas fa-phone"></i>
+                            <span>Get Started Today</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Gym Vending Overview -->
-    <section class="gym-overview">
+    <section id="overview" class="gym-overview">
         <div class="container">
             <div class="overview-content">
                 <div class="overview-text">
                     <h2>Specialized Vending for Fitness Centers</h2>
                     <p>VendSmart provides customized vending solutions for gyms, fitness centers, and wellness facilities throughout Jacksonville. Our machines are stocked with healthy options that align with your members' fitness goals and support their active lifestyle.</p>
+                    
+                    <div class="overview-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h3>Member Satisfaction</h3>
+                                <p>Keep your members happy with convenient access to healthy options</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-dollar-sign"></i>
+                            <div>
+                                <h3>Revenue Boost</h3>
+                                <p>Generate additional income while providing value to your members</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>24/7 Availability</h3>
+                                <p>Serve members even when your staff is not available</p>
+                            </div>
+                        </div>
+                    </div>
                     
                     <div class="gym-features">
                         <div class="feature-item">
@@ -147,11 +459,15 @@
     </section>
 
     <!-- Gym-Specific Products -->
-    <section class="gym-products">
+    <section id="products" class="gym-products">
         <div class="container">
             <div class="section-header">
                 <h2>Fitness-Focused Product Selection</h2>
                 <p class="section-subtitle">Curated products that support your members' fitness goals and provide the nutrition they need for optimal performance.</p>
+            </div>
+            
+            <div class="product-intro">
+                <p>Our gym vending machines are stocked with carefully selected products that align with fitness goals and healthy lifestyles. From pre-workout energy boosters to post-workout recovery options, we provide everything your members need to stay fueled and focused.</p>
             </div>
             
             <div class="products-grid">
@@ -215,7 +531,7 @@
     </section>
 
     <!-- Gym Benefits -->
-    <section class="gym-benefits">
+    <section id="benefits" class="gym-benefits">
         <div class="container">
             <div class="section-header">
                 <h2>Benefits for Your Gym</h2>
@@ -275,7 +591,7 @@
     </section>
 
     <!-- Gym Types -->
-    <section class="gym-types">
+    <section id="facilities" class="gym-types">
         <div class="container">
             <div class="section-header">
                 <h2>Solutions for All Fitness Facilities</h2>
@@ -326,8 +642,80 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common questions about gym vending machines and our services</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What types of products do you offer for gyms?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a comprehensive selection of fitness-focused products including protein shakes, energy bars, healthy snacks, sports drinks, bottled water, and fitness supplements. All products are carefully selected to support active lifestyles and fitness goals.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How much does it cost to install vending machines in my gym?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer free installation and equipment placement for qualified gyms. There are no upfront costs - we handle all installation, maintenance, and stocking. Revenue is shared between your gym and VendSmart.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can members use credit cards or mobile payments?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Our modern vending machines accept credit cards, debit cards, mobile payments (Apple Pay, Google Pay), and cash. This provides maximum convenience for your members.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How often do you restock the machines?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We monitor inventory levels remotely and restock machines based on usage patterns. Typically, machines are restocked 2-3 times per week, but we can adjust frequency based on your gym's needs and member traffic.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer healthy and organic options?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We specialize in healthy vending and offer organic snacks, natural protein bars, fresh fruit options, and clean-label products. We can customize the selection to match your gym's health and wellness philosophy.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What if a machine breaks down?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide 24/7 support and maintenance. If a machine malfunctions, we'll respond quickly to fix the issue. Our smart technology also alerts us to potential problems before they affect your members.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
-    <section class="cta-section">
+    <section id="contact" class="cta-section">
         <div class="container">
             <h2>Ready to Enhance Your Gym with Healthy Vending?</h2>
             <p>Contact VendSmart to get customized vending solutions for your fitness center. Free installation and maintenance included.</p>
@@ -340,5 +728,28 @@
 
     <!-- Footer will be loaded by includes.js -->
     <script src="includes.js"></script>
+    
+    <script>
+        // FAQ Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // Close other FAQ items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html> 
