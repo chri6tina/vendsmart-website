@@ -10,35 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .social-proof-bar {
-            background: linear-gradient(135deg, #00C5F5, #0099CC);
-            color: white;
-            padding: 8px 0;
-            font-size: 0.9rem;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1002;
-            box-shadow: 0 2px 10px rgba(0, 197, 245, 0.3);
-        }
-        
-        .social-proof-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-        
-        .social-proof-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .social-proof-item i {
-            animation: pulse 2s infinite;
-        }
+
         
         @keyframes pulse {
             0%, 100% { opacity: 1; }
@@ -50,7 +22,7 @@
             color: white;
             padding: 4rem 0;
             text-align: center;
-            margin-top: 120px; /* Account for fixed navbar and social proof bar */
+            margin-top: 80px; /* Account for fixed navbar only */
         }
         
         .hero-content h1 {
@@ -89,6 +61,31 @@
         .hero-stat-label {
             font-size: 0.9rem;
             opacity: 0.8;
+        }
+        
+        .hero-social-proof {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .hero-social-proof .social-proof-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .hero-social-proof .social-proof-item i {
+            animation: pulse 2s infinite;
+            color: #00C5F5;
         }
         
         .products-section {
@@ -288,9 +285,13 @@
                 font-size: 1.5rem;
             }
             
-            .social-proof-content {
+            .hero-social-proof {
                 gap: 1rem;
                 font-size: 0.8rem;
+            }
+            
+            .hero-social-proof .social-proof-item {
+                padding: 0.5rem 1rem;
             }
             
             .product-grid {
@@ -300,43 +301,7 @@
     </style>
 </head>
 <body>
-    <!-- Social Proof Bar -->
-    <div class="social-proof-bar">
-        <div class="container">
-            <div class="social-proof-content">
-                <div class="social-proof-item">
-                    <i class="fas fa-users"></i>
-                    <span><span id="people-online">47</span> people viewing this page</span>
-                </div>
-                <div class="social-proof-item">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span><span id="items-in-cart">12</span> items added to cart in the last hour</span>
-                </div>
-                <div class="social-proof-item">
-                    <i class="fas fa-star"></i>
-                    <span>4.9/5 rating from 2,500+ vendors</span>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Contact Bar -->
-    <div class="contact-bar">
-        <div class="contact-info">
-            <span class="contact-item">
-                <i class="fas fa-phone"></i>
-                904-456-3851
-            </span>
-            <span class="contact-item">
-                <i class="fas fa-envelope"></i>
-                vendsmartjacksonville@gmail.com
-            </span>
-            <a href="https://www.facebook.com/vendsmart" target="_blank" class="contact-item">
-                <i class="fab fa-facebook"></i>
-                Follow Us
-            </a>
-        </div>
-    </div>
 
     <!-- Navigation -->
     <nav class="navbar">
@@ -397,6 +362,21 @@
                     <div class="hero-stat">
                         <div class="hero-stat-number">94%</div>
                         <div class="hero-stat-label">Success Rate</div>
+                    </div>
+                </div>
+                
+                <div class="hero-social-proof">
+                    <div class="social-proof-item">
+                        <i class="fas fa-users"></i>
+                        <span><span id="people-online">47</span> people viewing this page</span>
+                    </div>
+                    <div class="social-proof-item">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span><span id="items-in-cart">12</span> items added to cart in the last hour</span>
+                    </div>
+                    <div class="social-proof-item">
+                        <i class="fas fa-star"></i>
+                        <span>4.9/5 rating from 2,500+ vendors</span>
                     </div>
                 </div>
                 
@@ -584,7 +564,7 @@
             <p>Join thousands of successful vendors who have transformed their lives with our proven course and tools. Start your journey to financial freedom today.</p>
             <div class="cta-buttons">
                 <a href="https://vendflow.gumroad.com/l/rxbzy" target="_blank" class="btn btn-primary">Get the Course Now</a>
-                <a href="contact.html" class="btn btn-outline">Speak with an Expert</a>
+                <a href="#testimonials" class="btn btn-outline">See Success Stories</a>
             </div>
         </div>
     </section>
