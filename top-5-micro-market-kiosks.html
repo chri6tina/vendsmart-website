@@ -36,7 +36,7 @@
     <style>
         .kiosks-hero {
             padding: 8rem 0 6rem;
-            background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+            background: linear-gradient(135deg, #00C5F5, #0099CC, #0077AA);
             background-size: 200% 200%;
             animation: gradientShift 8s ease infinite;
             color: white;
@@ -106,9 +106,12 @@
         
         .kiosks-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: 1fr;
             gap: 2rem;
             margin-top: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .kiosk-card {
@@ -123,11 +126,11 @@
         .kiosk-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-            border-color: #667eea;
+            border-color: #0099CC;
         }
         
         .kiosk-header {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
             color: white;
             padding: 2rem;
             text-align: center;
@@ -268,24 +271,24 @@
         }
         
         .kiosk-cta .btn-primary {
-            background: #667eea;
+            background: #0099CC;
             color: white;
-            border: 2px solid #667eea;
+            border: 2px solid #0099CC;
         }
         
         .kiosk-cta .btn-primary:hover {
             background: transparent;
-            color: #667eea;
+            color: #0099CC;
         }
         
         .kiosk-cta .btn-secondary {
             background: transparent;
-            color: #667eea;
-            border: 2px solid #667eea;
+            color: #0099CC;
+            border: 2px solid #0099CC;
         }
         
         .kiosk-cta .btn-secondary:hover {
-            background: #667eea;
+            background: #0099CC;
             color: white;
         }
         
@@ -315,7 +318,7 @@
         }
         
         .comparison-table th {
-            background: #667eea;
+            background: #0099CC;
             color: white;
             font-weight: 600;
         }
@@ -373,6 +376,8 @@
             .kiosks-grid {
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
+                max-width: 100%;
+                padding: 0 1rem;
             }
             
             .kiosk-pros-cons {
