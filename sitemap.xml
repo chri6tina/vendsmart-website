@@ -48,6 +48,14 @@
         <priority>0.9</priority>
     </url>
     
+    <!-- Top 5 Kiosks Page -->
+    <url>
+        <loc>https://jacksonvillevendingmachines.com/top-5-micro-market-kiosks.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
     <!-- Location Pages -->
     <url>
         <loc>https://jacksonvillevendingmachines.com/locations.html</loc>
