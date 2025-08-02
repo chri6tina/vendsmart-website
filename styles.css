@@ -578,12 +578,18 @@ body {
 .hero-links {
     margin-top: 1.5rem;
     text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-links p {
     color: rgba(255, 255, 255, 0.9);
     font-size: 0.9rem;
     margin: 0;
+    text-align: center;
+    width: 100%;
 }
 
 .hero-links a {
@@ -1137,6 +1143,15 @@ body {
     
     .hero-buttons {
         justify-content: center;
+    }
+
+    .hero-links {
+        margin-top: 1rem;
+    }
+
+    .hero-links p {
+        font-size: 0.8rem;
+        line-height: 1.4;
     }
     
     .services-grid,
