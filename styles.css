@@ -1443,7 +1443,11 @@ body {
     
     /* Hide contact bar on mobile for more space */
     .contact-bar {
-        display: none;
+        display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
     }
     
     /* Adjust navbar position since contact bar is hidden */
@@ -1462,7 +1466,11 @@ body {
     
     /* Contact bar hidden on mobile */
     .contact-bar {
-        display: none;
+        display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
     }
     
     .navbar {
