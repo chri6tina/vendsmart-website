@@ -1667,6 +1667,151 @@ html {
     color: #6b7280;
 }
 
+/* Industry Services */
+.industry-services {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.industry-services .section-header h2 {
+    color: var(--dark-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--vend-blue-light), var(--vend-blue-dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.industry-services .section-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.industry-services .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.industry-services .service-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.industry-services .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--vend-blue-light), var(--vend-blue-dark));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.industry-services .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 197, 245, 0.2);
+    border-color: var(--vend-blue-light);
+}
+
+.industry-services .service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.industry-services .service-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--vend-blue-light), var(--vend-blue-dark));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.industry-services .service-card:hover .service-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 20px rgba(0, 197, 245, 0.3);
+}
+
+.industry-services .service-icon i {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.industry-services .service-card h3 {
+    color: var(--dark-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.industry-services .service-card p {
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.industry-services .service-features {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.industry-services .service-features li {
+    padding: 0.4rem 0;
+    color: var(--text-color);
+    position: relative;
+    padding-left: 1.2rem;
+    font-size: 0.95rem;
+}
+
+.industry-services .service-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--vend-blue-light);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.industry-services .service-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.industry-services .service-actions .btn {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
 /* Additional Services */
 .additional-services {
     padding: 80px 0;
@@ -1765,6 +1910,58 @@ html {
     
     .benefits-grid {
         grid-template-columns: 1fr;
+    }
+    
+    /* Industry Services Mobile */
+    .industry-services .section-header h2 {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+    
+    .industry-services .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .industry-services .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .industry-services .service-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .industry-services .service-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .industry-services .service-card p {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+    }
+    
+    .industry-services .service-features {
+        margin-bottom: 1rem;
+    }
+    
+    .industry-services .service-features li {
+        font-size: 0.9rem;
+        padding: 0.3rem 0;
+    }
+    
+    .industry-services .service-actions {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .industry-services .service-actions .btn {
+        width: 100%;
+        padding: 1rem 1.2rem;
+        font-size: 1rem;
     }
 }
 
@@ -4848,5 +5045,48 @@ html {
     .faq-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 1rem;
+    }
+    
+    /* Industry Services Landscape Mobile */
+    .industry-services .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+}
+
+/* Industry Services Extra Small Mobile */
+@media (max-width: 480px) {
+    .industry-services .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .industry-services .section-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .industry-services .service-card {
+        padding: 1rem;
+    }
+    
+    .industry-services .service-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .industry-services .service-card p {
+        font-size: 0.9rem;
+    }
+    
+    .industry-services .service-features li {
+        font-size: 0.85rem;
+    }
+    
+    .industry-services .service-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem;
+    }
+    
+    .industry-services .service-icon i {
+        font-size: 1.5rem;
     }
 }
