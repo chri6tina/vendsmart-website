@@ -28,6 +28,22 @@ document.addEventListener('DOMContentLoaded', function() {
             // Initialize mobile navigation after nav is loaded
             setTimeout(() => {
                 initializeMobileNav();
+                
+                // Force hide contact bar on mobile
+                if (window.innerWidth <= 768) {
+                    const contactBar = document.querySelector('.contact-bar');
+                    if (contactBar) {
+                        contactBar.style.display = 'none';
+                        contactBar.style.visibility = 'hidden';
+                        contactBar.style.height = '0';
+                        contactBar.style.padding = '0';
+                        contactBar.style.margin = '0';
+                        contactBar.style.opacity = '0';
+                        contactBar.style.position = 'absolute';
+                        contactBar.style.left = '-9999px';
+                        contactBar.style.top = '-9999px';
+                    }
+                }
             }, 100); // Small delay to ensure DOM is updated
             
             // Retry initialization if elements are not found

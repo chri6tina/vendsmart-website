@@ -1442,12 +1442,19 @@ body {
     }
     
     /* Hide contact bar on mobile for more space */
-    .contact-bar {
+    .contact-bar,
+    body .contact-bar,
+    html body .contact-bar,
+    .contact-bar.contact-bar {
         display: none !important;
         visibility: hidden !important;
         height: 0 !important;
         padding: 0 !important;
         margin: 0 !important;
+        opacity: 0 !important;
+        position: absolute !important;
+        left: -9999px !important;
+        top: -9999px !important;
     }
     
     /* Adjust navbar position since contact bar is hidden */
