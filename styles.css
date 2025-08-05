@@ -5098,7 +5098,8 @@ html {
 .apartment-complex-hero,
 .riverside-hero,
 .nursing-home-help-hero,
-.university-help-hero {
+.university-help-hero,
+.jacksonville-help-hero {
     background: linear-gradient(135deg, var(--vend-blue-light) 0%, var(--vend-blue-dark) 100%);
     position: relative;
     overflow: hidden;
@@ -5110,7 +5111,8 @@ html {
 .apartment-complex-hero::before,
 .riverside-hero::before,
 .nursing-home-help-hero::before,
-.university-help-hero::before {
+.university-help-hero::before,
+.jacksonville-help-hero::before {
     content: '';
     position: absolute;
     top: 0;
@@ -5630,5 +5632,148 @@ html {
     
     .solution-details li {
         font-size: 0.95rem;
+    }
+}
+
+/* Business Types Section */
+.business-types {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.types-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.type-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.type-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--vend-blue-light), var(--vend-blue-dark));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.type-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 197, 245, 0.2);
+    border-color: var(--vend-blue-light);
+}
+
+.type-card:hover::before {
+    transform: scaleX(1);
+}
+
+.type-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--vend-blue-light), var(--vend-blue-dark));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.type-card:hover .type-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 20px rgba(0, 197, 245, 0.3);
+}
+
+.type-icon i {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.type-card h3 {
+    color: var(--dark-color);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.type-card p {
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.type-features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.type-features li {
+    padding: 0.4rem 0;
+    color: var(--text-color);
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.type-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--vend-blue-light);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Mobile Responsiveness for Business Types */
+@media (max-width: 768px) {
+    .business-types {
+        padding: 3rem 0;
+    }
+    
+    .types-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .type-card {
+        padding: 1.5rem;
+    }
+    
+    .type-card h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .business-types {
+        padding: 2rem 0;
+    }
+    
+    .type-card {
+        padding: 1rem;
+    }
+    
+    .type-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .type-features li {
+        font-size: 0.9rem;
     }
 }
