@@ -1359,60 +1359,63 @@
         setInterval(updateScarcity, 120000);
         updateScarcity(); // Initial call
         
-        // Social proof counter animation
-        function animateCounter(element, target, duration = 2000) {
-            let start = 0;
-            const increment = target / (duration / 16);
+        // Dynamic social proof counters
+        let currentPeopleOnline = 47;
+        let currentItemsInCart = 12;
+        
+        // Smooth counter animation
+        function animateCounter(element, startValue, endValue, duration = 1000) {
+            const startTime = performance.now();
+            const difference = endValue - startValue;
             
-            function updateCounter() {
-                start += increment;
-                if (start < target) {
-                    element.textContent = Math.floor(start);
+            function updateCounter(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                // Easing function for smooth animation
+                const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+                const currentValue = Math.round(startValue + (difference * easeOutQuart));
+                
+                element.textContent = currentValue;
+                
+                if (progress < 1) {
                     requestAnimationFrame(updateCounter);
-                } else {
-                    element.textContent = target;
                 }
             }
-            updateCounter();
+            
+            requestAnimationFrame(updateCounter);
         }
-
-        // Random number generation for social proof
-        function updateSocialProof() {
-            const peopleOnline = Math.floor(Math.random() * 30) + 30; // 30-60
-            const itemsInCart = Math.floor(Math.random() * 8) + 8; // 8-16
+        
+        // Update people online counter
+        function updatePeopleOnline() {
+            const change = Math.floor(Math.random() * 5) - 2; // -2 to +2
+            const newValue = Math.max(35, Math.min(65, currentPeopleOnline + change));
             
-            document.getElementById('people-online').textContent = peopleOnline;
-            document.getElementById('items-in-cart').textContent = itemsInCart;
+            if (newValue !== currentPeopleOnline) {
+                animateCounter(document.getElementById('people-online'), currentPeopleOnline, newValue, 800);
+                currentPeopleOnline = newValue;
+            }
         }
-
-        // Update social proof every 30 seconds
-        setInterval(updateSocialProof, 30000);
         
-        // Lead magnet form handling
-        document.getElementById('leadMagnetForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = this.querySelector('input[type="email"]').value;
+        // Update items in cart counter
+        function updateItemsInCart() {
+            const change = Math.floor(Math.random() * 3) - 1; // -1 to +1
+            const newValue = Math.max(8, Math.min(20, currentItemsInCart + change));
             
-            // Show success message
-            this.innerHTML = `
-                <div style="text-align: center; padding: 2rem;">
-                    <i class="fas fa-check-circle" style="font-size: 3rem; color: #10b981; margin-bottom: 1rem;"></i>
-                    <h3>Thank You!</h3>
-                    <p>Your free starter kit is being sent to ${email}</p>
-                    <p style="font-size: 0.9rem; color: #6b7280;">Check your email in the next 5 minutes.</p>
-                </div>
-            `;
-            
-            // Redirect to thank you page after 3 seconds
-            setTimeout(() => {
-                window.location.href = 'thank-you.html';
-            }, 3000);
-        });
+            if (newValue !== currentItemsInCart) {
+                animateCounter(document.getElementById('items-in-cart'), currentItemsInCart, newValue, 600);
+                currentItemsInCart = newValue;
+            }
+        }
         
-        // Initial animation
+        // Update counters at different intervals for more realistic feel
+        setInterval(updatePeopleOnline, 8000 + Math.random() * 4000); // 8-12 seconds
+        setInterval(updateItemsInCart, 12000 + Math.random() * 6000); // 12-18 seconds
+        
+        // Initial counter animation
         setTimeout(() => {
-            animateCounter(document.getElementById('people-online'), 47);
-            animateCounter(document.getElementById('items-in-cart'), 12);
+            animateCounter(document.getElementById('people-online'), 0, currentPeopleOnline, 1500);
+            animateCounter(document.getElementById('items-in-cart'), 0, currentItemsInCart, 1200);
         }, 1000);
         
         // Smooth scrolling for anchor links
