@@ -219,9 +219,9 @@
         
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-            gap: 2.5rem;
-            margin-top: 3rem;
+            grid-template-columns: 1fr;
+            max-width: 800px;
+            margin: 3rem auto 0;
         }
         
         .product-card {
@@ -243,16 +243,215 @@
         }
         
         .product-card.featured::before {
-            content: "MOST POPULAR";
+            content: "LIMITED TIME OFFER";
             position: absolute;
             top: 0;
             right: 0;
-            background: linear-gradient(135deg, #00C5F5, #0099CC);
+            background: linear-gradient(135deg, #ef4444, #dc2626);
             color: white;
-            padding: 0.5rem 1rem;
-            font-size: 0.8rem;
+            padding: 0.75rem 1.5rem;
+            font-size: 0.9rem;
+            font-weight: 700;
+            border-radius: 0 20px 0 12px;
+            animation: pulse 2s infinite;
+        }
+        
+        .main-offer {
+            transform: scale(1.02);
+            border: 3px solid #00C5F5;
+            box-shadow: 0 15px 50px rgba(0, 197, 245, 0.2);
+        }
+        
+        .main-offer:hover {
+            transform: scale(1.03) translateY(-10px);
+            box-shadow: 0 25px 70px rgba(0, 197, 245, 0.3);
+        }
+        
+        /* Immediate CTA Section */
+        .immediate-cta-section {
+            background: linear-gradient(135deg, #00C5F5, #0088E8);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .cta-content h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .cta-content p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .cta-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .cta-stat {
+            text-align: center;
+        }
+        
+        .cta-stat-number {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .cta-stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        .btn-large {
+            padding: 1.5rem 3rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+            border-radius: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn-large:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+        
+        .cta-note {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            margin-top: 1.5rem;
+        }
+        
+        /* Additional Tools Section */
+        .additional-tools-section {
+            padding: 5rem 0;
+            background: #f8fafc;
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+        
+        .tool-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+            border-color: #e5e7eb;
+        }
+        
+        .tool-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #6b7280, #9ca3af);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .tool-icon i {
+            font-size: 1.8rem;
+            color: white;
+        }
+        
+        .tool-card:hover .tool-icon {
+            transform: scale(1.1);
+        }
+        
+        .tool-title {
+            font-size: 1.4rem;
             font-weight: 600;
-            border-radius: 0 12px 0 8px;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tool-price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #6b7280;
+            margin-bottom: 1rem;
+        }
+        
+        .tool-description {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .tool-features {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+        
+        .tool-features li {
+            padding: 0.5rem 0;
+            color: #374151;
+            position: relative;
+            padding-left: 1.5rem;
+            font-size: 0.95rem;
+        }
+        
+        .tool-features li:before {
+            content: "✓";
+            color: #6b7280;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .tool-cta .btn {
+            width: 100%;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 10px;
+        }
+        
+        /* Mobile responsive for tools */
+        @media (max-width: 768px) {
+            .tools-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .tool-card {
+                padding: 1.5rem;
+            }
+            
+            .tool-title {
+                font-size: 1.3rem;
+            }
+            
+            .tool-price {
+                font-size: 1.8rem;
+            }
         }
         
         .product-icon {
@@ -1126,6 +1325,34 @@
         </div>
     </section>
 
+    <!-- Immediate CTA Section -->
+    <section class="immediate-cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Vending Business?</h2>
+                <p>Get instant access to the complete course for just $29 (85% off $197)</p>
+                <div class="cta-stats">
+                    <div class="cta-stat">
+                        <span class="cta-stat-number">2,500+</span>
+                        <span class="cta-stat-label">Vendors Started</span>
+                    </div>
+                    <div class="cta-stat">
+                        <span class="cta-stat-number">94%</span>
+                        <span class="cta-stat-label">Success Rate</span>
+                    </div>
+                    <div class="cta-stat">
+                        <span class="cta-stat-number">$29</span>
+                        <span class="cta-stat-label">Limited Time Price</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-large" onclick="openEmailModal()">
+                    <i class="fas fa-rocket"></i> Get Course Access Now
+                </button>
+                <p class="cta-note">🔒 Secure checkout • Instant access • 30-day money-back guarantee</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Authority Section -->
     <section class="authority-section">
         <div class="container">
@@ -1218,15 +1445,15 @@
     <section id="products" class="products-section">
         <div class="container">
             <div class="section-header">
-                <h2>Everything You Need to Start Your Vending Business</h2>
-                <p class="section-subtitle">From comprehensive courses to lead generation tools, we provide the resources that successful vendors use to build profitable businesses.</p>
+                <h2>Complete Vending Machine Business Course</h2>
+                <p class="section-subtitle">Everything you need to start and scale your vending business from scratch. Join 2,500+ successful vendors who used this course to build profitable businesses.</p>
             </div>
             
 
             
             <div class="product-grid">
                 <!-- Vending Machine Course -->
-                <div class="product-card featured">
+                <div class="product-card featured main-offer">
                     <div class="product-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
@@ -1281,60 +1508,6 @@
                         <button class="btn btn-primary" onclick="openEmailModal()">
                             <i class="fas fa-shopping-cart"></i> Get Course Now
                         </button>
-                    </div>
-                </div>
-
-                <!-- Lead Generation Tool -->
-                <div class="product-card">
-                    <div class="product-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h3 class="product-title">Vending Lead Locator Pro</h3>
-                    <div class="product-price">$19</div>
-                    <p class="product-description">Skip the guesswork and find profitable locations fast. Perfect for busy side hustlers who want to start earning quickly. Get 50+ verified leads in your area.</p>
-                    
-                    <ul class="product-features">
-                        <li>50+ verified locations</li>
-                        <li>Business contact information</li>
-                        <li>Basic lead details included</li>
-                        <li>25-mile radius search</li>
-                        <li>5-day delivery</li>
-                        <li>Quality guarantee</li>
-                        <li>One-time payment</li>
-                        <li>No subscription fees</li>
-                    </ul>
-                    
-                    <div class="product-cta">
-                        <a href="https://www.thevendinglocator.com/pricing" target="_blank" class="btn btn-primary">
-                            <i class="fas fa-shopping-cart"></i> Get Leads Now
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Vendor CRM -->
-                <div class="product-card">
-                    <div class="product-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3 class="product-title">Vendor CRM & Management System</h3>
-                    <div class="product-price">$20</div>
-                    <p class="product-description">Scale your side hustle into a full business. Our CRM helps you manage multiple locations, track profits, and grow efficiently.</p>
-                    
-                    <ul class="product-features">
-                        <li>Lead management system</li>
-                        <li>Route optimization</li>
-                        <li>Inventory tracking</li>
-                        <li>Revenue analytics</li>
-                        <li>Customer database</li>
-                        <li>Mobile app access</li>
-                        <li>Automated reporting</li>
-                        <li>24/7 support</li>
-                    </ul>
-                    
-                    <div class="product-cta">
-                        <a href="https://vendingleadlocator.com/" target="_blank" class="btn btn-primary">
-                            <i class="fas fa-rocket"></i> Try CRM Free
-                        </a>
                     </div>
                 </div>
             </div>
@@ -1454,6 +1627,72 @@
                 <div class="faq-item">
                     <div class="faq-question">Is there a money-back guarantee?</div>
                     <div class="faq-answer">Yes! We offer a 30-day money-back guarantee. If you're not completely satisfied with the course, we'll refund your purchase, no questions asked.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Tools Section -->
+    <section class="additional-tools-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Additional Tools to Accelerate Your Success</h2>
+                <p class="section-subtitle">Complement your course with these powerful tools designed to help you find locations and manage your business efficiently.</p>
+            </div>
+            
+            <div class="tools-grid">
+                <!-- Lead Generation Tool -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="tool-title">Vending Lead Locator Pro</h3>
+                    <div class="tool-price">$19</div>
+                    <p class="tool-description">Skip the guesswork and find profitable locations fast. Perfect for busy side hustlers who want to start earning quickly. Get 50+ verified leads in your area.</p>
+                    
+                    <ul class="tool-features">
+                        <li>50+ verified locations</li>
+                        <li>Business contact information</li>
+                        <li>Basic lead details included</li>
+                        <li>25-mile radius search</li>
+                        <li>5-day delivery</li>
+                        <li>Quality guarantee</li>
+                        <li>One-time payment</li>
+                        <li>No subscription fees</li>
+                    </ul>
+                    
+                    <div class="tool-cta">
+                        <a href="https://www.thevendinglocator.com/pricing" target="_blank" class="btn btn-secondary">
+                            <i class="fas fa-shopping-cart"></i> Get Leads Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Vendor CRM -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="tool-title">Vendor CRM & Management System</h3>
+                    <div class="tool-price">$20</div>
+                    <p class="tool-description">Scale your side hustle into a full business. Our CRM helps you manage multiple locations, track profits, and grow efficiently.</p>
+                    
+                    <ul class="tool-features">
+                        <li>Lead management system</li>
+                        <li>Route optimization</li>
+                        <li>Inventory tracking</li>
+                        <li>Revenue analytics</li>
+                        <li>Customer database</li>
+                        <li>Mobile app access</li>
+                        <li>Automated reporting</li>
+                        <li>24/7 support</li>
+                    </ul>
+                    
+                    <div class="tool-cta">
+                        <a href="https://vendingleadlocator.com/" target="_blank" class="btn btn-secondary">
+                            <i class="fas fa-rocket"></i> Try CRM Free
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
