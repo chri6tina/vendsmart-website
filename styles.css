@@ -5090,3 +5090,167 @@ html {
         font-size: 1.5rem;
     }
 }
+
+/* New Industry Page Specific Styles */
+.nursing-home-hero,
+.university-hero,
+.shopping-mall-hero,
+.apartment-complex-hero,
+.riverside-hero {
+    background: linear-gradient(135deg, var(--vend-blue-light) 0%, var(--vend-blue-dark) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.nursing-home-hero::before,
+.university-hero::before,
+.shopping-mall-hero::before,
+.apartment-complex-hero::before,
+.riverside-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.nursing-home-overview,
+.university-overview,
+.shopping-mall-overview,
+.apartment-complex-overview,
+.riverside-overview {
+    padding: 5rem 0;
+    background: white;
+}
+
+.nursing-home-solutions,
+.university-solutions,
+.shopping-mall-solutions,
+.apartment-complex-solutions,
+.riverside-solutions {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.nursing-home-benefits,
+.university-benefits,
+.shopping-mall-benefits,
+.apartment-complex-benefits,
+.riverside-benefits {
+    padding: 5rem 0;
+    background: white;
+}
+
+.nursing-home-products,
+.university-products,
+.shopping-mall-products,
+.apartment-complex-products,
+.riverside-products {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+/* Overview Features Styling */
+.overview-features {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.overview-features li {
+    padding: 0.8rem 0;
+    color: var(--text-color);
+    position: relative;
+    padding-left: 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.overview-features li i {
+    position: absolute;
+    left: 0;
+    top: 0.8rem;
+    color: var(--vend-blue-light);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.overview-features li strong {
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+/* Mobile Responsiveness for New Pages */
+@media (max-width: 768px) {
+    .nursing-home-overview,
+    .university-overview,
+    .shopping-mall-overview,
+    .apartment-complex-overview,
+    .riverside-overview,
+    .nursing-home-solutions,
+    .university-solutions,
+    .shopping-mall-solutions,
+    .apartment-complex-solutions,
+    .riverside-solutions,
+    .nursing-home-benefits,
+    .university-benefits,
+    .shopping-mall-benefits,
+    .apartment-complex-benefits,
+    .riverside-benefits,
+    .nursing-home-products,
+    .university-products,
+    .shopping-mall-products,
+    .apartment-complex-products,
+    .riverside-products {
+        padding: 3rem 0;
+    }
+    
+    .overview-features li {
+        padding: 0.6rem 0;
+        padding-left: 1.8rem;
+        font-size: 0.95rem;
+    }
+    
+    .overview-features li i {
+        top: 0.6rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nursing-home-overview,
+    .university-overview,
+    .shopping-mall-overview,
+    .apartment-complex-overview,
+    .riverside-overview,
+    .nursing-home-solutions,
+    .university-solutions,
+    .shopping-mall-solutions,
+    .apartment-complex-solutions,
+    .riverside-solutions,
+    .nursing-home-benefits,
+    .university-benefits,
+    .shopping-mall-benefits,
+    .apartment-complex-benefits,
+    .riverside-benefits,
+    .nursing-home-products,
+    .university-products,
+    .shopping-mall-products,
+    .apartment-complex-products,
+    .riverside-products {
+        padding: 2rem 0;
+    }
+    
+    .overview-features li {
+        padding: 0.5rem 0;
+        padding-left: 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .overview-features li i {
+        top: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
