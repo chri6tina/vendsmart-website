@@ -271,21 +271,129 @@
         .immediate-cta-section {
             background: linear-gradient(135deg, #00C5F5, #0088E8);
             color: white;
-            padding: 4rem 0;
+            padding: 5rem 0;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .immediate-cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .urgency-badge {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 25px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            animation: pulse 2s infinite;
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+        }
+        
+        .urgency-badge i {
+            animation: fire 1s infinite;
+        }
+        
+        @keyframes fire {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
         }
         
         .cta-content h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
+            font-size: 3rem;
+            font-weight: 800;
             margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(135deg, #ffffff, #e0f2fe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .cta-subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+            line-height: 1.5;
+        }
+        
+        .price-highlight {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .original-price {
+            font-size: 1.5rem;
+            text-decoration: line-through;
+            opacity: 0.7;
+            color: #e0f2fe;
+        }
+        
+        .current-price {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #ffffff;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
         
-        .cta-content p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            opacity: 0.95;
+        .savings {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        
+        .cta-benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .benefit-item i {
+            color: #10b981;
+            font-size: 1.2rem;
+        }
+        
+        .benefit-item span {
+            font-weight: 500;
         }
         
         .cta-stats {
@@ -328,10 +436,78 @@
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
         }
         
+        .cta-urgency {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-bottom: 2.5rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .countdown-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        .countdown {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 0.75rem;
+            border-radius: 8px;
+            font-weight: 700;
+            min-width: 40px;
+            text-align: center;
+        }
+        
+        .spots-left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            color: #fef3c7;
+            font-weight: 600;
+        }
+        
+        .spots-left i {
+            color: #f59e0b;
+            animation: pulse 2s infinite;
+        }
+        
+        .trust-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .trust-item i {
+            color: #10b981;
+        }
+        
         .cta-note {
-            font-size: 0.95rem;
-            opacity: 0.8;
-            margin-top: 1.5rem;
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-top: 2rem;
+            line-height: 1.6;
         }
         
         /* Additional Tools Section */
@@ -1329,8 +1505,38 @@
     <section class="immediate-cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>Ready to Start Your Vending Business?</h2>
-                <p>Get instant access to the complete course for just $29 (85% off $197)</p>
+                <div class="urgency-badge">
+                    <i class="fas fa-fire"></i>
+                    <span>LIMITED TIME OFFER - 85% OFF</span>
+                </div>
+                <h2>Start Your Vending Empire Today</h2>
+                <p class="cta-subtitle">Join 2,500+ successful vendors who turned their side hustle into a profitable business</p>
+                
+                <div class="price-highlight">
+                    <div class="original-price">$197</div>
+                    <div class="current-price">$29</div>
+                    <div class="savings">Save $168</div>
+                </div>
+                
+                <div class="cta-benefits">
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>12+ hours of video content</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Business plan templates</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Location scouting strategies</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Private community access</span>
+                    </div>
+                </div>
+                
                 <div class="cta-stats">
                     <div class="cta-stat">
                         <span class="cta-stat-number">2,500+</span>
@@ -1341,14 +1547,43 @@
                         <span class="cta-stat-label">Success Rate</span>
                     </div>
                     <div class="cta-stat">
-                        <span class="cta-stat-number">$29</span>
-                        <span class="cta-stat-label">Limited Time Price</span>
+                        <span class="cta-stat-number">$2K-8K</span>
+                        <span class="cta-stat-label">Monthly Profit Range</span>
                     </div>
                 </div>
+                
+                <div class="cta-urgency">
+                    <div class="countdown-wrapper">
+                        <i class="fas fa-clock"></i>
+                        <span>Offer ends in: </span>
+                        <span class="countdown" id="cta-countdown-hours">00</span>:<span class="countdown" id="cta-countdown-minutes">00</span>:<span class="countdown" id="cta-countdown-seconds">00</span>
+                    </div>
+                    <div class="spots-left">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span>Only <strong id="cta-spots-left">7</strong> spots left at this price</span>
+                    </div>
+                </div>
+                
                 <button class="btn btn-primary btn-large" onclick="openEmailModal()">
                     <i class="fas fa-rocket"></i> Get Course Access Now
                 </button>
-                <p class="cta-note">🔒 Secure checkout • Instant access • 30-day money-back guarantee</p>
+                
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure checkout</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-bolt"></i>
+                        <span>Instant access</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-undo"></i>
+                        <span>30-day guarantee</span>
+                    </div>
+                </div>
+                
+                <p class="cta-note">🎯 Perfect for side hustlers • 💰 Start with just $3,000 • 🚀 Scale to $50K+ monthly</p>
             </div>
         </div>
     </section>
@@ -1792,6 +2027,34 @@
         setInterval(updateCountdown, 1000);
         updateCountdown(); // Initial call
         
+        // CTA countdown timer
+        function updateCTACountdown() {
+            const now = new Date();
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 999);
+            
+            const timeLeft = endOfDay - now;
+            
+            if (timeLeft > 0) {
+                const hours = Math.floor(timeLeft / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+                
+                document.getElementById('cta-countdown-hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('cta-countdown-minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('cta-countdown-seconds').textContent = seconds.toString().padStart(2, '0');
+            } else {
+                // Reset for next day
+                document.getElementById('cta-countdown-hours').textContent = '23';
+                document.getElementById('cta-countdown-minutes').textContent = '59';
+                document.getElementById('cta-countdown-seconds').textContent = '59';
+            }
+        }
+        
+        // Update CTA countdown every second
+        setInterval(updateCTACountdown, 1000);
+        updateCTACountdown(); // Initial call
+        
         // Scarcity indicator
         function updateScarcity() {
             const spotsLeft = Math.floor(Math.random() * 5) + 3; // 3-7 spots
@@ -1934,20 +2197,9 @@
                         'send_to': 'G-ZD02L8HK5P/email_capture'
                     });
                     
-                    // Show success message
-                    document.getElementById('modalContent').innerHTML = `
-                        <div class="modal-success">
-                            <i class="fas fa-check-circle"></i>
-                            <h3>Thank You!</h3>
-                            <p>Redirecting you to the course...</p>
-                        </div>
-                    `;
-                    
-                    // Redirect to Gumroad after 2 seconds
-                    setTimeout(() => {
-                        window.open('https://vendflow.gumroad.com/l/rxbzy', '_blank');
-                        closeEmailModal();
-                    }, 2000);
+                    // Redirect to Gumroad immediately
+                    window.open('https://vendflow.gumroad.com/l/rxbzy', '_blank');
+                    closeEmailModal();
                 } else {
                     throw new Error('Form submission failed');
                 }
