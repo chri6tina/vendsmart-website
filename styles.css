@@ -258,16 +258,11 @@ body {
 
 
 
-/* Phone Number Header */
-.phone-header {
-    background: #f8f9fa;
-    padding: 8px 0;
-    text-align: center;
-    border-bottom: 1px solid #e9ecef;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1002;
+/* Navigation Phone Number */
+.nav-phone {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
 }
 
 .phone-link {
@@ -276,6 +271,7 @@ body {
     font-weight: 500;
     font-size: 0.9rem;
     transition: color 0.3s ease;
+    white-space: nowrap;
 }
 
 .phone-link:hover {
@@ -288,7 +284,7 @@ body {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     position: fixed;
-    top: 36px;
+    top: 0;
     width: 100%;
     z-index: 1000;
     padding: 1rem 0;
@@ -1081,17 +1077,12 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .phone-header {
-        padding: 6px 0;
-        font-size: 0.85rem;
-    }
-    
-    .phone-link {
-        font-size: 0.85rem;
+    .nav-phone {
+        display: none;
     }
     
     .navbar {
-        top: 30px;
+        top: 0;
     }
     
     .nav-menu {
