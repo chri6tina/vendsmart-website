@@ -5096,7 +5096,9 @@ html {
 .university-hero,
 .shopping-mall-hero,
 .apartment-complex-hero,
-.riverside-hero {
+.riverside-hero,
+.nursing-home-help-hero,
+.university-help-hero {
     background: linear-gradient(135deg, var(--vend-blue-light) 0%, var(--vend-blue-dark) 100%);
     position: relative;
     overflow: hidden;
@@ -5106,7 +5108,9 @@ html {
 .university-hero::before,
 .shopping-mall-hero::before,
 .apartment-complex-hero::before,
-.riverside-hero::before {
+.riverside-hero::before,
+.nursing-home-help-hero::before,
+.university-help-hero::before {
     content: '';
     position: absolute;
     top: 0;
@@ -5252,5 +5256,379 @@ html {
     .overview-features li i {
         top: 0.5rem;
         font-size: 0.9rem;
+    }
+}
+
+/* How We Help Page Styles */
+.challenge-overview {
+    padding: 5rem 0;
+    background: white;
+}
+
+.challenges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.challenge-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.challenge-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b6b, #ee5a24);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.challenge-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(255, 107, 107, 0.2);
+    border-color: #ff6b6b;
+}
+
+.challenge-card:hover::before {
+    transform: scaleX(1);
+}
+
+.challenge-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.challenge-card:hover .challenge-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+}
+
+.challenge-icon i {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.challenge-card h3 {
+    color: var(--dark-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.challenge-card p {
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.challenge-impact {
+    background: linear-gradient(135deg, #fff5f5, #ffe8e8);
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #ff6b6b;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+.how-we-help {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.help-solutions {
+    margin-top: 3rem;
+}
+
+.help-solution {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.help-solution:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 197, 245, 0.2);
+}
+
+.solution-header {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--vend-blue-light), var(--vend-blue-dark));
+    color: white;
+}
+
+.solution-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.solution-icon i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.solution-title h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.solution-title p {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.solution-content {
+    padding: 2rem;
+}
+
+.solution-details h4 {
+    color: var(--dark-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.solution-details ul {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.solution-details li {
+    padding: 0.5rem 0;
+    color: var(--text-color);
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.solution-details li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--vend-blue-light);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.solution-details li strong {
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+.solution-benefit {
+    background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--vend-blue-light);
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.success-stories {
+    padding: 5rem 0;
+    background: white;
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.story-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.story-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ffd700, #ffed4e);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.story-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(255, 215, 0, 0.2);
+    border-color: #ffd700;
+}
+
+.story-card:hover::before {
+    transform: scaleX(1);
+}
+
+.story-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.story-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #ffd700, #ffed4e);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.story-icon i {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.story-header h3 {
+    color: var(--dark-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.story-content p {
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.story-results {
+    background: linear-gradient(135deg, #fffbf0, #fff8dc);
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #ffd700;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+/* Mobile Responsiveness for How We Help Pages */
+@media (max-width: 768px) {
+    .challenge-overview,
+    .how-we-help,
+    .success-stories {
+        padding: 3rem 0;
+    }
+    
+    .challenges-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .challenge-card {
+        padding: 1.5rem;
+    }
+    
+    .challenge-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .solution-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    
+    .solution-icon {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .solution-content {
+        padding: 1.5rem;
+    }
+    
+    .stories-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .story-card {
+        padding: 1.5rem;
+    }
+    
+    .story-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .story-icon {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .challenge-overview,
+    .how-we-help,
+    .success-stories {
+        padding: 2rem 0;
+    }
+    
+    .challenge-card,
+    .story-card {
+        padding: 1rem;
+    }
+    
+    .solution-header,
+    .solution-content {
+        padding: 1rem;
+    }
+    
+    .challenge-card h3,
+    .solution-title h3 {
+        font-size: 1.1rem;
+    }
+    
+    .solution-details li {
+        font-size: 0.95rem;
     }
 }
