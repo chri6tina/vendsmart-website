@@ -18,6 +18,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZD02L8HK5P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZD02L8HK5P');
+    </script>
+    
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
     {
@@ -1634,6 +1644,12 @@
         function openEmailModal() {
             document.getElementById('emailModal').style.display = 'flex';
             document.body.style.overflow = 'hidden';
+            
+            // Track modal open event
+            gtag('event', 'modal_open', {
+                'event_category': 'vending_course',
+                'event_label': 'email_modal_opened'
+            });
         }
         
         function closeEmailModal() {
@@ -1667,6 +1683,18 @@
             })
             .then(response => {
                 if (response.ok) {
+                    // Track conversion in Google Analytics
+                    gtag('event', 'email_capture', {
+                        'event_category': 'vending_course',
+                        'event_label': 'email_submitted',
+                        'value': 1
+                    });
+                    
+                    // Track custom conversion
+                    gtag('event', 'conversion', {
+                        'send_to': 'G-ZD02L8HK5P/email_capture'
+                    });
+                    
                     // Show success message
                     document.getElementById('modalContent').innerHTML = `
                         <div class="modal-success">
@@ -1706,6 +1734,23 @@
                 closeEmailModal();
             }
         });
+        
+        // Auto-open modal based on URL parameters
+        function checkUrlForModal() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const showModal = urlParams.get('show_modal');
+            const utmSource = urlParams.get('utm_source');
+            
+            // Auto-open modal if show_modal=true or if coming from Google Ads
+            if (showModal === 'true' || utmSource === 'google') {
+                setTimeout(() => {
+                    openEmailModal();
+                }, 2000); // 2 second delay to let page load
+            }
+        }
+        
+        // Check URL when page loads
+        checkUrlForModal();
     </script>
     
     <!-- Email Capture Modal -->
