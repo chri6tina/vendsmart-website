@@ -256,56 +256,31 @@ body {
     left: 0;
 }
 
-/* Contact Bar */
-.contact-bar {
-    background: #00C5F5;
-    color: #2A2A2A;
+
+
+/* Phone Number Header */
+.phone-header {
+    background: #f8f9fa;
     padding: 8px 0;
-    font-size: 0.9rem;
-    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #e9ecef;
     position: fixed;
     top: 0;
-    z-index: 1001;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: none;
-}
-
-.contact-bar .contact-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    background: none;
-    border-radius: 0;
-    box-shadow: none;
     width: 100%;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    gap: 1rem;
+    z-index: 1002;
 }
 
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: #2A2A2A;
+.phone-link {
+    color: #333;
     text-decoration: none;
     font-weight: 500;
-    background: none;
-    border: none;
-    padding: 0;
-    white-space: nowrap;
-    font-size: 0.85rem;
-}
-
-.contact-item:hover {
-    opacity: 0.8;
-}
-
-.contact-item i {
     font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.phone-link:hover {
+    color: #00C5F5;
+    text-decoration: none;
 }
 
 /* Navigation */
@@ -1106,6 +1081,19 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .phone-header {
+        padding: 6px 0;
+        font-size: 0.85rem;
+    }
+    
+    .phone-link {
+        font-size: 0.85rem;
+    }
+    
+    .navbar {
+        top: 30px;
+    }
+    
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -1308,18 +1296,7 @@ body {
         text-align: center;
     }
     
-    /* Contact bar responsive */
-    .contact-bar .contact-info {
-        justify-content: center;
-        gap: 1rem;
-        padding: 0 10px;
-        flex-wrap: wrap;
-    }
-    
-    .contact-item {
-        font-size: 0.8rem;
-        white-space: nowrap;
-    }
+
     
     /* Reduce container padding on mobile */
     .container {
