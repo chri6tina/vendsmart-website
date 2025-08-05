@@ -8,6 +8,70 @@
         <priority>1.0</priority>
     </url>
     
+    <!-- New Vending Pages -->
+    <url>
+        <loc>https://jacksonvillevendingmachines.com/vendingmachines.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://jacksonvillevendingmachines.com/vending-in-jacksonville-florida.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://jacksonvillevendingmachines.com/free-vending-machine-placement.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://jacksonvillevendingmachines.com/micro-markets.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://jacksonvillevendingmachines.com/coffee-services.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Location-Specific Free Placement Pages -->
+    <url>
+        <loc>https://jacksonvillevendingmachines.com/free-vending-machine-placement-jacksonville-downtown.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://jacksonvillevendingmachines.com/free-vending-machine-placement-jacksonville-beach.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://jacksonvillevendingmachines.com/free-vending-machine-placement-jacksonville-northside.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://jacksonvillevendingmachines.com/free-vending-machine-placement-jacksonville-ponte-vedra.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://jacksonvillevendingmachines.com/free-vending-machine-placement-jacksonville-orange-park.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
     <!-- Services Pages -->
     <url>
         <loc>https://jacksonvillevendingmachines.com/vending-services-jacksonville.html</loc>
