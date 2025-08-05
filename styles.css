@@ -12,6 +12,12 @@
     --light-color: #f8fafc;
     --text-color: #374151;
     --text-light: #6b7280;
+    
+    /* Additional brand color combinations */
+    --vend-gradient: linear-gradient(135deg, var(--vend-blue-light) 0%, var(--vend-blue-dark) 100%);
+    --smart-gradient: linear-gradient(135deg, var(--smart-silver-light) 0%, var(--smart-silver-dark) 100%);
+    --brand-shadow: 0 4px 20px rgba(0, 197, 245, 0.15);
+    --brand-shadow-hover: 0 8px 30px rgba(0, 197, 245, 0.25);
 }
 
 /* Reset and Base Styles */
@@ -5100,7 +5106,7 @@ html {
 .nursing-home-help-hero,
 .university-help-hero,
 .jacksonville-help-hero {
-    background: linear-gradient(135deg, var(--vend-blue-light) 0%, var(--vend-blue-dark) 100%);
+    background: var(--vend-gradient);
     position: relative;
     overflow: hidden;
 }
@@ -5278,7 +5284,7 @@ html {
     background: white;
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--brand-shadow);
     border: 2px solid transparent;
     transition: all 0.3s ease;
     position: relative;
@@ -5292,15 +5298,15 @@ html {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #ff6b6b, #ee5a24);
+    background: linear-gradient(90deg, var(--vend-blue-light), var(--vend-blue-dark));
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
 
 .challenge-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(255, 107, 107, 0.2);
-    border-color: #ff6b6b;
+    box-shadow: var(--brand-shadow-hover);
+    border-color: var(--vend-blue-light);
 }
 
 .challenge-card:hover::before {
@@ -5310,7 +5316,7 @@ html {
 .challenge-icon {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+    background: var(--vend-gradient);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -5321,7 +5327,7 @@ html {
 
 .challenge-card:hover .challenge-icon {
     transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+    box-shadow: var(--brand-shadow-hover);
 }
 
 .challenge-icon i {
@@ -5343,10 +5349,10 @@ html {
 }
 
 .challenge-impact {
-    background: linear-gradient(135deg, #fff5f5, #ffe8e8);
+    background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
     padding: 1rem;
     border-radius: 8px;
-    border-left: 4px solid #ff6b6b;
+    border-left: 4px solid var(--vend-blue-light);
     font-size: 0.95rem;
     color: var(--text-color);
 }
@@ -5363,7 +5369,7 @@ html {
 .help-solution {
     background: white;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--brand-shadow);
     margin-bottom: 2rem;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -5371,7 +5377,7 @@ html {
 
 .help-solution:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 197, 245, 0.2);
+    box-shadow: var(--brand-shadow-hover);
 }
 
 .solution-header {
@@ -5385,7 +5391,7 @@ html {
 .solution-icon {
     width: 60px;
     height: 60px;
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--vend-gradient);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -5475,7 +5481,7 @@ html {
     background: white;
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--brand-shadow);
     border: 2px solid transparent;
     transition: all 0.3s ease;
     position: relative;
@@ -5489,15 +5495,15 @@ html {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #ffd700, #ffed4e);
+    background: linear-gradient(90deg, var(--smart-silver-light), var(--smart-silver-dark));
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
 
 .story-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(255, 215, 0, 0.2);
-    border-color: #ffd700;
+    box-shadow: var(--brand-shadow-hover);
+    border-color: var(--vend-blue-light);
 }
 
 .story-card:hover::before {
@@ -5513,7 +5519,7 @@ html {
 .story-icon {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #ffd700, #ffed4e);
+    background: var(--vend-gradient);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -5542,10 +5548,10 @@ html {
 }
 
 .story-results {
-    background: linear-gradient(135deg, #fffbf0, #fff8dc);
+    background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
     padding: 1rem;
     border-radius: 8px;
-    border-left: 4px solid #ffd700;
+    border-left: 4px solid var(--vend-blue-light);
     font-size: 0.95rem;
     color: var(--text-color);
 }
@@ -5652,7 +5658,7 @@ html {
     background: white;
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--brand-shadow);
     border: 2px solid transparent;
     transition: all 0.3s ease;
     position: relative;
@@ -5673,7 +5679,7 @@ html {
 
 .type-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 197, 245, 0.2);
+    box-shadow: var(--brand-shadow-hover);
     border-color: var(--vend-blue-light);
 }
 
@@ -5695,7 +5701,7 @@ html {
 
 .type-card:hover .type-icon {
     transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 10px 20px rgba(0, 197, 245, 0.3);
+    box-shadow: var(--brand-shadow-hover);
 }
 
 .type-icon i {
