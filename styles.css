@@ -1347,7 +1347,9 @@ body {
     
     /* Adjust hero section to account for fixed navbar */
     .hero {
-        margin-top: 70px;
+        margin-top: 0;
+        padding: 80px 0 60px;
+        min-height: 60vh;
     }
     
     /* Ensure hamburger menu is visible and properly positioned */
@@ -1375,14 +1377,19 @@ body {
         display: block;
     }
     
-    /* Debug styles - make hamburger more visible */
+    /* Hamburger menu styling */
     .hamburger {
-        border: 2px solid #ff0000 !important;
-        background-color: rgba(255, 0, 0, 0.1) !important;
+        border: none;
+        background-color: transparent;
     }
 }
 
 @media (max-width: 480px) {
+    .hero {
+        padding: 60px 0 40px;
+        min-height: 50vh;
+    }
+    
     .hero-content h1 {
         font-size: 2rem;
     }
@@ -1462,11 +1469,12 @@ body {
     
     /* Ensure proper spacing on very small screens */
     .contact-bar {
-        padding: 8px 0;
+        padding: 6px 0;
     }
     
     .navbar {
         padding: 10px 0;
+        top: 25px;
     }
     
     /* Enhanced mobile styles for area cards */
