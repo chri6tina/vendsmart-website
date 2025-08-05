@@ -1377,7 +1377,7 @@ body {
         display: block;
     }
     
-    /* Hamburger menu styling */
+    /* Hamburger menu styling - clean and functional */
     .hamburger {
         border: none;
         background-color: transparent;
@@ -1441,17 +1441,14 @@ body {
         padding: 2rem 1.5rem;
     }
     
-    /* Contact bar mobile responsive */
-    .contact-bar .contact-info {
-        flex-direction: column;
-        gap: 0.5rem;
-        padding: 0 5px;
-        align-items: center;
+    /* Hide contact bar on mobile for more space */
+    .contact-bar {
+        display: none;
     }
     
-    .contact-item {
-        font-size: 0.75rem;
-        text-align: center;
+    /* Adjust navbar position since contact bar is hidden */
+    .navbar {
+        top: 0;
     }
     
     /* Further reduce container padding on very small screens */
@@ -1463,18 +1460,14 @@ body {
         padding: 0 5px !important;
     }
     
-    .contact-bar .contact-info {
-        padding: 0 5px !important;
-    }
-    
-    /* Ensure proper spacing on very small screens */
+    /* Contact bar hidden on mobile */
     .contact-bar {
-        padding: 6px 0;
+        display: none;
     }
     
     .navbar {
         padding: 10px 0;
-        top: 25px;
+        top: 0;
     }
     
     /* Enhanced mobile styles for area cards */
