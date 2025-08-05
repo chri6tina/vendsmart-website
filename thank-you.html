@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - VendSmart | Jacksonville Vending Solutions</title>
+    <meta name="description" content="Thank you for contacting VendSmart. We'll be in touch within 24 hours to discuss your vending needs.">
+    <link rel="canonical" href="https://jacksonvillevendingmachines.com/thank-you.html">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .thank-you-section {
+            padding: 6rem 0 4rem 0;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            margin-top: 120px; /* Account for fixed navbar and contact bar */
+        }
+        
+        .thank-you-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .thank-you-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            animation: pulse 2s infinite;
+        }
+        
+        .checkmark {
+            font-size: 3rem;
+            color: white;
+            font-weight: bold;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .thank-you-content h1 {
+            font-size: 3rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .thank-you-message {
+            font-size: 1.2rem;
+            color: #6b7280;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+        
+        .next-steps {
+            background: white;
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            margin-bottom: 3rem;
+        }
+        
+        .next-steps h2 {
+            font-size: 2rem;
+            color: #1f2937;
+            margin-bottom: 2rem;
+        }
+        
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .step-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: 12px;
+            border-left: 4px solid #00C5F5;
+            transition: transform 0.3s ease;
+        }
+        
+        .step-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0 auto 1rem;
+        }
+        
+        .step-item h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .step-item p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        
+        .contact-info-thank-you {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 3rem;
+        }
+        
+        .contact-info-thank-you h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .contact-info-thank-you p {
+            color: #6b7280;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-methods-thank-you {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-method-thank-you {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 1.5rem;
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-method-thank-you:hover {
+            transform: translateY(-2px);
+            color: white;
+        }
+        
+        .contact-method-thank-you i {
+            font-size: 1.2rem;
+        }
+        
+        .thank-you-actions {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .thank-you-actions .btn {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .thank-you-content h1 {
+                font-size: 2rem;
+            }
+            
+            .next-steps {
+                padding: 2rem;
+            }
+            
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-methods-thank-you {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .thank-you-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .thank-you-actions .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Contact Bar -->
+    <div class="contact-bar">
+        <div class="contact-info">
+            <span class="contact-item">
+                <i class="fas fa-phone"></i>
+                904-456-3851
+            </span>
+            <span class="contact-item">
+                <i class="fas fa-envelope"></i>
+                vendsmartjacksonville@gmail.com
+            </span>
+            <a href="https://www.facebook.com/vendsmart" target="_blank" class="contact-item">
+                <i class="fab fa-facebook"></i>
+                Follow Us
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" aria-label="VendSmart Homepage">
+                    <img src="vendsmart-logo-jacksonville-vending.png" alt="VendSmart - Jacksonville Vending Machine Company Logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="coffeeservices.html">Coffee Services</a></li>
+                        <li><a href="smart-coolers.html">Smart Coolers</a></li>
+                        <li><a href="setting-up-a-micro-market-in-your-jacksonville-office.html">Micro-Markets</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Locations <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="locations.html">All Locations</a></li>
+                        <li><a href="downtown-jacksonville.html">Downtown</a></li>
+                        <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
+                        <li><a href="orange-park.html">Orange Park</a></li>
+                        <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="cta-button">Contact Us</a></li>
+            </ul>
+            <div class="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Thank You Section -->
+    <section class="thank-you-section">
+        <div class="container">
+            <div class="thank-you-content">
+                <div class="thank-you-icon">
+                    <span class="checkmark">✓</span>
+                </div>
+                
+                <h1>Thank You!</h1>
+                <p class="thank-you-message">Your free Vending Business Starter Kit is on its way! Check your email in the next 5 minutes.</p>
+                
+                <div class="next-steps">
+                    <h2>What's in Your Free Starter Kit?</h2>
+                    <div class="steps-grid">
+                        <div class="step-item">
+                            <div class="step-number">📋</div>
+                            <h3>Complete Business Setup Checklist</h3>
+                            <p>Step-by-step guide to legally start your vending business, including permits, insurance, and business structure.</p>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">🎯</div>
+                            <h3>Sample Lesson: "Finding Your First 5 Locations"</h3>
+                            <p>Exclusive preview from our full course showing you exactly how to identify and secure profitable vending locations.</p>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">💰</div>
+                            <h3>Pricing Strategy Template</h3>
+                            <p>Proven pricing formulas used by successful vendors to maximize profits and stay competitive.</p>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">📅</div>
+                            <h3>Weekly Action Plan</h3>
+                            <p>90-day roadmap to get your first machine installed and generating revenue within 3 months.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-info-thank-you">
+                    <h3>Ready to Take Your Vending Business to the Next Level?</h3>
+                    <p>Join 2,500+ successful vendors who used our complete course to build profitable businesses:</p>
+                    <div class="contact-methods-thank-you">
+                        <a href="https://vendflow.gumroad.com/l/rxbzy" target="_blank" class="contact-method-thank-you">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Get the Complete Course ($79)</span>
+                        </a>
+                        <a href="https://www.thevendinglocator.com/pricing" target="_blank" class="contact-method-thank-you">
+                            <i class="fas fa-search"></i>
+                            <span>Get Lead Generation Tool ($19)</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="thank-you-actions">
+                    <a href="how-to-start-a-vending-machine-business.html" class="btn btn-primary">Back to Vending Business Page</a>
+                    <a href="index.html" class="btn btn-outline">Visit VendSmart Homepage</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VendSmart</h3>
+                    <p>Premium vending solutions for Jacksonville, Florida & surrounding areas.</p>
+                    <p>Free Installation & Delivery</p>
+                    <p>Coffee Services Available</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/vendsmart" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_ID" target="_blank"><i class="fab fa-google"></i></a>
+                        <a href="https://www.yelp.com/biz/YOUR_YELP_ID" target="_blank"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#vending">Vending Machines</a></li>
+                        <li><a href="services.html#micro-markets">Micro-Markets</a></li>
+                        <li><a href="services.html#coffee">Coffee Services</a></li>
+                        <li><a href="services.html#emergency">Emergency Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="downtown-jacksonville.html">Downtown Jacksonville</a></li>
+                        <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
+                        <li><a href="orange-park.html">Orange Park</a></li>
+                        <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
+                        <li><a href="atlantic-beach.html">Atlantic Beach</a></li>
+                        <li><a href="st-augustine.html">St. Augustine</a></li>
+                        <li><a href="mandarin.html">Mandarin</a></li>
+                        <li><a href="lakeside.html">Lakeside</a></li>
+                        <li><a href="locations.html">All Locations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="tel:904-456-3851">904-456-3851</a></p>
+                    <p><a href="mailto:vendsmartjacksonville@gmail.com">vendsmartjacksonville@gmail.com</a></p>
+                    <p>Jacksonville, Florida & Surrounding Areas</p>
+                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VendSmart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="includes.js"></script>
+</body>
+</html> 

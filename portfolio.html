@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VendSmart Portfolio - Vending Machine Installations in Jacksonville | VendSmart</title>
+    <meta name="description" content="View VendSmart's portfolio of vending machine installations, micro-markets, and coffee services throughout Jacksonville, Florida. See our work in action.">
+    <link rel="canonical" href="https://jacksonvillevendingmachines.com/portfolio.html">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .portfolio-overview {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .overview-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .overview-text h2 {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .overview-text p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .portfolio-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-3px);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #00C5F5;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: #6b7280;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        .overview-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .image-placeholder {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #cbd5e1;
+        }
+        
+        .image-placeholder i {
+            font-size: 4rem;
+            color: #00C5F5;
+            margin-bottom: 1rem;
+        }
+        
+        .image-placeholder p {
+            color: #6b7280;
+            font-weight: 600;
+        }
+        
+        .portfolio-categories {
+            padding: 4rem 0;
+            background: #f8fafc;
+        }
+        
+        .portfolio-categories h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 3rem;
+        }
+        
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .category-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .category-card i {
+            font-size: 2.5rem;
+            color: #00C5F5;
+            margin-bottom: 1rem;
+        }
+        
+        .category-card h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .category-card p {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .portfolio-gallery {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .portfolio-gallery h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 3rem;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .gallery-item {
+            background: #f8fafc;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-3px);
+        }
+        
+        .gallery-image {
+            height: 200px;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .gallery-image i {
+            font-size: 3rem;
+            color: #00C5F5;
+        }
+        
+        .gallery-content {
+            padding: 1.5rem;
+        }
+        
+        .gallery-content h3 {
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .gallery-content p {
+            color: #6b7280;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .testimonials-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+        }
+        
+        .testimonials-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 3rem;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .testimonial-content {
+            font-style: italic;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .testimonial-photo {
+            width: 50px;
+            height: 50px;
+            background: #00C5F5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .testimonial-info h4 {
+            color: #1f2937;
+            margin-bottom: 0.25rem;
+        }
+        
+        .testimonial-info p {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .overview-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .overview-text h2,
+            .portfolio-categories h2,
+            .portfolio-gallery h2,
+            .testimonials-section h2 {
+                font-size: 2rem;
+            }
+            
+            .portfolio-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Contact Bar -->
+    <div class="contact-bar">
+        <div class="contact-info">
+            <span class="contact-item">
+                <i class="fas fa-phone"></i>
+                904-456-3851
+            </span>
+            <span class="contact-item">
+                <i class="fas fa-envelope"></i>
+                vendsmartjacksonville@gmail.com
+            </span>
+            <a href="https://www.facebook.com/vendsmart" target="_blank" class="contact-item">
+                <i class="fab fa-facebook"></i>
+                Follow Us
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" aria-label="VendSmart Homepage">
+                    <img src="vendsmart-logo-jacksonville-vending.png" alt="VendSmart - Jacksonville Vending Machine Company Logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="coffeeservices.html">Coffee Services</a></li>
+                        <li><a href="smart-coolers.html">Smart Coolers</a></li>
+                        <li><a href="setting-up-a-micro-market-in-your-jacksonville-office.html">Micro-Markets</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Locations <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="locations.html">All Locations</a></li>
+                        <li><a href="downtown-jacksonville.html">Downtown</a></li>
+                        <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
+                        <li><a href="orange-park.html">Orange Park</a></li>
+                        <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="cta-button">Contact Us</a></li>
+            </ul>
+            <div class="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="jacksonville-vending-micro-market.jpg" alt="VendSmart portfolio of vending installations in Jacksonville" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>VendSmart Portfolio</h1>
+                <p>Showcasing our vending machine installations and micro-markets throughout Jacksonville</p>
+                <div class="hero-buttons">
+                    <a href="#overview" class="btn btn-primary">View Our Work</a>
+                    <a href="contact.html" class="btn btn-outline">Get Free Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Overview -->
+    <section id="overview" class="portfolio-overview">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>Our Work in Jacksonville</h2>
+                    <p>VendSmart has successfully installed and maintained vending solutions for hundreds of Jacksonville businesses. From corporate offices to healthcare facilities, our portfolio demonstrates our commitment to quality and customer satisfaction.</p>
+                    
+                    <div class="portfolio-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Installations</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">Service Areas</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Satisfaction</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Support</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-images"></i>
+                        <p>Portfolio Gallery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Categories -->
+    <section class="portfolio-categories">
+        <div class="container">
+            <h2>Our Service Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Smart Vending Machines</h3>
+                    <p>Modern vending solutions with contactless payments and real-time monitoring</p>
+                    <a href="services.html#vending" class="btn btn-outline">View Examples</a>
+                </div>
+                
+                <div class="category-card">
+                    <i class="fas fa-store"></i>
+                    <h3>Micro-Markets</h3>
+                    <p>Self-service convenience stores with fresh food and smart checkout</p>
+                    <a href="setting-up-a-micro-market-in-your-jacksonville-office.html" class="btn btn-outline">View Examples</a>
+                </div>
+                
+                <div class="category-card">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Coffee Services</h3>
+                    <p>Professional coffee solutions for offices and businesses</p>
+                    <a href="coffeeservices.html" class="btn btn-outline">View Examples</a>
+                </div>
+                
+                <div class="category-card">
+                    <i class="fas fa-snowflake"></i>
+                    <h3>Smart Coolers</h3>
+                    <p>Advanced cooling technology with inventory tracking</p>
+                    <a href="smart-coolers.html" class="btn btn-outline">View Examples</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section class="portfolio-gallery">
+        <div class="container">
+            <h2>Recent Installations</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Downtown Office Complex</h3>
+                        <p>Micro-market installation with smart coolers and self-checkout kiosks</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Healthcare Facility</h3>
+                        <p>Smart vending machines with healthy snack options</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>University Campus</h3>
+                        <p>Multiple vending locations with contactless payment systems</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Manufacturing Plant</h3>
+                        <p>24/7 vending solutions for shift workers</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Hotel & Resort</h3>
+                        <p>Premium vending services for guests and staff</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <i class="fas fa-shopping-mall"></i>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Shopping Center</h3>
+                        <p>High-traffic vending solutions with smart technology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "VendSmart transformed our break room into a modern convenience store. Our employees love the fresh food options and the self-checkout system is incredibly easy to use."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-photo">JD</div>
+                        <div class="testimonial-info">
+                            <h4>John Davis</h4>
+                            <p>Office Manager, Downtown Jacksonville</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "The smart vending machines have increased our revenue by 40% compared to traditional machines. The real-time monitoring helps us keep everything stocked perfectly."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-photo">SM</div>
+                        <div class="testimonial-info">
+                            <h4>Sarah Martinez</h4>
+                            <p>Facility Director, Healthcare Center</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "Professional installation, excellent service, and our employees couldn't be happier. VendSmart exceeded our expectations in every way."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-photo">RW</div>
+                        <div class="testimonial-info">
+                            <h4>Robert Wilson</h4>
+                            <p>Operations Manager, Manufacturing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to See Your Project Here?</h2>
+            <p>Contact VendSmart today to discuss your vending solution needs</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Get Free Quote</a>
+                <a href="services.html" class="btn btn-secondary">View Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VendSmart</h3>
+                    <p>Premium vending solutions for Jacksonville, Florida & surrounding areas.</p>
+                    <p>Free Installation & Delivery</p>
+                    <p>Coffee Services Available</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/vendsmart" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_ID" target="_blank"><i class="fab fa-google"></i></a>
+                        <a href="https://www.yelp.com/biz/YOUR_YELP_ID" target="_blank"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#vending">Vending Machines</a></li>
+                        <li><a href="services.html#micro-markets">Micro-Markets</a></li>
+                        <li><a href="services.html#coffee">Coffee Services</a></li>
+                        <li><a href="services.html#emergency">Emergency Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="downtown-jacksonville.html">Downtown Jacksonville</a></li>
+                        <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
+                        <li><a href="orange-park.html">Orange Park</a></li>
+                        <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
+                        <li><a href="atlantic-beach.html">Atlantic Beach</a></li>
+                        <li><a href="st-augustine.html">St. Augustine</a></li>
+                        <li><a href="mandarin.html">Mandarin</a></li>
+                        <li><a href="lakeside.html">Lakeside</a></li>
+                        <li><a href="locations.html">All Locations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="tel:904-456-3851">904-456-3851</a></p>
+                    <p><a href="mailto:vendsmartjacksonville@gmail.com">vendsmartjacksonville@gmail.com</a></p>
+                    <p>Jacksonville, Florida & Surrounding Areas</p>
+                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VendSmart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="includes.js"></script>
+</body>
+</html> 

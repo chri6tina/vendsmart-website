@@ -1,0 +1,27 @@
+<svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vendGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60A5FA;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="smartGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E5E7EB;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#D1D5DB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9CA3AF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- VEND with stylized V -->
+  <g transform="translate(10, 10)">
+    <!-- VEND text with white outline -->
+    <text x="0" y="25" font-family="Arial, sans-serif" font-weight="bold" font-size="24" fill="white" stroke="white" stroke-width="0.5">VEND</text>
+    <!-- VEND text with black outline -->
+    <text x="0" y="25" font-family="Arial, sans-serif" font-weight="bold" font-size="24" fill="url(#vendGradient)" stroke="#1F2937" stroke-width="1.5">VEND</text>
+    
+    <!-- SMART text with white outline -->
+    <text x="0" y="50" font-family="Arial, sans-serif" font-weight="bold" font-size="24" fill="white" stroke="white" stroke-width="0.5">SMART</text>
+    <!-- SMART text with black outline -->
+    <text x="0" y="50" font-family="Arial, sans-serif" font-weight="bold" font-size="24" fill="url(#smartGradient)" stroke="#1F2937" stroke-width="1.5">SMART</text>
+  </g>
+</svg> 
