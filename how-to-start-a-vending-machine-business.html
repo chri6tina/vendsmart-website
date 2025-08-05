@@ -1360,8 +1360,8 @@
         updateScarcity(); // Initial call
         
         // Dynamic social proof counters
-        let currentPeopleOnline = 47;
-        let currentItemsInCart = 12;
+        let currentPeopleOnline = 20;
+        let currentItemsInCart = 8;
         
         // Smooth counter animation
         function animateCounter(element, startValue, endValue, duration = 1000) {
@@ -1389,34 +1389,38 @@
         // Update people online counter
         function updatePeopleOnline() {
             const change = Math.floor(Math.random() * 5) - 2; // -2 to +2
-            const newValue = Math.max(35, Math.min(65, currentPeopleOnline + change));
+            const newValue = Math.max(15, Math.min(35, currentPeopleOnline + change));
             
-            if (newValue !== currentPeopleOnline) {
-                animateCounter(document.getElementById('people-online'), currentPeopleOnline, newValue, 800);
-                currentPeopleOnline = newValue;
-            }
+            // Always update to ensure changes happen
+            animateCounter(document.getElementById('people-online'), currentPeopleOnline, newValue, 800);
+            currentPeopleOnline = newValue;
         }
         
         // Update items in cart counter
         function updateItemsInCart() {
             const change = Math.floor(Math.random() * 3) - 1; // -1 to +1
-            const newValue = Math.max(8, Math.min(20, currentItemsInCart + change));
+            const newValue = Math.max(5, Math.min(15, currentItemsInCart + change));
             
-            if (newValue !== currentItemsInCart) {
-                animateCounter(document.getElementById('items-in-cart'), currentItemsInCart, newValue, 600);
-                currentItemsInCart = newValue;
-            }
+            // Always update to ensure changes happen
+            animateCounter(document.getElementById('items-in-cart'), currentItemsInCart, newValue, 600);
+            currentItemsInCart = newValue;
         }
         
         // Update counters at different intervals for more realistic feel
-        setInterval(updatePeopleOnline, 8000 + Math.random() * 4000); // 8-12 seconds
-        setInterval(updateItemsInCart, 12000 + Math.random() * 6000); // 12-18 seconds
+        setInterval(updatePeopleOnline, 10000 + Math.random() * 10000); // 10-20 seconds
+        setInterval(updateItemsInCart, 15000 + Math.random() * 10000); // 15-25 seconds
         
         // Initial counter animation
         setTimeout(() => {
             animateCounter(document.getElementById('people-online'), 0, currentPeopleOnline, 1500);
             animateCounter(document.getElementById('items-in-cart'), 0, currentItemsInCart, 1200);
         }, 1000);
+        
+        // Force first update after initial animation
+        setTimeout(() => {
+            updatePeopleOnline();
+            updateItemsInCart();
+        }, 3000);
         
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
