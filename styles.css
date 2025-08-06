@@ -18,6 +18,44 @@
     --smart-gradient: linear-gradient(135deg, var(--smart-silver-light) 0%, var(--smart-silver-dark) 100%);
     --brand-shadow: 0 4px 20px rgba(0, 197, 245, 0.15);
     --brand-shadow-hover: 0 8px 30px rgba(0, 197, 245, 0.25);
+    
+    /* Contact Bar Styles */
+    --contact-bar-bg: var(--vend-gradient);
+    --contact-bar-text: var(--logo-white);
+    --contact-bar-link: var(--logo-white);
+    --contact-bar-link-hover: rgba(255, 255, 255, 0.8);
+}
+
+/* Contact Bar */
+.contact-bar {
+    background: var(--contact-bar-bg);
+    color: var(--contact-bar-text);
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.contact-bar .contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+
+.contact-bar a {
+    color: var(--contact-bar-link);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: opacity 0.3s ease;
+}
+
+.contact-bar a:hover {
+    opacity: 0.8;
+}
+
+.contact-bar i {
+    font-size: 0.8rem;
 }
 
 /* Reset and Base Styles */
@@ -1083,6 +1121,10 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .contact-bar {
+        display: none;
+    }
+    
     .nav-phone {
         display: none;
     }
