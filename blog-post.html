@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <!-- Contentful SDK -->
-    <script src="https://unpkg.com/contentful@latest/dist/contentful.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
 </head>
 <body>
     <!-- Contact Bar -->
@@ -219,6 +219,12 @@
 
             try {
                 console.log('🔍 Loading post with ID:', postId);
+                console.log('🔧 Contentful client available:', typeof client !== 'undefined');
+                
+                if (typeof client === 'undefined') {
+                    showError('Contentful client not initialized');
+                    return;
+                }
                 
                 // Check if this is a sample post (not from Contentful)
                 if (postId.startsWith('sample-') || isSamplePostId(postId)) {
@@ -261,36 +267,45 @@
             document.getElementById('loadingPost').style.display = 'none';
             document.getElementById('postContent').style.display = 'block';
 
+            // Handle different possible field names
+            const title = post.fields.title || post.fields.name || 'Untitled Post';
+            const category = post.fields.category || post.fields.postCategory || 'Uncategorized';
+            const readTime = post.fields.readTime || post.fields.readingTime || '5 min read';
+            const featuredImage = post.fields.featuredImage || post.fields.image || post.fields.heroImage;
+
             // Set post metadata
-            document.getElementById('postCategory').textContent = post.fields.category || 'Uncategorized';
+            document.getElementById('postCategory').textContent = category;
             document.getElementById('postDate').textContent = new Date(post.sys.createdAt).toLocaleDateString('en-US', {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric'
             });
-            document.getElementById('postReadTime').textContent = post.fields.readTime || '5 min read';
+            document.getElementById('postReadTime').textContent = readTime;
             
             // Set post title
-            document.getElementById('postTitle').textContent = post.fields.title;
+            document.getElementById('postTitle').textContent = title;
 
             // Set featured image if available
-            if (post.fields.featuredImage?.fields?.file?.url) {
-                document.getElementById('postImage').src = post.fields.featuredImage.fields.file.url;
-                document.getElementById('postImage').alt = post.fields.title;
+            if (featuredImage?.fields?.file?.url) {
+                document.getElementById('postImage').src = featuredImage.fields.file.url;
+                document.getElementById('postImage').alt = title;
                 document.getElementById('postFeaturedImage').style.display = 'block';
             }
 
             // Set post content (Rich text)
-            if (post.fields.content) {
+            const content = post.fields.content || post.fields.body || post.fields.postContent;
+            const excerpt = post.fields.excerpt || post.fields.summary || 'Content coming soon...';
+            
+            if (content) {
                 // Handle different content formats from Contentful
-                let content = '';
+                let contentHtml = '';
                 
-                if (typeof post.fields.content === 'string') {
+                if (typeof content === 'string') {
                     // Plain text content
-                    content = post.fields.content;
-                } else if (post.fields.content.content) {
+                    contentHtml = content;
+                } else if (content.content) {
                     // Rich text content from Contentful
-                    content = post.fields.content.content.map(item => {
+                    contentHtml = content.content.map(item => {
                         if (item.nodeType === 'paragraph') {
                             return `<p>${item.content.map(c => c.value).join('')}</p>`;
                         } else if (item.nodeType === 'heading-1') {
@@ -312,19 +327,19 @@
                     }).join('');
                 } else {
                     // Fallback to excerpt if no content
-                    content = post.fields.excerpt || 'Content coming soon...';
+                    contentHtml = excerpt;
                 }
                 
                 document.getElementById('postBody').innerHTML = `
                     <div style="line-height: 1.8; font-size: 1.1rem; color: #374151;">
-                        ${content}
+                        ${contentHtml}
                     </div>
                 `;
             } else {
                 // No content field, use excerpt as fallback
                 document.getElementById('postBody').innerHTML = `
                     <div style="line-height: 1.8; font-size: 1.1rem; color: #374151;">
-                        <p>${post.fields.excerpt || 'Content coming soon...'}</p>
+                        <p>${excerpt}</p>
                         <p><em>This article is being prepared. Please check back soon for the full content.</em></p>
                     </div>
                 `;
@@ -345,14 +360,31 @@
         // Load related posts
         async function loadRelatedPosts(category, currentPostId) {
             try {
-                const response = await client.getEntries({
-                    content_type: 'post',
-                    'fields.website': 'vendsmart',
-                    'fields.category': category,
-                    'sys.id[ne]': currentPostId, // Exclude current post
-                    order: '-sys.createdAt',
-                    limit: 3
-                });
+                // Try to find related posts by category (handle different field names)
+                let response;
+                try {
+                    response = await client.getEntries({
+                        content_type: 'blogPost',
+                        'fields.category': category,
+                        'sys.id[ne]': currentPostId, // Exclude current post
+                        order: '-sys.createdAt',
+                        limit: 3
+                    });
+                } catch (categoryError) {
+                    // If category field doesn't exist, try alternative field names
+                    try {
+                        response = await client.getEntries({
+                            content_type: 'blogPost',
+                            'fields.postCategory': category,
+                            'sys.id[ne]': currentPostId,
+                            order: '-sys.createdAt',
+                            limit: 3
+                        });
+                    } catch (altError) {
+                        console.log('No related posts found for category:', category);
+                        return;
+                    }
+                }
 
                 const relatedPosts = response.items;
                 
@@ -367,19 +399,25 @@
                             day: 'numeric'
                         });
                         
+                        // Handle different possible field names
+                        const title = post.fields.title || post.fields.name || 'Untitled Post';
+                        const category = post.fields.category || post.fields.postCategory || 'Uncategorized';
+                        const excerpt = post.fields.excerpt || post.fields.summary || 'No excerpt available.';
+                        const featuredImage = post.fields.featuredImage || post.fields.image || post.fields.heroImage;
+                        
                         relatedHTML += `
                             <article class="blog-post">
                                 <div class="post-image">
-                                    <img src="${post.fields.featuredImage?.fields?.file?.url || 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'}" 
-                                         alt="${post.fields.title}">
+                                    <img src="${featuredImage?.fields?.file?.url || 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'}" 
+                                         alt="${title}">
                                 </div>
                                 <div class="post-content">
                                     <div class="post-meta">
-                                        <span class="category">${post.fields.category}</span>
+                                        <span class="category">${category}</span>
                                         <span class="date">${date}</span>
                                     </div>
-                                    <h3>${post.fields.title}</h3>
-                                    <p>${post.fields.excerpt}</p>
+                                    <h3>${title}</h3>
+                                    <p>${excerpt}</p>
                                     <a href="blog-post.html?id=${post.sys.id}" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </article>
@@ -667,6 +705,15 @@
 
         // Load post when page loads
         document.addEventListener('DOMContentLoaded', function() {
+            console.log('🚀 Blog post page DOM loaded');
+            console.log('🔧 Contentful SDK available:', typeof contentful !== 'undefined');
+            
+            if (typeof contentful === 'undefined') {
+                console.error('❌ Contentful SDK not loaded on blog post page!');
+                showError('Contentful SDK not loaded. Please refresh the page.');
+                return;
+            }
+            
             loadBlogPost();
             initBackToTop();
         });

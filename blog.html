@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <!-- Contentful SDK -->
-    <script src="https://unpkg.com/contentful@latest/dist/contentful.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
 </head>
 <body>
     <!-- Contact Bar -->
@@ -140,22 +140,33 @@
             space: 'xpopyri6s8gv',
             accessToken: 'u7y4yBwgXnAUXt-c2B4rVuidEoe4L3AzMBzkNMxSXp0'
         });
+        
+        console.log('🔧 Contentful client initialized');
+        console.log('🔧 Space ID: xpopyri6s8gv');
+        console.log('🔧 Access Token: u7y4yBwgXnAUXt-c2B4rVuidEoe4L3AzMBzkNMxSXp0');
 
         // Blog post template
         function createBlogPostHTML(post) {
-            const category = post.fields.category || 'Uncategorized';
+            console.log('🔍 Creating HTML for post:', post.fields.title);
+            console.log('🔍 Post fields available:', Object.keys(post.fields));
+            
+            // Handle different possible field names
+            const title = post.fields.title || post.fields.name || 'Untitled Post';
+            const category = post.fields.category || post.fields.postCategory || 'Uncategorized';
+            const readTime = post.fields.readTime || post.fields.readingTime || '5 min read';
+            const featuredImage = post.fields.featuredImage || post.fields.image || post.fields.heroImage;
+            
             const date = new Date(post.sys.createdAt).toLocaleDateString('en-US', {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric'
             });
-            const readTime = post.fields.readTime || '5 min read';
             
             return `
                 <article class="blog-post" data-category="${category.toLowerCase().replace(/\s+/g, '-')}">
                     <div class="post-image">
-                        <img src="${post.fields.featuredImage?.fields?.file?.url || 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'}" 
-                             alt="${post.fields.title || 'Blog Post'}">
+                        <img src="${featuredImage?.fields?.file?.url || 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'}" 
+                             alt="${title}">
                     </div>
                     <div class="post-content">
                         <div class="post-meta">
@@ -163,7 +174,7 @@
                             <span class="date">${date}</span>
                             <span class="read-time">${readTime}</span>
                         </div>
-                        <h3>${post.fields.title || 'Untitled Post'}</h3>
+                        <h3>${title}</h3>
                         <a href="blog-post.html?id=${post.sys.id}" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
@@ -172,21 +183,28 @@
 
         // Featured post template
         function createFeaturedPostHTML(post) {
-            const category = post.fields.category || 'Featured';
+            console.log('🔍 Creating featured post HTML for:', post.fields.title);
+            
+            // Handle different possible field names
+            const title = post.fields.title || post.fields.name || 'Featured Post';
+            const category = post.fields.category || post.fields.postCategory || 'Featured';
+            const readTime = post.fields.readTime || post.fields.readingTime || '5 min read';
+            const featuredImage = post.fields.featuredImage || post.fields.image || post.fields.heroImage;
+            const excerpt = post.fields.excerpt || post.fields.summary || 'No excerpt available.';
+            
             const date = new Date(post.sys.createdAt).toLocaleDateString('en-US', {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric'
             });
-            const readTime = post.fields.readTime || '5 min read';
             
             return {
-                image: post.fields.featuredImage?.fields?.file?.url || 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+                image: featuredImage?.fields?.file?.url || 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
                 category: category,
                 date: date,
                 readTime: readTime,
-                title: post.fields.title || 'Featured Post',
-                excerpt: post.fields.excerpt || 'No excerpt available.',
+                title: title,
+                excerpt: excerpt,
                 id: post.sys.id
             };
         }
@@ -202,14 +220,19 @@
 
                 // Fetch posts from Contentful
                 const response = await client.getEntries({
-                    content_type: 'post',
-                    'fields.website': 'vendsmart',
+                    content_type: 'blogPost',
                     order: '-sys.createdAt',
                     limit: 12
                 });
 
                 console.log('📦 Contentful response:', response);
                 console.log('📊 Number of posts found:', response.items.length);
+                
+                // Debug: Log the first post structure if available
+                if (response.items.length > 0) {
+                    console.log('🔍 First post structure:', response.items[0]);
+                    console.log('🔍 Available fields:', Object.keys(response.items[0].fields));
+                }
 
                 const posts = response.items;
                 
@@ -290,8 +313,13 @@
                 }
 
             } catch (error) {
-                console.error('Error loading blog posts:', error);
-                document.getElementById('blogGrid').innerHTML = '<div class="error-posts"><p>Error loading blog posts. Please try again later.</p></div>';
+                console.error('❌ Error loading blog posts:', error);
+                console.error('❌ Error details:', {
+                    message: error.message,
+                    name: error.name,
+                    stack: error.stack
+                });
+                document.getElementById('blogGrid').innerHTML = '<div class="error-posts"><p>Error loading blog posts. Please try again later.</p><p>Error: ' + error.message + '</p></div>';
             }
         }
 
@@ -486,6 +514,16 @@
 
         // Load posts when page loads
         document.addEventListener('DOMContentLoaded', function() {
+            console.log('🚀 DOM loaded, checking Contentful SDK...');
+            
+            // Check if Contentful SDK is loaded
+            if (typeof contentful === 'undefined') {
+                console.error('❌ Contentful SDK not loaded!');
+                document.getElementById('blogGrid').innerHTML = '<div class="error-posts"><p>Error: Contentful SDK not loaded. Please refresh the page.</p></div>';
+                return;
+            }
+            
+            console.log('✅ Contentful SDK loaded successfully');
             loadBlogPosts();
         });
     </script>
