@@ -8,6 +8,8 @@ Sitemap: https://jacksonvillevendingmachines.com/sitemap.xml
 Disallow: /admin/
 Disallow: /private/
 Disallow: /temp/
+Disallow: /.git/
+Disallow: /.github/
 
 # Allow all HTML pages
 Allow: /*.html
@@ -22,4 +24,12 @@ Allow: /*.jpeg
 Allow: /*.png
 Allow: /*.gif
 Allow: /*.svg
-Allow: /*.webp 
+Allow: /*.webp
+
+# Specific important pages
+Allow: /sitemap.xml
+Allow: /robots.txt
+Allow: /CNAME
+
+# Crawl delay for better server performance
+Crawl-delay: 1 
