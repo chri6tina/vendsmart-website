@@ -55,6 +55,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     initializeMobileNav();
                 }
             }, 500);
+            
+            // Final retry with longer delay
+            setTimeout(() => {
+                const hamburger = document.querySelector('.hamburger');
+                const navMenu = document.querySelector('.nav-menu');
+                if (!hamburger || !navMenu) {
+                    console.log('Elements not found after 500ms, final retry...');
+                    initializeMobileNav();
+                }
+            }, 1000);
         })
         .catch(error => {
             console.error('Error loading navigation:', error);
@@ -90,29 +100,75 @@ function initializeMobileNav() {
     if (hamburger && navMenu) {
         console.log('Both elements found, adding event listeners...');
         
-        hamburger.addEventListener('click', function() {
-            console.log('Hamburger clicked!');
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
+        // Remove any existing event listeners to prevent duplicates
+        hamburger.removeEventListener('click', hamburgerClickHandler);
+        hamburger.addEventListener('click', hamburgerClickHandler);
         
         // Close mobile menu when clicking on a link
         const navLinks = document.querySelectorAll('.nav-menu a');
         navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
+            link.removeEventListener('click', closeMobileMenu);
+            link.addEventListener('click', closeMobileMenu);
         });
 
         // Initialize dropdown functionality for mobile
         initializeDropdowns();
+        
+        // Add window resize listener to handle orientation changes
+        window.removeEventListener('resize', handleResize);
+        window.addEventListener('resize', handleResize);
         
         console.log('Mobile navigation initialized successfully');
     } else {
         console.error('Hamburger or nav menu not found!');
         console.log('Available elements with class "hamburger":', document.querySelectorAll('.hamburger'));
         console.log('Available elements with class "nav-menu":', document.querySelectorAll('.nav-menu'));
+    }
+}
+
+// Hamburger click handler function
+function hamburgerClickHandler() {
+    console.log('Hamburger clicked!');
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    if (hamburger && navMenu) {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        
+        // Prevent body scroll when menu is open
+        if (navMenu.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    }
+}
+
+// Close mobile menu function
+function closeMobileMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    if (hamburger && navMenu) {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
+// Handle window resize
+function handleResize() {
+    if (window.innerWidth > 768) {
+        // On desktop, ensure mobile menu is closed
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        if (hamburger && navMenu) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        }
     }
 }
 

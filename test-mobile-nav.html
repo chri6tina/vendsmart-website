@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
+    <!-- Contact Bar -->
+    <div class="contact-bar">
+        <div class="contact-info">
+            <a href="tel:904-456-3851"><i class="fas fa-phone"></i> 904-456-3851</a>
+            <a href="mailto:vendsmartjacksonville@gmail.com"><i class="fas fa-envelope"></i> vendsmartjacksonville@gmail.com</a>
+        </div>
+    </div>
 
     <!-- Navigation (directly included for testing) -->
     <nav class="navbar">
@@ -18,6 +24,9 @@
                 <a href="/" aria-label="VendSmart Homepage">
                     <img src="vendsmart-logo-jacksonville-vending.png" alt="VendSmart - Jacksonville Vending Machine Company Logo">
                 </a>
+            </div>
+            <div class="nav-phone">
+                <a href="tel:904-456-3851" class="phone-link">904-456-3851</a>
             </div>
             <ul class="nav-menu">
                 <li><a href="/">Home</a></li>
@@ -75,6 +84,24 @@
         <h1>Mobile Navigation Test</h1>
         <p>This page tests the mobile navigation directly. Resize your browser to mobile size to see the hamburger menu.</p>
         <p>If you can see the hamburger menu (three horizontal lines) on mobile, click it to test the mobile menu functionality.</p>
+        
+        <h2>Test Instructions:</h2>
+        <ol>
+            <li>Resize your browser window to mobile size (width ≤ 768px)</li>
+            <li>You should see a hamburger menu (three horizontal lines) in the top right</li>
+            <li>Click the hamburger menu to open the mobile navigation</li>
+            <li>The menu should slide in from the left</li>
+            <li>Click on dropdown items to test dropdown functionality</li>
+        </ol>
+        
+        <h2>Expected Behavior:</h2>
+        <ul>
+            <li>Hamburger menu visible on mobile (≤768px)</li>
+            <li>Desktop navigation hidden on mobile</li>
+            <li>Mobile menu slides in from left when hamburger clicked</li>
+            <li>Dropdowns work on mobile</li>
+            <li>Menu closes when clicking links</li>
+        </ul>
     </div>
 
     <script>
@@ -122,6 +149,8 @@
                         });
                     }
                 });
+                
+                console.log('Mobile navigation initialized successfully');
             } else {
                 console.error('Hamburger or nav menu not found!');
             }
