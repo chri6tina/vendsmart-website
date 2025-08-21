@@ -5958,3 +5958,239 @@ html {
         text-align: center;
     }
 }
+
+/* Breadcrumb Navigation */
+.breadcrumb-section {
+    background: var(--light-color);
+    padding: 1rem 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.breadcrumb-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.breadcrumb-nav a {
+    color: var(--vend-blue-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-nav a:hover {
+    color: var(--vend-blue-dark);
+}
+
+.breadcrumb-nav i {
+    color: var(--text-light);
+    font-size: 0.8rem;
+}
+
+.breadcrumb-nav span {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+/* Area Overview Section */
+.area-overview {
+    padding: 4rem 0;
+    background: white;
+}
+
+.overview-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+    align-items: start;
+}
+
+.overview-text h3 {
+    color: var(--dark-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.overview-text h4 {
+    color: var(--dark-color);
+    margin: 1.5rem 0 1rem;
+    font-size: 1.2rem;
+}
+
+.overview-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.overview-text li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.overview-text li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--vend-blue-light);
+    font-weight: bold;
+}
+
+.overview-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--light-color);
+    border-radius: 12px;
+    border: 2px solid var(--vend-blue-light);
+}
+
+.stat-item h4 {
+    color: var(--vend-blue-light);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    color: var(--text-color);
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Business Types Section */
+.business-types {
+    padding: 4rem 0;
+    background: var(--light-color);
+}
+
+.business-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.business-type {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.business-type:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    border-color: var(--vend-blue-light);
+}
+
+.business-type i {
+    font-size: 2.5rem;
+    color: var(--vend-blue-light);
+    margin-bottom: 1rem;
+}
+
+.business-type h3 {
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.business-type p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Related Areas Section */
+.related-areas {
+    padding: 4rem 0;
+    background: white;
+}
+
+.related-areas .areas-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.related-areas .area-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    text-align: center;
+}
+
+.related-areas .area-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    border-color: var(--vend-blue-light);
+}
+
+.related-areas .area-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--vend-gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: white;
+    font-size: 1.4rem;
+    box-shadow: var(--brand-shadow);
+}
+
+.related-areas .area-card h3 {
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.related-areas .area-card p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Responsive Design for New Sections */
+@media (max-width: 768px) {
+    .overview-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .business-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .related-areas .areas-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .breadcrumb-nav {
+        flex-wrap: wrap;
+        gap: 0.25rem;
+    }
+    
+    .stat-item {
+        padding: 1rem;
+    }
+    
+    .stat-item h4 {
+        font-size: 1.5rem;
+    }
+}
