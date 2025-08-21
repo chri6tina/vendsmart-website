@@ -5827,3 +5827,98 @@ html {
         font-size: 0.9rem;
     }
 }
+
+/* Area Icons for Landing Page */
+.area-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--vend-gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: var(--brand-shadow);
+}
+
+.area-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.area-feature {
+    background: var(--smart-gradient);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* Quick Navigation Section */
+.quick-nav {
+    padding: 4rem 0;
+    background: var(--light-color);
+}
+
+.quick-nav .areas-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.quick-nav .area-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    text-align: center;
+}
+
+.quick-nav .area-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    border-color: var(--vend-blue-light);
+}
+
+.quick-nav .area-card h3 {
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.quick-nav .area-card p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments for quick navigation */
+@media (max-width: 768px) {
+    .quick-nav .areas-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .quick-nav .area-card {
+        padding: 1.5rem;
+    }
+    
+    .area-features {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .area-feature {
+        width: 100%;
+        text-align: center;
+    }
+}
