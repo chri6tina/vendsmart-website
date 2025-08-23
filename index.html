@@ -92,16 +92,15 @@
 </head>
 <body>
 
+    <!-- Contact Bar -->
+    <div class="contact-bar">
+        <div class="contact-info">
+            <a href="tel:904-456-3851"><i class="fas fa-phone"></i> 904-456-3851</a>
+            <a href="mailto:vendsmartjacksonville@gmail.com"><i class="fas fa-envelope"></i> vendsmartjacksonville@gmail.com</a>
+        </div>
+    </div>
 
     <!-- Navigation will be loaded by includes.js -->
-
-    <!-- Mobile Navigation Debug Info -->
-    <div id="mobile-nav-debug" style="position: fixed; top: 80px; right: 20px; background: rgba(0,0,0,0.8); color: white; padding: 10px; border-radius: 5px; font-size: 12px; z-index: 9999; display: none;">
-        <strong>Mobile Nav Debug:</strong><br>
-        <span id="hamburger-status">Hamburger: Not found</span><br>
-        <span id="nav-menu-status">Nav Menu: Not found</span><br>
-        <span id="window-width">Width: </span>
-    </div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -480,50 +479,5 @@
     <script src="includes.js"></script>
     <script src="script.js"></script>
     
-    <!-- Mobile Navigation Debug Script -->
-    <script>
-        // Debug mobile navigation
-        function debugMobileNav() {
-            const debugDiv = document.getElementById('mobile-nav-debug');
-            const hamburgerStatus = document.getElementById('hamburger-status');
-            const navMenuStatus = document.getElementById('nav-menu-status');
-            const windowWidth = document.getElementById('window-width');
-            
-            if (debugDiv) {
-                // Show debug info on mobile
-                if (window.innerWidth <= 768) {
-                    debugDiv.style.display = 'block';
-                    
-                    // Update status
-                    const hamburger = document.querySelector('.hamburger');
-                    const navMenu = document.querySelector('.nav-menu');
-                    
-                    hamburgerStatus.textContent = `Hamburger: ${hamburger ? 'Found' : 'Not found'}`;
-                    navMenuStatus.textContent = `Nav Menu: ${navMenu ? 'Found' : 'Not found'}`;
-                    windowWidth.textContent = `Width: ${window.innerWidth}px`;
-                    
-                    // Check if elements exist and are visible
-                    if (hamburger) {
-                        const computedStyle = window.getComputedStyle(hamburger);
-                        hamburgerStatus.textContent += ` (display: ${computedStyle.display})`;
-                    }
-                    
-                    if (navMenu) {
-                        const computedStyle = window.getComputedStyle(navMenu);
-                        navMenuStatus.textContent += ` (display: ${computedStyle.display})`;
-                    }
-                } else {
-                    debugDiv.style.display = 'none';
-                }
-            }
-        }
-        
-        // Run debug on load and resize
-        window.addEventListener('load', debugMobileNav);
-        window.addEventListener('resize', debugMobileNav);
-        
-        // Run debug every 2 seconds to catch dynamic loading
-        setInterval(debugMobileNav, 2000);
-    </script>
 </body>
 </html> 

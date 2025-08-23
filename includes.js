@@ -118,11 +118,35 @@ function initializeMobileNav() {
         window.removeEventListener('resize', handleResize);
         window.addEventListener('resize', handleResize);
         
+        // Add touch event support for mobile
+        hamburger.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            hamburgerClickHandler();
+        });
+        
         console.log('Mobile navigation initialized successfully');
+        
+        // Test if elements are visible
+        const hamburgerStyle = window.getComputedStyle(hamburger);
+        const navMenuStyle = window.getComputedStyle(navMenu);
+        console.log('Hamburger display:', hamburgerStyle.display);
+        console.log('Nav menu display:', navMenuStyle.display);
+        console.log('Nav menu left:', navMenuStyle.left);
+        
     } else {
         console.error('Hamburger or nav menu not found!');
         console.log('Available elements with class "hamburger":', document.querySelectorAll('.hamburger'));
         console.log('Available elements with class "nav-menu":', document.querySelectorAll('.nav-menu'));
+        
+        // Try to find elements again after a short delay
+        setTimeout(() => {
+            const retryHamburger = document.querySelector('.hamburger');
+            const retryNavMenu = document.querySelector('.nav-menu');
+            if (retryHamburger && retryNavMenu) {
+                console.log('Elements found on retry, initializing...');
+                initializeMobileNav();
+            }
+        }, 100);
     }
 }
 
@@ -238,4 +262,63 @@ function initializeDropdowns() {
             });
         }
     });
+}
+
+// Additional safety check - run initialization after a longer delay as backup
+window.addEventListener('load', function() {
+    setTimeout(() => {
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        if (hamburger && navMenu && !hamburger.hasAttribute('data-initialized')) {
+            console.log('Backup initialization on window load...');
+            hamburger.setAttribute('data-initialized', 'true');
+            initializeMobileNav();
+        }
+    }, 2000);
+    
+    // Additional check for mobile devices
+    if (window.innerWidth <= 768) {
+        console.log('Mobile device detected, ensuring navigation is initialized...');
+        setTimeout(() => {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            if (hamburger && navMenu) {
+                console.log('Mobile navigation elements found, re-initializing...');
+                initializeMobileNav();
+            }
+        }, 1000);
+    }
+});
+
+// Debug function to check mobile navigation status
+function debugMobileNav() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    const contactBar = document.querySelector('.contact-bar');
+    
+    console.log('=== Mobile Navigation Debug ===');
+    console.log('Contact bar:', contactBar ? 'Found' : 'Not found');
+    console.log('Hamburger:', hamburger ? 'Found' : 'Not found');
+    console.log('Nav menu:', navMenu ? 'Found' : 'Not found');
+    console.log('Window width:', window.innerWidth);
+    
+    if (hamburger) {
+        const style = window.getComputedStyle(hamburger);
+        console.log('Hamburger display:', style.display);
+        console.log('Hamburger visibility:', style.visibility);
+        console.log('Hamburger opacity:', style.opacity);
+    }
+    
+    if (navMenu) {
+        const style = window.getComputedStyle(navMenu);
+        console.log('Nav menu display:', style.display);
+        console.log('Nav menu left:', style.left);
+        console.log('Nav menu transform:', style.transform);
+    }
+    console.log('==============================');
+}
+
+// Run debug on mobile devices
+if (window.innerWidth <= 768) {
+    setTimeout(debugMobileNav, 3000);
 } 
