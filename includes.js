@@ -93,6 +93,13 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('footer.html')
         .then(response => response.text())
         .then(data => {
+            // Check if footer already exists to prevent duplicates
+            const existingFooter = document.querySelector('footer, .footer');
+            if (existingFooter) {
+                console.log('Footer already exists, skipping duplicate insertion');
+                return;
+            }
+            
             // Insert footer before closing body tag
             const scriptTag = document.querySelector('script[src="script.js"]');
             if (scriptTag) {
@@ -100,6 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 document.body.insertAdjacentHTML('beforeend', data);
             }
+            console.log('Footer loaded successfully');
         })
         .catch(error => console.error('Error loading footer:', error));
 });
