@@ -31,7 +31,15 @@
             <div>Menu items found: <span id="menu-status">Checking...</span></div>
             <div>Phone found: <span id="phone-status">Checking...</span></div>
             <div>Hamburger found: <span id="hamburger-status">Checking...</span></div>
+            <div>Console logs: <span id="console-status">Check browser console</span></div>
         </div>
+        
+        <h2>What This Fix Does:</h2>
+        <ul>
+            <li><strong>Before:</strong> Pages tried to fetch navigation from nav.html (which often failed)</li>
+            <li><strong>Now:</strong> Navigation HTML is embedded directly in includes.js</li>
+            <li><strong>Result:</strong> Navigation should appear on ALL pages that use includes.js</li>
+        </ul>
     </div>
 
     <script src="includes.js"></script>
