@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Link Test - VendSmart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+            background: #f5f5f5;
+        }
+        .test-link {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .test-link:hover {
+            background: #0056b3;
+        }
+        .test-link.secondary {
+            background: #6c757d;
+        }
+        .test-link.secondary:hover {
+            background: #545b62;
+        }
+        .test-link.success {
+            background: #28a745;
+        }
+        .test-link.success:hover {
+            background: #1e7e34;
+        }
+        .status {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+        }
+        .instructions {
+            background: #e7f3ff;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #007bff;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Basic Link Test</h1>
+    <p>This page tests if basic HTML links work without any JavaScript or complex CSS.</p>
+    
+    <div class="instructions">
+        <strong>Instructions:</strong> Click each link below. They should either navigate to a new page or open in a new tab.
+    </div>
+    
+    <h2>Test Links:</h2>
+    <div>
+        <a href="https://www.google.com" class="test-link" target="_blank">Google (External - New Tab)</a>
+        <a href="contact.html" class="test-link secondary">Contact Page (Internal)</a>
+        <a href="services.html" class="test-link success">Services Page (Internal)</a>
+        <a href="https://www.example.com" class="test-link" target="_blank">Example.com (External - New Tab)</a>
+    </div>
+    
+    <h2>What Should Happen:</h2>
+    <ul>
+        <li><strong>Google link:</strong> Opens Google in a new tab</li>
+        <li><strong>Contact link:</strong> Navigates to contact.html</li>
+        <li><strong>Services link:</strong> Navigates to services.html</li>
+        <li><strong>Example link:</strong> Opens example.com in a new tab</li>
+    </ul>
+    
+    <h2>If Links Don't Work:</h2>
+    <div class="status">
+        <h3>Possible Issues:</h3>
+        <ol>
+            <li><strong>Browser Problem:</strong> Try a different browser or incognito mode</li>
+            <li><strong>JavaScript Blocked:</strong> Check if JavaScript is disabled</li>
+            <li><strong>Network Issue:</strong> Check your internet connection</li>
+            <li><strong>Security Software:</strong> Check if antivirus/firewall is blocking</li>
+            <li><strong>Browser Extensions:</strong> Disable ad blockers or other extensions</li>
+        </ol>
+        
+        <h3>Quick Tests:</h3>
+        <ul>
+            <li><strong>Right-click links:</strong> Try "Open in new tab" or "Open in new window"</li>
+            <li><strong>Copy link address:</strong> Right-click and copy, then paste in address bar</li>
+            <li><strong>Check console:</strong> Press F12 and look for errors</li>
+        </ul>
+    </div>
+    
+    <h2>Test Results:</h2>
+    <div class="status">
+        <p><strong>External links working:</strong> <span id="external-status">Test the Google/Example links above</span></p>
+        <p><strong>Internal links working:</strong> <span id="internal-status">Test the Contact/Services links above</span></p>
+        <p><strong>Overall status:</strong> <span id="overall-status">Testing...</span></p>
+    </div>
+    
+    <div class="instructions">
+        <strong>Next Steps:</strong> If these basic links work, the issue is with your main site's JavaScript. If they don't work, there's a fundamental browser or network issue.
+    </div>
+</body>
+</html>
