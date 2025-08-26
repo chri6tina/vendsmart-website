@@ -13,16 +13,33 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(data => {
             console.log('Navigation HTML loaded, length:', data.length);
+            console.log('Navigation HTML preview:', data.substring(0, 200));
             
             // Insert navigation after contact bar
             const contactBar = document.querySelector('.contact-bar');
             if (contactBar) {
                 contactBar.insertAdjacentHTML('afterend', data);
                 console.log('Navigation inserted after contact bar');
+                
+                // Update debug info
+                const debugDiv = document.getElementById('nav-debug');
+                if (debugDiv) {
+                    debugDiv.style.background = 'green';
+                    debugDiv.textContent = 'Navigation loaded successfully!';
+                    setTimeout(() => debugDiv.remove(), 3000);
+                }
             } else {
                 // If no contact bar, insert at the beginning of body
                 document.body.insertAdjacentHTML('afterbegin', data);
                 console.log('Navigation inserted at beginning of body');
+                
+                // Update debug info
+                const debugDiv = document.getElementById('nav-debug');
+                if (debugDiv) {
+                    debugDiv.style.background = 'green';
+                    debugDiv.textContent = 'Navigation loaded at beginning of body!';
+                    setTimeout(() => debugDiv.remove(), 3000);
+                }
             }
             
             // Initialize mobile navigation after nav is loaded
