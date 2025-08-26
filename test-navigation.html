@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Test - VendSmart</title>
+    <link rel="stylesheet" href="styles.css?v=21.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation will be loaded by includes.js -->
+
+    <div style="margin-top: 150px; padding: 20px;">
+        <h1>Navigation Loading Test</h1>
+        <p>This page tests if the navigation loads properly from includes.js.</p>
+        
+        <h2>What to check:</h2>
+        <ul>
+            <li>Navigation bar should appear at the top</li>
+            <li>Logo should be visible</li>
+            <li>Menu items should be clickable</li>
+            <li>Phone number should be visible</li>
+            <li>Hamburger menu should work on mobile</li>
+        </ul>
+        
+        <h2>Debug Info:</h2>
+        <div id="debug-info" style="background: #f0f0f0; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 12px;">
+            <div>Navigation loaded: <span id="nav-status">Checking...</span></div>
+            <div>Logo found: <span id="logo-status">Checking...</span></div>
+            <div>Menu items found: <span id="menu-status">Checking...</span></div>
+            <div>Phone found: <span id="phone-status">Checking...</span></div>
+            <div>Hamburger found: <span id="hamburger-status">Checking...</span></div>
+        </div>
+    </div>
+
+    <script src="includes.js"></script>
+    
+    <script>
+        // Debug script to check navigation status
+        function updateDebugInfo() {
+            const nav = document.querySelector('.navbar');
+            const logo = document.querySelector('.nav-logo img');
+            const menuItems = document.querySelectorAll('.nav-menu a');
+            const phone = document.querySelector('.nav-phone');
+            const hamburger = document.querySelector('.hamburger');
+            
+            document.getElementById('nav-status').textContent = nav ? 'Yes' : 'No';
+            document.getElementById('logo-status').textContent = logo ? 'Yes' : 'No';
+            document.getElementById('menu-status').textContent = menuItems.length + ' items';
+            document.getElementById('phone-status').textContent = phone ? 'Yes' : 'No';
+            document.getElementById('hamburger-status').textContent = hamburger ? 'Yes' : 'No';
+        }
+        
+        // Update debug info every second
+        setInterval(updateDebugInfo, 1000);
+        
+        // Initial update
+        setTimeout(updateDebugInfo, 500);
+    </script>
+</body>
+</html>
