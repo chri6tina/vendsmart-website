@@ -47,13 +47,7 @@ function loadNavigation() {
                             <li role="none"><a href="coffeeservices.html" role="menuitem">Coffee Services</a></li>
                             <li role="none"><a href="smart-coolers.html" role="menuitem">Smart Coolers</a></li>
                             <li class="dropdown-divider" role="separator"></li>
-                            <li role="none"><a href="vending-machine-repair-jacksonville.html" role="menuitem">Repair & Maintenance</a></li>
-                            <li role="none"><a href="vending-machine-parts-jacksonville.html" role="menuitem">Parts & Supplies</a></li>
-                            <li role="none"><a href="vending-machine-installation-jacksonville.html" role="menuitem">Installation</a></li>
-                            <li role="none"><a href="emergency-vending-machine-service-jacksonville.html" role="menuitem">Emergency Service</a></li>
-                            <li class="dropdown-divider" role="separator"></li>
                             <li role="none"><a href="services.html" role="menuitem">All Services</a></li>
-                            <li role="none"><a href="portfolio.html" role="menuitem">Our Work</a></li>
                         </ul>
                     </li>
                     
