@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Button Test - VendSmart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+        }
+        .test-button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+        }
+        .test-button:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+        .test-button.secondary {
+            background: #6b7280;
+        }
+        .test-button.secondary:hover {
+            background: #4b5563;
+        }
+        .test-button.outline {
+            background: transparent;
+            color: #3b82f6;
+            border: 2px solid #3b82f6;
+        }
+        .test-button.outline:hover {
+            background: #3b82f6;
+            color: white;
+        }
+        .status {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Button Test</h1>
+    <p>This page tests basic button functionality without any complex JavaScript or CSS.</p>
+    
+    <h2>Test Buttons:</h2>
+    <div>
+        <a href="https://google.com" class="test-button" target="_blank">Test External Link</a>
+        <a href="contact.html" class="test-button secondary">Contact Page</a>
+        <a href="services.html" class="test-button outline">Services Page</a>
+        <button class="test-button" onclick="alert('Button clicked!')">JavaScript Alert</button>
+    </div>
+    
+    <h2>Button Status:</h2>
+    <div class="status">
+        <div>External link clicks: <span id="external-clicks">0</span></div>
+        <div>Internal link clicks: <span id="internal-clicks">0</span></div>
+        <div>JavaScript button clicks: <span id="js-clicks">0</span></div>
+        <div>Last clicked: <span id="last-clicked">None</span></div>
+    </div>
+    
+    <h2>What to test:</h2>
+    <ul>
+        <li><strong>External link:</strong> Should open Google in new tab</li>
+        <li><strong>Contact link:</strong> Should navigate to contact.html</li>
+        <li><strong>Services link:</strong> Should navigate to services.html</li>
+        <li><strong>JavaScript button:</strong> Should show alert popup</li>
+    </ul>
+    
+    <h2>If buttons don't work:</h2>
+    <ul>
+        <li><strong>Check console:</strong> Press F12 and look for errors</li>
+        <li><strong>Check network:</strong> See if page requests are made</li>
+        <li><strong>Check cursor:</strong> Hover over buttons - should show pointer</li>
+        <li><strong>Try different browser:</strong> Test in incognito/private mode</li>
+    </ul>
+    
+    <script>
+        let externalClicks = 0;
+        let internalClicks = 0;
+        let jsClicks = 0;
+        
+        // Track external link clicks
+        document.querySelector('a[href="https://google.com"]').addEventListener('click', function() {
+            externalClicks++;
+            document.getElementById('external-clicks').textContent = externalClicks;
+            document.getElementById('last-clicked').textContent = 'External link';
+            console.log('External link clicked');
+        });
+        
+        // Track internal link clicks
+        document.querySelectorAll('a[href*=".html"]').forEach(link => {
+            link.addEventListener('click', function() {
+                internalClicks++;
+                document.getElementById('internal-clicks').textContent = internalClicks;
+                document.getElementById('last-clicked').textContent = this.href;
+                console.log('Internal link clicked:', this.href);
+            });
+        });
+        
+        // Track JavaScript button clicks
+        document.querySelector('button').addEventListener('click', function() {
+            jsClicks++;
+            document.getElementById('js-clicks').textContent = jsClicks;
+            document.getElementById('last-clicked').textContent = 'JavaScript button';
+            console.log('JavaScript button clicked');
+        });
+        
+        console.log('Simple button test page loaded');
+        console.log('All event listeners attached');
+    </script>
+</body>
+</html>

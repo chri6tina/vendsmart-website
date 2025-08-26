@@ -285,4 +285,38 @@ window.addEventListener('load', function() {
         console.log('Window load backup - checking navigation...');
         setTimeout(initializeNavigation, 100);
     }
-}); 
+});
+
+// Fix CTA buttons - ensure they work properly
+function fixCTAButtons() {
+    console.log('Fixing CTA buttons...');
+    
+    // Find all CTA buttons
+    const ctaButtons = document.querySelectorAll('.btn, .cta-button, .hero-buttons a, .cta-buttons a');
+    
+    ctaButtons.forEach(button => {
+        console.log('Found CTA button:', button.href || button.textContent);
+        
+        // Remove any existing click listeners
+        const newButton = button.cloneNode(true);
+        button.parentNode.replaceChild(newButton, button);
+        
+        // Add new click listener
+        newButton.addEventListener('click', function(e) {
+            console.log('CTA button clicked:', this.href);
+            // Let the default navigation happen
+        });
+        
+        // Ensure button is clickable
+        newButton.style.cursor = 'pointer';
+        newButton.style.pointerEvents = 'auto';
+        newButton.style.position = 'relative';
+        newButton.style.zIndex = '10';
+    });
+    
+    console.log('CTA buttons fixed - should work now');
+}
+
+// Initialize CTA button fixes
+document.addEventListener('DOMContentLoaded', fixCTAButtons);
+window.addEventListener('load', fixCTAButtons); 
