@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Test - Simple</title>
+    <link rel="stylesheet" href="styles.css?v=21.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation will be loaded by includes.js -->
+
+    <div style="margin-top: 150px; padding: 20px;">
+        <h1>Navigation Test - Simple</h1>
+        <p>This page tests the simplified navigation.</p>
+        
+        <h2>What to check:</h2>
+        <ul>
+            <li><strong>Services dropdown</strong> should have only 6 items:</li>
+            <ul>
+                <li>Vending Services</li>
+                <li>Micro-Markets</li>
+                <li>Coffee Services</li>
+                <li>Smart Coolers</li>
+                <li>--- (divider) ---</li>
+                <li>All Services</li>
+            </ul>
+            <li><strong>Locations dropdown</strong> should have 10 clean location names</li>
+        </ul>
+        
+        <h2>Current Status:</h2>
+        <div id="status" style="background: #f0f0f0; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 12px;">
+            <div>Navigation loaded: <span id="nav-status">Checking...</span></div>
+            <div>Services menu items: <span id="services-count">Checking...</span></div>
+            <div>Locations menu items: <span id="locations-count">Checking...</span></div>
+            <div>Last updated: <span id="last-update">Checking...</span></div>
+        </div>
+        
+        <h2>Troubleshooting:</h2>
+        <ul>
+            <li><strong>Hard refresh:</strong> Press Ctrl+F5 (Windows) or Cmd+Shift+R (Mac)</li>
+            <li><strong>Clear cache:</strong> Clear browser cache and cookies</li>
+            <li><strong>Check console:</strong> Press F12 and look for errors</li>
+            <li><strong>Wait a few minutes:</strong> Changes may take time to deploy</li>
+        </ul>
+    </div>
+
+    <script src="includes.js"></script>
+    
+    <script>
+        // Debug script to check navigation status
+        function updateStatus() {
+            const nav = document.querySelector('.navbar');
+            const servicesItems = document.querySelectorAll('.dropdown-menu[aria-label="Services submenu"] li');
+            const locationsItems = document.querySelectorAll('.dropdown-menu[aria-label="Locations submenu"] li');
+            
+            document.getElementById('nav-status').textContent = nav ? 'Yes' : 'No';
+            document.getElementById('services-count').textContent = servicesItems.length + ' items';
+            document.getElementById('locations-count').textContent = locationsItems.length + ' items';
+            document.getElementById('last-update').textContent = new Date().toLocaleTimeString();
+        }
+        
+        // Update status every 2 seconds
+        setInterval(updateStatus, 2000);
+        
+        // Initial update
+        setTimeout(updateStatus, 500);
+    </script>
+</body>
+</html>
