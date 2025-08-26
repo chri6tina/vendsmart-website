@@ -6,9 +6,39 @@ let isScrolled = false;
 
 // Initialize navigation when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    initializeNavigation();
+    loadNavigation();
     loadFooter();
 });
+
+// Load navigation from nav.html
+function loadNavigation() {
+    // Check if navigation already exists
+    if (document.querySelector('.navbar')) {
+        console.log('Navigation already exists, initializing...');
+        initializeNavigation();
+        return;
+    }
+    
+    console.log('Loading navigation...');
+    
+    // Fetch navigation HTML
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(html => {
+            // Insert navigation at the beginning of the body
+            document.body.insertAdjacentHTML('afterbegin', html);
+            
+            console.log('Navigation loaded successfully');
+            
+            // Initialize navigation functionality
+            initializeNavigation();
+        })
+        .catch(error => {
+            console.error('Error loading navigation:', error);
+            // Fallback: create basic navigation
+            createFallbackNavigation();
+        });
+}
 
 // Initialize all navigation functionality
 function initializeNavigation() {
@@ -37,6 +67,44 @@ function initializeNavigation() {
     initializeKeyboardNavigation();
     
     console.log('Navigation initialized successfully');
+}
+
+// Create fallback navigation if loading fails
+function createFallbackNavigation() {
+    console.log('Creating fallback navigation...');
+    
+    const fallbackNav = `
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="/" aria-label="Jacksonville Vending Machines Homepage">
+                        <img src="vendsmart-logo-jacksonville-vending.png" alt="Jacksonville Vending Machines - VendSmart Logo" loading="lazy">
+                    </a>
+                </div>
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="/" role="menuitem">Home</a></li>
+                    <li role="none"><a href="services.html" role="menuitem">Services</a></li>
+                    <li role="none"><a href="locations.html" role="menuitem">Locations</a></li>
+                    <li role="none"><a href="products.html" role="menuitem">Products</a></li>
+                    <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                </ul>
+                <div class="nav-phone">
+                    <a href="tel:904-456-3851" class="phone-link" aria-label="Call us at 904-456-3851">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <span>904-456-3851</span>
+                    </a>
+                </div>
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu" type="button">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </nav>
+    `;
+    
+    document.body.insertAdjacentHTML('afterbegin', fallbackNav);
+    initializeNavigation();
 }
 
 // Initialize scroll effects for navbar
