@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTA Buttons Test - VendSmart</title>
+    <link rel="stylesheet" href="styles.css?v=21.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation will be loaded by includes.js -->
+
+    <div style="margin-top: 150px; padding: 20px;">
+        <h1>CTA Buttons Test</h1>
+        <p>This page tests if the CTA buttons are working properly.</p>
+        
+        <h2>Test Buttons:</h2>
+        <div style="margin: 20px 0;">
+            <a href="get-a-free-vending-machine-in-jacksonville-florida.html" class="btn btn-primary">Get Free Machine (Primary)</a>
+            <a href="contact.html" class="btn btn-secondary">Contact Us (Secondary)</a>
+            <a href="services.html" class="btn btn-outline">Services (Outline)</a>
+        </div>
+        
+        <h2>Button Status:</h2>
+        <div id="button-status" style="background: #f0f0f0; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 12px;">
+            <div>Primary button found: <span id="primary-status">Checking...</span></div>
+            <div>Secondary button found: <span id="secondary-status">Checking...</span></div>
+            <div>Outline button found: <span id="outline-status">Checking...</span></div>
+            <div>Button clicks: <span id="click-count">0</span></div>
+        </div>
+        
+        <h2>What to test:</h2>
+        <ul>
+            <li><strong>Click each button</strong> - they should navigate to the correct pages</li>
+            <li><strong>Check hover effects</strong> - buttons should have hover animations</li>
+            <li><strong>Verify links</strong> - URLs should be correct</li>
+            <li><strong>Mobile testing</strong> - buttons should work on mobile devices</li>
+        </ul>
+        
+        <h2>Troubleshooting:</h2>
+        <ul>
+            <li><strong>Check console:</strong> Press F12 and look for JavaScript errors</li>
+            <li><strong>Check network:</strong> See if page requests are being made</li>
+            <li><strong>Check CSS:</strong> Verify button styles are loading</li>
+            <li><strong>Check links:</strong> Right-click and "Open in new tab" to test</li>
+        </ul>
+    </div>
+
+    <script src="includes.js"></script>
+    
+    <script>
+        // Debug script to check button functionality
+        let clickCount = 0;
+        
+        function updateButtonStatus() {
+            const primaryBtn = document.querySelector('.btn-primary');
+            const secondaryBtn = document.querySelector('.btn-secondary');
+            const outlineBtn = document.querySelector('.btn-outline');
+            
+            document.getElementById('primary-status').textContent = primaryBtn ? 'Yes' : 'No';
+            document.getElementById('secondary-status').textContent = secondaryBtn ? 'Yes' : 'No';
+            document.getElementById('outline-status').textContent = outlineBtn ? 'Yes' : 'No';
+        }
+        
+        // Add click event listeners to all buttons
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('btn')) {
+                clickCount++;
+                document.getElementById('click-count').textContent = clickCount;
+                console.log('Button clicked:', e.target.href);
+            }
+        });
+        
+        // Update status every second
+        setInterval(updateButtonStatus, 1000);
+        
+        // Initial update
+        setTimeout(updateButtonStatus, 500);
+    </script>
+</body>
+</html>
