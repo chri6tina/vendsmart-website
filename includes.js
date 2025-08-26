@@ -1,4 +1,4 @@
-// ===== SIMPLE MOBILE NAVIGATION SYSTEM =====
+// ===== ULTRA-SIMPLE MOBILE NAVIGATION SYSTEM =====
 
 // Global variables
 let mobileMenuOpen = false;
@@ -82,47 +82,36 @@ function loadNavigation() {
                     </a>
                 </div>
 
-                <!-- NEW SIMPLE MOBILE MENU TOGGLE -->
-                <button class="mobile-menu-toggle" type="button" aria-label="Toggle mobile menu">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
+                <!-- ULTRA-SIMPLE MOBILE MENU BUTTON -->
+                <button class="mobile-btn" type="button" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
             </div>
             
-            <!-- NEW SIMPLE MOBILE MENU -->
-            <div class="mobile-menu">
-                <div class="mobile-menu-header">
-                    <h3>Menu</h3>
-                    <button class="mobile-menu-close" type="button" aria-label="Close mobile menu">×</button>
-                </div>
-                <ul class="mobile-menu-items">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="jacksonville-vending-services-landing.html">Vending Services</a></li>
-                    <li><a href="setting-up-a-micro-market-in-your-jacksonville-office.html">Micro-Markets</a></li>
-                    <li><a href="coffeeservices.html">Coffee Services</a></li>
-                    <li><a href="smart-coolers.html">Smart Coolers</a></li>
-                    <li><a href="services.html">All Services</a></li>
-                    <li><a href="locations.html">All Locations</a></li>
-                    <li><a href="jacksonville.html">Jacksonville</a></li>
-                    <li><a href="downtown-jacksonville.html">Downtown</a></li>
-                    <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
-                    <li><a href="orange-park.html">Orange Park</a></li>
-                    <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
-                    <li><a href="atlantic-beach.html">Atlantic Beach</a></li>
-                    <li><a href="st-augustine.html">St. Augustine</a></li>
-                    <li><a href="mandarin.html">Mandarin</a></li>
-                    <li><a href="lakeside.html">Lakeside</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html" class="mobile-cta">Contact Us</a></li>
-                </ul>
-                <div class="mobile-menu-footer">
-                    <a href="tel:904-456-3851" class="mobile-phone">
-                        <i class="fas fa-phone"></i>
-                        <span>904-456-3851</span>
-                    </a>
-                </div>
+            <!-- ULTRA-SIMPLE MOBILE MENU -->
+            <div class="mobile-nav" id="mobileNav">
+                <a href="/">Home</a>
+                <a href="jacksonville-vending-services-landing.html">Vending Services</a>
+                <a href="setting-up-a-micro-market-in-your-jacksonville-office.html">Micro-Markets</a>
+                <a href="coffeeservices.html">Coffee Services</a>
+                <a href="smart-coolers.html">Smart Coolers</a>
+                <a href="services.html">All Services</a>
+                <a href="locations.html">All Locations</a>
+                <a href="jacksonville.html">Jacksonville</a>
+                <a href="downtown-jacksonville.html">Downtown</a>
+                <a href="jacksonville-beach.html">Jacksonville Beach</a>
+                <a href="orange-park.html">Orange Park</a>
+                <a href="ponte-vedra.html">Ponte Vedra</a>
+                <a href="atlantic-beach.html">Atlantic Beach</a>
+                <a href="st-augustine.html">St. Augustine</a>
+                <a href="mandarin.html">Mandarin</a>
+                <a href="lakeside.html">Lakeside</a>
+                <a href="products.html">Products</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html" class="mobile-cta">Contact Us</a>
+                <a href="tel:904-456-3851" class="mobile-phone">📞 904-456-3851</a>
             </div>
         </nav>
     `;
@@ -139,25 +128,21 @@ function loadNavigation() {
 // Initialize all navigation functionality
 function initializeNavigation() {
     const navbar = document.querySelector('.navbar');
-    const mobileToggle = document.querySelector('.mobile-menu-toggle');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const mobileClose = document.querySelector('.mobile-menu-close');
+    const mobileBtn = document.querySelector('.mobile-btn');
+    const mobileNav = document.querySelector('#mobileNav');
     
-    if (!navbar || !mobileToggle || !mobileMenu) {
+    if (!navbar || !mobileBtn || !mobileNav) {
         console.log('Mobile navigation elements not found, retrying...');
         setTimeout(initializeNavigation, 100);
         return;
     }
     
-    console.log('Initializing NEW mobile navigation...');
+    console.log('Initializing ULTRA-SIMPLE mobile navigation...');
     
     // Initialize desktop dropdowns
     initializeDropdowns();
     
-    // Initialize NEW simple mobile menu
-    initializeMobileMenu();
-    
-    console.log('NEW mobile navigation initialized successfully');
+    console.log('ULTRA-SIMPLE mobile navigation initialized successfully');
 }
 
 // Initialize desktop dropdown functionality
@@ -183,78 +168,53 @@ function initializeDropdowns() {
     });
 }
 
-// Initialize NEW simple mobile menu functionality
-function initializeMobileMenu() {
-    const mobileToggle = document.querySelector('.mobile-menu-toggle');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const mobileClose = document.querySelector('.mobile-menu-close');
-    const body = document.body;
+// GLOBAL MOBILE MENU TOGGLE FUNCTION
+function toggleMobileMenu() {
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileBtn = document.querySelector('.mobile-btn');
     
-    if (!mobileToggle || !mobileMenu || !mobileClose) {
-        console.log('Mobile menu elements not found');
+    if (!mobileNav || !mobileBtn) {
+        console.log('Mobile elements not found');
         return;
     }
     
-    console.log('Setting up NEW mobile menu...');
+    mobileMenuOpen = !mobileMenuOpen;
+    console.log('Mobile menu toggled:', mobileMenuOpen);
     
-    // Toggle mobile menu
-    function toggleMobileMenu() {
-        mobileMenuOpen = !mobileMenuOpen;
-        console.log('Mobile menu toggled:', mobileMenuOpen);
-        
-        if (mobileMenuOpen) {
-            mobileMenu.classList.add('open');
-            body.style.overflow = 'hidden';
-            mobileToggle.classList.add('active');
-        } else {
-            mobileMenu.classList.remove('open');
-            body.style.overflow = '';
-            mobileToggle.classList.remove('active');
-        }
+    if (mobileMenuOpen) {
+        mobileNav.classList.add('show');
+        mobileBtn.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    } else {
+        mobileNav.classList.remove('show');
+        mobileBtn.classList.remove('active');
+        document.body.style.overflow = '';
     }
-    
-    // Open mobile menu
-    mobileToggle.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        console.log('Mobile toggle clicked');
-        toggleMobileMenu();
-    });
-    
-    // Close mobile menu
-    mobileClose.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        console.log('Mobile close clicked');
-        toggleMobileMenu();
-    });
-    
-    // Close menu when clicking outside
-    document.addEventListener('click', function(e) {
-        if (mobileMenuOpen && !mobileMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
-            console.log('Clicking outside, closing menu');
-            toggleMobileMenu();
-        }
-    });
-    
-    // Close menu on escape key
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && mobileMenuOpen) {
-            console.log('Escape key pressed, closing menu');
-            toggleMobileMenu();
-        }
-    });
-    
-    // Handle window resize
-    window.addEventListener('resize', function() {
-        if (window.innerWidth > 768 && mobileMenuOpen) {
-            console.log('Window resized to desktop, closing mobile menu');
-            toggleMobileMenu();
-        }
-    });
-    
-    console.log('NEW mobile menu setup complete');
 }
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', function(e) {
+    if (mobileMenuOpen && !e.target.closest('.mobile-btn') && !e.target.closest('#mobileNav')) {
+        console.log('Clicking outside, closing mobile menu');
+        toggleMobileMenu();
+    }
+});
+
+// Close mobile menu on escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && mobileMenuOpen) {
+        console.log('Escape key pressed, closing mobile menu');
+        toggleMobileMenu();
+    }
+});
+
+// Handle window resize
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 768 && mobileMenuOpen) {
+        console.log('Window resized to desktop, closing mobile menu');
+        toggleMobileMenu();
+    }
+});
 
 // Load footer
 function loadFooter() {
@@ -282,7 +242,7 @@ function loadFooter() {
 
 // Handle window load as backup
 window.addEventListener('load', function() {
-    if (!document.querySelector('.mobile-menu.open')) {
+    if (!document.querySelector('#mobileNav.show')) {
         console.log('Window load backup - checking navigation...');
         setTimeout(initializeNavigation, 100);
     }
