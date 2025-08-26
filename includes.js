@@ -1,196 +1,240 @@
-// ===== BULLETPROOF MOBILE NAVIGATION =====
+// ===== BRAND NEW NAVIGATION SYSTEM =====
 
-// Initialize navigation when DOM is loaded
+// Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    loadNavigation();
+    loadNewNavigation();
     loadFooter();
 });
 
-// Load navigation directly (no fetch needed)
-function loadNavigation() {
+// Load brand new navigation
+function loadNewNavigation() {
     // Check if navigation already exists
     if (document.querySelector('.navbar')) {
         console.log('Navigation already exists, skipping...');
         return;
     }
     
-    console.log('Loading BULLETPROOF navigation...');
+    console.log('Loading BRAND NEW navigation...');
     
-    // Insert navigation HTML directly at the beginning of the body
-    const navigationHTML = `
-        <nav class="navbar" role="navigation" aria-label="Main navigation">
+    // Brand new navigation HTML
+    const newNavigationHTML = `
+        <nav class="navbar">
             <div class="nav-container">
-                <!-- Logo Section -->
+                <!-- Logo -->
                 <div class="nav-logo">
-                    <a href="/" aria-label="Jacksonville Vending Machines Homepage">
-                        <img src="vendsmart-logo-jacksonville-vending.png" alt="Jacksonville Vending Machines - VendSmart Logo" loading="lazy">
+                    <a href="/">
+                        <img src="vendsmart-logo-jacksonville-vending.png" alt="VendSmart Logo">
                     </a>
                 </div>
-
-                <!-- Desktop Navigation Menu -->
-                <ul class="nav-menu" role="menubar">
-                    <li role="none"><a href="/" role="menuitem">Home</a></li>
-                    
-                    <!-- Services Dropdown -->
-                    <li class="dropdown" role="none">
-                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="menuitem">
-                            Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
-                        </button>
-                        <ul class="dropdown-menu" role="menu" aria-label="Services submenu">
-                            <li role="none"><a href="jacksonville-vending-services-landing.html" role="menuitem">Vending Services</a></li>
-                            <li role="none"><a href="setting-up-a-micro-market-in-your-jacksonville-office.html" role="menuitem">Micro-Markets</a></li>
-                            <li role="none"><a href="coffeeservices.html" role="menuitem">Coffee Services</a></li>
-                            <li role="none"><a href="smart-coolers.html" role="menuitem">Smart Coolers</a></li>
-                            <li class="dropdown-divider" role="separator"></li>
-                            <li role="none"><a href="services.html" role="menuitem">All Services</a></li>
-                        </ul>
-                    </li>
-                    
-                    <!-- Locations Dropdown -->
-                    <li class="dropdown" role="none">
-                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="menuitem">
-                            Locations <i class="fas fa-chevron-down" aria-hidden="true"></i>
-                        </button>
-                        <ul class="dropdown-menu" role="menu" aria-label="Locations submenu">
-                            <li role="none"><a href="locations.html" role="menuitem">All Locations</a></li>
-                            <li role="none"><a href="jacksonville.html" role="menuitem">Jacksonville</a></li>
-                            <li role="none"><a href="downtown-jacksonville.html" role="menuitem">Downtown</a></li>
-                            <li role="none"><a href="jacksonville-beach.html" role="menuitem">Jacksonville Beach</a></li>
-                            <li role="none"><a href="orange-park.html" role="menuitem">Orange Park</a></li>
-                            <li role="none"><a href="ponte-vedra.html" role="menuitem">Ponte Vedra</a></li>
-                            <li role="none"><a href="atlantic-beach.html" role="menuitem">Atlantic Beach</a></li>
-                            <li role="none"><a href="st-augustine.html" role="menuitem">St. Augustine</a></li>
-                            <li role="none"><a href="mandarin.html" role="menuitem">Mandarin</a></li>
-                            <li role="none"><a href="lakeside.html" role="menuitem">Lakeside</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li role="none"><a href="products.html" role="menuitem">Products</a></li>
-                    <li role="none"><a href="blog.html" role="menuitem">Blog</a></li>
-                    <li role="none"><a href="contact.html" class="cta-button" role="menuitem">Contact Us</a></li>
-                </ul>
-
-                <!-- Contact Phone (Desktop) -->
-                <div class="nav-phone">
-                    <a href="tel:904-456-3851" class="phone-link" aria-label="Call us at 904-456-3851">
-                        <i class="fas fa-phone" aria-hidden="true"></i>
-                        <span>904-456-3851</span>
-                    </a>
+                
+                <!-- Desktop Menu -->
+                <div class="desktop-menu">
+                    <a href="/">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="locations.html">Locations</a>
+                    <a href="products.html">Products</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html" class="cta-btn">Contact</a>
                 </div>
-
-                <!-- BULLETPROOF MOBILE BUTTON -->
-                <button class="mobile-btn" onclick="toggleMobileMenu()" style="display: none; flex-direction: column; gap: 4px; background: none; border: none; cursor: pointer; padding: 8px; z-index: 1001;">
-                    <span style="width: 25px; height: 3px; background-color: #000000; border-radius: 2px; display: block; margin-bottom: 4px;"></span>
-                    <span style="width: 25px; height: 3px; background-color: #000000; border-radius: 2px; display: block; margin-bottom: 4px;"></span>
-                    <span style="width: 25px; height: 3px; background-color: #000000; border-radius: 2px; display: block;"></span>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
             </div>
             
-            <!-- BULLETPROOF MOBILE MENU -->
-            <div class="mobile-nav" id="mobileNav" style="position: fixed; top: 0; left: -100%; width: 100%; height: 100vh; background: #ffffff; box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1); transition: left 0.3s ease; z-index: 1000; overflow-y: auto; padding-top: 80px;">
-                <a href="/" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Home</a>
-                <a href="jacksonville-vending-services-landing.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Vending Services</a>
-                <a href="setting-up-a-micro-market-in-your-jacksonville-office.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Micro-Markets</a>
-                <a href="coffeeservices.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Coffee Services</a>
-                <a href="smart-coolers.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Smart Coolers</a>
-                <a href="services.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">All Services</a>
-                <a href="locations.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">All Locations</a>
-                <a href="jacksonville.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Jacksonville</a>
-                <a href="downtown-jacksonville.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Downtown</a>
-                <a href="jacksonville-beach.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Jacksonville Beach</a>
-                <a href="orange-park.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Orange Park</a>
-                <a href="ponte-vedra.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Ponte Vedra</a>
-                <a href="atlantic-beach.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Atlantic Beach</a>
-                <a href="st-augustine.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">St. Augustine</a>
-                <a href="mandarin.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Mandarin</a>
-                <a href="lakeside.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Lakeside</a>
-                <a href="products.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Products</a>
-                <a href="blog.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Blog</a>
-                <a href="contact.html" style="display: block; padding: 15px 20px; color: #3b82f6; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6; background-color: #f8fafc; font-weight: 600;">Contact Us</a>
-                <a href="tel:904-456-3851" style="display: block; padding: 15px 20px; color: #3b82f6; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6; background-color: #f8fafc; font-weight: 600;">📞 904-456-3851</a>
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="/">Home</a>
+                <a href="services.html">Services</a>
+                <a href="locations.html">Locations</a>
+                <a href="products.html">Products</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="tel:904-456-3851">📞 904-456-3851</a>
             </div>
         </nav>
         
         <style>
-            /* BULLETPROOF MOBILE STYLES - INLINE TO AVOID CONFLICTS */
+            /* BRAND NEW NAVIGATION STYLES */
+            .navbar {
+                background: white;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 1000;
+            }
+            
+            .nav-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 70px;
+            }
+            
+            .nav-logo img {
+                height: 40px;
+            }
+            
+            .desktop-menu {
+                display: flex;
+                gap: 30px;
+                align-items: center;
+            }
+            
+            .desktop-menu a {
+                color: #333;
+                text-decoration: none;
+                font-weight: 500;
+                transition: color 0.3s ease;
+            }
+            
+            .desktop-menu a:hover {
+                color: #3b82f6;
+            }
+            
+            .cta-btn {
+                background: #3b82f6;
+                color: white !important;
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-weight: 600;
+            }
+            
+            .cta-btn:hover {
+                background: #2563eb;
+            }
+            
+            /* Mobile Menu Button */
+            .mobile-menu-btn {
+                display: none;
+                flex-direction: column;
+                gap: 4px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                padding: 5px;
+            }
+            
+            .mobile-menu-btn span {
+                width: 25px;
+                height: 3px;
+                background: #333;
+                border-radius: 2px;
+                transition: all 0.3s ease;
+            }
+            
+            /* Mobile Menu */
+            .mobile-menu {
+                display: none;
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: white;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                z-index: 999;
+            }
+            
+            .mobile-menu.show {
+                display: block;
+            }
+            
+            .mobile-menu a {
+                display: block;
+                padding: 15px 20px;
+                color: #333;
+                text-decoration: none;
+                border-bottom: 1px solid #eee;
+                font-weight: 500;
+            }
+            
+            .mobile-menu a:hover {
+                background: #f8f9fa;
+            }
+            
+            /* Mobile Styles */
             @media (max-width: 768px) {
-                .mobile-btn {
-                    display: flex !important;
+                .desktop-menu {
+                    display: none;
                 }
                 
-                .nav-menu, .dropdown-menu, .nav-phone {
-                    display: none !important;
+                .mobile-menu-btn {
+                    display: flex;
                 }
+                
+                .mobile-menu-btn.active span:nth-child(1) {
+                    transform: rotate(45deg) translate(5px, 5px);
+                }
+                
+                .mobile-menu-btn.active span:nth-child(2) {
+                    opacity: 0;
+                }
+                
+                .mobile-menu-btn.active span:nth-child(3) {
+                    transform: rotate(-45deg) translate(7px, -6px);
+                }
+            }
+            
+            /* Body padding for fixed nav */
+            body {
+                padding-top: 70px;
             }
         </style>
     `;
     
-    // Insert navigation at the beginning of the body
-    document.body.insertAdjacentHTML('afterbegin', navigationHTML);
+    // Insert new navigation
+    document.body.insertAdjacentHTML('afterbegin', newNavigationHTML);
     
-    console.log('BULLETPROOF navigation loaded successfully');
-    
-    // Initialize desktop dropdowns only
-    initializeDropdowns();
+    console.log('BRAND NEW navigation loaded successfully');
 }
 
-// Initialize desktop dropdown functionality
-function initializeDropdowns() {
-    const dropdowns = document.querySelectorAll('.dropdown');
-    
-    dropdowns.forEach(dropdown => {
-        const toggle = dropdown.querySelector('.dropdown-toggle');
-        const menu = dropdown.querySelector('.dropdown-menu');
-        
-        if (!toggle || !menu) return;
-        
-        // Desktop hover events only
-        if (window.innerWidth > 768) {
-            dropdown.addEventListener('mouseenter', () => {
-                menu.setAttribute('aria-expanded', 'true');
-            });
-            
-            dropdown.addEventListener('mouseleave', () => {
-                menu.setAttribute('aria-expanded', 'false');
-            });
-        }
-    });
-}
-
-// BULLETPROOF MOBILE MENU TOGGLE FUNCTION
+// Simple mobile menu toggle
 function toggleMobileMenu() {
-    console.log('toggleMobileMenu called - BULLETPROOF');
+    console.log('toggleMobileMenu called');
     
-    const mobileNav = document.getElementById('mobileNav');
-    const mobileBtn = document.querySelector('.mobile-btn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileBtn = document.querySelector('.mobile-menu-btn');
     
-    if (!mobileNav) {
-        console.log('Mobile nav element not found');
+    if (!mobileMenu || !mobileBtn) {
+        console.log('Mobile elements not found');
         return;
     }
     
-    if (!mobileBtn) {
-        console.log('Mobile button element not found');
-        return;
-    }
-    
-    console.log('Elements found, toggling...');
-    
-    // Toggle the show class
-    mobileNav.classList.toggle('show');
+    // Toggle menu
+    mobileMenu.classList.toggle('show');
     mobileBtn.classList.toggle('active');
     
-    // Check if menu is now open
-    const isOpen = mobileNav.classList.contains('show');
-    console.log('Menu is now:', isOpen ? 'OPEN' : 'CLOSED');
-    
     // Prevent body scroll when open
-    if (isOpen) {
+    if (mobileMenu.classList.contains('show')) {
         document.body.style.overflow = 'hidden';
     } else {
         document.body.style.overflow = '';
     }
+    
+    console.log('Mobile menu toggled');
 }
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('.mobile-menu-btn') && !e.target.closest('#mobileMenu')) {
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        
+        if (mobileMenu && mobileMenu.classList.contains('show')) {
+            mobileMenu.classList.remove('show');
+            mobileBtn.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    }
+});
 
 // Load footer
 function loadFooter() {

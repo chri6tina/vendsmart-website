@@ -503,78 +503,7 @@ body {
     color: #3b82f6;
 }
 
-/* ULTRA-SIMPLE MOBILE MENU BUTTON */
-.mobile-btn {
-    display: none;
-    flex-direction: column;
-    gap: 4px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 8px;
-    z-index: 1001;
-    position: relative;
-}
-
-.mobile-btn span {
-    width: 25px;
-    height: 3px;
-    background-color: #000000;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-    display: block;
-}
-
-/* ULTRA-SIMPLE MOBILE MENU */
-.mobile-nav {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100vh;
-    background: #ffffff;
-    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1);
-    transition: left 0.3s ease;
-    z-index: 1000;
-    overflow-y: auto;
-    padding-top: 80px;
-}
-
-.mobile-nav.show {
-    left: 0 !important;
-}
-
-.mobile-nav a {
-    display: block;
-    padding: 15px 20px;
-    color: #374151;
-    text-decoration: none;
-    font-size: 16px;
-    border-bottom: 1px solid #f3f4f6;
-    transition: background-color 0.2s ease;
-}
-
-.mobile-nav a:hover {
-    background-color: #f9fafb;
-    color: #1f2937;
-}
-
-.mobile-nav .mobile-cta {
-    background-color: #3b82f6;
-    color: white;
-    font-weight: 600;
-}
-
-.mobile-nav .mobile-cta:hover {
-    background-color: #2563eb;
-}
-
-.mobile-nav .mobile-phone {
-    background-color: #f8fafc;
-    color: #3b82f6;
-    font-weight: 600;
-    border-top: 2px solid #e5e7eb;
-}
+/* OLD NAVIGATION REMOVED - NEW NAVIGATION IS EMBEDDED IN INCLUDES.JS */
 
 /* Mobile styles */
 @media (max-width: 768px) {
@@ -603,21 +532,7 @@ body {
         display: none;
     }
     
-    .mobile-btn {
-        display: flex;
-    }
-    
-    .mobile-btn.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-    
-    .mobile-btn.active span:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .mobile-btn.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px);
-    }
+    /* NEW NAVIGATION HANDLES MOBILE STYLES */
 }
 
 /* Page Layout Adjustments for Fixed Navigation */
