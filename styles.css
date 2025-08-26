@@ -1165,36 +1165,7 @@ body {
         top: 0;
     }
     
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background-color: white;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s ease;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        padding: 2rem 0;
-        z-index: 999;
-        display: flex;
-        height: calc(100vh - 70px);
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-    
-    .nav-menu.active {
-        left: 0;
-        transform: translateX(0);
-        visibility: visible;
-        opacity: 1;
-    }
-    
-    .nav-menu:not(.active) {
-        visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-    }
+    /* Mobile navigation styles are now handled in the main CSS section above */
     
     .nav-menu li {
         margin: 0;
@@ -7377,41 +7348,58 @@ html {
     transition: all 0.3s ease;
 }
 
-/* Ensure mobile navigation is properly accessible */
-.nav-menu[aria-hidden="true"] {
-    display: none;
-}
-
-.nav-menu[aria-hidden="false"] {
+/* Desktop Navigation Styles */
+.nav-menu {
     display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+    position: static;
+    background: transparent;
+    box-shadow: none;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    z-index: auto;
 }
 
-/* Ensure mobile navigation has proper contrast */
-.nav-menu {
-    background: #ffffff;
-    color: #333333;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-/* Ensure mobile navigation is properly positioned */
-.nav-menu {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: calc(100vh - 70px);
-    z-index: 9999;
-}
-
-/* Ensure mobile navigation has proper scroll behavior */
-.nav-menu {
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-    scrollbar-color: #cbd5e1 #f1f5f9;
+/* Mobile Navigation Styles */
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: calc(100vh - 70px);
+        z-index: 9999;
+        background: #ffffff;
+        color: #333333;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+        scrollbar-color: #cbd5e1 #f1f5f9;
+        flex-direction: column;
+        text-align: center;
+        transition: 0.3s ease;
+        padding: 2rem 0;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .nav-menu:not(.active) {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
 .nav-menu::-webkit-scrollbar {
@@ -7442,14 +7430,7 @@ html {
     background-color: #f0f9ff;
 }
 
-/* Ensure mobile navigation has proper ARIA support */
-.nav-menu[aria-expanded="false"] {
-    display: none;
-}
-
-.nav-menu[aria-expanded="true"] {
-    display: flex;
-}
+/* ARIA support is handled in the main navigation styles above */
 
 /* Ensure mobile navigation has proper keyboard navigation */
 .nav-menu a:focus {
