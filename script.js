@@ -20,6 +20,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Ensure all other links work properly (fix for CTA buttons)
+document.addEventListener('DOMContentLoaded', function() {
+    // Make sure all buttons and links work properly
+    const allLinks = document.querySelectorAll('a[href]:not([href^="#"])');
+    allLinks.forEach(link => {
+        // Ensure links are clickable
+        link.style.cursor = 'pointer';
+        link.style.pointerEvents = 'auto';
+        
+        // Add click logging for debugging
+        link.addEventListener('click', function(e) {
+            console.log('Link clicked:', this.href);
+            // Don't prevent default - let navigation happen
+        });
+    });
+    
+    console.log('CTA buttons and links initialized - should work now');
+});
+
 // Navbar background change on scroll
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
