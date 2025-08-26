@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     loadFooter();
 });
 
-// Load navigation from nav.html
+// Load navigation directly (no fetch needed)
 function loadNavigation() {
     // Check if navigation already exists
     if (document.querySelector('.navbar')) {
@@ -21,23 +21,105 @@ function loadNavigation() {
     
     console.log('Loading navigation...');
     
-    // Fetch navigation HTML
-    fetch('nav.html')
-        .then(response => response.text())
-        .then(html => {
-            // Insert navigation at the beginning of the body
-            document.body.insertAdjacentHTML('afterbegin', html);
-            
-            console.log('Navigation loaded successfully');
-            
-            // Initialize navigation functionality
-            initializeNavigation();
-        })
-        .catch(error => {
-            console.error('Error loading navigation:', error);
-            // Fallback: create basic navigation
-            createFallbackNavigation();
-        });
+    // Insert navigation HTML directly at the beginning of the body
+    const navigationHTML = `
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <!-- Logo Section -->
+                <div class="nav-logo">
+                    <a href="/" aria-label="Jacksonville Vending Machines Homepage">
+                        <img src="vendsmart-logo-jacksonville-vending.png" alt="Jacksonville Vending Machines - VendSmart Logo" loading="lazy">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Menu -->
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="/" role="menuitem">Home</a></li>
+                    
+                    <!-- Services Dropdown -->
+                    <li class="dropdown" role="none">
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="menuitem">
+                            Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-label="Services submenu">
+                            <li role="none"><a href="jacksonville-vending-services-landing.html" role="menuitem">Jacksonville Vending Services</a></li>
+                            <li role="none"><a href="why-choose-vendsmart-jacksonville.html" role="menuitem">Why Choose VendSmart</a></li>
+                            <li role="none"><a href="jacksonville-vending-market-report-2024.html" role="menuitem">Market Report 2024</a></li>
+                            <li role="none"><a href="top-10-places-vending-machines-jacksonville.html" role="menuitem">Top 10 Locations</a></li>
+                            <li role="none"><a href="vending-services-jacksonville.html" role="menuitem">Vending Services Jacksonville</a></li>
+                            <li role="none"><a href="vending-machine-repair-jacksonville.html" role="menuitem">Vending Machine Repair</a></li>
+                            <li role="none"><a href="vending-machine-parts-jacksonville.html" role="menuitem">Vending Machine Parts</a></li>
+                            <li role="none"><a href="vending-machine-installation-jacksonville.html" role="menuitem">Vending Machine Installation</a></li>
+                            <li role="none"><a href="vending-machine-maintenance-jacksonville.html" role="menuitem">Vending Machine Maintenance</a></li>
+                            <li role="none"><a href="emergency-vending-machine-service-jacksonville.html" role="menuitem">Emergency Service</a></li>
+                            <li role="none"><a href="vending-machine-warranty-jacksonville.html" role="menuitem">Warranty Information</a></li>
+                            <li role="none"><a href="services.html" role="menuitem">All Services</a></li>
+                            <li role="none"><a href="coffeeservices.html" role="menuitem">Coffee Services</a></li>
+                            <li role="none"><a href="setting-up-a-micro-market-in-your-jacksonville-office.html" role="menuitem">Micro-Markets</a></li>
+                            <li role="none"><a href="vendingmachine-service.html" role="menuitem">Vending Machine Service</a></li>
+                            <li class="dropdown-divider" role="separator"></li>
+                            <li role="none"><a href="vending-machines-for-gyms.html" role="menuitem">Gym Vending</a></li>
+                            <li role="none"><a href="vending-machines-for-hotels.html" role="menuitem">Hotel Vending</a></li>
+                            <li role="none"><a href="vending-machines-for-manufacturing.html" role="menuitem">Manufacturing Vending</a></li>
+                            <li role="none"><a href="vending-machines-for-retail.html" role="menuitem">Retail Vending</a></li>
+                            <li role="none"><a href="vending-machines-for-hospitals.html" role="menuitem">Hospital Vending</a></li>
+                            <li role="none"><a href="vending-machines-for-schools.html" role="menuitem">School Vending</a></li>
+                            <li role="none"><a href="vending-machines-for-office-buildings.html" role="menuitem">Office Buildings</a></li>
+                            <li class="dropdown-divider" role="separator"></li>
+                            <li role="none"><a href="portfolio.html" role="menuitem">Portfolio</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Locations Dropdown -->
+                    <li class="dropdown" role="none">
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="menuitem">
+                            Locations <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-label="Locations submenu">
+                            <li role="none"><a href="jacksonville-vending-services-landing.html" role="menuitem">Jacksonville Vending Services</a></li>
+                            <li role="none"><a href="locations.html" role="menuitem">All Locations</a></li>
+                            <li role="none"><a href="jacksonville.html" role="menuitem">Jacksonville Overview</a></li>
+                            <li role="none"><a href="downtown-jacksonville.html" role="menuitem">Downtown Jacksonville</a></li>
+                            <li role="none"><a href="jacksonville-beach.html" role="menuitem">Jacksonville Beach</a></li>
+                            <li role="none"><a href="orange-park.html" role="menuitem">Orange Park</a></li>
+                            <li role="none"><a href="ponte-vedra.html" role="menuitem">Ponte Vedra</a></li>
+                            <li role="none"><a href="atlantic-beach.html" role="menuitem">Atlantic Beach</a></li>
+                            <li role="none"><a href="st-augustine.html" role="menuitem">St. Augustine</a></li>
+                            <li role="none"><a href="mandarin.html" role="menuitem">Mandarin</a></li>
+                            <li role="none"><a href="lakeside.html" role="menuitem">Lakeside</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li role="none"><a href="products.html" role="menuitem">Products</a></li>
+                    <li role="none"><a href="blog.html" role="menuitem">Blog</a></li>
+                    <li role="none"><a href="contact.html" class="cta-button" role="menuitem">Contact Us</a></li>
+                </ul>
+
+                <!-- Contact Phone (Desktop) -->
+                <div class="nav-phone">
+                    <a href="tel:904-456-3851" class="phone-link" aria-label="Call us at 904-456-3851">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <span>904-456-3851</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu" type="button">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </nav>
+    `;
+    
+    // Insert navigation at the beginning of the body
+    document.body.insertAdjacentHTML('afterbegin', navigationHTML);
+    
+    console.log('Navigation loaded successfully');
+    
+    // Initialize navigation functionality
+    initializeNavigation();
 }
 
 // Initialize all navigation functionality
@@ -69,43 +151,7 @@ function initializeNavigation() {
     console.log('Navigation initialized successfully');
 }
 
-// Create fallback navigation if loading fails
-function createFallbackNavigation() {
-    console.log('Creating fallback navigation...');
-    
-    const fallbackNav = `
-        <nav class="navbar" role="navigation" aria-label="Main navigation">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <a href="/" aria-label="Jacksonville Vending Machines Homepage">
-                        <img src="vendsmart-logo-jacksonville-vending.png" alt="Jacksonville Vending Machines - VendSmart Logo" loading="lazy">
-                    </a>
-                </div>
-                <ul class="nav-menu" role="menubar">
-                    <li role="none"><a href="/" role="menuitem">Home</a></li>
-                    <li role="none"><a href="services.html" role="menuitem">Services</a></li>
-                    <li role="none"><a href="locations.html" role="menuitem">Locations</a></li>
-                    <li role="none"><a href="products.html" role="menuitem">Products</a></li>
-                    <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
-                </ul>
-                <div class="nav-phone">
-                    <a href="tel:904-456-3851" class="phone-link" aria-label="Call us at 904-456-3851">
-                        <i class="fas fa-phone" aria-hidden="true"></i>
-                        <span>904-456-3851</span>
-                    </a>
-                </div>
-                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu" type="button">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                </button>
-            </div>
-        </nav>
-    `;
-    
-    document.body.insertAdjacentHTML('afterbegin', fallbackNav);
-    initializeNavigation();
-}
+
 
 // Initialize scroll effects for navbar
 function initializeScrollEffects() {
