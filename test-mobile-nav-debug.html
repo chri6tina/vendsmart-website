@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Navigation Debug - VendSmart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .debug-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .status-box {
+            background: #e7f3ff;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .error-box {
+            background: #ffe7e7;
+            border: 1px solid #dc3545;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .success-box {
+            background: #e7ffe7;
+            border: 1px solid #28a745;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .test-button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .test-button:hover {
+            background: #0056b3;
+        }
+        .debug-info {
+            font-family: monospace;
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 3px;
+            margin: 10px 0;
+            white-space: pre-wrap;
+        }
+        .mobile-nav-test {
+            border: 2px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="debug-container">
+        <h1>Mobile Navigation Debug</h1>
+        <p>This page tests all aspects of your mobile navigation to identify why it's not working.</p>
+        
+        <div class="status-box">
+            <h3>Current Status:</h3>
+            <div id="current-status">Loading...</div>
+        </div>
+        
+        <div class="mobile-nav-test">
+            <h3>Mobile Navigation Test Area</h3>
+            <p>This area will show your actual navigation bar for testing:</p>
+            <div id="nav-test-area">Navigation will be loaded here...</div>
+        </div>
+        
+        <div class="status-box">
+            <h3>Test Results:</h3>
+            <div id="test-results">No tests run yet...</div>
+        </div>
+        
+        <div class="status-box">
+            <h3>Debug Actions:</h3>
+            <button class="test-button" onclick="testHamburgerClick()">Test Hamburger Click</button>
+            <button class="test-button" onclick="testMobileMenuToggle()">Test Menu Toggle</button>
+            <button class="test-button" onclick="checkElementStatus()">Check Element Status</button>
+            <button class="test-button" onclick="forceMobileMenuOpen()">Force Menu Open</button>
+            <button class="test-button" onclick="resetMobileMenu()">Reset Menu</button>
+        </div>
+        
+        <div class="status-box">
+            <h3>Console Logs:</h3>
+            <div id="console-logs" class="debug-info">Console logs will appear here...</div>
+        </div>
+        
+        <div class="status-box">
+            <h3>Element Inspector:</h3>
+            <div id="element-info" class="debug-info">Element information will appear here...</div>
+        </div>
+    </div>
+
+    <script>
+        // Capture console logs
+        const originalLog = console.log;
+        const originalError = console.error;
+        const consoleLogs = document.getElementById('console-logs');
+        
+        console.log = function(...args) {
+            originalLog.apply(console, args);
+            consoleLogs.textContent += args.join(' ') + '\n';
+        };
+        
+        console.error = function(...args) {
+            originalError.apply(console, args);
+            consoleLogs.textContent += 'ERROR: ' + args.join(' ') + '\n';
+        };
+        
+        // Load navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, checking for navigation...');
+            updateStatus();
+            
+            // Load navigation if it doesn't exist
+            if (!document.querySelector('.navbar')) {
+                console.log('No navigation found, loading...');
+                loadNavigation();
+            } else {
+                console.log('Navigation found, initializing...');
+                initializeNavigation();
+            }
+        });
+        
+        // Load navigation function (simplified version)
+        function loadNavigation() {
+            const navHTML = `
+                <nav class="navbar" role="navigation" aria-label="Main navigation">
+                    <div class="nav-container">
+                        <div class="nav-logo">
+                            <a href="/" aria-label="Jacksonville Vending Machines Homepage">
+                                <img src="vendsmart-logo-jacksonville-vending.png" alt="Jacksonville Vending Machines - VendSmart Logo" loading="lazy">
+                            </a>
+                        </div>
+                        <ul class="nav-menu" role="menubar">
+                            <li role="none"><a href="/" role="menuitem">Home</a></li>
+                            <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                        </ul>
+                        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu" type="button">
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                        </button>
+                    </div>
+                </nav>
+            `;
+            
+            document.getElementById('nav-test-area').innerHTML = navHTML;
+            console.log('Navigation loaded into test area');
+            initializeNavigation();
+        }
+        
+        // Initialize navigation
+        function initializeNavigation() {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (!hamburger || !navMenu) {
+                console.log('Navigation elements not found');
+                return;
+            }
+            
+            console.log('Initializing mobile navigation...');
+            
+            // Mobile menu functionality
+            let isMobileMenuOpen = false;
+            
+            function toggleMobileMenu() {
+                isMobileMenuOpen = !isMobileMenuOpen;
+                console.log('Mobile menu toggled:', isMobileMenuOpen);
+                
+                hamburger.setAttribute('aria-expanded', isMobileMenuOpen);
+                hamburger.classList.toggle('active', isMobileMenuOpen);
+                navMenu.classList.toggle('active', isMobileMenuOpen);
+                
+                updateStatus();
+            }
+            
+            hamburger.addEventListener('click', toggleMobileMenu);
+            console.log('Hamburger click listener attached');
+            
+            updateStatus();
+        }
+        
+        // Update status display
+        function updateStatus() {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            let status = '';
+            
+            if (hamburger) {
+                status += `✅ Hamburger button found\n`;
+                status += `   - Visible: ${hamburger.offsetParent !== null}\n`;
+                status += `   - Active class: ${hamburger.classList.contains('active')}\n`;
+                status += `   - Aria expanded: ${hamburger.getAttribute('aria-expanded')}\n`;
+            } else {
+                status += `❌ Hamburger button NOT found\n`;
+            }
+            
+            if (navMenu) {
+                status += `✅ Navigation menu found\n`;
+                status += `   - Visible: ${navMenu.offsetParent !== null}\n`;
+                status += `   - Active class: ${navMenu.classList.contains('active')}\n`;
+                status += `   - Left position: ${navMenu.style.left || 'default'}\n`;
+            } else {
+                status += `❌ Navigation menu NOT found\n`;
+            }
+            
+            status += `\n📱 Window width: ${window.innerWidth}px`;
+            status += `\n🖥️ Device: ${window.innerWidth <= 768 ? 'Mobile' : 'Desktop'}`;
+            
+            document.getElementById('current-status').innerHTML = status.replace(/\n/g, '<br>');
+        }
+        
+        // Test functions
+        function testHamburgerClick() {
+            const hamburger = document.querySelector('.hamburger');
+            if (hamburger) {
+                console.log('Testing hamburger click...');
+                hamburger.click();
+                setTimeout(updateStatus, 100);
+            } else {
+                console.log('Hamburger not found for testing');
+            }
+        }
+        
+        function testMobileMenuToggle() {
+            const navMenu = document.querySelector('.nav-menu');
+            if (navMenu) {
+                console.log('Testing menu toggle...');
+                navMenu.classList.toggle('active');
+                updateStatus();
+            }
+        }
+        
+        function checkElementStatus() {
+            updateStatus();
+            console.log('Element status updated');
+        }
+        
+        function forceMobileMenuOpen() {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            if (hamburger && navMenu) {
+                console.log('Forcing mobile menu open...');
+                hamburger.classList.add('active');
+                navMenu.classList.add('active');
+                hamburger.setAttribute('aria-expanded', 'true');
+                updateStatus();
+            }
+        }
+        
+        function resetMobileMenu() {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            if (hamburger && navMenu) {
+                console.log('Resetting mobile menu...');
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+                updateStatus();
+            }
+        }
+        
+        // Update status every 2 seconds
+        setInterval(updateStatus, 2000);
+        
+        console.log('Mobile navigation debug page loaded');
+    </script>
+</body>
+</html>

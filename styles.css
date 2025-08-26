@@ -548,10 +548,13 @@ body {
         padding: 20px 0;
         transition: left 0.3s ease;
         overflow-y: auto;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     
     .nav-menu.active {
-        left: 0;
+        left: 0 !important;
+        transform: none !important;
     }
     
     .nav-menu a,

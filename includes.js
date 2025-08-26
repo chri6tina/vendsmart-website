@@ -202,11 +202,21 @@ function initializeMobileMenu() {
     if (!hamburger || !navMenu) return;
     
     function toggleMobileMenu() {
+        console.log('toggleMobileMenu called');
+        console.log('Current state:', isMobileMenuOpen);
+        console.log('Hamburger element:', hamburger);
+        console.log('Nav menu element:', navMenu);
+        
         isMobileMenuOpen = !isMobileMenuOpen;
+        console.log('Mobile menu toggled:', isMobileMenuOpen);
         
         hamburger.setAttribute('aria-expanded', isMobileMenuOpen);
         hamburger.classList.toggle('active', isMobileMenuOpen);
         navMenu.classList.toggle('active', isMobileMenuOpen);
+        
+        console.log('Hamburger classes:', hamburger.className);
+        console.log('Nav menu classes:', navMenu.className);
+        console.log('Nav menu left position:', navMenu.style.left);
         
         // Prevent body scroll when menu is open
         if (isMobileMenuOpen) {
@@ -214,6 +224,9 @@ function initializeMobileMenu() {
         } else {
             body.style.overflow = '';
         }
+        
+        // Force a reflow to ensure CSS changes take effect
+        navMenu.offsetHeight;
     }
     
     // Hamburger click handler
