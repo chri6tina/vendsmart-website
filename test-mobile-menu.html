@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Menu Test - VendSmart</title>
+    <link rel="stylesheet" href="styles.css?v=21.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation will be loaded by includes.js -->
+
+    <div style="margin-top: 150px; padding: 20px;">
+        <h1>Mobile Menu Test</h1>
+        <p>This page tests the mobile hamburger menu functionality.</p>
+        
+        <h2>Test Instructions:</h2>
+        <ol>
+            <li><strong>Resize your browser</strong> to mobile size (width ≤ 768px)</li>
+            <li><strong>Look for hamburger menu</strong> (three horizontal lines) in top right</li>
+            <li><strong>Click the hamburger</strong> to open mobile navigation</li>
+            <li><strong>Check if menu slides in</strong> from the left</li>
+        </ol>
+        
+        <h2>Current Status:</h2>
+        <div id="status" style="background: #f0f0f0; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 12px;">
+            <div>Window width: <span id="window-width">Checking...</span></div>
+            <div>Hamburger visible: <span id="hamburger-visible">Checking...</span></div>
+            <div>Hamburger found: <span id="hamburger-found">Checking...</span></div>
+            <div>Nav menu found: <span id="nav-menu-found">Checking...</span></div>
+            <div>Mobile menu open: <span id="menu-open">Checking...</span></div>
+            <div>Click events: <span id="click-events">Checking...</span></div>
+        </div>
+        
+        <h2>What to check:</h2>
+        <ul>
+            <li><strong>Hamburger visibility:</strong> Should show on mobile (≤768px)</li>
+            <li><strong>Click functionality:</strong> Should respond to clicks</li>
+            <li><strong>Menu animation:</strong> Should slide in from left</li>
+            <li><strong>Menu items:</strong> Should be clickable</li>
+            <li><strong>Close functionality:</strong> Should close when clicking outside</li>
+        </ul>
+        
+        <h2>Troubleshooting:</h2>
+        <ul>
+            <li><strong>Check console:</strong> Press F12 and look for errors</li>
+            <li><strong>Verify mobile size:</strong> Make sure browser width is ≤768px</li>
+            <li><strong>Check CSS:</strong> Verify mobile styles are loading</li>
+            <li><strong>Test click events:</strong> Look for console logs</li>
+        </ul>
+    </div>
+
+    <script src="includes.js"></script>
+    
+    <script>
+        // Debug script to check mobile menu status
+        let clickCount = 0;
+        
+        function updateStatus() {
+            const width = window.innerWidth;
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            const isMobile = width <= 768;
+            
+            document.getElementById('window-width').textContent = width + 'px (' + (isMobile ? 'Mobile' : 'Desktop') + ')';
+            document.getElementById('hamburger-visible').textContent = isMobile ? 'Should be visible' : 'Hidden on desktop';
+            document.getElementById('hamburger-found').textContent = hamburger ? 'Yes' : 'No';
+            document.getElementById('nav-menu-found').textContent = navMenu ? 'Yes' : 'No';
+            document.getElementById('menu-open').textContent = navMenu && navMenu.classList.contains('active') ? 'Yes' : 'No';
+            document.getElementById('click-events').textContent = clickCount + ' clicks detected';
+        }
+        
+        // Add click detection
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('hamburger') || e.target.closest('.hamburger')) {
+                clickCount++;
+                console.log('Hamburger clicked! Count:', clickCount);
+            }
+        });
+        
+        // Update status every second
+        setInterval(updateStatus, 1000);
+        
+        // Initial update
+        setTimeout(updateStatus, 500);
+        
+        // Log when page loads
+        console.log('Mobile menu test page loaded');
+        console.log('Current window width:', window.innerWidth);
+        console.log('Mobile breakpoint: 768px');
+    </script>
+</body>
+</html>

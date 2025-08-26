@@ -22,16 +22,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Ensure all other links work properly (fix for CTA buttons)
 document.addEventListener('DOMContentLoaded', function() {
-    // Make sure all buttons and links work properly
-    const allLinks = document.querySelectorAll('a[href]:not([href^="#"])');
-    allLinks.forEach(link => {
+    // Make sure CTA buttons and navigation links work properly (but not hamburger)
+    const ctaLinks = document.querySelectorAll('.btn, .cta-button, .hero-buttons a, .cta-buttons a');
+    ctaLinks.forEach(link => {
         // Ensure links are clickable
         link.style.cursor = 'pointer';
         link.style.pointerEvents = 'auto';
         
         // Add click logging for debugging
         link.addEventListener('click', function(e) {
-            console.log('Link clicked:', this.href);
+            console.log('CTA link clicked:', this.href);
             // Don't prevent default - let navigation happen
         });
     });
