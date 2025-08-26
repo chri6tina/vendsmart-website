@@ -7702,13 +7702,20 @@ html {
     position: relative;
 }
 
-/* Ensure mobile navigation has proper fallback */
-.nav-menu:not(.active):not(.loading):not(.error) {
-    display: none;
+/* Desktop navigation is always visible */
+.nav-menu {
+    display: flex;
 }
 
-.nav-menu.active {
-    display: flex;
+/* Mobile navigation fallback - only hide on mobile when not active */
+@media (max-width: 768px) {
+    .nav-menu:not(.active):not(.loading):not(.error) {
+        display: none;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
 }
 
 .nav-menu.active::before {
