@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Simple Mobile Test - VendSmart</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+        
+        /* Super Simple Navigation */
+        .nav {
+            background: white;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        /* Super Simple Mobile Button */
+        .mobile-btn {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+        
+        .mobile-btn span {
+            width: 25px;
+            height: 3px;
+            background: #333;
+            border-radius: 2px;
+            display: block;
+        }
+        
+        /* Super Simple Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100vh;
+            background: white;
+            transition: left 0.3s ease;
+            z-index: 1000;
+            padding-top: 80px;
+        }
+        
+        .mobile-menu.show {
+            left: 0;
+        }
+        
+        .mobile-menu a {
+            display: block;
+            padding: 15px 20px;
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .mobile-menu a:hover {
+            background: #f5f5f5;
+        }
+        
+        /* Desktop Menu */
+        .desktop-menu {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .desktop-menu a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px;
+        }
+        
+        .desktop-menu a:hover {
+            background: #f5f5f5;
+            border-radius: 5px;
+        }
+        
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .desktop-menu {
+                display: none;
+            }
+            
+            .mobile-btn {
+                display: flex;
+            }
+        }
+        
+        /* Test Content */
+        .test-content {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .test-button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+        
+        .test-button:hover {
+            background: #0056b3;
+        }
+        
+        .status-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+        }
+        
+        .debug-info {
+            font-family: monospace;
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 3px;
+            margin: 10px 0;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <!-- Super Simple Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <div class="logo">VendSmart</div>
+            
+            <!-- Desktop Menu -->
+            <div class="desktop-menu">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <!-- Super Simple Mobile Button -->
+            <button class="mobile-btn" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Super Simple Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+    </div>
+    
+    <!-- Test Content -->
+    <div class="test-content">
+        <h1>Super Simple Mobile Navigation Test</h1>
+        <p>This page tests the most basic mobile navigation possible.</p>
+        
+        <div class="status-box">
+            <h3>Test Instructions:</h3>
+            <ol>
+                <li><strong>Resize your browser</strong> to mobile width (or use mobile device)</li>
+                <li><strong>Click the hamburger button</strong> (three lines) in the top right</li>
+                <li><strong>Menu should slide in</strong> from the left</li>
+                <li><strong>Click any menu item</strong> to test navigation</li>
+            </ol>
+        </div>
+        
+        <div class="status-box">
+            <h3>Current Status:</h3>
+            <div id="status">Checking...</div>
+        </div>
+        
+        <div class="status-box">
+            <h3>Debug Info:</h3>
+            <div id="debug" class="debug-info">Loading...</div>
+        </div>
+        
+        <div class="status-box">
+            <h3>Test Buttons:</h3>
+            <button class="test-button" onclick="testClick()">Test Button Click</button>
+            <button class="test-button" onclick="forceMenuOpen()">Force Menu Open</button>
+            <button class="test-button" onclick="forceMenuClose()">Force Menu Close</button>
+            <button class="test-button" onclick="checkElements()">Check Elements</button>
+        </div>
+    </div>
+
+    <script>
+        let menuOpen = false;
+        
+        // Super Simple Toggle Function
+        function toggleMenu() {
+            console.log('toggleMenu called');
+            const menu = document.getElementById('mobileMenu');
+            const btn = document.querySelector('.mobile-btn');
+            
+            if (!menu || !btn) {
+                console.log('Menu or button not found');
+                return;
+            }
+            
+            menuOpen = !menuOpen;
+            console.log('Menu state:', menuOpen);
+            
+            if (menuOpen) {
+                menu.classList.add('show');
+                btn.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            } else {
+                menu.classList.remove('show');
+                btn.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+            
+            updateStatus();
+        }
+        
+        // Test Functions
+        function testClick() {
+            console.log('Test button clicked!');
+            document.getElementById('status').innerHTML = '✅ Test button works!';
+        }
+        
+        function forceMenuOpen() {
+            const menu = document.getElementById('mobileMenu');
+            if (menu) {
+                menu.classList.add('show');
+                menuOpen = true;
+                updateStatus();
+                console.log('Menu forced open');
+            }
+        }
+        
+        function forceMenuClose() {
+            const menu = document.getElementById('mobileMenu');
+            if (menu) {
+                menu.classList.remove('show');
+                menuOpen = false;
+                updateStatus();
+                console.log('Menu forced closed');
+            }
+        }
+        
+        function checkElements() {
+            const menu = document.getElementById('mobileMenu');
+            const btn = document.querySelector('.mobile-btn');
+            const debug = document.getElementById('debug');
+            
+            let info = '';
+            info += `Menu element: ${menu ? 'Found' : 'NOT FOUND'}\n`;
+            info += `Button element: ${btn ? 'Found' : 'NOT FOUND'}\n`;
+            info += `Menu classes: ${menu ? menu.className : 'N/A'}\n`;
+            info += `Button classes: ${btn ? btn.className : 'N/A'}\n`;
+            info += `Menu visible: ${menu && menu.classList.contains('show') ? 'Yes' : 'No'}\n`;
+            info += `Window width: ${window.innerWidth}px\n`;
+            info += `Menu open state: ${menuOpen}\n`;
+            
+            debug.textContent = info;
+        }
+        
+        function updateStatus() {
+            const status = document.getElementById('status');
+            const menu = document.getElementById('mobileMenu');
+            
+            if (menu && menu.classList.contains('show')) {
+                status.innerHTML = '✅ Menu is OPEN';
+            } else {
+                status.innerHTML = '❌ Menu is CLOSED';
+            }
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Page loaded');
+            updateStatus();
+            checkElements();
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (menuOpen && !e.target.closest('.mobile-btn') && !e.target.closest('#mobileMenu')) {
+                    console.log('Clicking outside, closing menu');
+                    toggleMenu();
+                }
+            });
+            
+            // Close menu on escape
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && menuOpen) {
+                    console.log('Escape pressed, closing menu');
+                    toggleMenu();
+                }
+            });
+        });
+        
+        console.log('Super simple mobile test page loaded');
+    </script>
+</body>
+</html>

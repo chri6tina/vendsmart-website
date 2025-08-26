@@ -1,7 +1,4 @@
-// ===== ULTRA-SIMPLE MOBILE NAVIGATION SYSTEM =====
-
-// Global variables
-let mobileMenuOpen = false;
+// ===== ABSOLUTE MINIMAL MOBILE NAVIGATION =====
 
 // Initialize navigation when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
@@ -14,11 +11,10 @@ function loadNavigation() {
     // Check if navigation already exists
     if (document.querySelector('.navbar')) {
         console.log('Navigation already exists, initializing...');
-        initializeNavigation();
         return;
     }
     
-    console.log('Loading navigation...');
+    console.log('Loading ABSOLUTE MINIMAL navigation...');
     
     // Insert navigation HTML directly at the beginning of the body
     const navigationHTML = `
@@ -82,15 +78,15 @@ function loadNavigation() {
                     </a>
                 </div>
 
-                <!-- ULTRA-SIMPLE MOBILE MENU BUTTON -->
-                <button class="mobile-btn" type="button" onclick="toggleMobileMenu()">
+                <!-- ABSOLUTE MINIMAL MOBILE BUTTON -->
+                <button class="mobile-btn" onclick="toggleMobileMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
             </div>
             
-            <!-- ULTRA-SIMPLE MOBILE MENU -->
+            <!-- ABSOLUTE MINIMAL MOBILE MENU -->
             <div class="mobile-nav" id="mobileNav">
                 <a href="/">Home</a>
                 <a href="jacksonville-vending-services-landing.html">Vending Services</a>
@@ -119,30 +115,10 @@ function loadNavigation() {
     // Insert navigation at the beginning of the body
     document.body.insertAdjacentHTML('afterbegin', navigationHTML);
     
-    console.log('Navigation loaded successfully');
+    console.log('ABSOLUTE MINIMAL navigation loaded successfully');
     
-    // Initialize navigation functionality
-    initializeNavigation();
-}
-
-// Initialize all navigation functionality
-function initializeNavigation() {
-    const navbar = document.querySelector('.navbar');
-    const mobileBtn = document.querySelector('.mobile-btn');
-    const mobileNav = document.querySelector('#mobileNav');
-    
-    if (!navbar || !mobileBtn || !mobileNav) {
-        console.log('Mobile navigation elements not found, retrying...');
-        setTimeout(initializeNavigation, 100);
-        return;
-    }
-    
-    console.log('Initializing ULTRA-SIMPLE mobile navigation...');
-    
-    // Initialize desktop dropdowns
+    // Initialize desktop dropdowns only
     initializeDropdowns();
-    
-    console.log('ULTRA-SIMPLE mobile navigation initialized successfully');
 }
 
 // Initialize desktop dropdown functionality
@@ -168,53 +144,40 @@ function initializeDropdowns() {
     });
 }
 
-// GLOBAL MOBILE MENU TOGGLE FUNCTION
+// GLOBAL MOBILE MENU TOGGLE FUNCTION - ABSOLUTE MINIMAL
 function toggleMobileMenu() {
+    console.log('toggleMobileMenu called - ABSOLUTE MINIMAL');
+    
     const mobileNav = document.getElementById('mobileNav');
     const mobileBtn = document.querySelector('.mobile-btn');
     
-    if (!mobileNav || !mobileBtn) {
-        console.log('Mobile elements not found');
+    if (!mobileNav) {
+        console.log('Mobile nav element not found');
         return;
     }
     
-    mobileMenuOpen = !mobileMenuOpen;
-    console.log('Mobile menu toggled:', mobileMenuOpen);
+    if (!mobileBtn) {
+        console.log('Mobile button element not found');
+        return;
+    }
     
-    if (mobileMenuOpen) {
-        mobileNav.classList.add('show');
-        mobileBtn.classList.add('active');
+    console.log('Elements found, toggling...');
+    
+    // Toggle the show class
+    mobileNav.classList.toggle('show');
+    mobileBtn.classList.toggle('active');
+    
+    // Check if menu is now open
+    const isOpen = mobileNav.classList.contains('show');
+    console.log('Menu is now:', isOpen ? 'OPEN' : 'CLOSED');
+    
+    // Prevent body scroll when open
+    if (isOpen) {
         document.body.style.overflow = 'hidden';
     } else {
-        mobileNav.classList.remove('show');
-        mobileBtn.classList.remove('active');
         document.body.style.overflow = '';
     }
 }
-
-// Close mobile menu when clicking outside
-document.addEventListener('click', function(e) {
-    if (mobileMenuOpen && !e.target.closest('.mobile-btn') && !e.target.closest('#mobileNav')) {
-        console.log('Clicking outside, closing mobile menu');
-        toggleMobileMenu();
-    }
-});
-
-// Close mobile menu on escape key
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && mobileMenuOpen) {
-        console.log('Escape key pressed, closing mobile menu');
-        toggleMobileMenu();
-    }
-});
-
-// Handle window resize
-window.addEventListener('resize', function() {
-    if (window.innerWidth > 768 && mobileMenuOpen) {
-        console.log('Window resized to desktop, closing mobile menu');
-        toggleMobileMenu();
-    }
-});
 
 // Load footer
 function loadFooter() {
@@ -239,14 +202,6 @@ function loadFooter() {
         })
         .catch(error => console.error('Error loading footer:', error));
 }
-
-// Handle window load as backup
-window.addEventListener('load', function() {
-    if (!document.querySelector('#mobileNav.show')) {
-        console.log('Window load backup - checking navigation...');
-        setTimeout(initializeNavigation, 100);
-    }
-});
 
 // Fix CTA buttons - ensure they work properly
 function fixCTAButtons() {
