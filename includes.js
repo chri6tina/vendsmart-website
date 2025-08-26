@@ -1,8 +1,7 @@
-// ===== MODERN NAVIGATION SYSTEM =====
+// ===== SIMPLE MOBILE NAVIGATION SYSTEM =====
 
 // Global variables
-let isMobileMenuOpen = false;
-let isScrolled = false;
+let mobileMenuOpen = false;
 
 // Initialize navigation when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
@@ -83,12 +82,47 @@ function loadNavigation() {
                     </a>
                 </div>
 
-                <!-- Mobile Menu Toggle -->
-                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu" type="button">
+                <!-- NEW SIMPLE MOBILE MENU TOGGLE -->
+                <button class="mobile-menu-toggle" type="button" aria-label="Toggle mobile menu">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                 </button>
+            </div>
+            
+            <!-- NEW SIMPLE MOBILE MENU -->
+            <div class="mobile-menu">
+                <div class="mobile-menu-header">
+                    <h3>Menu</h3>
+                    <button class="mobile-menu-close" type="button" aria-label="Close mobile menu">×</button>
+                </div>
+                <ul class="mobile-menu-items">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="jacksonville-vending-services-landing.html">Vending Services</a></li>
+                    <li><a href="setting-up-a-micro-market-in-your-jacksonville-office.html">Micro-Markets</a></li>
+                    <li><a href="coffeeservices.html">Coffee Services</a></li>
+                    <li><a href="smart-coolers.html">Smart Coolers</a></li>
+                    <li><a href="services.html">All Services</a></li>
+                    <li><a href="locations.html">All Locations</a></li>
+                    <li><a href="jacksonville.html">Jacksonville</a></li>
+                    <li><a href="downtown-jacksonville.html">Downtown</a></li>
+                    <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
+                    <li><a href="orange-park.html">Orange Park</a></li>
+                    <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
+                    <li><a href="atlantic-beach.html">Atlantic Beach</a></li>
+                    <li><a href="st-augustine.html">St. Augustine</a></li>
+                    <li><a href="mandarin.html">Mandarin</a></li>
+                    <li><a href="lakeside.html">Lakeside</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html" class="mobile-cta">Contact Us</a></li>
+                </ul>
+                <div class="mobile-menu-footer">
+                    <a href="tel:904-456-3851" class="mobile-phone">
+                        <i class="fas fa-phone"></i>
+                        <span>904-456-3851</span>
+                    </a>
+                </div>
             </div>
         </nav>
     `;
@@ -105,55 +139,28 @@ function loadNavigation() {
 // Initialize all navigation functionality
 function initializeNavigation() {
     const navbar = document.querySelector('.navbar');
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileClose = document.querySelector('.mobile-menu-close');
     
-    if (!navbar || !hamburger || !navMenu) {
-        console.log('Navigation elements not found, retrying...');
+    if (!navbar || !mobileToggle || !mobileMenu) {
+        console.log('Mobile navigation elements not found, retrying...');
         setTimeout(initializeNavigation, 100);
         return;
     }
     
-    console.log('Initializing navigation...');
+    console.log('Initializing NEW mobile navigation...');
     
-    // Initialize scroll effects
-    initializeScrollEffects();
-    
-    // Initialize dropdowns
+    // Initialize desktop dropdowns
     initializeDropdowns();
     
-    // Initialize mobile menu
+    // Initialize NEW simple mobile menu
     initializeMobileMenu();
     
-    // Initialize keyboard navigation
-    initializeKeyboardNavigation();
-    
-    console.log('Navigation initialized successfully');
+    console.log('NEW mobile navigation initialized successfully');
 }
 
-
-
-// Initialize scroll effects for navbar
-function initializeScrollEffects() {
-    const navbar = document.querySelector('.navbar');
-    
-    function handleScroll() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
-        if (scrollTop > 50 && !isScrolled) {
-            navbar.classList.add('scrolled');
-            isScrolled = true;
-        } else if (scrollTop <= 50 && isScrolled) {
-            navbar.classList.remove('scrolled');
-            isScrolled = false;
-        }
-    }
-    
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Check initial scroll position
-}
-
-// Initialize dropdown functionality
+// Initialize desktop dropdown functionality
 function initializeDropdowns() {
     const dropdowns = document.querySelectorAll('.dropdown');
     
@@ -163,7 +170,7 @@ function initializeDropdowns() {
         
         if (!toggle || !menu) return;
         
-        // Desktop hover events
+        // Desktop hover events only
         if (window.innerWidth > 768) {
             dropdown.addEventListener('mouseenter', () => {
                 menu.setAttribute('aria-expanded', 'true');
@@ -173,99 +180,80 @@ function initializeDropdowns() {
                 menu.setAttribute('aria-expanded', 'false');
             });
         }
-        
-        // Mobile click events
-        if (window.innerWidth <= 768) {
-            toggle.addEventListener('click', (e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                
-                const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
-                toggle.setAttribute('aria-expanded', !isExpanded);
-                
-                if (isExpanded) {
-                    menu.style.display = 'none';
-                } else {
-                    menu.style.display = 'block';
-                }
-            });
-        }
     });
 }
 
-// Initialize mobile menu functionality
+// Initialize NEW simple mobile menu functionality
 function initializeMobileMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileClose = document.querySelector('.mobile-menu-close');
     const body = document.body;
     
-    if (!hamburger || !navMenu) return;
-    
-    function toggleMobileMenu() {
-        console.log('toggleMobileMenu called');
-        console.log('Current state:', isMobileMenuOpen);
-        console.log('Hamburger element:', hamburger);
-        console.log('Nav menu element:', navMenu);
-        
-        isMobileMenuOpen = !isMobileMenuOpen;
-        console.log('Mobile menu toggled:', isMobileMenuOpen);
-        
-        hamburger.setAttribute('aria-expanded', isMobileMenuOpen);
-        hamburger.classList.toggle('active', isMobileMenuOpen);
-        navMenu.classList.toggle('active', isMobileMenuOpen);
-        
-        console.log('Hamburger classes:', hamburger.className);
-        console.log('Nav menu classes:', navMenu.className);
-        console.log('Nav menu left position:', navMenu.style.left);
-        
-        // Prevent body scroll when menu is open
-        if (isMobileMenuOpen) {
-            body.style.overflow = 'hidden';
-        } else {
-            body.style.overflow = '';
-        }
-        
-        // Force a reflow to ensure CSS changes take effect
-        navMenu.offsetHeight;
+    if (!mobileToggle || !mobileMenu || !mobileClose) {
+        console.log('Mobile menu elements not found');
+        return;
     }
     
-    // Hamburger click handler
-    hamburger.addEventListener('click', toggleMobileMenu);
+    console.log('Setting up NEW mobile menu...');
+    
+    // Toggle mobile menu
+    function toggleMobileMenu() {
+        mobileMenuOpen = !mobileMenuOpen;
+        console.log('Mobile menu toggled:', mobileMenuOpen);
+        
+        if (mobileMenuOpen) {
+            mobileMenu.classList.add('open');
+            body.style.overflow = 'hidden';
+            mobileToggle.classList.add('active');
+        } else {
+            mobileMenu.classList.remove('open');
+            body.style.overflow = '';
+            mobileToggle.classList.remove('active');
+        }
+    }
+    
+    // Open mobile menu
+    mobileToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('Mobile toggle clicked');
+        toggleMobileMenu();
+    });
+    
+    // Close mobile menu
+    mobileClose.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('Mobile close clicked');
+        toggleMobileMenu();
+    });
     
     // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (isMobileMenuOpen && !hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+    document.addEventListener('click', function(e) {
+        if (mobileMenuOpen && !mobileMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
+            console.log('Clicking outside, closing menu');
             toggleMobileMenu();
         }
     });
     
     // Close menu on escape key
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && isMobileMenuOpen) {
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && mobileMenuOpen) {
+            console.log('Escape key pressed, closing menu');
             toggleMobileMenu();
         }
     });
     
     // Handle window resize
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 768 && isMobileMenuOpen) {
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768 && mobileMenuOpen) {
+            console.log('Window resized to desktop, closing mobile menu');
             toggleMobileMenu();
         }
     });
-}
-
-// Initialize keyboard navigation
-function initializeKeyboardNavigation() {
-    const navItems = document.querySelectorAll('.nav-menu a, .nav-menu .dropdown-toggle');
     
-    navItems.forEach(item => {
-        item.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                item.click();
-            }
-        });
-    });
+    console.log('NEW mobile menu setup complete');
 }
 
 // Load footer
@@ -294,7 +282,7 @@ function loadFooter() {
 
 // Handle window load as backup
 window.addEventListener('load', function() {
-    if (!document.querySelector('.nav-menu.active')) {
+    if (!document.querySelector('.mobile-menu.open')) {
         console.log('Window load backup - checking navigation...');
         setTimeout(initializeNavigation, 100);
     }
