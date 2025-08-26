@@ -1,4 +1,4 @@
-// ===== ABSOLUTE MINIMAL MOBILE NAVIGATION =====
+// ===== BULLETPROOF MOBILE NAVIGATION =====
 
 // Initialize navigation when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
 function loadNavigation() {
     // Check if navigation already exists
     if (document.querySelector('.navbar')) {
-        console.log('Navigation already exists, initializing...');
+        console.log('Navigation already exists, skipping...');
         return;
     }
     
-    console.log('Loading ABSOLUTE MINIMAL navigation...');
+    console.log('Loading BULLETPROOF navigation...');
     
     // Insert navigation HTML directly at the beginning of the body
     const navigationHTML = `
@@ -78,44 +78,57 @@ function loadNavigation() {
                     </a>
                 </div>
 
-                <!-- ABSOLUTE MINIMAL MOBILE BUTTON -->
-                <button class="mobile-btn" onclick="toggleMobileMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <!-- BULLETPROOF MOBILE BUTTON -->
+                <button class="mobile-btn" onclick="toggleMobileMenu()" style="display: none; flex-direction: column; gap: 4px; background: none; border: none; cursor: pointer; padding: 8px; z-index: 1001;">
+                    <span style="width: 25px; height: 3px; background-color: #000000; border-radius: 2px; display: block; margin-bottom: 4px;"></span>
+                    <span style="width: 25px; height: 3px; background-color: #000000; border-radius: 2px; display: block; margin-bottom: 4px;"></span>
+                    <span style="width: 25px; height: 3px; background-color: #000000; border-radius: 2px; display: block;"></span>
                 </button>
             </div>
             
-            <!-- ABSOLUTE MINIMAL MOBILE MENU -->
-            <div class="mobile-nav" id="mobileNav">
-                <a href="/">Home</a>
-                <a href="jacksonville-vending-services-landing.html">Vending Services</a>
-                <a href="setting-up-a-micro-market-in-your-jacksonville-office.html">Micro-Markets</a>
-                <a href="coffeeservices.html">Coffee Services</a>
-                <a href="smart-coolers.html">Smart Coolers</a>
-                <a href="services.html">All Services</a>
-                <a href="locations.html">All Locations</a>
-                <a href="jacksonville.html">Jacksonville</a>
-                <a href="downtown-jacksonville.html">Downtown</a>
-                <a href="jacksonville-beach.html">Jacksonville Beach</a>
-                <a href="orange-park.html">Orange Park</a>
-                <a href="ponte-vedra.html">Ponte Vedra</a>
-                <a href="atlantic-beach.html">Atlantic Beach</a>
-                <a href="st-augustine.html">St. Augustine</a>
-                <a href="mandarin.html">Mandarin</a>
-                <a href="lakeside.html">Lakeside</a>
-                <a href="products.html">Products</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html" class="mobile-cta">Contact Us</a>
-                <a href="tel:904-456-3851" class="mobile-phone">📞 904-456-3851</a>
+            <!-- BULLETPROOF MOBILE MENU -->
+            <div class="mobile-nav" id="mobileNav" style="position: fixed; top: 0; left: -100%; width: 100%; height: 100vh; background: #ffffff; box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1); transition: left 0.3s ease; z-index: 1000; overflow-y: auto; padding-top: 80px;">
+                <a href="/" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Home</a>
+                <a href="jacksonville-vending-services-landing.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Vending Services</a>
+                <a href="setting-up-a-micro-market-in-your-jacksonville-office.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Micro-Markets</a>
+                <a href="coffeeservices.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Coffee Services</a>
+                <a href="smart-coolers.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Smart Coolers</a>
+                <a href="services.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">All Services</a>
+                <a href="locations.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">All Locations</a>
+                <a href="jacksonville.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Jacksonville</a>
+                <a href="downtown-jacksonville.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Downtown</a>
+                <a href="jacksonville-beach.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Jacksonville Beach</a>
+                <a href="orange-park.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Orange Park</a>
+                <a href="ponte-vedra.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Ponte Vedra</a>
+                <a href="atlantic-beach.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Atlantic Beach</a>
+                <a href="st-augustine.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">St. Augustine</a>
+                <a href="mandarin.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Mandarin</a>
+                <a href="lakeside.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Lakeside</a>
+                <a href="products.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Products</a>
+                <a href="blog.html" style="display: block; padding: 15px 20px; color: #374151; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6;">Blog</a>
+                <a href="contact.html" style="display: block; padding: 15px 20px; color: #3b82f6; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6; background-color: #f8fafc; font-weight: 600;">Contact Us</a>
+                <a href="tel:904-456-3851" style="display: block; padding: 15px 20px; color: #3b82f6; text-decoration: none; font-size: 16px; border-bottom: 1px solid #f3f4f6; background-color: #f8fafc; font-weight: 600;">📞 904-456-3851</a>
             </div>
         </nav>
+        
+        <style>
+            /* BULLETPROOF MOBILE STYLES - INLINE TO AVOID CONFLICTS */
+            @media (max-width: 768px) {
+                .mobile-btn {
+                    display: flex !important;
+                }
+                
+                .nav-menu, .dropdown-menu, .nav-phone {
+                    display: none !important;
+                }
+            }
+        </style>
     `;
     
     // Insert navigation at the beginning of the body
     document.body.insertAdjacentHTML('afterbegin', navigationHTML);
     
-    console.log('ABSOLUTE MINIMAL navigation loaded successfully');
+    console.log('BULLETPROOF navigation loaded successfully');
     
     // Initialize desktop dropdowns only
     initializeDropdowns();
@@ -144,9 +157,9 @@ function initializeDropdowns() {
     });
 }
 
-// GLOBAL MOBILE MENU TOGGLE FUNCTION - ABSOLUTE MINIMAL
+// BULLETPROOF MOBILE MENU TOGGLE FUNCTION
 function toggleMobileMenu() {
-    console.log('toggleMobileMenu called - ABSOLUTE MINIMAL');
+    console.log('toggleMobileMenu called - BULLETPROOF');
     
     const mobileNav = document.getElementById('mobileNav');
     const mobileBtn = document.querySelector('.mobile-btn');

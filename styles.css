@@ -541,7 +541,7 @@ body {
 }
 
 .mobile-nav.show {
-    left: 0;
+    left: 0 !important;
 }
 
 .mobile-nav a {
