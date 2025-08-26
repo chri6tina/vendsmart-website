@@ -37,11 +37,11 @@ function loadNewNavigation() {
                     <a href="contact.html" class="cta-btn">Contact</a>
                 </div>
                 
-                <!-- Mobile Menu Button -->
+                <!-- FIXED HAMBURGER BUTTON WITH PROPER SPACING -->
                 <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
                 </button>
             </div>
             
@@ -112,23 +112,28 @@ function loadNewNavigation() {
                 background: #2563eb;
             }
             
-            /* Mobile Menu Button */
+            /* FIXED HAMBURGER BUTTON WITH PROPER SPACING */
             .mobile-menu-btn {
                 display: none;
                 flex-direction: column;
-                gap: 4px;
                 background: none;
                 border: none;
                 cursor: pointer;
-                padding: 5px;
+                padding: 8px;
+                width: 40px;
+                height: 40px;
+                justify-content: center;
+                align-items: center;
             }
             
-            .mobile-menu-btn span {
+            .hamburger-line {
                 width: 25px;
                 height: 3px;
                 background: #333;
                 border-radius: 2px;
+                margin: 2px 0;
                 transition: all 0.3s ease;
+                display: block;
             }
             
             /* Mobile Menu */
@@ -170,16 +175,16 @@ function loadNewNavigation() {
                     display: flex;
                 }
                 
-                .mobile-menu-btn.active span:nth-child(1) {
-                    transform: rotate(45deg) translate(5px, 5px);
+                .mobile-menu-btn.active .hamburger-line:nth-child(1) {
+                    transform: rotate(45deg) translate(6px, 6px);
                 }
                 
-                .mobile-menu-btn.active span:nth-child(2) {
+                .mobile-menu-btn.active .hamburger-line:nth-child(2) {
                     opacity: 0;
                 }
                 
-                .mobile-menu-btn.active span:nth-child(3) {
-                    transform: rotate(-45deg) translate(7px, -6px);
+                .mobile-menu-btn.active .hamburger-line:nth-child(3) {
+                    transform: rotate(-45deg) translate(6px, -6px);
                 }
             }
             
