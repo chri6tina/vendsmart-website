@@ -7,67 +7,125 @@
     <link rel="stylesheet" href="styles.css?v=21.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+        .test-content {
+            padding: 100px 20px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .test-section {
+            margin: 40px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-    </div>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <!-- Logo Section -->
+            <div class="nav-logo">
+                <a href="/" aria-label="Jacksonville Vending Machines Homepage">
+                    <img src="vendsmart-logo-jacksonville-vending.png" alt="Jacksonville Vending Machines - VendSmart Logo" loading="lazy">
+                </a>
+            </div>
 
-    <!-- Navigation will be loaded by includes.js -->
+            <!-- Desktop Navigation Menu -->
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="/" role="menuitem">Home</a></li>
+                
+                <!-- Services Dropdown -->
+                <li class="dropdown" role="none">
+                    <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="menuitem">
+                        Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-label="Services submenu">
+                        <li role="none"><a href="services.html" role="menuitem">All Services</a></li>
+                        <li role="none"><a href="coffeeservices.html" role="menuitem">Coffee Services</a></li>
+                        <li role="none"><a href="setting-up-a-micro-market-in-your-jacksonville-office.html" role="menuitem">Micro-Markets</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Locations Dropdown -->
+                <li class="dropdown" role="none">
+                    <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="menuitem">
+                        Locations <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-label="Locations submenu">
+                        <li role="none"><a href="locations.html" role="menuitem">All Locations</a></li>
+                        <li role="none"><a href="jacksonville.html" role="menuitem">Jacksonville</a></li>
+                        <li role="none"><a href="downtown-jacksonville.html" role="menuitem">Downtown</a></li>
+                    </ul>
+                </li>
+                
+                <li role="none"><a href="products.html" role="menuitem">Products</a></li>
+                <li role="none"><a href="blog.html" role="menuitem">Blog</a></li>
+                <li role="none"><a href="contact.html" class="cta-button" role="menuitem">Contact Us</a></li>
+            </ul>
 
-    <!-- Test Content -->
-    <div style="margin-top: 150px; padding: 20px;">
+            <!-- Contact Phone (Desktop) -->
+            <div class="nav-phone">
+                <a href="tel:904-456-3851" class="phone-link" aria-label="Call us at 904-456-3851">
+                    <i class="fas fa-phone" aria-hidden="true"></i>
+                    <span>904-456-3851</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu" type="button">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="test-content">
         <h1>Mobile Navigation Test</h1>
-        <p>This page tests the mobile navigation using includes.js. Resize your browser to mobile size to see the hamburger menu.</p>
-        <p>If you can see the hamburger menu (three horizontal lines) on mobile, click it to test the mobile menu functionality.</p>
         
-        <h2>Test Instructions:</h2>
-        <ol>
-            <li>Resize your browser window to mobile size (width ≤ 768px)</li>
-            <li>You should see a hamburger menu (three horizontal lines) in the top right</li>
-            <li>Click the hamburger menu to open the mobile navigation</li>
-            <li>The menu should slide in from the left</li>
-            <li>Click on dropdown items to test dropdown functionality</li>
-        </ol>
+        <div class="test-section">
+            <h2>Test Instructions</h2>
+            <ol>
+                <li>Resize your browser window to mobile size (768px or less)</li>
+                <li>Click the hamburger menu button (three lines) in the top right</li>
+                <li>The navigation menu should slide in from the left</li>
+                <li>Click on "Services" or "Locations" to test dropdown functionality</li>
+                <li>Click outside the menu or on a link to close it</li>
+            </ol>
+        </div>
         
-        <h2>Expected Behavior:</h2>
-        <ul>
-            <li>Hamburger menu visible on mobile (≤768px)</li>
-            <li>Desktop navigation hidden on mobile</li>
-            <li>Mobile menu slides in from left when hamburger clicked</li>
-            <li>Dropdowns work on mobile</li>
-            <li>Menu closes when clicking links</li>
-        </ul>
+        <div class="test-section">
+            <h2>Expected Behavior</h2>
+            <ul>
+                <li>✅ Hamburger button should be visible on mobile</li>
+                <li>✅ Clicking hamburger should show/hide navigation menu</li>
+                <li>✅ Menu should slide in from left with smooth animation</li>
+                <li>✅ Dropdown menus should work on mobile</li>
+                <li>✅ Clicking outside should close the menu</li>
+                <li>✅ Clicking a link should close the menu</li>
+            </ul>
+        </div>
         
-        <h2>Debug Info:</h2>
-        <div id="debug-info" style="background: #f0f0f0; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 12px;">
-    
-            <div>Navigation loaded: <span id="nav-status">Checking...</span></div>
-            <div>Hamburger found: <span id="hamburger-status">Checking...</span></div>
-            <div>Nav menu found: <span id="nav-menu-status">Checking...</span></div>
-            <div>Window width: <span id="window-width">Checking...</span></div>
+        <div class="test-section">
+            <h2>Mobile Navigation Features</h2>
+            <ul>
+                <li>Fixed position navigation bar</li>
+                <li>Smooth slide-in animation</li>
+                <li>Dropdown support for Services and Locations</li>
+                <li>Proper accessibility attributes</li>
+                <li>Body scroll prevention when menu is open</li>
+            </ul>
         </div>
     </div>
 
     <script src="includes.js"></script>
     <script src="script.js"></script>
-    
-    <script>
-        // Debug script to check mobile navigation status
-        function updateDebugInfo() {
-            const nav = document.querySelector('.navbar');
-            const hamburger = document.querySelector('.hamburger');
-            const navMenu = document.querySelector('.nav-menu');
-            
-            document.getElementById('nav-status').textContent = nav ? 'Yes' : 'No';
-            document.getElementById('hamburger-status').textContent = hamburger ? 'Yes' : 'No';
-            document.getElementById('nav-menu-status').textContent = navMenu ? 'Yes' : 'No';
-            document.getElementById('window-width').textContent = window.innerWidth + 'px';
-        }
-        
-        // Update debug info every second
-        setInterval(updateDebugInfo, 1000);
-        
-        // Initial update
-        setTimeout(updateDebugInfo, 500);
-    </script>
 </body>
-</html> 
+</html>
