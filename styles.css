@@ -570,10 +570,12 @@ body {
     .dropdown-menu {
         display: none;
         position: static;
-        background: #f8f9fa;
+        background: #ffffff;
         box-shadow: none;
         width: 100%;
         padding: 0;
+        border: none;
+        border-radius: 0;
     }
     
     .dropdown.active .dropdown-menu {
@@ -581,13 +583,25 @@ body {
     }
     
     .dropdown-menu li {
-        border-bottom: 1px solid #e5e7eb;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    
+    .dropdown-menu li:last-child {
+        border-bottom: none;
     }
     
     .dropdown-menu a {
-        padding: 12px 40px;
+        padding: 12px 30px;
         font-size: 14px;
-        color: #666;
+        color: #555;
+        background: #fafafa;
+        transition: all 0.2s ease;
+    }
+    
+    .dropdown-menu a:hover {
+        background: #f0f0f0;
+        color: #3b82f6;
+        padding-left: 35px;
     }
     
     .dropdown-toggle {
@@ -602,11 +616,20 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        transition: all 0.2s ease;
     }
     
     .dropdown-toggle:hover {
         background: #f8f9fa;
         color: #3b82f6;
+    }
+    
+    .dropdown-toggle i {
+        transition: transform 0.2s ease;
+    }
+    
+    .dropdown.active .dropdown-toggle i {
+        transform: rotate(180deg);
     }
     
     .nav-phone {
@@ -7609,32 +7632,9 @@ html {
     opacity: 1;
 }
 
-/* Ensure mobile navigation has proper close button */
-.nav-menu::after {
-    content: '×';
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #666;
-    cursor: pointer;
-    z-index: 1;
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
+/* Remove X button - hamburger menu handles closing */
 
-.nav-menu::after:hover {
-    background: rgba(255, 255, 255, 1);
-    color: #333;
-    transform: scale(1.1);
-}
+/* X button hover removed */
 
 /* Ensure mobile navigation has proper loading states */
 .nav-menu.loading {
@@ -7830,31 +7830,9 @@ html {
     opacity: 1;
 }
 
-.nav-menu::after {
-    content: '×';
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #666;
-    cursor: pointer;
-    z-index: 1;
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
+/* X button removed */
 
-.nav-menu::after:hover {
-    background: rgba(255, 255, 255, 1);
-    color: #333;
-    transform: scale(1.1);
-}
+/* X button hover removed */
 
 .nav-menu.loading::before {
     content: '';
