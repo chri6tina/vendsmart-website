@@ -7735,6 +7735,11 @@ html {
 
 /* Ensure mobile navigation has proper dark mode support */
 @media (prefers-color-scheme: dark) {
+    .navbar {
+        background: #1f2937 !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+    
     .nav-menu {
         background: #1f2937;
         color: #f9fafb;
@@ -7760,6 +7765,23 @@ html {
     
     .dropdown-menu a:hover {
         background: #374151;
+    }
+    
+    .dropdown-toggle {
+        color: #f9fafb;
+    }
+    
+    .dropdown-toggle:hover {
+        background-color: #374151;
+        color: #f9fafb;
+    }
+    
+    .phone-link {
+        color: #f9fafb;
+    }
+    
+    .phone-link:hover {
+        color: #60a5fa;
     }
 }
 
