@@ -151,6 +151,6 @@ vending-services-orange-park.html
 vending-services-ponte-vedra.html
 vending-services-st-augustine.html
 vending-services-st.-augustine.html
-vending-services-vending-services-beach.html
+vending-services-jacksonville-beach.html
 vendingmachine-service.html
 why-choose-vendsmart-jacksonville.html
