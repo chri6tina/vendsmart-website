@@ -126,7 +126,6 @@ vending-machine-warranty-jacksonville.html
 vending-machines-for-apartment-complexes-jacksonville.html
 vending-machines-for-construction-sites-jacksonville.html
 vending-machines-for-government-buildings-jacksonville.html
-vending-machines-for-government-buildings.html
 vending-machines-for-gyms.html
 vending-machines-for-hospitals.html
 vending-machines-for-hotels.html
