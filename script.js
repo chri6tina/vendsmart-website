@@ -20,24 +20,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Ensure all other links work properly (fix for CTA buttons)
-document.addEventListener('DOMContentLoaded', function() {
-    // Make sure CTA buttons and navigation links work properly (but not hamburger)
-    const ctaLinks = document.querySelectorAll('.btn, .cta-button, .hero-buttons a, .cta-buttons a');
-    ctaLinks.forEach(link => {
-        // Ensure links are clickable
-        link.style.cursor = 'pointer';
-        link.style.pointerEvents = 'auto';
-        
-        // Add click logging for debugging
-        link.addEventListener('click', function(e) {
-            console.log('CTA link clicked:', this.href);
-            // Don't prevent default - let navigation happen
-        });
-    });
-    
-    console.log('CTA buttons and links initialized - should work now');
-});
+// CTA buttons are now handled by includes.js to avoid conflicts
 
 // Navbar background change on scroll
 window.addEventListener('scroll', function() {
@@ -112,8 +95,7 @@ window.addEventListener('load', function() {
     document.body.classList.add('loaded');
 });
 
-// Add loading class to body
-document.body.classList.add('loading');
+// Removed loading class addition that was causing issues
 
 // Service area hover effects
 document.addEventListener('DOMContentLoaded', function() {

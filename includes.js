@@ -1,9 +1,45 @@
 // ===== MOBILE NAVIGATION FIX =====
 
+// Load navigation
+function loadNavigation() {
+    fetch('nav.html')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(data => {
+            // Check if navigation already exists to prevent duplicates
+            const existingNav = document.querySelector('nav, .navbar');
+            if (existingNav) {
+                console.log('Navigation already exists, skipping duplicate insertion');
+                return;
+            }
+            
+            // Insert navigation after opening body tag
+            const body = document.querySelector('body');
+            if (body) {
+                body.insertAdjacentHTML('afterbegin', data);
+                console.log('Navigation loaded successfully');
+                
+                // Initialize mobile navigation after navigation is loaded
+                setTimeout(() => {
+                    initializeMobileNavigation();
+                }, 100);
+            }
+        })
+        .catch(error => {
+            console.error('Error loading navigation:', error);
+            // Don't let navigation errors break the entire site
+        });
+}
+
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
+    loadNavigation();
     loadFooter();
-    initializeMobileNavigation();
+    // Don't initialize mobile navigation here - wait for navigation to load
 });
 
 // Initialize mobile navigation for existing navbar
@@ -115,36 +151,4 @@ function loadFooter() {
         .catch(error => console.error('Error loading footer:', error));
 }
 
-// Fix CTA buttons - ensure they work properly
-function fixCTAButtons() {
-    console.log('Fixing CTA buttons...');
-    
-    // Find all CTA buttons
-    const ctaButtons = document.querySelectorAll('.btn, .cta-button, .hero-buttons a, .cta-buttons a');
-    
-    ctaButtons.forEach(button => {
-        console.log('Found CTA button:', button.href || button.textContent);
-        
-        // Remove any existing click listeners
-        const newButton = button.cloneNode(true);
-        button.parentNode.replaceChild(newButton, button);
-        
-        // Add new click listener
-        newButton.addEventListener('click', function(e) {
-            console.log('CTA button clicked:', this.href);
-            // Let the default navigation happen
-        });
-        
-        // Ensure button is clickable
-        newButton.style.cursor = 'pointer';
-        newButton.style.pointerEvents = 'auto';
-        newButton.style.position = 'relative';
-        newButton.style.zIndex = '10';
-    });
-    
-    console.log('CTA buttons fixed - should work now');
-}
-
-// Initialize CTA button fixes
-document.addEventListener('DOMContentLoaded', fixCTAButtons);
-window.addEventListener('load', fixCTAButtons); 
+// Location cards use existing area-card-link pattern - no custom JavaScript needed 
