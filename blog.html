@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacksonville Vending Machines - Vending Machine Blog | Industry Tips & News</title>
+    <meta name="description" content="Jacksonville vending machine blog with industry insights, tips & news. Expert advice on vending machines, micro-markets & business solutions from VendSmart.">
+    <link rel="canonical" href="https://jacksonvillevendingmachines.com/blog.html">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Main site CSS (minimal, just for header/footer) -->
+    <link rel="stylesheet" href="styles.css?v=12.0">
+    <!-- Blog-specific CSS (isolated) -->
+    <link rel="stylesheet" href="blog-styles.css?v=1.3">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="k6tgI9HdMAcJ9OBJx7CeVA" async></script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZD02L8HK5P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ZD02L8HK5P');
+    </script>
+    
+    <!-- Contentful SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+</head>
+<body>
+    </div>
+    </div>
+
+    <!-- Navigation will be loaded by includes.js -->
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="jacksonville-vending-micro-market.jpg" alt="Jacksonville vending machine blog and industry insights" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>VendSmart Blog</h1>
+                <p>Expert insights, industry trends, and practical tips for vending success</p>
+                <div class="blog-stats">
+                    <div class="stat">
+                        <span class="stat-number" id="totalPosts">50+</span>
+                        <span class="stat-label">Articles</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Readers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog-content">
+        <div class="container">
+            <!-- Featured Post (Contentful) -->
+            <div class="featured-post" id="featuredPost" style="display: none;">
+                <div class="featured-post-image">
+                    <img id="featuredImage" src="" alt="">
+                </div>
+                <div class="featured-post-content">
+                    <div class="post-meta">
+                        <span class="category" id="featuredCategory">Featured</span>
+                        <span class="date" id="featuredDate"></span>
+                        <span class="read-time" id="featuredReadTime"></span>
+                    </div>
+                    <h2 id="featuredTitle"></h2>
+                    <a href="#" class="read-more-btn" id="featuredLink">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Blog Categories -->
+            <div class="blog-categories">
+                <h3>Browse by Category</h3>
+                <div class="category-filters" id="categoryFilters">
+                    <button class="category-btn active" data-category="all">All Posts</button>
+                    <!-- Categories will be populated by Contentful -->
+                </div>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid" id="blogGrid">
+                <!-- Posts will be populated by Contentful -->
+                <div class="loading-posts">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading blog posts...</p>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container" id="loadMoreContainer" style="display: none;">
+                <button class="load-more-btn" id="loadMoreBtn">
+                    <i class="fas fa-plus"></i>
+                    Load More Articles
+                </button>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="newsletter-signup">
+                <div class="newsletter-content">
+                    <h3>Stay Updated</h3>
+                    <p>Get the latest vending industry insights and tips delivered to your inbox.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer will be loaded by includes.js -->
+
+    <!-- Blog Script -->
+    <script src="includes.js"></script>
+    <script src="blog-script.js?v=2.0"></script>
+    
+    <!-- Contentful Integration Script -->
+    <script>
+        // Contentful Configuration
+        const client = contentful.createClient({
+            space: 'xpopyri6s8gv',
+            accessToken: 'u7y4yBwgXnAUXt-c2B4rVuidEoe4L3AzMBzkNMxSXp0'
+        });
+        
+        console.log('🔧 Contentful client initialized');
+        console.log('🔧 Space ID: xpopyri6s8gv');
+        console.log('🔧 Access Token: u7y4yBwgXnAUXt-c2B4rVuidEoe4L3AzMBzkNMxSXp0');
+
+        // Blog post template
+        function createBlogPostHTML(post) {
+            console.log('🔍 Creating HTML for post:', post.fields.title);
+            console.log('🔍 Post fields available:', Object.keys(post.fields));
+            
+            // Handle different possible field names
+            const title = post.fields.title || post.fields.name || 'Untitled Post';
+            const category = post.fields.category || post.fields.postCategory || 'Uncategorized';
+            const readTime = post.fields.readTime || post.fields.readingTime || '5 min read';
+            const featuredImage = post.fields.featuredImage || post.fields.image || post.fields.heroImage;
+            
+            const date = new Date(post.sys.createdAt).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            
+            return `
+                <article class="blog-post" data-category="${category.toLowerCase().replace(/\s+/g, '-')}">
+                    <div class="post-image">
+                        <img src="${featuredImage?.fields?.file?.url || 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'}" 
+                             alt="${title}">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="category">${category}</span>
+                            <span class="date">${date}</span>
+                            <span class="read-time">${readTime}</span>
+                        </div>
+                        <h3>${title}</h3>
+                        <a href="blog-post.html?id=${post.sys.id}" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            `;
+        }
+
+        // Featured post template
+        function createFeaturedPostHTML(post) {
+            console.log('🔍 Creating featured post HTML for:', post.fields.title);
+            
+            // Handle different possible field names
+            const title = post.fields.title || post.fields.name || 'Featured Post';
+            const category = post.fields.category || post.fields.postCategory || 'Featured';
+            const readTime = post.fields.readTime || post.fields.readingTime || '5 min read';
+            const featuredImage = post.fields.featuredImage || post.fields.image || post.fields.heroImage;
+            const excerpt = post.fields.excerpt || post.fields.summary || 'No excerpt available.';
+            
+            const date = new Date(post.sys.createdAt).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            
+            return {
+                image: featuredImage?.fields?.file?.url || 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+                category: category,
+                date: date,
+                readTime: readTime,
+                title: title,
+                excerpt: excerpt,
+                id: post.sys.id
+            };
+        }
+
+        // Load blog posts from Contentful
+        async function loadBlogPosts() {
+            try {
+                // Show loading state
+                const blogGrid = document.getElementById('blogGrid');
+                blogGrid.innerHTML = '<div class="loading-posts"><i class="fas fa-spinner fa-spin"></i><p>Loading blog posts...</p></div>';
+
+                console.log('🔍 Fetching posts from Contentful...');
+
+                // Fetch posts from Contentful
+                const response = await client.getEntries({
+                    content_type: 'blogPost',
+                    order: '-sys.createdAt',
+                    limit: 12
+                });
+
+                console.log('📦 Contentful response:', response);
+                console.log('📊 Number of posts found:', response.items.length);
+                
+                // Debug: Log the first post structure if available
+                if (response.items.length > 0) {
+                    console.log('🔍 First post structure:', response.items[0]);
+                    console.log('🔍 Available fields:', Object.keys(response.items[0].fields));
+                }
+
+                const posts = response.items;
+                
+                if (posts.length === 0) {
+                    console.log('❌ No Contentful posts found - showing sample posts...');
+                    showSamplePosts();
+                    return;
+                }
+
+                console.log('✅ Posts found! First post:', posts[0]);
+                console.log('🏷️ Categories found:', posts.map(p => p.fields.category));
+
+                // Update total posts count
+                const totalPostsElement = document.getElementById('totalPosts');
+                if (totalPostsElement) {
+                    totalPostsElement.textContent = posts.length + '+';
+                }
+
+                // Set featured post (first post)
+                if (posts.length > 0) {
+                    console.log('⭐ Setting featured post...');
+                    const featuredPost = createFeaturedPostHTML(posts[0]);
+                    console.log('🎯 Featured post data:', featuredPost);
+                    
+                    document.getElementById('featuredImage').src = featuredPost.image;
+                    document.getElementById('featuredImage').alt = featuredPost.title;
+                    document.getElementById('featuredCategory').textContent = featuredPost.category;
+                    document.getElementById('featuredDate').textContent = featuredPost.date;
+                    document.getElementById('featuredReadTime').textContent = featuredPost.readTime;
+                    document.getElementById('featuredTitle').textContent = featuredPost.title;
+                    document.getElementById('featuredLink').href = `blog-post.html?id=${featuredPost.id}`;
+                    document.getElementById('featuredPost').style.display = 'grid';
+                    console.log('✅ Featured post set!');
+                }
+
+                // Populate blog grid (skip first post as it's featured)
+                const regularPosts = posts.slice(1);
+                console.log('📝 Regular posts to display:', regularPosts.length);
+                
+                let blogGridHTML = '';
+                
+                regularPosts.forEach(post => {
+                    const postHTML = createBlogPostHTML(post);
+                    blogGridHTML += postHTML;
+                    console.log('📄 Created HTML for post:', post.fields.title);
+                });
+
+                console.log('🎨 Setting blog grid HTML...');
+                blogGrid.innerHTML = blogGridHTML;
+                console.log('✅ Blog grid updated!');
+
+                // Populate categories
+                const categories = [...new Set(posts.map(post => post.fields.category).filter(Boolean))];
+                const categoryFilters = document.getElementById('categoryFilters');
+                
+                categories.forEach(category => {
+                    const button = document.createElement('button');
+                    button.className = 'category-btn';
+                    button.setAttribute('data-category', category.toLowerCase().replace(/\s+/g, '-'));
+                    button.textContent = category;
+                    categoryFilters.appendChild(button);
+                });
+
+                // Show load more button if there are more posts
+                if (posts.length >= 12) {
+                    document.getElementById('loadMoreContainer').style.display = 'block';
+                }
+
+                // Reinitialize blog functionality
+                initializeBlogFunctionality();
+                
+                // Call additional blog functions
+                if (window.observeBlogPosts) {
+                    window.observeBlogPosts();
+                }
+                if (window.addReadingTimeToPosts) {
+                    window.addReadingTimeToPosts();
+                }
+
+            } catch (error) {
+                console.error('❌ Error loading blog posts:', error);
+                console.error('❌ Error details:', {
+                    message: error.message,
+                    name: error.name,
+                    stack: error.stack
+                });
+                document.getElementById('blogGrid').innerHTML = '<div class="error-posts"><p>Error loading blog posts. Please try again later.</p><p>Error: ' + error.message + '</p></div>';
+            }
+        }
+
+        // Initialize blog functionality after Contentful loads
+        function initializeBlogFunctionality() {
+            // Category filtering
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            const blogPosts = document.querySelectorAll('.blog-post');
+            
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const selectedCategory = this.getAttribute('data-category');
+                    
+                    // Update active button
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter posts
+                    blogPosts.forEach(post => {
+                        const postCategory = post.getAttribute('data-category');
+                        
+                        if (selectedCategory === 'all' || postCategory === selectedCategory) {
+                            post.style.display = 'block';
+                            post.classList.remove('hidden');
+                            post.style.animation = 'none';
+                            post.offsetHeight;
+                            post.style.animation = 'fadeInUp 0.6s ease forwards';
+                        } else {
+                            post.classList.add('fade-out');
+                            setTimeout(() => {
+                                post.style.display = 'none';
+                                post.classList.add('hidden');
+                            }, 300);
+                        }
+                    });
+                });
+            });
+
+            // Newsletter form
+            const newsletterForm = document.getElementById('newsletterForm');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const emailInput = this.querySelector('input[type="email"]');
+                    const email = emailInput.value;
+                    
+                    if (email) {
+                        const button = this.querySelector('button');
+                        const originalText = button.innerHTML;
+                        
+                        button.innerHTML = '<i class="fas fa-check"></i> Subscribed!';
+                        button.style.background = '#10B981';
+                        
+                        emailInput.value = '';
+                        
+                        setTimeout(() => {
+                            button.innerHTML = originalText;
+                            button.style.background = '#1f2937';
+                        }, 3000);
+                    }
+                });
+            }
+        }
+
+        // Sample posts data for fallback
+        const samplePosts = [
+            {
+                id: 'iot-integration-vending-cloud',
+                category: 'Technology',
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+                title: 'IoT Integration: Connecting Your Vending Machines to the Cloud',
+                excerpt: 'Learn how IoT technology is enabling real-time monitoring and predictive maintenance for vending operations.',
+                date: 'November 28, 2024',
+                readTime: '8 min read'
+            },
+            {
+                id: 'customer-analytics-vending-performance',
+                category: 'Business Tips',
+                image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+                title: 'Customer Analytics: Understanding Your Vending Machine Performance',
+                excerpt: 'Discover how data analytics can help you optimize your vending machine inventory and increase sales.',
+                date: 'November 25, 2024',
+                readTime: '6 min read'
+            },
+            {
+                id: 'plant-based-options-vending-trend',
+                category: 'Health & Wellness',
+                image: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+                title: 'Plant-Based Options: The Growing Trend in Vending',
+                excerpt: 'Explore the rise of plant-based and vegan options in vending machines and how to meet this demand.',
+                date: 'November 22, 2024',
+                readTime: '5 min read'
+            },
+            {
+                id: 'preventive-maintenance-vending-care',
+                category: 'Maintenance',
+                image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+                title: 'Preventive Maintenance: Saving Money Through Proactive Care',
+                excerpt: 'A detailed guide to implementing a preventive maintenance schedule that saves money and prevents downtime.',
+                date: 'November 20, 2024',
+                readTime: '7 min read'
+            },
+            {
+                id: 'sustainability-vending-eco-friendly',
+                category: 'Industry News',
+                image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+                title: 'Sustainability in Vending: Eco-Friendly Practices and Products',
+                excerpt: 'How to make your vending business more sustainable and appeal to environmentally conscious consumers.',
+                date: 'November 18, 2024',
+                readTime: '6 min read'
+            },
+            {
+                id: 'mobile-apps-vending-customer-experience',
+                category: 'Technology',
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+                title: 'Mobile Apps and Vending: Enhancing Customer Experience',
+                excerpt: 'How mobile applications are transforming the way customers interact with vending machines.',
+                date: 'November 15, 2024',
+                readTime: '5 min read'
+            }
+        ];
+
+        // Show sample posts when no Contentful posts are available
+        function showSamplePosts() {
+            const blogGrid = document.getElementById('blogGrid');
+            let blogGridHTML = '';
+            
+            // Set featured post (first sample post)
+            const featuredPost = samplePosts[0];
+            document.getElementById('featuredImage').src = featuredPost.image;
+            document.getElementById('featuredImage').alt = featuredPost.title;
+            document.getElementById('featuredCategory').textContent = featuredPost.category;
+            document.getElementById('featuredDate').textContent = featuredPost.date;
+            document.getElementById('featuredReadTime').textContent = featuredPost.readTime;
+            document.getElementById('featuredTitle').textContent = featuredPost.title;
+            document.getElementById('featuredLink').href = `blog-post.html?id=${featuredPost.id}`;
+            document.getElementById('featuredPost').style.display = 'grid';
+            
+            // Create regular posts (skip first as it's featured)
+            const regularPosts = samplePosts.slice(1);
+            regularPosts.forEach(post => {
+                blogGridHTML += `
+                    <article class="blog-post" data-category="${post.category.toLowerCase().replace(/\s+/g, '-')}">
+                        <div class="post-image">
+                            <img src="${post.image}" alt="${post.title}">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="category">${post.category}</span>
+                                <span class="date">${post.date}</span>
+                                <span class="read-time">${post.readTime}</span>
+                            </div>
+                            <h3>${post.title}</h3>
+                            <a href="blog-post.html?id=${post.id}" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                `;
+            });
+            
+            blogGrid.innerHTML = blogGridHTML;
+            
+            // Update total posts count
+            const totalPostsElement = document.getElementById('totalPosts');
+            if (totalPostsElement) {
+                totalPostsElement.textContent = samplePosts.length + '+';
+            }
+            
+            // Populate categories
+            const categories = [...new Set(samplePosts.map(post => post.category))];
+            const categoryFilters = document.getElementById('categoryFilters');
+            
+            categories.forEach(category => {
+                const button = document.createElement('button');
+                button.className = 'category-btn';
+                button.setAttribute('data-category', category.toLowerCase().replace(/\s+/g, '-'));
+                button.textContent = category;
+                categoryFilters.appendChild(button);
+            });
+            
+            // Initialize blog functionality
+            initializeBlogFunctionality();
+            
+            // Call additional blog functions
+            if (window.observeBlogPosts) {
+                window.observeBlogPosts();
+            }
+            if (window.addReadingTimeToPosts) {
+                window.addReadingTimeToPosts();
+            }
+        }
+
+        // Load posts when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🚀 DOM loaded, checking Contentful SDK...');
+            
+            // Check if Contentful SDK is loaded
+            if (typeof contentful === 'undefined') {
+                console.error('❌ Contentful SDK not loaded!');
+                document.getElementById('blogGrid').innerHTML = '<div class="error-posts"><p>Error: Contentful SDK not loaded. Please refresh the page.</p></div>';
+                return;
+            }
+            
+            console.log('✅ Contentful SDK loaded successfully');
+            loadBlogPosts();
+        });
+    </script>
+</body>
+</html> 

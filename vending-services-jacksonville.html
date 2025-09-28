@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacksonville Vending Machines - Vending Services in Jacksonville FL | Smart Vending & Micro-Markets</title>
+    <meta name="description" content="Professional vending services in Jacksonville FL. Smart vending machines, micro-markets, coffee services & fresh food solutions. Free installation, 24/7 support. Serving all Jacksonville areas.">
+    <meta name="keywords" content="vending services Jacksonville, Jacksonville vending services, vending machine services Jacksonville FL, smart vending Jacksonville, micro markets Jacksonville, coffee services Jacksonville, vending company Jacksonville">
+    <link rel="canonical" href="https://jacksonvillevendingmachines.com/vending-services-jacksonville.html">
+    <link rel="stylesheet" href="styles.css?v=15.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Hero Stats */
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            margin: 2rem auto;
+            flex-wrap: wrap;
+            max-width: 800px;
+            width: 100%;
+        }
+        
+        .hero-stat {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            flex: 1;
+            min-width: 150px;
+        }
+        
+        .hero-stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #00C5F5;
+            display: block;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-stat-label {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.9);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 0.5rem;
+        }
+        
+        /* Hero Content Centering */
+        .hero-content {
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .hero-content h1 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero-content .hero-subtitle {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        /* Service Categories */
+        .service-categories {
+            padding: 5rem 0;
+            background: #f8fafc;
+        }
+        
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .category-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
+        }
+        
+        .category-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            border-color: #00C5F5;
+        }
+        
+        .category-card h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        
+        .category-card h3::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
+            border-radius: 2px;
+        }
+        
+        .category-card p {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .category-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .category-card ul li {
+            padding: 0.75rem 0;
+            color: #374151;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .category-card ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0.75rem;
+            width: 20px;
+            height: 20px;
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        /* Jacksonville Areas */
+        .jacksonville-areas {
+            padding: 5rem 0;
+            background: white;
+        }
+        
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        .area-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .area-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-color: #00C5F5;
+        }
+        
+        .area-card h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        
+        .area-card p {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+        
+        /* Why Choose Us */
+        .why-choose {
+            padding: 5rem 0;
+            background: #f8fafc;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .benefit-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+        
+        .benefit-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .benefit-icon i {
+            font-size: 2rem;
+            color: white;
+        }
+        
+        .benefit-card h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        
+        .benefit-card p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-stats {
+                flex-direction: column;
+                gap: 1rem;
+                max-width: 100%;
+                margin: 2rem auto;
+            }
+            
+            .hero-stat {
+                padding: 1rem;
+                min-width: auto;
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .hero-stat-number {
+                font-size: 2rem;
+            }
+            
+            .category-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .category-card {
+                padding: 2rem;
+            }
+            
+            .category-card h3 {
+                font-size: 1.5rem;
+            }
+            
+            .areas-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "VendSmart Jacksonville Vending Services",
+        "description": "Professional vending services in Jacksonville FL including smart vending machines, micro-markets, and coffee services",
+        "url": "https://jacksonvillevendingmachines.com/vending-services-jacksonville.html",
+        "telephone": "+1-904-456-3851",
+        "email": "vendsmartjacksonville@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Jacksonville",
+            "addressRegion": "FL",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "30.3322",
+            "longitude": "-81.6557"
+        },
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "30.3322",
+                "longitude": "-81.6557"
+            },
+            "geoRadius": "50000"
+        },
+        "areaServed": [
+            "Jacksonville, FL",
+            "Jacksonville Beach, FL",
+            "Orange Park, FL",
+            "Ponte Vedra, FL",
+            "Atlantic Beach, FL",
+            "St. Augustine, FL",
+            "Mandarin, FL",
+            "Lakeside, FL"
+        ],
+        "openingHours": "Mo-Su 00:00-23:59",
+        "priceRange": "$$",
+        "paymentAccepted": "Cash, Credit Card",
+        "currenciesAccepted": "USD",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Jacksonville Vending Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Smart Vending Machines Jacksonville"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Micro-Markets Jacksonville"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Coffee Services Jacksonville"
+                    }
+                }
+            ]
+        },
+        "sameAs": [
+            "https://www.facebook.com/vendsmart",
+            "https://www.instagram.com/jacksonvillevendingmachines"
+        ]
+    }
+    </script>
+</head>
+<body>
+    </div>
+
+    <!-- Navigation will be loaded by includes.js -->
+
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb-nav" style="background: #f8fafc; padding: 1rem 0; border-bottom: 1px solid #e5e7eb;">
+        <div class="container">
+            <nav aria-label="Breadcrumb">
+                <ol style="list-style: none; padding: 0; margin: 0; display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                    <li><a href="/" style="color: #00C5F5; text-decoration: none;">Home</a></li>
+                    <li style="color: #6b7280;">/</li>
+                    <li style="color: #374151;">Vending Services Jacksonville</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="jacksonville-vending-micro-market.jpg" alt="Vending services in Jacksonville FL - smart vending machines and micro-markets" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Vending Services in Jacksonville FL</h1>
+                <p class="hero-subtitle">Jacksonville's premier vending service provider. Smart vending machines, micro-markets, coffee services, and fresh food solutions for businesses throughout the Jacksonville area.</p>
+                
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">500+</span>
+                        <span class="hero-stat-label">Locations Served</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">24/7</span>
+                        <span class="hero-stat-label">Support</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">15+</span>
+                        <span class="hero-stat-label">Years Experience</span>
+                    </div>
+                </div>
+                
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Free Installation</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Smart Technology</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Local Service</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary">Get Vending Services</a>
+                    <a href="get-a-free-vending-machine-in-jacksonville-florida.html" class="btn btn-secondary">Free Machine</a>
+                </div>
+                <div class="hero-links" style="margin-top: 1rem; text-align: center;">
+                    <p style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem;">
+                        <a href="/" style="color: #00C5F5; text-decoration: none;">← Back to VendSmart Home</a> | 
+                        <a href="services.html" style="color: #00C5F5; text-decoration: none;">View All Services</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Categories -->
+    <section class="service-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comprehensive Vending Services in Jacksonville</h2>
+                <p class="section-subtitle">From traditional vending machines to cutting-edge micro-markets, we provide complete vending solutions for businesses throughout the Jacksonville area.</p>
+            </div>
+            
+            <div class="category-grid">
+                <div class="category-card">
+                    <h3>Smart Vending Machines</h3>
+                    <p>Modern, intelligent vending solutions equipped with the latest technology for maximum convenience and profitability.</p>
+                    <ul>
+                        <li>Contactless payment systems</li>
+                        <li>Real-time inventory monitoring</li>
+                        <li>Mobile app integration</li>
+                        <li>Energy-efficient operation</li>
+                        <li>Remote management capabilities</li>
+                        <li>Custom branding options</li>
+                    </ul>
+                    <div class="service-actions" style="margin-top: 2rem;">
+                        <a href="get-a-free-vending-machine-in-jacksonville-florida.html" class="btn btn-primary">Get Free Machine</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <h3>Micro-Markets</h3>
+                    <p>Transform your break room into a modern convenience store with self-service markets and fresh food options.</p>
+                    <ul>
+                        <li>Self-checkout kiosks</li>
+                        <li>Fresh food and beverages</li>
+                        <li>Smart coolers and freezers</li>
+                        <li>Employee loyalty programs</li>
+                        <li>Healthy meal options</li>
+                        <li>24/7 access for employees</li>
+                    </ul>
+                    <div class="service-actions" style="margin-top: 2rem;">
+                        <a href="setting-up-a-micro-market-in-your-jacksonville-office.html" class="btn btn-primary">Learn About Micro-Markets</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <h3>Coffee Services</h3>
+                    <p>Professional coffee solutions to keep your team energized and productive throughout the workday.</p>
+                    <ul>
+                        <li>Commercial coffee machines</li>
+                        <li>Premium coffee and tea</li>
+                        <li>Espresso and specialty drinks</li>
+                        <li>Regular maintenance and service</li>
+                        <li>Custom coffee programs</li>
+                        <li>Cost-effective solutions</li>
+                    </ul>
+                    <div class="service-actions" style="margin-top: 2rem;">
+                        <a href="coffeeservices.html" class="btn btn-primary">Coffee Services</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <h3>Industry-Specific Solutions</h3>
+                    <p>Tailored vending services designed for specific industries and business types throughout Jacksonville.</p>
+                    <ul>
+                        <li>Hospital and healthcare vending</li>
+                        <li>School and education vending</li>
+                        <li>Manufacturing facility solutions</li>
+                        <li>Office building vending</li>
+                        <li>Hotel and hospitality services</li>
+                        <li>Gym and fitness center vending</li>
+                    </ul>
+                    <div class="service-actions" style="margin-top: 2rem;">
+                        <a href="services.html" class="btn btn-primary">View All Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jacksonville Areas -->
+    <section class="jacksonville-areas">
+        <div class="container">
+            <div class="section-header">
+                <h2>Vending Services Throughout Jacksonville</h2>
+                <p class="section-subtitle">We provide comprehensive vending services to businesses in all areas of Jacksonville and surrounding communities.</p>
+            </div>
+            
+            <div class="areas-grid">
+                <div class="area-card">
+                    <h4>Downtown Jacksonville</h4>
+                    <p>Office buildings, hotels, and retail locations</p>
+                </div>
+                <div class="area-card">
+                    <h4>Jacksonville Beach</h4>
+                    <p>Beachfront properties and entertainment venues</p>
+                </div>
+                <div class="area-card">
+                    <h4>Orange Park</h4>
+                    <p>Suburban businesses and community facilities</p>
+                </div>
+                <div class="area-card">
+                    <h4>Ponte Vedra</h4>
+                    <p>Upscale properties and golf communities</p>
+                </div>
+                <div class="area-card">
+                    <h4>Atlantic Beach</h4>
+                    <p>Coastal businesses and local establishments</p>
+                </div>
+                <div class="area-card">
+                    <h4>St. Augustine</h4>
+                    <p>Historic district and tourist areas</p>
+                </div>
+                <div class="area-card">
+                    <h4>Mandarin</h4>
+                    <p>Family-friendly neighborhoods and schools</p>
+                </div>
+                <div class="area-card">
+                    <h4>Lakeside</h4>
+                    <p>Residential areas and local businesses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose VendSmart for Vending Services in Jacksonville?</h2>
+                <p class="section-subtitle">Local expertise, reliable service, and innovative solutions make us the preferred choice for vending services throughout the Jacksonville area.</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Local Jacksonville Company</h3>
+                    <p>We're based right here in Jacksonville, providing fast response times and local expertise for all your vending needs.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Free Installation & Maintenance</h3>
+                    <p>No upfront costs for equipment or installation. We handle all maintenance, repairs, and restocking at no additional charge.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Support & Service</h3>
+                    <p>Round-the-clock support ensures your vending services are always operational and your customers are satisfied.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Smart Technology</h3>
+                    <p>Modern vending machines with contactless payments, mobile apps, and real-time monitoring for maximum convenience.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Revenue Sharing</h3>
+                    <p>Generate additional income for your business through our flexible revenue sharing programs.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Customized Solutions</h3>
+                    <p>Tailored vending programs designed specifically for your business type, location, and customer preferences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Locations Section -->
+    <section class="related-locations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Vending Services Available Throughout Jacksonville</h2>
+                <p class="section-subtitle">Discover our comprehensive vending solutions available in all Jacksonville areas and surrounding communities.</p>
+            </div>
+            
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Downtown Jacksonville</h3>
+                    <p>Professional vending solutions for downtown office buildings, hotels, and corporate headquarters.</p>
+                    <div class="location-actions">
+                        <a href="downtown-jacksonville.html" class="btn btn-secondary">Downtown Services</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <h3>Jacksonville Beach</h3>
+                    <p>Beachfront vending solutions for hotels, resorts, and coastal businesses.</p>
+                    <div class="location-actions">
+                        <a href="jacksonville-beach.html" class="btn btn-secondary">Beach Services</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Orange Park</h3>
+                    <p>Suburban vending solutions for healthcare facilities, retail centers, and community businesses.</p>
+                    <div class="location-actions">
+                        <a href="orange-park.html" class="btn btn-secondary">Orange Park Services</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-golf-ball"></i>
+                    </div>
+                    <h3>Ponte Vedra</h3>
+                    <p>Luxury vending solutions for upscale properties, golf communities, and premium businesses.</p>
+                    <div class="location-actions">
+                        <a href="ponte-vedra.html" class="btn btn-secondary">Ponte Vedra Services</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Atlantic Beach</h3>
+                    <p>Coastal vending solutions for beachfront businesses and local establishments.</p>
+                    <div class="location-actions">
+                        <a href="atlantic-beach.html" class="btn btn-secondary">Atlantic Beach Services</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>St. Augustine</h3>
+                    <p>Historic area vending solutions for tourism businesses and cultural institutions.</p>
+                    <div class="location-actions">
+                        <a href="st-augustine.html" class="btn btn-secondary">St. Augustine Services</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Mandarin</h3>
+                    <p>Family-friendly vending solutions for schools, neighborhoods, and community centers.</p>
+                    <div class="location-actions">
+                        <a href="mandarin.html" class="btn btn-secondary">Mandarin Services</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Lakeside</h3>
+                    <p>Residential area vending solutions for local businesses and community facilities.</p>
+                    <div class="location-actions">
+                        <a href="lakeside.html" class="btn btn-secondary">Lakeside Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready for Professional Vending Services in Jacksonville?</h2>
+            <p>Contact VendSmart today to get started with customized vending solutions for your business. Free consultation and installation included.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                <a href="get-a-free-vending-machine-in-jacksonville-florida.html" class="btn btn-secondary">Get Free Machine</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer will be loaded by includes.js -->
+    <script src="includes.js"></script>
+</body>
+</html> 

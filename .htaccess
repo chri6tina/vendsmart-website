@@ -1,0 +1,45 @@
+RewriteEngine On
+
+# Redirect old WordPress URLs to new GitHub Pages URLs
+RewriteRule ^mandarin/$ /mandarin.html [R=301,L]
+RewriteRule ^blog/$ /blog.html [R=301,L]
+RewriteRule ^contact/$ /contact.html [R=301,L]
+RewriteRule ^services/$ /services.html [R=301,L]
+RewriteRule ^locations/$ /locations.html [R=301,L]
+RewriteRule ^portfolio/$ /portfolio.html [R=301,L]
+
+# Redirect vending machine related URLs (handle both with and without trailing slashes)
+RewriteRule ^vendingmachines/?$ /vendingmachines.html [R=301,L]
+RewriteRule ^vendingmachines\.html$ /vendingmachines.html [R=301,L]
+RewriteRule ^vending-in-jacksonville-florida/?$ /vending-in-jacksonville-florida.html [R=301,L]
+RewriteRule ^how-to-start-a-vending-machine-business/?$ /how-to-start-a-vending-machine-business.html [R=301,L]
+RewriteRule ^setting-up-a-micro-market-in-your-jacksonville-office/?$ /setting-up-a-micro-market-in-your-jacksonville-office.html [R=301,L]
+RewriteRule ^free-vending-machine-placement/?$ /free-vending-machine-placement.html [R=301,L]
+RewriteRule ^free-vending-machine-placement-jacksonville-downtown/?$ /free-vending-machine-placement-jacksonville-downtown.html [R=301,L]
+RewriteRule ^free-vending-machine-placement-jacksonville-beach/?$ /free-vending-machine-placement-jacksonville-beach.html [R=301,L]
+RewriteRule ^free-vending-machine-placement-jacksonville-northside/?$ /free-vending-machine-placement-jacksonville-northside.html [R=301,L]
+RewriteRule ^free-vending-machine-placement-jacksonville-ponte-vedra/?$ /free-vending-machine-placement-jacksonville-ponte-vedra.html [R=301,L]
+RewriteRule ^free-vending-machine-placement-jacksonville-orange-park/?$ /free-vending-machine-placement-jacksonville-orange-park.html [R=301,L]
+
+# Redirect coffee services URLs
+RewriteRule ^coffee-services/?$ /coffee-services.html [R=301,L]
+RewriteRule ^coffee-services\.html$ /coffeeservices.html [R=301,L]
+
+# Redirect micro-markets URLs
+RewriteRule ^micro-markets/?$ /micro-markets.html [R=301,L]
+RewriteRule ^micro-markets\.html$ /micro-markets.html [R=301,L]
+
+# Redirect smart coolers URLs
+RewriteRule ^smart-coolers/?$ /smart-coolers.html [R=301,L]
+
+# Redirect location URLs
+RewriteRule ^jacksonville/?$ /jacksonville.html [R=301,L]
+RewriteRule ^downtown/?$ /downtown-jacksonville.html [R=301,L]
+RewriteRule ^downtown\.html$ /downtown-jacksonville.html [R=301,L]
+RewriteRule ^mandarin/?$ /mandarin.html [R=301,L]
+
+# Redirect home page variants
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Redirect other common WordPress patterns (this should be last)
+RewriteRule ^([^/]+)/$ /$1.html [R=301,L] 

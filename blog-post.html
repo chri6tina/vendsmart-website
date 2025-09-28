@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacksonville Vending Machines - Blog Post | Vending Solutions Jacksonville</title>
+    <meta name="description" content="Read the latest vending industry insights and tips from VendSmart.">
+    
+    <!-- Main site CSS (minimal, just for header/footer) -->
+    <link rel="stylesheet" href="styles.css?v=11.0">
+    <!-- Blog-specific CSS (isolated) -->
+    <link rel="stylesheet" href="blog-styles.css?v=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Contentful SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+</head>
+<body>
+    </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="VendSmart LOGO WITH BORDER.png" alt="VendSmart Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html" class="cta-button">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post Content -->
+    <section class="blog-post-full">
+        <div class="container">
+            <!-- Loading State -->
+            <div id="loadingPost" class="loading-posts">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Loading blog post...</p>
+            </div>
+
+            <!-- Post Content (will be populated by Contentful) -->
+            <div id="postContent" style="display: none;">
+                <!-- Back Button -->
+                <div class="back-button-container">
+                    <a href="blog.html" class="back-button">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Back to Blog</span>
+                    </a>
+                </div>
+                
+                <!-- Post Header -->
+                <div class="post-header">
+                    <div class="post-meta">
+                        <span class="category" id="postCategory"></span>
+                        <span class="date" id="postDate"></span>
+                        <span class="read-time" id="postReadTime"></span>
+                    </div>
+                    <h1 id="postTitle"></h1>
+                </div>
+
+                <!-- Featured Image -->
+                <div class="post-featured-image" id="postFeaturedImage" style="display: none;">
+                    <img id="postImage" src="" alt="">
+                </div>
+
+                <!-- Post Content -->
+                <div class="post-content" id="postBody"></div>
+
+                <!-- Post Footer -->
+                <div class="post-footer">
+                    <!-- Tags -->
+                    <div class="post-tags" id="postTags" style="display: none;">
+                        <h4>Tags:</h4>
+                        <div id="tagsList"></div>
+                    </div>
+
+                    <!-- Share Buttons -->
+                    <div class="share-buttons">
+                        <h4>Share this post:</h4>
+                        <div class="share-links">
+                            <a href="#" class="share-btn" data-platform="facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="share-btn" data-platform="twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="share-btn" data-platform="linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="share-btn" data-platform="email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Error State -->
+            <div id="errorPost" class="error-posts" style="display: none;">
+                <p>Error loading blog post. Please try again later.</p>
+                <a href="blog.html" class="btn btn-primary">← Back to Blog</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Posts Section -->
+    <section class="related-posts" id="relatedPosts" style="display: none;">
+        <div class="container">
+            <h2>Related Posts</h2>
+            <div class="blog-grid" id="relatedPostsGrid">
+                <!-- Related posts will be populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" style="display: none;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VendSmart</h3>
+                    <p>Premium vending solutions for Jacksonville and surrounding areas. 24/7 support, smart technology, and healthy options.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/vendsmart" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Smart Vending Machines</a></li>
+                        <li><a href="setting-up-a-micro-market-in-your-jacksonville-office.html">Micro-Markets</a></li>
+                        <li><a href="coffeeservices.html">Coffee Services</a></li>
+                        <li><a href="get-a-free-vending-machine-in-jacksonville-florida.html">Free Machine Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Service Areas</h3>
+                    <ul>
+                        <li><a href="downtown-jacksonville.html">Downtown Jacksonville</a></li>
+                        <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
+                        <li><a href="atlantic-beach.html">Atlantic Beach</a></li>
+                        <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-phone"></i> 904-456-3851</p>
+                    <p><i class="fas fa-envelope"></i> vendsmartjacksonville@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> 24/7 Emergency Service</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 VendSmart. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contentful Integration Script -->
+    <script>
+        // Contentful Configuration
+        const client = contentful.createClient({
+            space: 'xpopyri6s8gv',
+            accessToken: 'u7y4yBwgXnAUXt-c2B4rVuidEoe4L3AzMBzkNMxSXp0'
+        });
+
+        // Get post ID from URL
+        function getPostId() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('id');
+        }
+
+        // Load blog post from Contentful
+        async function loadBlogPost() {
+            const postId = getPostId();
+            
+            if (!postId) {
+                showError('No post ID provided');
+                return;
+            }
+
+            try {
+                console.log('🔍 Loading post with ID:', postId);
+                console.log('🔧 Contentful client available:', typeof client !== 'undefined');
+                
+                if (typeof client === 'undefined') {
+                    showError('Contentful client not initialized');
+                    return;
+                }
+                
+                // Check if this is a sample post (not from Contentful)
+                if (postId.startsWith('sample-') || isSamplePostId(postId)) {
+                    loadSamplePost(postId);
+                    return;
+                }
+                
+                // Fetch post from Contentful
+                const response = await client.getEntry(postId);
+                const post = response;
+                
+                console.log('📦 Post data:', post);
+                
+                if (!post) {
+                    showError('Post not found');
+                    return;
+                }
+
+                // Update page title and meta description
+                document.title = `${post.fields.title} - VendSmart Blog`;
+                if (post.fields.metaDescription) {
+                    document.querySelector('meta[name="description"]').setAttribute('content', post.fields.metaDescription);
+                }
+
+                // Populate post content
+                populatePostContent(post);
+                
+                // Load related posts
+                loadRelatedPosts(post.fields.category, postId);
+
+            } catch (error) {
+                console.error('Error loading blog post:', error);
+                showError('Error loading blog post');
+            }
+        }
+
+        // Populate post content
+        function populatePostContent(post) {
+            // Hide loading, show content
+            document.getElementById('loadingPost').style.display = 'none';
+            document.getElementById('postContent').style.display = 'block';
+
+            // Handle different possible field names
+            const title = post.fields.title || post.fields.name || 'Untitled Post';
+            const category = post.fields.category || post.fields.postCategory || 'Uncategorized';
+            const readTime = post.fields.readTime || post.fields.readingTime || '5 min read';
+            const featuredImage = post.fields.featuredImage || post.fields.image || post.fields.heroImage;
+
+            // Set post metadata
+            document.getElementById('postCategory').textContent = category;
+            document.getElementById('postDate').textContent = new Date(post.sys.createdAt).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            document.getElementById('postReadTime').textContent = readTime;
+            
+            // Set post title
+            document.getElementById('postTitle').textContent = title;
+
+            // Set featured image if available
+            if (featuredImage?.fields?.file?.url) {
+                document.getElementById('postImage').src = featuredImage.fields.file.url;
+                document.getElementById('postImage').alt = title;
+                document.getElementById('postFeaturedImage').style.display = 'block';
+            }
+
+            // Set post content (Rich text)
+            const content = post.fields.content || post.fields.body || post.fields.postContent;
+            const excerpt = post.fields.excerpt || post.fields.summary || 'Content coming soon...';
+            
+            if (content) {
+                // Handle different content formats from Contentful
+                let contentHtml = '';
+                
+                if (typeof content === 'string') {
+                    // Plain text content
+                    contentHtml = content;
+                } else if (content.content) {
+                    // Rich text content from Contentful
+                    contentHtml = content.content.map(item => {
+                        if (item.nodeType === 'paragraph') {
+                            return `<p>${item.content.map(c => c.value).join('')}</p>`;
+                        } else if (item.nodeType === 'heading-1') {
+                            return `<h2>${item.content.map(c => c.value).join('')}</h2>`;
+                        } else if (item.nodeType === 'heading-2') {
+                            return `<h3>${item.content.map(c => c.value).join('')}</h3>`;
+                        } else if (item.nodeType === 'unordered-list') {
+                            const listItems = item.content.map(listItem => 
+                                `<li>${listItem.content.map(c => c.value).join('')}</li>`
+                            ).join('');
+                            return `<ul>${listItems}</ul>`;
+                        } else if (item.nodeType === 'ordered-list') {
+                            const listItems = item.content.map(listItem => 
+                                `<li>${listItem.content.map(c => c.value).join('')}</li>`
+                            ).join('');
+                            return `<ol>${listItems}</ol>`;
+                        }
+                        return '';
+                    }).join('');
+                } else {
+                    // Fallback to excerpt if no content
+                    contentHtml = excerpt;
+                }
+                
+                document.getElementById('postBody').innerHTML = `
+                    <div style="line-height: 1.8; font-size: 1.1rem; color: #374151;">
+                        ${contentHtml}
+                    </div>
+                `;
+            } else {
+                // No content field, use excerpt as fallback
+                document.getElementById('postBody').innerHTML = `
+                    <div style="line-height: 1.8; font-size: 1.1rem; color: #374151;">
+                        <p>${excerpt}</p>
+                        <p><em>This article is being prepared. Please check back soon for the full content.</em></p>
+                    </div>
+                `;
+            }
+
+            // Set tags if available
+            if (post.fields.tags) {
+                const tags = post.fields.tags.split(',').map(tag => tag.trim());
+                const tagsList = document.getElementById('tagsList');
+                tagsList.innerHTML = tags.map(tag => `<span class="tag">${tag}</span>`).join('');
+                document.getElementById('postTags').style.display = 'block';
+            }
+
+            // Setup share buttons
+            setupShareButtons(post);
+        }
+
+        // Load related posts
+        async function loadRelatedPosts(category, currentPostId) {
+            try {
+                // Try to find related posts by category (handle different field names)
+                let response;
+                try {
+                    response = await client.getEntries({
+                        content_type: 'blogPost',
+                        'fields.category': category,
+                        'sys.id[ne]': currentPostId, // Exclude current post
+                        order: '-sys.createdAt',
+                        limit: 3
+                    });
+                } catch (categoryError) {
+                    // If category field doesn't exist, try alternative field names
+                    try {
+                        response = await client.getEntries({
+                            content_type: 'blogPost',
+                            'fields.postCategory': category,
+                            'sys.id[ne]': currentPostId,
+                            order: '-sys.createdAt',
+                            limit: 3
+                        });
+                    } catch (altError) {
+                        console.log('No related posts found for category:', category);
+                        return;
+                    }
+                }
+
+                const relatedPosts = response.items;
+                
+                if (relatedPosts.length > 0) {
+                    const relatedGrid = document.getElementById('relatedPostsGrid');
+                    let relatedHTML = '';
+                    
+                    relatedPosts.forEach(post => {
+                        const date = new Date(post.sys.createdAt).toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric'
+                        });
+                        
+                        // Handle different possible field names
+                        const title = post.fields.title || post.fields.name || 'Untitled Post';
+                        const category = post.fields.category || post.fields.postCategory || 'Uncategorized';
+                        const excerpt = post.fields.excerpt || post.fields.summary || 'No excerpt available.';
+                        const featuredImage = post.fields.featuredImage || post.fields.image || post.fields.heroImage;
+                        
+                        relatedHTML += `
+                            <article class="blog-post">
+                                <div class="post-image">
+                                    <img src="${featuredImage?.fields?.file?.url || 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'}" 
+                                         alt="${title}">
+                                </div>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <span class="category">${category}</span>
+                                        <span class="date">${date}</span>
+                                    </div>
+                                    <h3>${title}</h3>
+                                    <p>${excerpt}</p>
+                                    <a href="blog-post.html?id=${post.sys.id}" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                        `;
+                    });
+                    
+                    relatedGrid.innerHTML = relatedHTML;
+                    document.getElementById('relatedPosts').style.display = 'block';
+                }
+            } catch (error) {
+                console.error('Error loading related posts:', error);
+            }
+        }
+
+        // Setup share buttons
+        function setupShareButtons(post) {
+            const shareButtons = document.querySelectorAll('.share-btn');
+            const url = window.location.href;
+            const title = post.fields.title;
+            
+            shareButtons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const platform = this.getAttribute('data-platform');
+                    let shareUrl = '';
+                    
+                    switch(platform) {
+                        case 'facebook':
+                            shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+                            break;
+                        case 'twitter':
+                            shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`;
+                            break;
+                        case 'linkedin':
+                            shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
+                            break;
+                        case 'email':
+                            shareUrl = `mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(`Check out this article: ${url}`)}`;
+                            break;
+                    }
+                    
+                    if (shareUrl) {
+                        window.open(shareUrl, '_blank', 'width=600,height=400');
+                    }
+                });
+            });
+        }
+
+        // Sample posts data (matching the ones in blog-script.js)
+        const samplePosts = {
+            'iot-integration-vending-cloud': {
+                title: 'IoT Integration: Connecting Your Vending Machines to the Cloud',
+                category: 'Technology',
+                date: 'November 28, 2024',
+                readTime: '8 min read',
+                excerpt: 'Learn how IoT technology is enabling real-time monitoring and predictive maintenance for vending operations.',
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+                content: `
+                    <h2>The Future of Vending is Connected</h2>
+                    <p>The Internet of Things (IoT) is revolutionizing the vending industry, enabling unprecedented levels of monitoring, control, and optimization. By connecting your vending machines to the cloud, you can gain real-time insights into machine performance, inventory levels, and customer behavior.</p>
+                    
+                    <h3>Real-Time Monitoring Benefits</h3>
+                    <p>With IoT integration, you can monitor your vending machines 24/7 from anywhere in the world. This includes:</p>
+                    <ul>
+                        <li>Real-time inventory tracking</li>
+                        <li>Machine performance metrics</li>
+                        <li>Sales data and trends</li>
+                        <li>Maintenance alerts</li>
+                        <li>Customer usage patterns</li>
+                    </ul>
+                    
+                    <h3>Predictive Maintenance</h3>
+                    <p>IoT sensors can detect potential issues before they become problems, allowing for proactive maintenance that reduces downtime and repair costs. This predictive approach can save thousands of dollars annually in maintenance expenses.</p>
+                    
+                    <h3>Enhanced Customer Experience</h3>
+                    <p>Connected vending machines can offer features like mobile payments, personalized recommendations, and real-time product availability, significantly improving the customer experience and increasing sales.</p>
+                `
+            },
+            'customer-analytics-vending-performance': {
+                title: 'Customer Analytics: Understanding Your Vending Machine Performance',
+                category: 'Business Tips',
+                date: 'November 25, 2024',
+                readTime: '6 min read',
+                excerpt: 'Discover how data analytics can help you optimize your vending machine inventory and increase sales.',
+                image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+                content: `
+                    <h2>Data-Driven Vending Decisions</h2>
+                    <p>In today's competitive vending market, success depends on making informed decisions based on real data. Customer analytics provide the insights you need to optimize your operations and maximize profitability.</p>
+                    
+                    <h3>Key Performance Indicators</h3>
+                    <p>Track these essential metrics to understand your vending performance:</p>
+                    <ul>
+                        <li>Sales velocity by product</li>
+                        <li>Peak usage times</li>
+                        <li>Customer preferences</li>
+                        <li>Revenue per machine</li>
+                        <li>Restocking frequency</li>
+                    </ul>
+                    
+                    <h3>Inventory Optimization</h3>
+                    <p>Analytics help you stock the right products in the right quantities at the right time. This reduces waste, ensures product availability, and increases customer satisfaction.</p>
+                    
+                    <h3>Revenue Maximization</h3>
+                    <p>By understanding customer behavior patterns, you can optimize pricing, product placement, and promotional strategies to maximize revenue from each machine.</p>
+                `
+            },
+            'plant-based-options-vending-trend': {
+                title: 'Plant-Based Options: The Growing Trend in Vending',
+                category: 'Health & Wellness',
+                date: 'November 22, 2024',
+                readTime: '5 min read',
+                excerpt: 'Explore the rise of plant-based and vegan options in vending machines and how to meet this demand.',
+                image: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+                content: `
+                    <h2>The Plant-Based Revolution in Vending</h2>
+                    <p>As consumers become more health-conscious and environmentally aware, the demand for plant-based options in vending machines is growing rapidly. This trend represents a significant opportunity for vending operators to expand their offerings and attract new customers.</p>
+                    
+                    <h3>Popular Plant-Based Categories</h3>
+                    <p>Consider adding these plant-based options to your vending machines:</p>
+                    <ul>
+                        <li>Plant-based protein bars and snacks</li>
+                        <li>Dairy-free beverages</li>
+                        <li>Vegan-friendly packaged meals</li>
+                        <li>Nut and seed-based snacks</li>
+                        <li>Plant-based energy drinks</li>
+                    </ul>
+                    
+                    <h3>Meeting Dietary Preferences</h3>
+                    <p>Offering plant-based options helps you serve customers with various dietary preferences and restrictions, including vegans, vegetarians, and those with dairy allergies or lactose intolerance.</p>
+                    
+                    <h3>Environmental Benefits</h3>
+                    <p>Plant-based products typically have a lower environmental impact, appealing to environmentally conscious consumers and helping your business demonstrate corporate social responsibility.</p>
+                `
+            },
+            'preventive-maintenance-vending-care': {
+                title: 'Preventive Maintenance: Saving Money Through Proactive Care',
+                category: 'Maintenance',
+                date: 'November 20, 2024',
+                readTime: '7 min read',
+                excerpt: 'A detailed guide to implementing a preventive maintenance schedule that saves money and prevents downtime.',
+                image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+                content: `
+                    <h2>Prevention is Better Than Cure</h2>
+                    <p>Preventive maintenance is the key to keeping your vending machines running smoothly and avoiding costly repairs. A well-planned maintenance schedule can save thousands of dollars annually and ensure consistent service for your customers.</p>
+                    
+                    <h3>Essential Maintenance Tasks</h3>
+                    <p>Regular maintenance should include:</p>
+                    <ul>
+                        <li>Cleaning and sanitizing</li>
+                        <li>Inspecting mechanical components</li>
+                        <li>Testing payment systems</li>
+                        <li>Checking refrigeration systems</li>
+                        <li>Updating software and firmware</li>
+                    </ul>
+                    
+                    <h3>Maintenance Schedule</h3>
+                    <p>Create a comprehensive maintenance schedule that includes daily, weekly, monthly, and quarterly tasks. This ensures nothing is overlooked and helps prevent equipment failures.</p>
+                    
+                    <h3>Cost-Benefit Analysis</h3>
+                    <p>While preventive maintenance requires an investment of time and resources, the cost savings from avoiding major repairs and reducing downtime far outweigh the initial investment.</p>
+                `
+            },
+            'sustainability-vending-eco-friendly': {
+                title: 'Sustainability in Vending: Eco-Friendly Practices and Products',
+                category: 'Industry News',
+                date: 'November 18, 2024',
+                readTime: '6 min read',
+                excerpt: 'How to make your vending business more sustainable and appeal to environmentally conscious consumers.',
+                image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+                content: `
+                    <h2>Green Vending: The Future of the Industry</h2>
+                    <p>Sustainability is no longer just a trend—it's a business imperative. Consumers are increasingly choosing businesses that demonstrate environmental responsibility, making eco-friendly practices essential for vending success.</p>
+                    
+                    <h3>Sustainable Product Options</h3>
+                    <p>Stock your machines with environmentally friendly products:</p>
+                    <ul>
+                        <li>Organic and fair-trade items</li>
+                        <li>Products with minimal packaging</li>
+                        <li>Biodegradable and compostable options</li>
+                        <li>Locally sourced products</li>
+                        <li>Recyclable packaging</li>
+                    </ul>
+                    
+                    <h3>Energy-Efficient Equipment</h3>
+                    <p>Modern vending machines are designed with energy efficiency in mind. Look for machines with LED lighting, smart refrigeration systems, and energy-saving modes to reduce your carbon footprint and operating costs.</p>
+                    
+                    <h3>Waste Reduction Strategies</h3>
+                    <p>Implement recycling programs, reduce packaging waste, and donate unsold products to local food banks to minimize your environmental impact while supporting your community.</p>
+                `
+            },
+            'mobile-apps-vending-customer-experience': {
+                title: 'Mobile Apps and Vending: Enhancing Customer Experience',
+                category: 'Technology',
+                date: 'November 15, 2024',
+                readTime: '5 min read',
+                excerpt: 'How mobile applications are transforming the way customers interact with vending machines.',
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+                content: `
+                    <h2>The Mobile Revolution in Vending</h2>
+                    <p>Mobile apps are transforming the vending experience, making it more convenient, personalized, and engaging for customers. From mobile payments to loyalty programs, apps are becoming essential tools for modern vending operations.</p>
+                    
+                    <h3>Mobile Payment Integration</h3>
+                    <p>Mobile payment options like Apple Pay, Google Pay, and digital wallets provide customers with convenient, contactless payment methods while reducing the need for cash handling and improving security.</p>
+                    
+                    <h3>Loyalty and Rewards Programs</h3>
+                    <p>Mobile apps enable sophisticated loyalty programs that can increase customer retention and encourage repeat purchases through rewards, discounts, and personalized offers.</p>
+                    
+                    <h3>Enhanced User Experience</h3>
+                    <p>Apps can provide real-time product availability, nutritional information, allergen warnings, and personalized recommendations, significantly improving the customer experience and building brand loyalty.</p>
+                `
+            }
+        };
+
+        // Check if post ID is a sample post
+        function isSamplePostId(postId) {
+            return Object.keys(samplePosts).includes(postId);
+        }
+
+        // Load sample post content
+        function loadSamplePost(postId) {
+            const post = samplePosts[postId];
+            
+            if (!post) {
+                showError('Sample post not found');
+                return;
+            }
+
+            // Update page title
+            document.title = `${post.title} - VendSmart Blog`;
+
+            // Populate post content
+            document.getElementById('loadingPost').style.display = 'none';
+            document.getElementById('postContent').style.display = 'block';
+
+            document.getElementById('postCategory').textContent = post.category;
+            document.getElementById('postDate').textContent = post.date;
+            document.getElementById('postReadTime').textContent = post.readTime;
+            document.getElementById('postTitle').textContent = post.title;
+
+            // Set featured image
+            document.getElementById('postImage').src = post.image;
+            document.getElementById('postImage').alt = post.title;
+            document.getElementById('postFeaturedImage').style.display = 'block';
+
+            // Set post content
+            document.getElementById('postBody').innerHTML = post.content;
+
+            // Setup share buttons
+            setupShareButtons({ fields: { title: post.title } });
+        }
+
+        // Show error
+        function showError(message) {
+            document.getElementById('loadingPost').style.display = 'none';
+            document.getElementById('errorPost').style.display = 'block';
+            console.error(message);
+        }
+
+        // Back to Top Button Functionality
+        function initBackToTop() {
+            const backToTopBtn = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.style.display = 'block';
+                    setTimeout(() => backToTopBtn.classList.add('show'), 10);
+                } else {
+                    backToTopBtn.classList.remove('show');
+                    setTimeout(() => {
+                        if (!backToTopBtn.classList.contains('show')) {
+                            backToTopBtn.style.display = 'none';
+                        }
+                    }, 300);
+                }
+            });
+            
+            backToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // Load post when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🚀 Blog post page DOM loaded');
+            console.log('🔧 Contentful SDK available:', typeof contentful !== 'undefined');
+            
+            if (typeof contentful === 'undefined') {
+                console.error('❌ Contentful SDK not loaded on blog post page!');
+                showError('Contentful SDK not loaded. Please refresh the page.');
+                return;
+            }
+            
+            loadBlogPost();
+            initBackToTop();
+        });
+    </script>
+</body>
+</html> 

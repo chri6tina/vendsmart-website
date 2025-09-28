@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | VendSmart</title>
+    <meta name="description" content="Page not found. Redirecting to VendSmart homepage.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="VendSmart LOGO WITH BORDER.png" alt="VendSmart Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="cta-button">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 404 Content -->
+    <section class="hero" style="min-height: 60vh; display: flex; align-items: center; justify-content: center;">
+        <div class="container text-center">
+            <h1>Page Not Found</h1>
+            <p>We're redirecting you to the correct page...</p>
+            <div class="loading-spinner" style="margin: 2rem auto; width: 50px; height: 50px; border: 5px solid #f3f3f3; border-top: 5px solid #007bff; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+            <p>If you're not redirected automatically, <a href="index.html">click here</a> to go to our homepage.</p>
+        </div>
+    </section>
+
+    <style>
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .text-center { text-align: center; }
+    </style>
+
+    <script>
+        // URL redirect mapping for old WordPress URLs
+        const redirectMap = {
+            '/mandarin/': '/mandarin.html',
+            '/blog/': '/blog.html',
+            '/contact/': '/contact.html',
+            '/services/': '/services.html',
+            '/locations/': '/locations.html',
+            '/portfolio/': '/portfolio.html',
+            '/downtown-jacksonville/': '/downtown-jacksonville.html',
+            '/jacksonville-beach/': '/jacksonville-beach.html',
+            '/orange-park/': '/orange-park.html',
+            '/ponte-vedra/': '/ponte-vedra.html',
+            '/atlantic-beach/': '/atlantic-beach.html',
+            '/st-augustine/': '/st-augustine.html',
+            '/lakeside/': '/lakeside.html',
+            '/coffeeservices/': '/coffeeservices.html',
+            '/vendingmachine-service/': '/vendingmachine-service.html',
+            '/get-a-free-vending-machine-in-jacksonville-florida/': '/get-a-free-vending-machine-in-jacksonville-florida.html',
+            '/get-free-machine.html': '/get-a-free-vending-machine-in-jacksonville-florida.html',
+            '/fernandina-beach.html': '/jacksonville-beach.html',
+            '/green-cove-springs.html': '/atlantic-beach.html',
+            '/setting-up-micro-market.html': '/setting-up-a-micro-market-in-your-jacksonville-office.html',
+            '/products/': '/products.html',
+            '/products': '/products.html',
+            '/top-5-micro-market-kiosks/': '/top-5-micro-market-kiosks.html',
+            '/top-5-micro-market-kiosks': '/top-5-micro-market-kiosks.html'
+        };
+
+        // Get current path
+        const currentPath = window.location.pathname;
+        
+        // Check if we have a redirect for this path
+        if (redirectMap[currentPath]) {
+            // Redirect to the correct page
+            window.location.href = redirectMap[currentPath];
+        } else {
+            // If no specific redirect, go to homepage after 3 seconds
+            setTimeout(() => {
+                window.location.href = '/index.html';
+            }, 3000);
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html> 

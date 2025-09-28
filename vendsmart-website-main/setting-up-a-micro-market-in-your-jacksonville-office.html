@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting Up a Micro-Market in Your Jacksonville Office | VendSmart</title>
+    <meta name="description" content="Learn how to set up a micro-market in your Jacksonville office. Complete guide to micro-market installation, benefits, and ROI with VendSmart.">
+    <link rel="canonical" href="https://jacksonvillevendingmachines.com/setting-up-a-micro-market-in-your-jacksonville-office.html">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .micro-market-overview {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .overview-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .overview-text h2 {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .overview-text p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .market-benefits {
+            display: grid;
+            gap: 1.5rem;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: 12px;
+            border-left: 4px solid #00C5F5;
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit-item:hover {
+            transform: translateY(-2px);
+        }
+        
+        .benefit-item i {
+            font-size: 1.5rem;
+            color: #00C5F5;
+            margin-top: 0.25rem;
+        }
+        
+        .benefit-item h3 {
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .benefit-item p {
+            color: #6b7280;
+            line-height: 1.5;
+            margin: 0;
+        }
+        
+        .overview-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .image-placeholder {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #cbd5e1;
+        }
+        
+        .image-placeholder i {
+            font-size: 4rem;
+            color: #00C5F5;
+            margin-bottom: 1rem;
+        }
+        
+        .image-placeholder p {
+            color: #6b7280;
+            font-weight: 600;
+        }
+        
+        .setup-process {
+            padding: 4rem 0;
+            background: #f8fafc;
+        }
+        
+        .setup-process h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 3rem;
+        }
+        
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .process-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+        
+        .process-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .process-number {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #00C5F5;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .process-card i {
+            font-size: 2.5rem;
+            color: #00C5F5;
+            margin: 1rem 0;
+        }
+        
+        .process-card h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .process-card p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        
+        .market-features {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .market-features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 3rem;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #e5e7eb;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .feature-card i {
+            font-size: 2.5rem;
+            color: #00C5F5;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .feature-card p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        
+        .benefits-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+        }
+        
+        .benefits-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .benefits-text h2 {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+        }
+        
+        .benefits-text p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .benefits-list {
+            margin-bottom: 2rem;
+        }
+        
+        .benefits-list .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            color: #374151;
+        }
+        
+        .benefits-list .benefit-item i {
+            color: #00C5F5;
+            font-weight: bold;
+        }
+        
+        .benefits-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        @media (max-width: 768px) {
+            .overview-content,
+            .benefits-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .overview-text h2,
+            .setup-process h2,
+            .market-features h2,
+            .benefits-text h2 {
+                font-size: 2rem;
+            }
+            
+            .benefits-cta {
+                flex-direction: column;
+            }
+            
+            .benefits-cta .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Contact Bar -->
+    <div class="contact-bar">
+        <div class="contact-info">
+            <span class="contact-item">
+                <i class="fas fa-phone"></i>
+                904-456-3851
+            </span>
+            <span class="contact-item">
+                <i class="fas fa-envelope"></i>
+                vendsmartjacksonville@gmail.com
+            </span>
+            <a href="https://www.facebook.com/vendsmart" target="_blank" class="contact-item">
+                <i class="fab fa-facebook"></i>
+                Follow Us
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" aria-label="VendSmart Homepage">
+                    <img src="vendsmart-logo-jacksonville-vending.png" alt="VendSmart - Jacksonville Vending Machine Company Logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="coffeeservices.html">Coffee Services</a></li>
+                        <li><a href="smart-coolers.html">Smart Coolers</a></li>
+                        <li><a href="setting-up-a-micro-market-in-your-jacksonville-office.html">Micro-Markets</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Locations <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="locations.html">All Locations</a></li>
+                        <li><a href="downtown-jacksonville.html">Downtown</a></li>
+                        <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
+                        <li><a href="orange-park.html">Orange Park</a></li>
+                        <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="cta-button">Contact Us</a></li>
+            </ul>
+            <div class="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="jacksonville-vending-micro-market.jpg" alt="Jacksonville micro-market setup and installation" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Setting Up a Micro-Market in Your Jacksonville Office</h1>
+                <p>Complete guide to transforming your break room into a modern convenience store</p>
+                <div class="hero-buttons">
+                    <a href="#overview" class="btn btn-primary">Learn More</a>
+                    <a href="contact.html" class="btn btn-outline">Get Free Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Micro-Market Overview -->
+    <section id="overview" class="micro-market-overview">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>What is a Micro-Market?</h2>
+                    <p>A micro-market is a self-service convenience store that transforms your office break room into a modern retail experience. Unlike traditional vending machines, micro-markets offer fresh food, healthy options, and a seamless shopping experience with self-checkout technology.</p>
+                    
+                    <div class="market-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-utensils"></i>
+                            <div>
+                                <h3>Fresh Food Options</h3>
+                                <p>Salads, sandwiches, fresh fruit, and healthy snacks</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <h3>Self-Checkout Technology</h3>
+                                <p>Touch-screen kiosks with contactless payment options</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <h3>Increased Revenue</h3>
+                                <p>Higher sales compared to traditional vending machines</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h3>Employee Satisfaction</h3>
+                                <p>Better food options improve workplace morale</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-store"></i>
+                        <p>Micro-Market Setup</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Setup Process -->
+    <section class="setup-process">
+        <div class="container">
+            <h2>Micro-Market Setup Process</h2>
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-number">1</div>
+                    <i class="fas fa-clipboard-list"></i>
+                    <h3>Assessment & Planning</h3>
+                    <p>We evaluate your space, employee count, and preferences to design the perfect micro-market solution.</p>
+                </div>
+                
+                <div class="process-card">
+                    <div class="process-number">2</div>
+                    <i class="fas fa-tools"></i>
+                    <h3>Installation</h3>
+                    <p>Professional installation of smart coolers, kiosks, and equipment with minimal disruption.</p>
+                </div>
+                
+                <div class="process-card">
+                    <div class="process-number">3</div>
+                    <i class="fas fa-box"></i>
+                    <h3>Product Selection</h3>
+                    <p>Curated selection of fresh food, beverages, and snacks based on your team's preferences.</p>
+                </div>
+                
+                <div class="process-card">
+                    <div class="process-number">4</div>
+                    <i class="fas fa-rocket"></i>
+                    <h3>Launch & Support</h3>
+                    <p>Employee training, grand opening, and ongoing support to ensure success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Features -->
+    <section class="market-features">
+        <div class="container">
+            <h2>Micro-Market Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-snowflake"></i>
+                    <h3>Smart Coolers</h3>
+                    <p>Temperature-controlled units with real-time monitoring and inventory tracking</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-tablet-alt"></i>
+                    <h3>Self-Checkout Kiosks</h3>
+                    <p>Touch-screen terminals with multiple payment options and user-friendly interface</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Fresh Food Options</h3>
+                    <p>Healthy meals, salads, sandwiches, and fresh produce for better nutrition</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Detailed reports on sales, popular items, and employee preferences</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <h2>Benefits for Your Business</h2>
+                    <p>Micro-markets provide numerous advantages for your workplace, from improved employee satisfaction to enhanced convenience and modern amenities.</p>
+                    
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Improved employee satisfaction and workplace culture</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Reduced time employees spend leaving for lunch</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Healthy food options for better productivity</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Modern, professional break room appearance</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>24/7 access to refreshments and snacks</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>No upfront costs or installation fees</span>
+                        </div>
+                    </div>
+                    
+                    <div class="benefits-cta">
+                        <a href="contact.html" class="btn btn-primary">Get Free Consultation</a>
+                        <a href="portfolio.html" class="btn btn-outline">View Examples</a>
+                    </div>
+                </div>
+                
+                <div class="overview-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-users"></i>
+                        <p>Employee Benefits</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Transform Your Break Room?</h2>
+            <p>Contact VendSmart today for a free micro-market consultation and quote</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Get Free Quote</a>
+                <a href="portfolio.html" class="btn btn-secondary">View Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VendSmart</h3>
+                    <p>Premium vending solutions for Jacksonville, Florida & surrounding areas.</p>
+                    <p>Free Installation & Delivery</p>
+                    <p>Coffee Services Available</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/vendsmart" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_ID" target="_blank"><i class="fab fa-google"></i></a>
+                        <a href="https://www.yelp.com/biz/YOUR_YELP_ID" target="_blank"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#vending">Vending Machines</a></li>
+                        <li><a href="services.html#micro-markets">Micro-Markets</a></li>
+                        <li><a href="services.html#coffee">Coffee Services</a></li>
+                        <li><a href="services.html#emergency">Emergency Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="downtown-jacksonville.html">Downtown Jacksonville</a></li>
+                        <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
+                        <li><a href="orange-park.html">Orange Park</a></li>
+                        <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
+                        <li><a href="atlantic-beach.html">Atlantic Beach</a></li>
+                        <li><a href="st-augustine.html">St. Augustine</a></li>
+                        <li><a href="mandarin.html">Mandarin</a></li>
+                        <li><a href="lakeside.html">Lakeside</a></li>
+                        <li><a href="locations.html">All Locations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="tel:904-456-3851">904-456-3851</a></p>
+                    <p><a href="mailto:vendsmartjacksonville@gmail.com">vendsmartjacksonville@gmail.com</a></p>
+                    <p>Jacksonville, Florida & Surrounding Areas</p>
+                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VendSmart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="includes.js"></script>
+</body>
+</html> 

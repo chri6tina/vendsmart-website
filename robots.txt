@@ -1,0 +1,35 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://jacksonvillevendingmachines.com/sitemap.xml
+
+# Disallow admin or private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /.git/
+Disallow: /.github/
+
+# Allow all HTML pages
+Allow: /*.html
+
+# Allow all CSS and JS files
+Allow: /*.css
+Allow: /*.js
+
+# Allow all images
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.png
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+
+# Specific important pages
+Allow: /sitemap.xml
+Allow: /robots.txt
+Allow: /CNAME
+
+# Crawl delay for better server performance
+Crawl-delay: 1 

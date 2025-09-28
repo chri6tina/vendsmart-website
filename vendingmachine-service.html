@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacksonville Vending Machines - Free Vending Machines for Your Break Room</title>
+    <meta name="description" content="Get free vending machines for your Jacksonville break room. Improve employee morale, reduce lunch breaks, and enhance workplace culture with VendSmart's free vending solutions.">
+    <link rel="canonical" href="https://jacksonvillevendingmachines.com/vendingmachine-service.html">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .service-overview {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .overview-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .overview-text h2 {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .overview-text p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .service-features {
+            display: grid;
+            gap: 1.5rem;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: 12px;
+            border-left: 4px solid #00C5F5;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-2px);
+        }
+        
+        .feature-item i {
+            font-size: 1.5rem;
+            color: #00C5F5;
+            margin-top: 0.25rem;
+        }
+        
+        .feature-item h3 {
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .feature-item p {
+            color: #6b7280;
+            line-height: 1.5;
+            margin: 0;
+        }
+        
+        .overview-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .image-placeholder {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #cbd5e1;
+        }
+        
+        .image-placeholder i {
+            font-size: 4rem;
+            color: #00C5F5;
+            margin-bottom: 1rem;
+        }
+        
+        .image-placeholder p {
+            color: #6b7280;
+            font-weight: 600;
+        }
+        
+        .employee-benefits {
+            padding: 4rem 0;
+            background: #f8fafc;
+        }
+        
+        .employee-benefits h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 3rem;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .benefit-card i {
+            font-size: 2.5rem;
+            color: #00C5F5;
+            margin-bottom: 1rem;
+        }
+        
+        .benefit-card h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .benefit-card p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        
+        .free-placement {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .free-placement h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 3rem;
+        }
+        
+        .placement-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .placement-card {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #e5e7eb;
+            transition: transform 0.3s ease;
+        }
+        
+        .placement-card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .placement-card i {
+            font-size: 2.5rem;
+            color: #00C5F5;
+            margin-bottom: 1rem;
+        }
+        
+        .placement-card h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .placement-card p {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .workplace-improvements {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+        }
+        
+        .improvements-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .improvements-text h2 {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+        }
+        
+        .improvements-text p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .improvements-list {
+            margin-bottom: 2rem;
+        }
+        
+        .improvement-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            color: #374151;
+        }
+        
+        .improvement-item i {
+            color: #00C5F5;
+            font-weight: bold;
+        }
+        
+        .improvements-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        @media (max-width: 768px) {
+            .overview-content,
+            .improvements-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .overview-text h2,
+            .employee-benefits h2,
+            .free-placement h2,
+            .improvements-text h2 {
+                font-size: 2rem;
+            }
+            
+            .improvements-cta {
+                flex-direction: column;
+            }
+            
+            .improvements-cta .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" aria-label="VendSmart Homepage">
+                    <img src="vendsmart-logo-jacksonville-vending.png" alt="VendSmart - Jacksonville Vending Machine Company Logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="coffeeservices.html">Coffee Services</a></li>
+                        <li><a href="smart-coolers.html">Smart Coolers</a></li>
+                        <li><a href="setting-up-a-micro-market-in-your-jacksonville-office.html">Micro-Markets</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Locations <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="locations.html">All Locations</a></li>
+                        <li><a href="downtown-jacksonville.html">Downtown</a></li>
+                        <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
+                        <li><a href="orange-park.html">Orange Park</a></li>
+                        <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="cta-button">Contact Us</a></li>
+            </ul>
+            <div class="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="jacksonville-vending-micro-market.jpg" alt="Free vending machines for Jacksonville break rooms" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Free Vending Machines for Your Break Room</h1>
+                <p>Transform your workplace with free vending machines that boost employee morale and improve workplace culture</p>
+                <div class="hero-buttons">
+                    <a href="#overview" class="btn btn-primary">Learn More</a>
+                    <a href="contact.html" class="btn btn-outline">Get Free Machine</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section id="overview" class="service-overview">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>Free Vending Machine Placement</h2>
+                    <p>VendSmart provides free vending machines to Jacksonville businesses, helping you create a more convenient and enjoyable workplace for your employees. No upfront costs, no installation fees - just better workplace amenities.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-gift"></i>
+                            <div>
+                                <h3>100% Free Placement</h3>
+                                <p>No upfront costs, installation fees, or hidden charges</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h3>Employee Satisfaction</h3>
+                                <p>Improve workplace morale and employee retention</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Reduced Break Time</h3>
+                                <p>Employees stay on-site for snacks and refreshments</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-leaf"></i>
+                            <div>
+                                <h3>Healthy Options</h3>
+                                <p>Curated selection of healthy snacks and beverages</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-gift"></i>
+                        <p>Free Vending Machines</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employee Benefits -->
+    <section class="employee-benefits">
+        <div class="container">
+            <h2>How Free Vending Machines Improve Your Workplace</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-smile"></i>
+                    <h3>Boost Employee Morale</h3>
+                    <p>Convenient access to snacks and refreshments shows employees you care about their comfort and well-being</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Improve Workplace Culture</h3>
+                    <p>Create a more welcoming environment that encourages collaboration and social interaction</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Reduce Lunch Breaks</h3>
+                    <p>Employees spend less time leaving the office for snacks, increasing productivity</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Healthier Options</h3>
+                    <p>Provide nutritious snacks that support employee health and energy levels</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Placement Process -->
+    <section class="free-placement">
+        <div class="container">
+            <h2>How Free Vending Machine Placement Works</h2>
+            <div class="placement-grid">
+                <div class="placement-card">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h3>1. Assessment</h3>
+                    <p>We evaluate your break room space and employee preferences to design the perfect vending solution</p>
+                </div>
+                
+                <div class="placement-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>2. Installation</h3>
+                    <p>Professional installation with no disruption to your business operations</p>
+                </div>
+                
+                <div class="placement-card">
+                    <i class="fas fa-box"></i>
+                    <h3>3. Product Selection</h3>
+                    <p>Curated selection of snacks and beverages based on your team's preferences</p>
+                </div>
+                
+                <div class="placement-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>4. Ongoing Support</h3>
+                    <p>Regular restocking, maintenance, and support to keep your vending machines running smoothly</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workplace Improvements -->
+    <section class="workplace-improvements">
+        <div class="container">
+            <div class="improvements-content">
+                <div class="improvements-text">
+                    <h2>Transform Your Workplace Culture</h2>
+                    <p>Free vending machines do more than provide snacks - they create a more positive, productive, and engaging workplace environment that your employees will love.</p>
+                    
+                    <div class="improvements-list">
+                        <div class="improvement-item">
+                            <i class="fas fa-check"></i>
+                            <span>Enhanced employee satisfaction and retention</span>
+                        </div>
+                        <div class="improvement-item">
+                            <i class="fas fa-check"></i>
+                            <span>Improved workplace morale and team bonding</span>
+                        </div>
+                        <div class="improvement-item">
+                            <i class="fas fa-check"></i>
+                            <span>Reduced time employees spend leaving for snacks</span>
+                        </div>
+                        <div class="improvement-item">
+                            <i class="fas fa-check"></i>
+                            <span>Professional break room appearance</span>
+                        </div>
+                        <div class="improvement-item">
+                            <i class="fas fa-check"></i>
+                            <span>24/7 access to refreshments and snacks</span>
+                        </div>
+                        <div class="improvement-item">
+                            <i class="fas fa-check"></i>
+                            <span>Zero cost to your business</span>
+                        </div>
+                    </div>
+                    
+                    <div class="improvements-cta">
+                        <a href="contact.html" class="btn btn-primary">Get Free Vending Machine</a>
+                        <a href="get-a-free-vending-machine-in-jacksonville-florida.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="overview-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-building"></i>
+                        <p>Workplace Culture</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Locations Section -->
+    <section class="related-locations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Vending Machine Service Available Throughout Jacksonville</h2>
+                <p class="section-subtitle">Professional vending machine service, maintenance, and support available in all Jacksonville areas and surrounding communities.</p>
+            </div>
+            
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Downtown Jacksonville</h3>
+                    <p>Vending machine service for downtown office buildings and corporate headquarters.</p>
+                    <div class="location-actions">
+                        <a href="downtown-jacksonville.html" class="btn btn-secondary">Downtown Service</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <h3>Jacksonville Beach</h3>
+                    <p>Beachfront vending machine service for hotels, resorts, and coastal businesses.</p>
+                    <div class="location-actions">
+                        <a href="jacksonville-beach.html" class="btn btn-secondary">Beach Service</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Orange Park</h3>
+                    <p>Suburban vending machine service for healthcare facilities and community businesses.</p>
+                    <div class="location-actions">
+                        <a href="orange-park.html" class="btn btn-secondary">Orange Park Service</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-golf-ball"></i>
+                    </div>
+                    <h3>Ponte Vedra</h3>
+                    <p>Luxury vending machine service for upscale properties and premium businesses.</p>
+                    <div class="location-actions">
+                        <a href="ponte-vedra.html" class="btn btn-secondary">Ponte Vedra Service</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Atlantic Beach</h3>
+                    <p>Coastal vending machine service for beachfront businesses and local establishments.</p>
+                    <div class="location-actions">
+                        <a href="atlantic-beach.html" class="btn btn-secondary">Atlantic Beach Service</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>St. Augustine</h3>
+                    <p>Historic area vending machine service for tourism businesses and cultural institutions.</p>
+                    <div class="location-actions">
+                        <a href="st-augustine.html" class="btn btn-secondary">St. Augustine Service</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Mandarin</h3>
+                    <p>Family-friendly vending machine service for schools and community centers.</p>
+                    <div class="location-actions">
+                        <a href="mandarin.html" class="btn btn-secondary">Mandarin Service</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Lakeside</h3>
+                    <p>Residential area vending machine service for local businesses and community facilities.</p>
+                    <div class="location-actions">
+                        <a href="lakeside.html" class="btn btn-secondary">Lakeside Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Transform Your Break Room?</h2>
+            <p>Get a free vending machine for your Jacksonville business today</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Get Free Machine</a>
+                <a href="get-a-free-vending-machine-in-jacksonville-florida.html" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VendSmart</h3>
+                    <p>Premium vending solutions for Jacksonville, Florida & surrounding areas.</p>
+                    <p>Free Installation & Delivery</p>
+                    <p>Coffee Services Available</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/vendsmart" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_ID" target="_blank"><i class="fab fa-google"></i></a>
+                        <a href="https://www.yelp.com/biz/YOUR_YELP_ID" target="_blank"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#vending">Vending Machines</a></li>
+                        <li><a href="services.html#micro-markets">Micro-Markets</a></li>
+                        <li><a href="services.html#coffee">Coffee Services</a></li>
+                        <li><a href="services.html#emergency">Emergency Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="downtown-jacksonville.html">Downtown Jacksonville</a></li>
+                        <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
+                        <li><a href="orange-park.html">Orange Park</a></li>
+                        <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
+                        <li><a href="atlantic-beach.html">Atlantic Beach</a></li>
+                        <li><a href="st-augustine.html">St. Augustine</a></li>
+                        <li><a href="mandarin.html">Mandarin</a></li>
+                        <li><a href="lakeside.html">Lakeside</a></li>
+                        <li><a href="locations.html">All Locations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="tel:904-456-3851">904-456-3851</a></p>
+                    <p><a href="mailto:vendsmartjacksonville@gmail.com">vendsmartjacksonville@gmail.com</a></p>
+                    <p>Jacksonville, Florida & Surrounding Areas</p>
+                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VendSmart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="includes.js"></script>
+</body>
+</html> 

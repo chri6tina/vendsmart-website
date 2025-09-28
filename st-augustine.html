@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Augustine Vending Machines & Micro-Markets | VendSmart</title>
+    <meta name="description" content="Free vending machines and micro-markets for St. Augustine businesses. Smart vending solutions for historic city tourism, local shops, and hospitality businesses. 100% free installation.">
+    <meta name="keywords" content="st augustine vending machines, historic city vending, tourism vending, local business vending, free vending machines st augustine">
+    <link rel="canonical" href="https://jacksonvillevendingmachines.com/st-augustine.html">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "VendSmart St. Augustine",
+        "description": "Free vending machines and micro-markets for St. Augustine businesses",
+        "url": "https://jacksonvillevendingmachines.com/st-augustine.html",
+        "telephone": "904-456-3851",
+        "email": "vendsmartjacksonville@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "St. Augustine",
+            "addressRegion": "FL",
+            "addressCountry": "US"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "St. Augustine"
+        },
+        "serviceArea": {
+            "@type": "City",
+            "name": "St. Augustine"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Vending Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Free Vending Machine Placement"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Micro-Markets"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Coffee Services"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <style>
+        .location-overview {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .location-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .location-text h2 {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .location-text p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .location-features {
+            display: grid;
+            gap: 1.5rem;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: 12px;
+            border-left: 4px solid #00C5F5;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-2px);
+        }
+        
+        .feature-item i {
+            font-size: 1.5rem;
+            color: #00C5F5;
+            margin-top: 0.25rem;
+        }
+        
+        .feature-item h3 {
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .feature-item p {
+            color: #6b7280;
+            line-height: 1.5;
+            margin: 0;
+        }
+        
+        .location-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .image-placeholder {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #cbd5e1;
+        }
+        
+        .image-placeholder i {
+            font-size: 4rem;
+            color: #00C5F5;
+            margin-bottom: 1rem;
+        }
+        
+        .image-placeholder p {
+            color: #6b7280;
+            font-weight: 600;
+        }
+        
+        .st-augustine-services {
+            padding: 4rem 0;
+            background: #f8fafc;
+        }
+        
+        .st-augustine-services h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 3rem;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-card i {
+            font-size: 2.5rem;
+            color: #00C5F5;
+            margin-bottom: 1rem;
+        }
+        
+        .service-card h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .service-card p {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .service-card li {
+            color: #6b7280;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f1f5f9;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .service-card li:before {
+            content: "✓";
+            color: #00C5F5;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .st-augustine-areas {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .st-augustine-areas h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 3rem;
+        }
+        
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .area-card {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            transition: transform 0.3s ease;
+        }
+        
+        .area-card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .area-card i {
+            font-size: 2.5rem;
+            color: #00C5F5;
+            margin-bottom: 1rem;
+        }
+        
+        .area-card h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .area-card p {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .area-card ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
+        }
+        
+        .area-card li {
+            color: #6b7280;
+            padding: 0.25rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .area-card li:before {
+            content: "•";
+            color: #00C5F5;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        
+        .st-augustine-benefits {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+        }
+        
+        .benefits-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .benefits-text h2 {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+        }
+        
+        .benefits-text p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .benefits-list {
+            margin-bottom: 2rem;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            color: #374151;
+        }
+        
+        .benefit-item i {
+            color: #00C5F5;
+            font-weight: bold;
+        }
+        
+        .benefits-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .st-augustine-stats {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .st-augustine-stats h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 3rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #00C5F5;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: #6b7280;
+            font-size: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .location-content,
+            .benefits-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .location-text h2,
+            .st-augustine-services h2,
+            .st-augustine-areas h2,
+            .st-augustine-benefits h2,
+            .st-augustine-stats h2 {
+                font-size: 2rem;
+            }
+            
+            .benefits-cta {
+                flex-direction: column;
+            }
+            
+            .benefits-cta .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" aria-label="VendSmart Homepage">
+                    <img src="vendsmart-logo-jacksonville-vending.png" alt="VendSmart - Jacksonville Vending Machine Company Logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="coffeeservices.html">Coffee Services</a></li>
+                        <li><a href="smart-coolers.html">Smart Coolers</a></li>
+                        <li><a href="setting-up-a-micro-market-in-your-jacksonville-office.html">Micro-Markets</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Locations <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="locations.html">All Locations</a></li>
+                        <li><a href="downtown-jacksonville.html">Downtown</a></li>
+                        <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
+                        <li><a href="orange-park.html">Orange Park</a></li>
+                        <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="cta-button">Contact Us</a></li>
+            </ul>
+            <div class="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="jacksonville-vending-micro-market.jpg" alt="St. Augustine vending machines and micro-markets" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Vending Machine Services in St. Augustine</h1>
+                <p class="hero-subtitle">Premium vending solutions for St. Augustine businesses with Jacksonville-based expertise</p>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Free Machine Placement</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Smart Technology</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="get-a-free-vending-machine-in-jacksonville-florida.html" class="btn btn-primary">Get Free Machine</a>
+                    <a href="contact.html" class="btn btn-secondary">Request Quote</a>
+                </div>
+                <div class="hero-links">
+                    <p>St. Augustine Vending Machines - Popular services: <a href="coffeeservices.html">Coffee Services</a> | <a href="setting-up-a-micro-market-in-your-jacksonville-office.html">Micro-Markets</a> | <a href="locations.html">All Locations</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Overview -->
+    <section id="overview" class="location-overview">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-text">
+                    <h2>Vending Solutions for St. Augustine</h2>
+                    <p>St. Augustine, America's oldest city, is a historic treasure known for its rich heritage, vibrant tourism industry, and charming local businesses. VendSmart provides specialized vending solutions tailored to the unique needs of St. Augustine's historic district, tourism businesses, and local community.</p>
+                    
+                    <div class="location-features">
+                        <div class="feature-item">
+                            <i class="fas fa-landmark"></i>
+                            <div>
+                                <h3>Historic District</h3>
+                                <p>Vending solutions for businesses in the historic district, serving tourists and locals in America's oldest city</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-hotel"></i>
+                            <div>
+                                <h3>Tourism & Hospitality</h3>
+                                <p>Vending solutions for hotels, bed & breakfasts, and hospitality businesses catering to millions of annual visitors</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-store"></i>
+                            <div>
+                                <h3>Local Shops & Retail</h3>
+                                <p>Convenient vending for local shops, boutiques, and retail businesses serving the St. Augustine community</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-utensils"></i>
+                            <div>
+                                <h3>Restaurants & Dining</h3>
+                                <p>Vending solutions for restaurants, cafes, and dining establishments in the historic city</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="location-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-landmark"></i>
+                        <p>St. Augustine</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- St. Augustine Services -->
+    <section class="st-augustine-services">
+        <div class="container">
+            <h2>Vending Services in St. Augustine</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Smart Vending Machines</h3>
+                    <p>Modern vending machines with contactless payments, real-time monitoring, and healthy snack options perfect for St. Augustine locations.</p>
+                    <ul>
+                        <li>Contactless payment systems (Apple Pay, Google Pay, credit cards)</li>
+                        <li>Real-time inventory monitoring and alerts</li>
+                        <li>Healthy and organic snack options</li>
+                        <li>Energy drinks and premium beverages</li>
+                        <li>24/7 remote support and maintenance</li>
+                        <li>Mobile app integration for easy ordering</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-store"></i>
+                    <h3>Micro-Markets</h3>
+                    <p>Self-service convenience stores that transform your space into a modern retail experience with fresh food and smart checkout.</p>
+                    <ul>
+                        <li>Self-checkout kiosks with touch-screen technology</li>
+                        <li>Fresh food options including salads and sandwiches</li>
+                        <li>Smart coolers with temperature monitoring</li>
+                        <li>Employee loyalty programs and discounts</li>
+                        <li>Detailed sales analytics and reporting</li>
+                        <li>Professional installation and setup</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Coffee Services</h3>
+                    <p>Professional coffee solutions including single-serve machines, traditional coffee makers, and premium coffee products for your business.</p>
+                    <ul>
+                        <li>Single-serve coffee machines (Keurig, Nespresso)</li>
+                        <li>Traditional coffee makers and supplies</li>
+                        <li>Premium coffee beans and tea selections</li>
+                        <li>Creamers, sweeteners, and condiments</li>
+                        <li>Regular maintenance and cleaning service</li>
+                        <li>Custom coffee programs for your brand</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-snowflake"></i>
+                    <h3>Smart Coolers</h3>
+                    <p>Advanced cooling technology with real-time monitoring, inventory tracking, and contactless payments for fresh food and beverages.</p>
+                    <ul>
+                        <li>Temperature monitoring with real-time alerts</li>
+                        <li>Automated inventory tracking and restocking</li>
+                        <li>Contactless payment integration</li>
+                        <li>Fresh food storage for salads and sandwiches</li>
+                        <li>Energy-efficient cooling systems</li>
+                        <li>Analytics dashboard for sales insights</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- St. Augustine Areas -->
+    <section class="st-augustine-areas">
+        <div class="container">
+            <h2>St. Augustine Business Areas We Serve</h2>
+            <div class="areas-grid">
+                <div class="area-card">
+                    <i class="fas fa-landmark"></i>
+                    <h3>Historic District</h3>
+                    <p>Vending solutions for businesses in the historic district of St. Augustine.</p>
+                    <ul>
+                        <li>St. George Street businesses</li>
+                        <li>Historic district shops</li>
+                        <li>Tourist information centers</li>
+                        <li>Historic attractions</li>
+                        <li>Museums and galleries</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline">Get Quote</a>
+                </div>
+                
+                <div class="area-card">
+                    <i class="fas fa-hotel"></i>
+                    <h3>Tourism & Hospitality</h3>
+                    <p>Vending solutions for hotels, bed & breakfasts, and hospitality businesses.</p>
+                    <ul>
+                        <li>Historic hotels and inns</li>
+                        <li>Bed & breakfast establishments</li>
+                        <li>Resort and vacation rentals</li>
+                        <li>Conference centers</li>
+                        <li>Tourist accommodations</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline">Get Quote</a>
+                </div>
+                
+                <div class="area-card">
+                    <i class="fas fa-store"></i>
+                    <h3>Local Shops & Retail</h3>
+                    <p>Convenient vending for local shops, boutiques, and retail businesses.</p>
+                    <ul>
+                        <li>Local boutiques and shops</li>
+                        <li>Convenience stores</li>
+                        <li>Grocery stores</li>
+                        <li>Retail plazas</li>
+                        <li>Souvenir and gift shops</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline">Get Quote</a>
+                </div>
+                
+                <div class="area-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Restaurants & Dining</h3>
+                    <p>Vending solutions for restaurants, cafes, and dining establishments.</p>
+                    <ul>
+                        <li>Historic restaurants</li>
+                        <li>Cafes and coffee shops</li>
+                        <li>Bars and pubs</li>
+                        <li>Takeout and delivery</li>
+                        <li>Food trucks and stands</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline">Get Quote</a>
+                </div>
+                
+                <div class="area-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Professional Offices</h3>
+                    <p>Smart vending for professional offices, medical practices, and service businesses.</p>
+                    <ul>
+                        <li>Medical offices and clinics</li>
+                        <li>Professional service firms</li>
+                        <li>Real estate offices</li>
+                        <li>Financial services</li>
+                        <li>Consulting and advisory firms</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline">Get Quote</a>
+                </div>
+                
+                <div class="area-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Automotive & Services</h3>
+                    <p>Vending solutions for automotive businesses, service centers, and repair facilities.</p>
+                    <ul>
+                        <li>Auto repair shops</li>
+                        <li>Car dealerships</li>
+                        <li>Service centers</li>
+                        <li>Gas stations and convenience stores</li>
+                        <li>Automotive parts stores</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- St. Augustine Benefits -->
+    <section class="st-augustine-benefits">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <h2>Why Choose VendSmart for St. Augustine?</h2>
+                    <p>St. Augustine businesses choose VendSmart for our local expertise, tourism-focused service, and commitment to supporting the unique character of America's oldest city.</p>
+                    
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>100% free vending machine placement with no upfront costs</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Local Jacksonville company with St. Augustine area expertise</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>24/7 support and emergency service available</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Professional installation with minimal business disruption</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Customized product selection for your team's preferences</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Regular maintenance and restocking included</span>
+                        </div>
+                    </div>
+                    
+                    <div class="benefits-cta">
+                        <a href="contact.html" class="btn btn-primary">Get Free Vending Machine</a>
+                        <a href="get-a-free-vending-machine-in-jacksonville-florida.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="location-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-chart-line"></i>
+                        <p>St. Augustine Success</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- St. Augustine Stats -->
+    <section class="st-augustine-stats">
+        <div class="container">
+            <h2>St. Augustine by the Numbers</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">St. Augustine Businesses Served</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support Available</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Free Installation</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Customer Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services Section -->
+    <section class="related-services">
+        <div class="container">
+            <h2>Vending Services Available in St. Augustine</h2>
+            <p>Discover the comprehensive range of vending solutions we offer to St. Augustine businesses:</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>Tourism & Hospitality Vending</h3>
+                    <p>Specialized vending solutions for St. Augustine's tourism industry, offering refreshments and snacks for visitors and staff at historic sites.</p>
+                    <div class="service-actions">
+                        <a href="vending-machines-for-hotels.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Retail Vending Solutions</h3>
+                    <p>Perfect for shopping centers and retail locations in St. Augustine, providing convenient access to snacks and beverages for customers and employees.</p>
+                    <div class="service-actions">
+                        <a href="vending-machines-for-retail.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Office Building Solutions</h3>
+                    <p>Modern vending machines and micro-markets for St. Augustine office buildings, enhancing workplace convenience and employee satisfaction.</p>
+                    <div class="service-actions">
+                        <a href="vending-machines-for-office-buildings.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3>Coffee Services</h3>
+                    <p>Premium coffee solutions for St. Augustine businesses, featuring high-quality coffee machines and regular maintenance services.</p>
+                    <div class="service-actions">
+                        <a href="coffeeservices.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Micro-Markets</h3>
+                    <p>Advanced micro-market solutions for St. Augustine businesses, offering fresh food options and modern payment systems.</p>
+                    <div class="service-actions">
+                        <a href="setting-up-a-micro-market-in-your-jacksonville-office.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Vending Machine Service</h3>
+                    <p>Comprehensive maintenance and repair services for all vending machines in St. Augustine, ensuring optimal performance and reliability.</p>
+                    <div class="service-actions">
+                        <a href="vendingmachine-service.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready for St. Augustine Vending Solutions?</h2>
+            <p>Get a free vending machine for your St. Augustine business today</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Get Free Machine</a>
+                <a href="get-a-free-vending-machine-in-jacksonville-florida.html" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VendSmart</h3>
+                    <p>Premium vending solutions for Jacksonville, Florida & surrounding areas.</p>
+                    <p>Free Installation & Delivery</p>
+                    <p>Coffee Services Available</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/vendsmart" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_ID" target="_blank"><i class="fab fa-google"></i></a>
+                        <a href="https://www.yelp.com/biz/YOUR_YELP_ID" target="_blank"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#vending">Vending Machines</a></li>
+                        <li><a href="services.html#micro-markets">Micro-Markets</a></li>
+                        <li><a href="services.html#coffee">Coffee Services</a></li>
+                        <li><a href="services.html#emergency">Emergency Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="downtown-jacksonville.html">Downtown Jacksonville</a></li>
+                        <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
+                        <li><a href="orange-park.html">Orange Park</a></li>
+                        <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
+                        <li><a href="atlantic-beach.html">Atlantic Beach</a></li>
+                        <li><a href="st-augustine.html">St. Augustine</a></li>
+                        <li><a href="mandarin.html">Mandarin</a></li>
+                        <li><a href="lakeside.html">Lakeside</a></li>
+                        <li><a href="locations.html">All Locations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="tel:904-456-3851">904-456-3851</a></p>
+                    <p><a href="mailto:vendsmartjacksonville@gmail.com">vendsmartjacksonville@gmail.com</a></p>
+                    <p>Jacksonville, Florida & Surrounding Areas</p>
+                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VendSmart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="includes.js"></script>
+</body>
+</html> 

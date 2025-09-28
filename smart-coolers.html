@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacksonville Vending Machines - Smart Coolers for Jacksonville Businesses</title>
+    <meta name="description" content="VendSmart provides smart coolers with real-time monitoring, inventory tracking, and contactless payments for Jacksonville businesses. Free installation available.">
+    <link rel="canonical" href="https://jacksonvillevendingmachines.com/smart-coolers.html">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .smart-cooler-overview {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .overview-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .overview-text h2 {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #00C5F5, #0099CC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .overview-text p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .smart-features {
+            display: grid;
+            gap: 1.5rem;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: 12px;
+            border-left: 4px solid #00C5F5;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-2px);
+        }
+        
+        .feature-item i {
+            font-size: 1.5rem;
+            color: #00C5F5;
+            margin-top: 0.25rem;
+        }
+        
+        .feature-item h3 {
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .feature-item p {
+            color: #6b7280;
+            line-height: 1.5;
+            margin: 0;
+        }
+        
+        .overview-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .image-placeholder {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #cbd5e1;
+        }
+        
+        .image-placeholder i {
+            font-size: 4rem;
+            color: #00C5F5;
+            margin-bottom: 1rem;
+        }
+        
+        .image-placeholder p {
+            color: #6b7280;
+            font-weight: 600;
+        }
+        
+        .smart-benefits {
+            padding: 4rem 0;
+            background: #f8fafc;
+        }
+        
+        .smart-benefits h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 3rem;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .benefit-card i {
+            font-size: 2.5rem;
+            color: #00C5F5;
+            margin-bottom: 1rem;
+        }
+        
+        .benefit-card h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .benefit-card p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        
+        .smart-applications {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .smart-applications h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 3rem;
+        }
+        
+        .applications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .application-card {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #e5e7eb;
+            transition: transform 0.3s ease;
+        }
+        
+        .application-card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .application-card h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .application-card p {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .free-placement {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+        }
+        
+        .placement-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .placement-text h2 {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+        }
+        
+        .placement-text p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .placement-benefits {
+            margin-bottom: 2rem;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            color: #374151;
+        }
+        
+        .benefit-item i {
+            color: #00C5F5;
+            font-weight: bold;
+        }
+        
+        .placement-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        @media (max-width: 768px) {
+            .overview-content,
+            .placement-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .overview-text h2,
+            .smart-benefits h2,
+            .smart-applications h2,
+            .placement-text h2 {
+                font-size: 2rem;
+            }
+            
+            .placement-cta {
+                flex-direction: column;
+            }
+            
+            .placement-cta .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" aria-label="VendSmart Homepage">
+                    <img src="vendsmart-logo-jacksonville-vending.png" alt="VendSmart - Jacksonville Vending Machine Company Logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="coffeeservices.html">Coffee Services</a></li>
+                        <li><a href="smart-coolers.html">Smart Coolers</a></li>
+                        <li><a href="setting-up-a-micro-market-in-your-jacksonville-office.html">Micro-Markets</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Locations <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="locations.html">All Locations</a></li>
+                        <li><a href="downtown-jacksonville.html">Downtown</a></li>
+                        <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
+                        <li><a href="orange-park.html">Orange Park</a></li>
+                        <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="cta-button">Contact Us</a></li>
+            </ul>
+            <div class="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="jacksonville-vending-micro-market.jpg" alt="Jacksonville smart cooler and micro-market technology" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Smart Coolers for Jacksonville Businesses</h1>
+                <p>Advanced cooling technology with real-time monitoring and inventory management</p>
+                <div class="hero-buttons">
+                    <a href="#overview" class="btn btn-primary">Learn More</a>
+                    <a href="contact.html" class="btn btn-outline">Get Free Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart Cooler Overview -->
+    <section id="overview" class="smart-cooler-overview">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>What are Smart Coolers?</h2>
+                    <p>Smart coolers are the next generation of vending technology, combining traditional refrigeration with cutting-edge IoT capabilities. These intelligent units provide real-time monitoring, automated inventory tracking, and seamless payment processing.</p>
+                    
+                    <div class="smart-features">
+                        <div class="feature-item">
+                            <i class="fas fa-thermometer-half"></i>
+                            <div>
+                                <h3>Temperature Monitoring</h3>
+                                <p>Real-time temperature tracking with alerts for optimal product freshness</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-boxes"></i>
+                            <div>
+                                <h3>Inventory Tracking</h3>
+                                <p>Automated stock monitoring with low-inventory alerts</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <h3>Contactless Payments</h3>
+                                <p>Mobile payments, credit cards, and digital wallet integration</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <h3>Analytics Dashboard</h3>
+                                <p>Detailed sales reports and performance analytics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-snowflake"></i>
+                        <p>Smart Cooler Technology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart Cooler Benefits -->
+    <section class="smart-benefits">
+        <div class="container">
+            <h2>Benefits of Smart Coolers</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Increased Revenue</h3>
+                    <p>Smart coolers typically generate 30-50% more revenue than traditional vending machines</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>24/7 Monitoring</h3>
+                    <p>Real-time alerts for maintenance, restocking, and temperature issues</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Fresh Food Options</h3>
+                    <p>Perfect temperature control for fresh salads, sandwiches, and healthy snacks</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Employee Satisfaction</h3>
+                    <p>Better food options improve workplace morale and productivity</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart Cooler Applications -->
+    <section class="smart-applications">
+        <div class="container">
+            <h2>Perfect for Jacksonville Businesses</h2>
+            <div class="applications-grid">
+                <div class="application-card">
+                    <h3>Office Buildings</h3>
+                    <p>Keep employees energized with fresh food and beverages</p>
+                    <a href="downtown-jacksonville.html" class="btn btn-outline">Downtown Offices</a>
+                </div>
+                
+                <div class="application-card">
+                    <h3>Healthcare Facilities</h3>
+                    <p>Healthy options for staff and visitors</p>
+                    <a href="orange-park.html" class="btn btn-outline">Healthcare Centers</a>
+                </div>
+                
+                <div class="application-card">
+                    <h3>Educational Institutions</h3>
+                    <p>Smart solutions for students and faculty</p>
+                    <a href="mandarin.html" class="btn btn-outline">Schools & Universities</a>
+                </div>
+                
+                <div class="application-card">
+                    <h3>Manufacturing Facilities</h3>
+                    <p>24/7 access to refreshments for shift workers</p>
+                    <a href="orange-park.html" class="btn btn-outline">Manufacturing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Smart Cooler Placement -->
+    <section class="free-placement">
+        <div class="container">
+            <div class="placement-content">
+                <div class="placement-text">
+                    <h2>Free Smart Cooler Placement in Jacksonville</h2>
+                    <p>Qualified Jacksonville businesses can receive free smart cooler installation with no upfront costs. We handle installation, maintenance, and restocking while you earn passive income.</p>
+                    
+                    <div class="placement-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>No upfront costs or installation fees</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Professional installation and setup</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Regular maintenance and restocking</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Revenue sharing opportunities</span>
+                        </div>
+                    </div>
+                    
+                    <div class="placement-cta">
+                        <a href="get-a-free-vending-machine-in-jacksonville-florida.html" class="btn btn-primary">Apply for Free Smart Cooler</a>
+                        <a href="contact.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="placement-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-gift"></i>
+                        <p>Free Smart Cooler</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Locations Section -->
+    <section class="related-locations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Smart Cooler Solutions Available Throughout Jacksonville</h2>
+                <p class="section-subtitle">Advanced cooling technology with real-time monitoring available in all Jacksonville areas and surrounding communities.</p>
+            </div>
+            
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Downtown Jacksonville</h3>
+                    <p>Smart coolers for downtown office buildings and corporate headquarters.</p>
+                    <div class="location-actions">
+                        <a href="downtown-jacksonville.html" class="btn btn-secondary">Downtown Solutions</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <h3>Jacksonville Beach</h3>
+                    <p>Beachfront smart coolers for hotels, resorts, and coastal businesses.</p>
+                    <div class="location-actions">
+                        <a href="jacksonville-beach.html" class="btn btn-secondary">Beach Solutions</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Orange Park</h3>
+                    <p>Suburban smart coolers for healthcare facilities and community businesses.</p>
+                    <div class="location-actions">
+                        <a href="orange-park.html" class="btn btn-secondary">Orange Park Solutions</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-golf-ball"></i>
+                    </div>
+                    <h3>Ponte Vedra</h3>
+                    <p>Luxury smart coolers for upscale properties and premium businesses.</p>
+                    <div class="location-actions">
+                        <a href="ponte-vedra.html" class="btn btn-secondary">Ponte Vedra Solutions</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Atlantic Beach</h3>
+                    <p>Coastal smart coolers for beachfront businesses and local establishments.</p>
+                    <div class="location-actions">
+                        <a href="atlantic-beach.html" class="btn btn-secondary">Atlantic Beach Solutions</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>St. Augustine</h3>
+                    <p>Historic area smart coolers for tourism businesses and cultural institutions.</p>
+                    <div class="location-actions">
+                        <a href="st-augustine.html" class="btn btn-secondary">St. Augustine Solutions</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Mandarin</h3>
+                    <p>Family-friendly smart coolers for schools and community centers.</p>
+                    <div class="location-actions">
+                        <a href="mandarin.html" class="btn btn-secondary">Mandarin Solutions</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Lakeside</h3>
+                    <p>Residential area smart coolers for local businesses and community facilities.</p>
+                    <div class="location-actions">
+                        <a href="lakeside.html" class="btn btn-secondary">Lakeside Solutions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Upgrade to Smart Coolers?</h2>
+            <p>Contact VendSmart today for a free consultation and smart cooler quote</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Get Free Quote</a>
+                <a href="get-a-free-vending-machine-in-jacksonville-florida.html" class="btn btn-secondary">Get Free Smart Cooler</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VendSmart</h3>
+                    <p>Premium vending solutions for Jacksonville, Florida & surrounding areas.</p>
+                    <p>Free Installation & Delivery</p>
+                    <p>Coffee Services Available</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/vendsmart" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_ID" target="_blank"><i class="fab fa-google"></i></a>
+                        <a href="https://www.yelp.com/biz/YOUR_YELP_ID" target="_blank"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#vending">Vending Machines</a></li>
+                        <li><a href="services.html#micro-markets">Micro-Markets</a></li>
+                        <li><a href="services.html#coffee">Coffee Services</a></li>
+                        <li><a href="services.html#emergency">Emergency Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="downtown-jacksonville.html">Downtown Jacksonville</a></li>
+                        <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
+                        <li><a href="orange-park.html">Orange Park</a></li>
+                        <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
+                        <li><a href="atlantic-beach.html">Atlantic Beach</a></li>
+                        <li><a href="st-augustine.html">St. Augustine</a></li>
+                        <li><a href="mandarin.html">Mandarin</a></li>
+                        <li><a href="lakeside.html">Lakeside</a></li>
+                        <li><a href="locations.html">All Locations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="tel:904-456-3851">904-456-3851</a></p>
+                    <p><a href="mailto:vendsmartjacksonville@gmail.com">vendsmartjacksonville@gmail.com</a></p>
+                    <p>Jacksonville, Florida & Surrounding Areas</p>
+                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VendSmart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="includes.js"></script>
+</body>
+</html> 

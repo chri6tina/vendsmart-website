@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacksonville Vending Machines - Get Free Vending Machine | Jacksonville, FL</title>
+    <meta name="description" content="Apply for free vending machine placement in Jacksonville, Florida. No upfront costs, professional installation, and exceptional service with VendSmart.">
+    <link rel="stylesheet" href="styles.css?v=22.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation will be loaded dynamically -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="Miro Market.jpg" alt="VendSmart Micro-Market" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Get a Free Vending Machine in Jacksonville</h1>
+                <p class="hero-subtitle">No upfront costs • Professional installation • Exceptional service • 24/7 support</p>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Free Machine Placement</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Professional Installation</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#application-form" class="btn btn-primary">Apply Now</a>
+                    <a href="contact.html" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="application-form-section" id="application-form">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Apply for Free Vending Machine</h2>
+                    <p>Fill out the form below and we'll contact you within 24 hours to discuss your application. No commitment required.</p>
+                </div>
+                
+                <form class="application-form" action="https://formspree.io/f/mwplbjpz" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="business-name">Business Name *</label>
+                            <input type="text" id="business-name" name="business-name" required placeholder="Your business name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-name">Contact Person *</label>
+                            <input type="text" id="contact-name" name="contact-name" required placeholder="Your full name">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(904) 456-3851">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Business Address *</label>
+                        <input type="text" id="address" name="address" required placeholder="Street address, Jacksonville, FL">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="business-type">Business Type *</label>
+                            <select id="business-type" name="business-type" required>
+                                <option value="">Select business type</option>
+                                <option value="office">Office Building</option>
+                                <option value="manufacturing">Manufacturing</option>
+                                <option value="warehouse">Warehouse</option>
+                                <option value="hospital">Hospital/Medical</option>
+                                <option value="school">School/University</option>
+                                <option value="hotel">Hotel/Hospitality</option>
+                                <option value="retail">Retail Store</option>
+                                <option value="gym">Gym/Fitness Center</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="daily-traffic">Daily Traffic *</label>
+                            <select id="daily-traffic" name="daily-traffic" required>
+                                <option value="">Select traffic level</option>
+                                <option value="50-100">50-100 people</option>
+                                <option value="100-200">100-200 people</option>
+                                <option value="200-500">200-500 people</option>
+                                <option value="500+">500+ people</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="operating-hours">Operating Hours *</label>
+                            <select id="operating-hours" name="operating-hours" required>
+                                <option value="">Select hours</option>
+                                <option value="8-5">8 AM - 5 PM</option>
+                                <option value="9-6">9 AM - 6 PM</option>
+                                <option value="24-7">24/7</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="machine-type">Preferred Machine Type</label>
+                            <select id="machine-type" name="machine-type">
+                                <option value="">Select preference</option>
+                                <option value="snack">Snack Machine</option>
+                                <option value="beverage">Beverage Machine</option>
+                                <option value="combo">Combo Machine</option>
+                                <option value="micro-market">Micro-Market</option>
+                                <option value="coffee">Coffee Service</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="location-details">Location Details</label>
+                        <textarea id="location-details" name="location-details" rows="4" placeholder="Describe your location, available space, power access, and any specific requirements..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="timeline">Preferred Installation Timeline</label>
+                        <select id="timeline" name="timeline">
+                            <option value="">Select timeline</option>
+                            <option value="asap">As soon as possible</option>
+                            <option value="1-2-weeks">1-2 weeks</option>
+                            <option value="1-month">1 month</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+                    
+
+                    
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Machine Overview -->
+    <section class="free-machine-overview">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>Free Vending Machine Placement Program</h2>
+                    <p>VendSmart offers qualified Jacksonville businesses the opportunity to receive a free vending machine with no upfront costs. We handle everything from installation to maintenance while providing exceptional service and support.</p>
+                    
+                    <div class="program-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-dollar-sign"></i>
+                            <div>
+                                <h3>No Upfront Costs</h3>
+                                <p>Zero installation fees, no equipment costs, and no hidden charges. We invest in your success.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <i class="fas fa-tools"></i>
+                            <div>
+                                <h3>Professional Installation</h3>
+                                <p>Our certified technicians handle all setup, wiring, and initial configuration at no cost to you.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h3>Reliable Service</h3>
+                                <p>Dependable maintenance, restocking, and support to keep your vending machine running smoothly.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <i class="fas fa-headset"></i>
+                            <div>
+                                <h3>24/7 Support</h3>
+                                <p>Round-the-clock maintenance, restocking, and technical support to keep your machine running.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-gift"></i>
+                        <p>Free Machine Program</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualification Criteria -->
+    <section class="qualification-criteria">
+        <div class="container">
+            <h2>Qualification Requirements</h2>
+            <p class="section-subtitle">To qualify for our free vending machine placement program, your location should meet the following criteria:</p>
+            
+            <div class="criteria-grid">
+                <div class="criteria-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Minimum Traffic</h3>
+                    <p>At least 50+ people per day in your location with regular access to the vending area</p>
+                </div>
+                
+                <div class="criteria-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Operating Hours</h3>
+                    <p>Location open at least 8 hours per day, 5 days per week for consistent sales</p>
+                </div>
+                
+                <div class="criteria-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Jacksonville Area</h3>
+                    <p>Must be located within our Jacksonville service area for regular maintenance</p>
+                </div>
+                
+                <div class="criteria-card">
+                    <i class="fas fa-plug"></i>
+                    <h3>Power Access</h3>
+                    <p>Access to electrical outlets and internet connectivity for smart technology</p>
+                </div>
+                
+                <div class="criteria-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Security</h3>
+                    <p>Safe, secure location with protection from theft and vandalism</p>
+                </div>
+                
+                <div class="criteria-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Partnership</h3>
+                    <p>Willingness to enter into a long-term partnership agreement with VendSmart</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How long does the application process take?</h3>
+                    <p>We typically review applications within 24 hours and contact qualified candidates within 1-2 business days.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What happens after I'm approved?</h3>
+                    <p>We'll schedule a site visit, discuss machine placement options, and begin the installation process within 1-2 weeks.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What services are included?</h3>
+                    <p>We provide complete installation, maintenance, restocking, and 24/7 support at no additional cost to you.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What if the machine doesn't perform well?</h3>
+                    <p>We monitor performance closely and will work with you to optimize product selection and placement for better results.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Can I choose the products in the machine?</h3>
+                    <p>Yes! We work with you to select products that match your employees' preferences and dietary needs.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What maintenance is included?</h3>
+                    <p>We handle all maintenance, repairs, restocking, and cleaning at no additional cost to you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Get Your Free Vending Machine?</h2>
+            <p>Apply now for your free vending machine and enjoy convenient access to snacks and beverages for your employees.</p>
+            <div class="cta-buttons">
+                <a href="#application-form" class="btn btn-primary">Apply Now</a>
+                <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VendSmart</h3>
+                    <p>Premium vending solutions for Jacksonville, Florida.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#vending">Vending Machines</a></li>
+                        <li><a href="services.html#micro-markets">Micro-Markets</a></li>
+                        <li><a href="services.html#coffee">Coffee Services</a></li>
+                        <li><a href="services.html#emergency">Emergency Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="downtown-jacksonville.html">Downtown</a></li>
+                        <li><a href="jacksonville-beach.html">Jacksonville Beach</a></li>
+                        <li><a href="orange-park.html">Orange Park</a></li>
+                        <li><a href="ponte-vedra.html">Ponte Vedra</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Jacksonville, Florida</p>
+                    <p>24/7 Support Available</p>
+                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VendSmart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="includes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

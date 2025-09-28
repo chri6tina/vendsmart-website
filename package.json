@@ -1,0 +1,31 @@
+{
+  "name": "vendsmart-website",
+  "version": "1.0.0",
+  "description": "VendSmart Vending Solutions Jacksonville - Professional Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=/index.html",
+    "start": "live-server --port=3000 --open=/index.html",
+    "build": "echo 'No build process needed for static site'",
+    "serve": "live-server --port=3000",
+    "deploy": "echo 'Ready for deployment to GitHub Pages, Netlify, or Vercel'"
+  },
+  "keywords": [
+    "vending-machines",
+    "jacksonville",
+    "florida",
+    "micro-markets",
+    "coffee-services",
+    "static-website"
+  ],
+  "author": "VendSmart",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/vendsmart-website.git"
+  },
+  "homepage": "https://jacksonvillevendingmachines.com"
+}
