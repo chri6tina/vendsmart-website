@@ -26,6 +26,14 @@ function loadNavigation() {
                 // Initialize mobile navigation after navigation is loaded
                 setTimeout(() => {
                     initializeMobileNavigation();
+                    
+                    // Trigger button initialization for dynamically loaded content
+                    if (typeof fixButtonIssues === 'function') {
+                        fixButtonIssues();
+                    }
+                    
+                    // Dispatch custom event to notify other scripts
+                    window.dispatchEvent(new CustomEvent('navigationLoaded'));
                 }, 100);
             }
         })
@@ -91,7 +99,12 @@ function initializeMobileNavigation() {
     // Close menu when clicking on a link
     const navLinks = navMenu.querySelectorAll('a');
     navLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function(e) {
+            // Don't interfere with button functionality
+            if (this.classList.contains('btn') || this.classList.contains('cta-button')) {
+                return; // Let the button handle its own click
+            }
+            
             navMenu.classList.remove('active');
             hamburger.classList.remove('active');
             hamburger.setAttribute('aria-expanded', 'false');

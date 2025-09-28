@@ -280,6 +280,50 @@
         <priority>0.8</priority>
     </url>
     
+    <!-- New Location Pages - Recently Added -->
+    <url>
+        <loc>https://jacksonvillevendingmachines.com/st-marys.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://jacksonvillevendingmachines.com/palm-coast.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://jacksonvillevendingmachines.com/lake-city.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://jacksonvillevendingmachines.com/yulee.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://jacksonvillevendingmachines.com/baldwin.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://jacksonvillevendingmachines.com/callahan.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://jacksonvillevendingmachines.com/macclenny.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
     <!-- Location-Specific Vending Services -->
     <url>
         <loc>https://jacksonvillevendingmachines.com/vending-services-downtown-jacksonville.html</loc>
@@ -337,6 +381,26 @@
     </url>
     <url>
         <loc>https://jacksonvillevendingmachines.com/jacksonville-vending-services-landing.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- New Location-Specific Vending Services -->
+    <url>
+        <loc>https://jacksonvillevendingmachines.com/vending-services-st-marys.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://jacksonvillevendingmachines.com/vending-services-palm-coast.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://jacksonvillevendingmachines.com/vending-services-lake-city.html</loc>
         <lastmod>2024-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>

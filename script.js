@@ -20,7 +20,78 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// CTA buttons are now handled by includes.js to avoid conflicts
+// Comprehensive button functionality fix
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Initializing button functionality...');
+    
+    // Function to ensure buttons work
+    function initializeButtons() {
+        const allButtons = document.querySelectorAll('.btn, .cta-button, button');
+        console.log(`Found ${allButtons.length} buttons to initialize`);
+        
+        allButtons.forEach((button, index) => {
+            // Ensure button is clickable
+            button.style.pointerEvents = 'auto';
+            button.style.cursor = 'pointer';
+            button.style.position = 'relative';
+            button.style.zIndex = '1';
+            
+            // Add click event listener if it doesn't have one
+            if (!button.hasAttribute('data-initialized')) {
+                button.setAttribute('data-initialized', 'true');
+                
+                button.addEventListener('click', function(event) {
+                    console.log(`Button ${index + 1} clicked:`, this.textContent.trim());
+                    
+                    // For anchor buttons, ensure navigation works
+                    if (this.tagName === 'A') {
+                        const href = this.getAttribute('href');
+                        if (href && href !== '#' && !href.startsWith('javascript:')) {
+                            console.log('Navigating to:', href);
+                            // Let the browser handle navigation
+                            return true;
+                        }
+                    }
+                    
+                    // For other buttons, prevent default if no href
+                    if (this.tagName === 'A' && (!this.getAttribute('href') || this.getAttribute('href') === '#')) {
+                        event.preventDefault();
+                        console.log('Prevented default for button without href');
+                        return false;
+                    }
+                    
+                    return true;
+                }, true);
+            }
+        });
+    }
+    
+    // Initialize buttons immediately
+    initializeButtons();
+    
+    // Re-initialize buttons after a delay to catch any dynamically loaded content
+    setTimeout(initializeButtons, 1000);
+    setTimeout(initializeButtons, 3000);
+    
+    // Also initialize when navigation is loaded (if using includes.js)
+    if (typeof window !== 'undefined') {
+        window.addEventListener('navigationLoaded', initializeButtons);
+    }
+});
+
+// Global function to fix button issues
+function fixButtonIssues() {
+    const allButtons = document.querySelectorAll('.btn, .cta-button, button');
+    allButtons.forEach(button => {
+        button.style.pointerEvents = 'auto';
+        button.style.cursor = 'pointer';
+        button.style.position = 'relative';
+        button.style.zIndex = '1';
+    });
+}
+
+// Run the fix function
+setTimeout(fixButtonIssues, 500);
 
 // Navbar background change on scroll
 window.addEventListener('scroll', function() {

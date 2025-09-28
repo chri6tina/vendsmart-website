@@ -1837,6 +1837,37 @@ html {
     outline-offset: 2px;
 }
 
+/* Ensure buttons are clickable and have proper cursor */
+.btn,
+.cta-button,
+button {
+    cursor: pointer !important;
+    pointer-events: auto !important;
+    position: relative !important;
+    z-index: 1 !important;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Ensure button links are properly styled */
+a.btn,
+a.cta-button {
+    display: inline-block !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    pointer-events: auto !important;
+}
+
+/* Fix for any potential overlay issues */
+.btn:hover,
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
 /* Page Header - Deprecated - Now using hero sections */
 /* .page-header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -7644,14 +7675,17 @@ html {
     z-index: -1;
     opacity: 0;
     transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
 .nav-menu.active::before {
     opacity: 1;
+    pointer-events: auto;
 }
 
 .nav-menu.active::before {
     opacity: 1;
+    pointer-events: auto;
 }
 
 /* Remove X button - hamburger menu handles closing */
