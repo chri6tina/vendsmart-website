@@ -93,17 +93,16 @@ function fixButtonIssues() {
 // Run the fix function
 setTimeout(fixButtonIssues, 500);
 
-// Navbar background change on scroll
-window.addEventListener('scroll', function() {
+// Navbar background change on scroll (use class toggle to allow CSS control)
+function updateNavbarScrolledState() {
     const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.15)';
-    } else {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-    }
-});
+    if (!navbar) return;
+    const scrolled = window.scrollY > 50;
+    navbar.classList.toggle('scrolled', scrolled);
+}
+
+window.addEventListener('scroll', updateNavbarScrolledState);
+document.addEventListener('DOMContentLoaded', updateNavbarScrolledState);
 
 // Intersection Observer for animations
 const observerOptions = {
