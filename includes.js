@@ -85,6 +85,22 @@ window.addEventListener('load', function() {
     }
 });
 
+// Observe DOM changes to initialize when navbar/hamburger appear dynamically
+(function observeNavInsertion() {
+    try {
+        const observer = new MutationObserver(() => {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            if (hamburger && navMenu && hamburger.getAttribute('data-mobile-nav-initialized') !== 'true') {
+                initializeMobileNavigation();
+            }
+        });
+        observer.observe(document.documentElement || document.body, { childList: true, subtree: true });
+    } catch (e) {
+        // no-op
+    }
+})();
+
 // Initialize mobile navigation for existing navbar
 function initializeMobileNavigation() {
     console.log('Initializing mobile navigation...');
