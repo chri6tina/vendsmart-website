@@ -58,6 +58,24 @@ document.addEventListener('DOMContentLoaded', function() {
     // Don't initialize mobile navigation here - wait for navigation to load
 });
 
+// Also initialize immediately if navigation already exists (handles cases where this script
+// is loaded after DOMContentLoaded or fetch isn't needed)
+(function immediateNavInit() {
+    const existingNav = document.querySelector('.navbar');
+    if (existingNav) {
+        try {
+            initializeMobileNavigation();
+            if (typeof fixButtonIssues === 'function') {
+                fixButtonIssues();
+            }
+            window.dispatchEvent(new CustomEvent('navigationLoaded'));
+            console.log('Immediate mobile navigation init executed');
+        } catch (e) {
+            console.error('Immediate mobile nav init failed:', e);
+        }
+    }
+})();
+
 // Initialize mobile navigation for existing navbar
 function initializeMobileNavigation() {
     console.log('Initializing mobile navigation...');
