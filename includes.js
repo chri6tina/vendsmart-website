@@ -13,7 +13,15 @@ function loadNavigation() {
             // Check if navigation already exists to prevent duplicates
             const existingNav = document.querySelector('nav, .navbar');
             if (existingNav) {
-                console.log('Navigation already exists, skipping duplicate insertion');
+                console.log('Navigation already exists, initializing mobile nav');
+                // Ensure mobile nav is initialized even if nav is already present in the HTML
+                setTimeout(() => {
+                    initializeMobileNavigation();
+                    if (typeof fixButtonIssues === 'function') {
+                        fixButtonIssues();
+                    }
+                    window.dispatchEvent(new CustomEvent('navigationLoaded'));
+                }, 100);
                 return;
             }
             
@@ -61,6 +69,13 @@ function initializeMobileNavigation() {
         console.log('Mobile navigation elements not found');
         return;
     }
+    
+    // Prevent duplicate initialization
+    if (hamburger.getAttribute('data-mobile-nav-initialized') === 'true') {
+        console.log('Mobile navigation already initialized, skipping');
+        return;
+    }
+    hamburger.setAttribute('data-mobile-nav-initialized', 'true');
     
     // Add click event to hamburger button
     hamburger.addEventListener('click', function() {
