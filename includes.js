@@ -76,6 +76,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 })();
 
+// As a final fallback, ensure initialization after full window load
+window.addEventListener('load', function() {
+    try {
+        initializeMobileNavigation();
+    } catch (e) {
+        // no-op
+    }
+});
+
 // Initialize mobile navigation for existing navbar
 function initializeMobileNavigation() {
     console.log('Initializing mobile navigation...');
