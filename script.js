@@ -181,6 +181,106 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Global Thank You Modal for Form Submissions (prevents Formspree redirects)
+function createGlobalThankYouModal() {
+    if (document.getElementById('global-thankyou-modal')) return;
+    const overlay = document.createElement('div');
+    overlay.id = 'global-thankyou-modal';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.setAttribute('aria-labelledby', 'thankyou-title');
+    overlay.style.display = 'none';
+    overlay.innerHTML = `
+        <div class=\"thankyou-overlay\">
+            <div class=\"thankyou-modal\">
+                <button type=\"button\" class=\"thankyou-close\" aria-label=\"Close\">&times;</button>
+                <div class=\"thankyou-content\">
+                    <h3 id=\"thankyou-title\">Thank you!</h3>
+                    <p>We received your request and will contact you shortly.</p>
+                    <a href=\"tel:904-456-3851\" class=\"btn btn-primary\" style=\"margin-top: 12px; display:inline-block;\">Call 904-456-3851</a>
+                </div>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(overlay);
+    const close = () => { overlay.style.display = 'none'; };
+    overlay.querySelector('.thankyou-close').addEventListener('click', close);
+    overlay.addEventListener('click', (e) => { if (e.target === overlay || e.target.classList.contains('thankyou-overlay')) close(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && overlay.style.display === 'block') close(); });
+}
+
+function showGlobalThankYouModal() {
+    const overlay = document.getElementById('global-thankyou-modal');
+    if (!overlay) return;
+    overlay.style.display = 'block';
+}
+
+function initializeAjaxForms() {
+    createGlobalThankYouModal();
+    const forms = Array.from(document.querySelectorAll('form'));
+    
+    forms.forEach(form => {
+        const action = (form.getAttribute('action') || '').toLowerCase();
+        const method = (form.getAttribute('method') || 'get').toLowerCase();
+        const isFormspree = action.includes('formspree.io');
+        if (!isFormspree || method !== 'post') return;
+        
+        if (form.getAttribute('data-ajax-bound') === 'true') return;
+        form.setAttribute('data-ajax-bound', 'true');
+        
+        form.addEventListener('submit', async function(e) {
+            // Client-side validation first
+            if (!validateForm(form)) {
+                e.preventDefault();
+                alert('Please fill in all required fields.');
+                return;
+            }
+            // Prevent default navigation/redirect
+            e.preventDefault();
+            
+            const submitButton = form.querySelector('[type=\"submit\"], button:not([type]), .btn.btn-primary');
+            const originalText = submitButton ? submitButton.innerHTML : null;
+            if (submitButton) {
+                submitButton.disabled = true;
+                submitButton.innerHTML = '<i class=\"fas fa-spinner fa-spin\"></i> Sending...';
+            }
+            
+            try {
+                const formData = new FormData(form);
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    headers: { 'Accept': 'application/json' },
+                    body: formData
+                });
+                
+                if (response.ok) {
+                    form.reset();
+                    showGlobalThankYouModal();
+                } else {
+                    // Try to parse error to give user feedback
+                    let message = 'There was an error sending your request. Please try again.';
+                    try {
+                        const data = await response.json();
+                        if (data && data.error) message = data.error;
+                    } catch (_) {}
+                    alert(message);
+                }
+            } catch (err) {
+                alert('Network error. Please check your connection and try again.');
+            } finally {
+                if (submitButton) {
+                    submitButton.disabled = false;
+                    submitButton.innerHTML = originalText;
+                }
+            }
+        });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', initializeAjaxForms);
+window.addEventListener('navigationLoaded', initializeAjaxForms);
+window.addEventListener('load', initializeAjaxForms);
+
 // Counter animation for statistics (if any)
 function animateCounter(element, target, duration = 2000) {
     let start = 0;

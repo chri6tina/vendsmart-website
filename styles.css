@@ -7873,6 +7873,59 @@ a.cta-button {
     background-color: #f0f9ff;
 }
 
+/* Global Thank You Modal (used after form submissions) */
+.thankyou-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.thankyou-modal {
+    background: #ffffff;
+    border-radius: 12px;
+    max-width: 420px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+    position: relative;
+    padding: 24px 24px 28px;
+    text-align: center;
+}
+
+.thankyou-content h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.5rem;
+    color: #111827;
+}
+
+.thankyou-content p {
+    color: #4b5563;
+    margin: 0;
+}
+
+.thankyou-close {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #6b7280;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .thankyou-modal {
+        padding: 20px 18px 24px;
+        max-width: 92%;
+    }
+}
+
 /* Ensure mobile navigation has proper keyboard navigation */
 .nav-menu a:focus-visible {
     outline: 2px solid var(--vend-blue-light);
