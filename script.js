@@ -1,6 +1,31 @@
 // Mobile Navigation Toggle - REMOVED (handled by includes.js)
 // This was causing conflicts with the navigation loaded by includes.js
 
+// Page transition - fade out before leaving, fade in on load
+document.addEventListener('click', function(e) {
+    var link = e.target.closest('a[href]');
+    if (!link || link.target === '_blank' || link.hasAttribute('download')) return;
+    if (e.ctrlKey || e.metaKey || e.shiftKey) return;
+    if (link.hostname !== window.location.hostname) return;
+    var href = link.getAttribute('href');
+    if (!href || href === '#' || href.charAt(0) === '#') return;
+    if (href.indexOf('javascript:') === 0) return;
+
+    e.preventDefault();
+    document.body.classList.add('page-leaving');
+    setTimeout(function() {
+        window.location.href = link.href;
+    }, 80);
+});
+
+(function addLoadedClass() {
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', addLoadedClass);
+    } else {
+        document.body.classList.add('loaded');
+    }
+})();
+
 // Smooth scrolling for anchor links (only for same-page anchors)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -192,5 +217,51 @@ function createBackToTopButton() {
 
 // Initialize back to top button - TEMPORARILY DISABLED
 // document.addEventListener('DOMContentLoaded', createBackToTopButton);
+
+// Haha AI Machines Carousel
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.querySelector('.carousel');
+    if (!carousel) return;
+
+    const track = carousel.querySelector('.carousel-track');
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const prevBtn = carousel.querySelector('.carousel-prev');
+    const nextBtn = carousel.querySelector('.carousel-next');
+    const dots = carousel.querySelectorAll('.carousel-dot');
+
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+
+    function goToSlide(index) {
+        currentSlide = (index + totalSlides) % totalSlides;
+        track.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+        slides.forEach((s, i) => s.classList.toggle('active', i === currentSlide));
+        dots.forEach((d, i) => d.classList.toggle('active', i === currentSlide));
+    }
+
+    function nextSlide() {
+        goToSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+        goToSlide(currentSlide - 1);
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => goToSlide(i));
+    });
+
+    // Auto-advance every 5 seconds
+    let autoInterval = setInterval(nextSlide, 5000);
+
+    carousel.addEventListener('mouseenter', () => clearInterval(autoInterval));
+    carousel.addEventListener('mouseleave', () => {
+        autoInterval = setInterval(nextSlide, 5000);
+    });
+});
 
 // Mobile menu CSS is now handled in the main styles.css file 
