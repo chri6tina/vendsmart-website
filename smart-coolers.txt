@@ -1,0 +1,299 @@
+3:I[4707,[],""]
+5:I[6423,[],""]
+6:I[406,["972","static/chunks/972-cf1bd04210e9dde7.js","185","static/chunks/app/layout-12c4ef10f722360e.js"],"default"]
+7:I[2972,["972","static/chunks/972-cf1bd04210e9dde7.js","42","static/chunks/app/%5Bslug%5D/page-4cb297c472b50def.js"],""]
+4:["slug","smart-coolers","d"]
+0:["NOQ5HPaGd-xJ__HInsPUc",[[["",{"children":[["slug","smart-coolers","d"],{"children":["__PAGE__?{\"slug\":\"smart-coolers\"}",{}]}]},"$undefined","$undefined",true],["",{"children":[["slug","smart-coolers","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/439e9c080256c230.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"/styles.css"}],["$","link",null,{"rel":"stylesheet","href":"/blog-styles.css"}]]}],["$","body",null,{"children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","main",null,{"children":[["$","h1",null,{"children":"404"}],["$","p",null,{"children":"Page not found."}]]}],"notFoundStyles":[]}],["$","footer",null,{"className":"footer","children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Jacksonville Vending Machines - VendSmart"}],["$","p",null,{"children":"Premium vending solutions for Jacksonville, Florida. Smart technology, healthy options, and 24/7 support."}],["$","p",null,{"children":["$","$L7",null,{"href":"/","style":{"color":"#00C5F5","textDecoration":"none","fontWeight":500},"children":"← Back to Jacksonville Vending Machines Home"}]}],["$","div",null,{"className":"social-links","children":[["$","a",null,{"href":"https://www.facebook.com/vendsmart","target":"_blank","rel":"noopener noreferrer","aria-label":"Follow us on Facebook","children":["$","i",null,{"className":"fab fa-facebook"}]}],["$","a",null,{"href":"https://www.instagram.com/jacksonvillevendingmachines","target":"_blank","rel":"noopener noreferrer","aria-label":"Follow us on Instagram","children":["$","i",null,{"className":"fab fa-instagram"}]}],["$","a",null,{"href":"https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_ID","target":"_blank","rel":"noopener noreferrer","aria-label":"View our Google Business Profile","children":["$","i",null,{"className":"fab fa-google"}]}],["$","a",null,{"href":"https://www.yelp.com/biz/vendsmart-jacksonville","target":"_blank","rel":"noopener noreferrer","aria-label":"Read our Yelp reviews","children":["$","i",null,{"className":"fab fa-yelp"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Services"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L7",null,{"href":"/services","children":"Smart Vending Machines"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/setting-up-a-micro-market-in-your-jacksonville-office","children":"Micro-Markets"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/coffeeservices","children":"Coffee Services"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/vendingmachine-service","children":"Vending Machine Service"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/smart-coolers","children":"Smart Coolers"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/portfolio","children":"Portfolio"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Locations"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L7",null,{"href":"/jacksonville","children":"Jacksonville Overview"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/downtown-jacksonville","children":"Downtown Jacksonville"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/jacksonville-beach","children":"Jacksonville Beach"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/orange-park","children":"Orange Park"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/ponte-vedra","children":"Ponte Vedra"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/atlantic-beach","children":"Atlantic Beach"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/st-augustine","children":"St. Augustine"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/mandarin","children":"Mandarin"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/lakeside","children":"Lakeside"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L7",null,{"href":"/about-us","children":"About Us"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/customer-reviews-jacksonville","children":"Customer Reviews"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/how-we-help-jacksonville","children":"How We Help"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/vending-in-jacksonville-florida","children":"Vending in Jacksonville"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/vending-machine-faq-jacksonville","children":"FAQ"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/free-vending-machine-placement","children":"Free Placement"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Contact"}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-phone"}]," ",["$","a",null,{"href":"tel:904-456-3851","children":"904-456-3851"}]]}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-envelope"}]," ",["$","a",null,{"href":"mailto:vendsmartjacksonville@gmail.com","children":"vendsmartjacksonville@gmail.com"}]]}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-map-marker-alt"}]," Jacksonville, Florida & Surrounding Areas"]}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-clock"}]," 24/7 Support Available"]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":["$","p",null,{"children":["© 2024 Jacksonville Vending Machines - VendSmart. All rights reserved. | ",["$","$L7",null,{"href":"/privacy-policy","children":"Privacy Policy"}]," | ",["$","$L7",null,{"href":"/terms-of-service","children":"Terms of Service"}]]}]}]]}]}]]}]]}]],null],null],["$L8",null]]]]
+9:T3662,<!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="/jacksonville-vending-micro-market.jpg" alt="Jacksonville smart cooler and micro-market technology" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Smart Coolers for Jacksonville Businesses</h1>
+                <p>Advanced cooling technology with real-time monitoring and inventory management</p>
+                <div class="hero-buttons">
+                    <a href="#overview" class="btn btn-primary">Learn More</a>
+                    <a href="/contact"" class="btn btn-outline">Get Free Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart Cooler Overview -->
+    <section id="overview" class="smart-cooler-overview">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>What are Smart Coolers?</h2>
+                    <p>Smart coolers are the next generation of vending technology, combining traditional refrigeration with cutting-edge IoT capabilities. These intelligent units provide real-time monitoring, automated inventory tracking, and seamless payment processing.</p>
+                    
+                    <div class="smart-features">
+                        <div class="feature-item">
+                            <i class="fas fa-thermometer-half"></i>
+                            <div>
+                                <h3>Temperature Monitoring</h3>
+                                <p>Real-time temperature tracking with alerts for optimal product freshness</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-boxes"></i>
+                            <div>
+                                <h3>Inventory Tracking</h3>
+                                <p>Automated stock monitoring with low-inventory alerts</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <h3>Contactless Payments</h3>
+                                <p>Mobile payments, credit cards, and digital wallet integration</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <h3>Analytics Dashboard</h3>
+                                <p>Detailed sales reports and performance analytics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-snowflake"></i>
+                        <p>Smart Cooler Technology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart Cooler Benefits -->
+    <section class="smart-benefits">
+        <div class="container">
+            <h2>Benefits of Smart Coolers</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Increased Revenue</h3>
+                    <p>Smart coolers typically generate 30-50% more revenue than traditional vending machines</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>24/7 Monitoring</h3>
+                    <p>Real-time alerts for maintenance, restocking, and temperature issues</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Fresh Food Options</h3>
+                    <p>Perfect temperature control for fresh salads, sandwiches, and healthy snacks</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Employee Satisfaction</h3>
+                    <p>Better food options improve workplace morale and productivity</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart Cooler Applications -->
+    <section class="smart-applications">
+        <div class="container">
+            <h2>Perfect for Jacksonville Businesses</h2>
+            <div class="applications-grid">
+                <div class="application-card">
+                    <h3>Office Buildings</h3>
+                    <p>Keep employees energized with fresh food and beverages</p>
+                    <a href="/downtown-jacksonville"" class="btn btn-outline">Downtown Offices</a>
+                </div>
+                
+                <div class="application-card">
+                    <h3>Healthcare Facilities</h3>
+                    <p>Healthy options for staff and visitors</p>
+                    <a href="/orange-park"" class="btn btn-outline">Healthcare Centers</a>
+                </div>
+                
+                <div class="application-card">
+                    <h3>Educational Institutions</h3>
+                    <p>Smart solutions for students and faculty</p>
+                    <a href="/mandarin"" class="btn btn-outline">Schools & Universities</a>
+                </div>
+                
+                <div class="application-card">
+                    <h3>Manufacturing Facilities</h3>
+                    <p>24/7 access to refreshments for shift workers</p>
+                    <a href="/orange-park"" class="btn btn-outline">Manufacturing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Smart Cooler Placement -->
+    <section class="free-placement">
+        <div class="container">
+            <div class="placement-content">
+                <div class="placement-text">
+                    <h2>Free Smart Cooler Placement in Jacksonville</h2>
+                    <p>Qualified Jacksonville businesses can receive free smart cooler installation with no upfront costs. We handle installation, maintenance, and restocking while you earn passive income.</p>
+                    
+                    <div class="placement-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>No upfront costs or installation fees</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Professional installation and setup</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Regular maintenance and restocking</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Revenue sharing opportunities</span>
+                        </div>
+                    </div>
+                    
+                    <div class="placement-cta">
+                        <a href="/get-a-free-vending-machine-in-jacksonville-florida"" class="btn btn-primary">Apply for Free Smart Cooler</a>
+                        <a href="/contact"" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="placement-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-gift"></i>
+                        <p>Free Smart Cooler</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Locations Section -->
+    <section class="related-locations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Smart Cooler Solutions Available Throughout Jacksonville</h2>
+                <p class="section-subtitle">Advanced cooling technology with real-time monitoring available in all Jacksonville areas and surrounding communities.</p>
+            </div>
+            
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Downtown Jacksonville</h3>
+                    <p>Smart coolers for downtown office buildings and corporate headquarters.</p>
+                    <div class="location-actions">
+                        <a href="/downtown-jacksonville"" class="btn btn-secondary">Downtown Solutions</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <h3>Jacksonville Beach</h3>
+                    <p>Beachfront smart coolers for hotels, resorts, and coastal businesses.</p>
+                    <div class="location-actions">
+                        <a href="/jacksonville-beach"" class="btn btn-secondary">Beach Solutions</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Orange Park</h3>
+                    <p>Suburban smart coolers for healthcare facilities and community businesses.</p>
+                    <div class="location-actions">
+                        <a href="/orange-park"" class="btn btn-secondary">Orange Park Solutions</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-golf-ball"></i>
+                    </div>
+                    <h3>Ponte Vedra</h3>
+                    <p>Luxury smart coolers for upscale properties and premium businesses.</p>
+                    <div class="location-actions">
+                        <a href="/ponte-vedra"" class="btn btn-secondary">Ponte Vedra Solutions</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Atlantic Beach</h3>
+                    <p>Coastal smart coolers for beachfront businesses and local establishments.</p>
+                    <div class="location-actions">
+                        <a href="/atlantic-beach"" class="btn btn-secondary">Atlantic Beach Solutions</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>St. Augustine</h3>
+                    <p>Historic area smart coolers for tourism businesses and cultural institutions.</p>
+                    <div class="location-actions">
+                        <a href="/st-augustine"" class="btn btn-secondary">St. Augustine Solutions</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Mandarin</h3>
+                    <p>Family-friendly smart coolers for schools and community centers.</p>
+                    <div class="location-actions">
+                        <a href="/mandarin"" class="btn btn-secondary">Mandarin Solutions</a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Lakeside</h3>
+                    <p>Residential area smart coolers for local businesses and community facilities.</p>
+                    <div class="location-actions">
+                        <a href="/lakeside"" class="btn btn-secondary">Lakeside Solutions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Upgrade to Smart Coolers?</h2>
+            <p>Contact VendSmart today for a free consultation and smart cooler quote</p>
+            <div class="cta-buttons">
+                <a href="/contact"" class="btn btn-primary">Get Free Quote</a>
+                <a href="/get-a-free-vending-machine-in-jacksonville-florida"" class="btn btn-secondary">Get Free Smart Cooler</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->2:[["$","section",null,{"className":"hero","children":[["$","div",null,{"className":"hero-background","children":[["$","img",null,{"src":"/jacksonville-vending-micro-market.jpg","alt":"Jacksonville Vending Machines - Smart Coolers for Jacksonville Businesses","className":"hero-bg-image"}],["$","div",null,{"className":"hero-overlay"}]]}],["$","div",null,{"className":"hero-container","children":["$","div",null,{"className":"hero-content","children":[["$","h1",null,{"children":"Jacksonville Vending Machines - Smart Coolers for Jacksonville Businesses"}],["$","p",null,{"className":"hero-subtitle","children":"VendSmart provides smart coolers with real-time monitoring, inventory tracking, and contactless payments for Jacksonville businesses. Free installation available."}],["$","div",null,{"className":"hero-features","children":[["$","div","0",{"className":"hero-feature","children":[["$","i",null,{"className":"fas fa-check-circle"}],["$","span",null,{"children":"Free Machine Placement"}]]}],["$","div","1",{"className":"hero-feature","children":[["$","i",null,{"className":"fas fa-check-circle"}],["$","span",null,{"children":"24/7 Support"}]]}],["$","div","2",{"className":"hero-feature","children":[["$","i",null,{"className":"fas fa-check-circle"}],["$","span",null,{"children":"Smart Technology"}]]}]]}]]}]}]]}],["$","section",null,{"className":"page-content container","style":{"padding":"2rem 1rem","maxWidth":1200,"margin":"0 auto"},"children":["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$9"}}]}],["$","section",null,{"className":"cta-section","children":["$","div",null,{"className":"container","children":[["$","h2",null,{"children":"Ready to Get Started?"}],["$","p",null,{"children":"Contact VendSmart for free vending machine placement in Jacksonville and surrounding areas."}],["$","div",null,{"className":"cta-buttons","children":[["$","$L7",null,{"href":"/get-a-free-vending-machine-in-jacksonville-florida","className":"btn btn-secondary","children":"Get Free Machine"}],["$","$L7",null,{"href":"/contact","className":"btn btn-outline","children":"Contact Us"}]]}]]}]}]]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Jacksonville Vending Machines - Smart Coolers for Jacksonville Businesses"}],["$","meta","3",{"name":"description","content":"VendSmart provides smart coolers with real-time monitoring, inventory tracking, and contactless payments for Jacksonville businesses. Free installation available."}],["$","meta","4",{"name":"keywords","content":"Jacksonville Vending Machines, vending company Jacksonville FL, micro markets Florida, smart vending"}],["$","meta","5",{"property":"og:title","content":"Jacksonville Vending Machines - Smart Coolers for Jacksonville Businesses"}],["$","meta","6",{"property":"og:description","content":"VendSmart provides smart coolers with real-time monitoring, inventory tracking, and contactless payments for Jacksonville businesses. Free installation available."}],["$","meta","7",{"property":"og:url","content":"https://jacksonvillevendingmachines.com"}],["$","meta","8",{"name":"twitter:card","content":"summary"}],["$","meta","9",{"name":"twitter:title","content":"Jacksonville Vending Machines - Smart Coolers for Jacksonville Businesses"}],["$","meta","10",{"name":"twitter:description","content":"VendSmart provides smart coolers with real-time monitoring, inventory tracking, and contactless payments for Jacksonville businesses. Free installation available."}],["$","link","11",{"rel":"icon","href":"/favicon.ico"}]]
+1:null

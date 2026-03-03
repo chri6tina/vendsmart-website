@@ -1,0 +1,411 @@
+3:I[4707,[],""]
+5:I[6423,[],""]
+6:I[406,["972","static/chunks/972-cf1bd04210e9dde7.js","185","static/chunks/app/layout-12c4ef10f722360e.js"],"default"]
+7:I[2972,["972","static/chunks/972-cf1bd04210e9dde7.js","42","static/chunks/app/%5Bslug%5D/page-4cb297c472b50def.js"],""]
+4:["slug","atlantic-beach","d"]
+0:["NOQ5HPaGd-xJ__HInsPUc",[[["",{"children":[["slug","atlantic-beach","d"],{"children":["__PAGE__?{\"slug\":\"atlantic-beach\"}",{}]}]},"$undefined","$undefined",true],["",{"children":[["slug","atlantic-beach","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/439e9c080256c230.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"/styles.css"}],["$","link",null,{"rel":"stylesheet","href":"/blog-styles.css"}]]}],["$","body",null,{"children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","main",null,{"children":[["$","h1",null,{"children":"404"}],["$","p",null,{"children":"Page not found."}]]}],"notFoundStyles":[]}],["$","footer",null,{"className":"footer","children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Jacksonville Vending Machines - VendSmart"}],["$","p",null,{"children":"Premium vending solutions for Jacksonville, Florida. Smart technology, healthy options, and 24/7 support."}],["$","p",null,{"children":["$","$L7",null,{"href":"/","style":{"color":"#00C5F5","textDecoration":"none","fontWeight":500},"children":"← Back to Jacksonville Vending Machines Home"}]}],["$","div",null,{"className":"social-links","children":[["$","a",null,{"href":"https://www.facebook.com/vendsmart","target":"_blank","rel":"noopener noreferrer","aria-label":"Follow us on Facebook","children":["$","i",null,{"className":"fab fa-facebook"}]}],["$","a",null,{"href":"https://www.instagram.com/jacksonvillevendingmachines","target":"_blank","rel":"noopener noreferrer","aria-label":"Follow us on Instagram","children":["$","i",null,{"className":"fab fa-instagram"}]}],["$","a",null,{"href":"https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_ID","target":"_blank","rel":"noopener noreferrer","aria-label":"View our Google Business Profile","children":["$","i",null,{"className":"fab fa-google"}]}],["$","a",null,{"href":"https://www.yelp.com/biz/vendsmart-jacksonville","target":"_blank","rel":"noopener noreferrer","aria-label":"Read our Yelp reviews","children":["$","i",null,{"className":"fab fa-yelp"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Services"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L7",null,{"href":"/services","children":"Smart Vending Machines"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/setting-up-a-micro-market-in-your-jacksonville-office","children":"Micro-Markets"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/coffeeservices","children":"Coffee Services"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/vendingmachine-service","children":"Vending Machine Service"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/smart-coolers","children":"Smart Coolers"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/portfolio","children":"Portfolio"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Locations"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L7",null,{"href":"/jacksonville","children":"Jacksonville Overview"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/downtown-jacksonville","children":"Downtown Jacksonville"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/jacksonville-beach","children":"Jacksonville Beach"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/orange-park","children":"Orange Park"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/ponte-vedra","children":"Ponte Vedra"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/atlantic-beach","children":"Atlantic Beach"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/st-augustine","children":"St. Augustine"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/mandarin","children":"Mandarin"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/lakeside","children":"Lakeside"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L7",null,{"href":"/about-us","children":"About Us"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/customer-reviews-jacksonville","children":"Customer Reviews"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/how-we-help-jacksonville","children":"How We Help"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/vending-in-jacksonville-florida","children":"Vending in Jacksonville"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/vending-machine-faq-jacksonville","children":"FAQ"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/free-vending-machine-placement","children":"Free Placement"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Contact"}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-phone"}]," ",["$","a",null,{"href":"tel:904-456-3851","children":"904-456-3851"}]]}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-envelope"}]," ",["$","a",null,{"href":"mailto:vendsmartjacksonville@gmail.com","children":"vendsmartjacksonville@gmail.com"}]]}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-map-marker-alt"}]," Jacksonville, Florida & Surrounding Areas"]}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-clock"}]," 24/7 Support Available"]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":["$","p",null,{"children":["© 2024 Jacksonville Vending Machines - VendSmart. All rights reserved. | ",["$","$L7",null,{"href":"/privacy-policy","children":"Privacy Policy"}]," | ",["$","$L7",null,{"href":"/terms-of-service","children":"Terms of Service"}]]}]}]]}]}]]}]]}]],null],null],["$L8",null]]]]
+9:T526e,<!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="/jacksonville-vending-micro-market.jpg" alt="Atlantic Beach vending machines and micro-markets" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Vending Machine Services in Atlantic Beach</h1>
+                <p class="hero-subtitle">Premium vending solutions for Atlantic Beach businesses with Jacksonville-based expertise</p>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Free Machine Placement</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Smart Technology</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="/get-a-free-vending-machine-in-jacksonville-florida"" class="btn btn-primary">Get Free Machine</a>
+                    <a href="/contact"" class="btn btn-secondary">Request Quote</a>
+                </div>
+                <div class="hero-links">
+                    <p>Atlantic Beach Vending Machines - Popular services: <a href="/coffeeservices"">Coffee Services</a> | <a href="/setting-up-a-micro-market-in-your-jacksonville-office"">Micro-Markets</a> | <a href="/locations"">All Locations</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Overview -->
+    <section id="overview" class="location-overview">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-text">
+                    <h2>Vending Solutions for Atlantic Beach</h2>
+                    <p>Atlantic Beach is a charming coastal community known for its laid-back atmosphere, local businesses, and beautiful beaches. VendSmart provides personalized vending solutions tailored to the unique character and needs of Atlantic Beach's local businesses and community.</p>
+                    
+                    <div class="location-features">
+                        <div class="feature-item">
+                            <i class="fas fa-store"></i>
+                            <div>
+                                <h3>Local Shops & Retail</h3>
+                                <p>Convenient vending for local shops, boutiques, and retail businesses serving the Atlantic Beach community</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-umbrella-beach"></i>
+                            <div>
+                                <h3>Beachfront Businesses</h3>
+                                <p>Vending solutions for beachfront hotels, restaurants, and businesses catering to beach visitors and locals</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-building"></i>
+                            <div>
+                                <h3>Professional Offices</h3>
+                                <p>Smart vending for professional offices, medical practices, and service businesses in Atlantic Beach</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-utensils"></i>
+                            <div>
+                                <h3>Local Restaurants</h3>
+                                <p>Vending solutions for local restaurants, cafes, and dining establishments in the Atlantic Beach area</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="location-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-umbrella-beach"></i>
+                        <p>Atlantic Beach</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atlantic Beach Services -->
+    <section class="atlantic-beach-services">
+        <div class="container">
+            <h2>Vending Services in Atlantic Beach</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Smart Vending Machines</h3>
+                    <p>Modern vending machines with contactless payments, real-time monitoring, and healthy snack options perfect for Atlantic Beach locations.</p>
+                    <ul>
+                        <li>Contactless payment systems (Apple Pay, Google Pay, credit cards)</li>
+                        <li>Real-time inventory monitoring and alerts</li>
+                        <li>Healthy and organic snack options</li>
+                        <li>Energy drinks and premium beverages</li>
+                        <li>24/7 remote support and maintenance</li>
+                        <li>Mobile app integration for easy ordering</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-store"></i>
+                    <h3>Micro-Markets</h3>
+                    <p>Self-service convenience stores that transform your space into a modern retail experience with fresh food and smart checkout.</p>
+                    <ul>
+                        <li>Self-checkout kiosks with touch-screen technology</li>
+                        <li>Fresh food options including salads and sandwiches</li>
+                        <li>Smart coolers with temperature monitoring</li>
+                        <li>Employee loyalty programs and discounts</li>
+                        <li>Detailed sales analytics and reporting</li>
+                        <li>Professional installation and setup</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Coffee Services</h3>
+                    <p>Professional coffee solutions including single-serve machines, traditional coffee makers, and premium coffee products for your business.</p>
+                    <ul>
+                        <li>Single-serve coffee machines (Keurig, Nespresso)</li>
+                        <li>Traditional coffee makers and supplies</li>
+                        <li>Premium coffee beans and tea selections</li>
+                        <li>Creamers, sweeteners, and condiments</li>
+                        <li>Regular maintenance and cleaning service</li>
+                        <li>Custom coffee programs for your brand</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-snowflake"></i>
+                    <h3>Smart Coolers</h3>
+                    <p>Advanced cooling technology with real-time monitoring, inventory tracking, and contactless payments for fresh food and beverages.</p>
+                    <ul>
+                        <li>Temperature monitoring with real-time alerts</li>
+                        <li>Automated inventory tracking and restocking</li>
+                        <li>Contactless payment integration</li>
+                        <li>Fresh food storage for salads and sandwiches</li>
+                        <li>Energy-efficient cooling systems</li>
+                        <li>Analytics dashboard for sales insights</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atlantic Beach Areas -->
+    <section class="atlantic-beach-areas">
+        <div class="container">
+            <h2>Atlantic Beach Business Areas We Serve</h2>
+            <div class="areas-grid">
+                <div class="area-card">
+                    <i class="fas fa-store"></i>
+                    <h3>Local Shops & Retail</h3>
+                    <p>Convenient vending for local shops, boutiques, and retail businesses in Atlantic Beach.</p>
+                    <ul>
+                        <li>Local boutiques and shops</li>
+                        <li>Convenience stores</li>
+                        <li>Grocery stores</li>
+                        <li>Retail plazas</li>
+                        <li>Beachside shops</li>
+                    </ul>
+                    <a href="/contact"" class="btn btn-outline">Get Quote</a>
+                </div>
+                
+                <div class="area-card">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <h3>Beachfront Businesses</h3>
+                    <p>Vending solutions for beachfront hotels, restaurants, and businesses.</p>
+                    <ul>
+                        <li>Beachfront hotels and motels</li>
+                        <li>Beachside restaurants</li>
+                        <li>Beach equipment rentals</li>
+                        <li>Beach access points</li>
+                        <li>Beachfront amenities</li>
+                    </ul>
+                    <a href="/contact"" class="btn btn-outline">Get Quote</a>
+                </div>
+                
+                <div class="area-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Professional Offices</h3>
+                    <p>Smart vending for professional offices, medical practices, and service businesses.</p>
+                    <ul>
+                        <li>Medical offices and clinics</li>
+                        <li>Professional service firms</li>
+                        <li>Real estate offices</li>
+                        <li>Financial services</li>
+                        <li>Consulting and advisory firms</li>
+                    </ul>
+                    <a href="/contact"" class="btn btn-outline">Get Quote</a>
+                </div>
+                
+                <div class="area-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Local Restaurants</h3>
+                    <p>Vending solutions for local restaurants, cafes, and dining establishments.</p>
+                    <ul>
+                        <li>Local restaurants</li>
+                        <li>Cafes and coffee shops</li>
+                        <li>Bars and pubs</li>
+                        <li>Takeout and delivery</li>
+                        <li>Food trucks and stands</li>
+                    </ul>
+                    <a href="/contact"" class="btn btn-outline">Get Quote</a>
+                </div>
+                
+                <div class="area-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Residential Areas</h3>
+                    <p>Vending solutions for residential communities and neighborhood businesses.</p>
+                    <ul>
+                        <li>Apartment complexes</li>
+                        <li>Condominium buildings</li>
+                        <li>Neighborhood centers</li>
+                        <li>Community facilities</li>
+                        <li>Residential amenities</li>
+                    </ul>
+                    <a href="/contact"" class="btn btn-outline">Get Quote</a>
+                </div>
+                
+                <div class="area-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Automotive & Services</h3>
+                    <p>Vending solutions for automotive businesses, service centers, and repair facilities.</p>
+                    <ul>
+                        <li>Auto repair shops</li>
+                        <li>Car dealerships</li>
+                        <li>Service centers</li>
+                        <li>Gas stations and convenience stores</li>
+                        <li>Automotive parts stores</li>
+                    </ul>
+                    <a href="/contact"" class="btn btn-outline">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atlantic Beach Benefits -->
+    <section class="atlantic-beach-benefits">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <h2>Why Choose VendSmart for Atlantic Beach?</h2>
+                    <p>Atlantic Beach businesses choose VendSmart for our local expertise, community-focused service, and commitment to supporting the unique character of this charming beach community.</p>
+                    
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>100% free vending machine placement with no upfront costs</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Local Jacksonville company with Atlantic Beach area expertise</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>24/7 support and emergency service available</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Professional installation with minimal business disruption</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Customized product selection for your team's preferences</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Regular maintenance and restocking included</span>
+                        </div>
+                    </div>
+                    
+                    <div class="benefits-cta">
+                        <a href="/contact"" class="btn btn-primary">Get Free Vending Machine</a>
+                        <a href="/get-a-free-vending-machine-in-jacksonville-florida"" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="location-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-chart-line"></i>
+                        <p>Atlantic Beach Success</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atlantic Beach Stats -->
+    <section class="atlantic-beach-stats">
+        <div class="container">
+            <h2>Atlantic Beach by the Numbers</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Atlantic Beach Businesses Served</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support Available</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Free Installation</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Customer Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services Section -->
+    <section class="related-services">
+        <div class="container">
+            <h2>Vending Services Available in Atlantic Beach</h2>
+            <p>Discover the comprehensive range of vending solutions we offer to Atlantic Beach businesses:</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <h3>Beach Resort Vending</h3>
+                    <p>Specialized vending solutions for Atlantic Beach resorts and beachfront businesses, offering refreshments and snacks for visitors and staff.</p>
+                    <div class="service-actions">
+                        <a href="/vending-machines-for-hotels"" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Retail Vending Solutions</h3>
+                    <p>Perfect for shopping centers and retail locations in Atlantic Beach, providing convenient access to snacks and beverages for customers and employees.</p>
+                    <div class="service-actions">
+                        <a href="/vending-machines-for-retail"" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Office Building Solutions</h3>
+                    <p>Modern vending machines and micro-markets for Atlantic Beach office buildings, enhancing workplace convenience and employee satisfaction.</p>
+                    <div class="service-actions">
+                        <a href="/vending-machines-for-office-buildings"" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3>Coffee Services</h3>
+                    <p>Premium coffee solutions for Atlantic Beach businesses, featuring high-quality coffee machines and regular maintenance services.</p>
+                    <div class="service-actions">
+                        <a href="/coffeeservices"" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Micro-Markets</h3>
+                    <p>Advanced micro-market solutions for Atlantic Beach businesses, offering fresh food options and modern payment systems.</p>
+                    <div class="service-actions">
+                        <a href="/setting-up-a-micro-market-in-your-jacksonville-office"" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Vending Machine Service</h3>
+                    <p>Comprehensive maintenance and repair services for all vending machines in Atlantic Beach, ensuring optimal performance and reliability.</p>
+                    <div class="service-actions">
+                        <a href="/vendingmachine-service"" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready for Atlantic Beach Vending Solutions?</h2>
+            <p>Get a free vending machine for your Atlantic Beach business today</p>
+            <div class="cta-buttons">
+                <a href="/contact"" class="btn btn-primary">Get Free Machine</a>
+                <a href="/get-a-free-vending-machine-in-jacksonville-florida"" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->2:[["$","section",null,{"className":"hero","children":[["$","div",null,{"className":"hero-background","children":[["$","img",null,{"src":"/jacksonville-vending-micro-market.jpg","alt":"Atlantic Beach Vending Machines & Micro-Markets | VendSmart","className":"hero-bg-image"}],["$","div",null,{"className":"hero-overlay"}]]}],["$","div",null,{"className":"hero-container","children":["$","div",null,{"className":"hero-content","children":[["$","h1",null,{"children":"Atlantic Beach Vending Machines & Micro-Markets | VendSmart"}],["$","p",null,{"className":"hero-subtitle","children":"Free vending machines and micro-markets for Atlantic Beach businesses. Smart vending solutions for charming beach community businesses, local shops, and beachfront locations. 100% free installation."}],["$","div",null,{"className":"hero-features","children":[["$","div","0",{"className":"hero-feature","children":[["$","i",null,{"className":"fas fa-check-circle"}],["$","span",null,{"children":"Free Machine Placement"}]]}],["$","div","1",{"className":"hero-feature","children":[["$","i",null,{"className":"fas fa-check-circle"}],["$","span",null,{"children":"24/7 Support"}]]}],["$","div","2",{"className":"hero-feature","children":[["$","i",null,{"className":"fas fa-check-circle"}],["$","span",null,{"children":"Smart Technology"}]]}]]}]]}]}]]}],["$","section",null,{"className":"page-content container","style":{"padding":"2rem 1rem","maxWidth":1200,"margin":"0 auto"},"children":["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$9"}}]}],["$","section",null,{"className":"cta-section","children":["$","div",null,{"className":"container","children":[["$","h2",null,{"children":"Ready to Get Started?"}],["$","p",null,{"children":"Contact VendSmart for free vending machine placement in Jacksonville and surrounding areas."}],["$","div",null,{"className":"cta-buttons","children":[["$","$L7",null,{"href":"/get-a-free-vending-machine-in-jacksonville-florida","className":"btn btn-secondary","children":"Get Free Machine"}],["$","$L7",null,{"href":"/contact","className":"btn btn-outline","children":"Contact Us"}]]}]]}]}]]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Atlantic Beach Vending Machines & Micro-Markets | VendSmart"}],["$","meta","3",{"name":"description","content":"Free vending machines and micro-markets for Atlantic Beach businesses. Smart vending solutions for charming beach community businesses, local shops, and beachfront locations. 100% free installation."}],["$","meta","4",{"name":"keywords","content":"Jacksonville Vending Machines, vending company Jacksonville FL, micro markets Florida, smart vending"}],["$","meta","5",{"property":"og:title","content":"Atlantic Beach Vending Machines & Micro-Markets | VendSmart"}],["$","meta","6",{"property":"og:description","content":"Free vending machines and micro-markets for Atlantic Beach businesses. Smart vending solutions for charming beach community businesses, local shops, and beachfront locations. 100% free installation."}],["$","meta","7",{"property":"og:url","content":"https://jacksonvillevendingmachines.com"}],["$","meta","8",{"name":"twitter:card","content":"summary"}],["$","meta","9",{"name":"twitter:title","content":"Atlantic Beach Vending Machines & Micro-Markets | VendSmart"}],["$","meta","10",{"name":"twitter:description","content":"Free vending machines and micro-markets for Atlantic Beach businesses. Smart vending solutions for charming beach community businesses, local shops, and beachfront locations. 100% free installation."}],["$","link","11",{"rel":"icon","href":"/favicon.ico"}]]
+1:null

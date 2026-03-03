@@ -1,0 +1,225 @@
+3:I[4707,[],""]
+5:I[6423,[],""]
+6:I[406,["972","static/chunks/972-cf1bd04210e9dde7.js","185","static/chunks/app/layout-12c4ef10f722360e.js"],"default"]
+7:I[2972,["972","static/chunks/972-cf1bd04210e9dde7.js","42","static/chunks/app/%5Bslug%5D/page-4cb297c472b50def.js"],""]
+4:["slug","vending-services-ponte-vedra","d"]
+0:["NOQ5HPaGd-xJ__HInsPUc",[[["",{"children":[["slug","vending-services-ponte-vedra","d"],{"children":["__PAGE__?{\"slug\":\"vending-services-ponte-vedra\"}",{}]}]},"$undefined","$undefined",true],["",{"children":[["slug","vending-services-ponte-vedra","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/439e9c080256c230.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"/styles.css"}],["$","link",null,{"rel":"stylesheet","href":"/blog-styles.css"}]]}],["$","body",null,{"children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","main",null,{"children":[["$","h1",null,{"children":"404"}],["$","p",null,{"children":"Page not found."}]]}],"notFoundStyles":[]}],["$","footer",null,{"className":"footer","children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Jacksonville Vending Machines - VendSmart"}],["$","p",null,{"children":"Premium vending solutions for Jacksonville, Florida. Smart technology, healthy options, and 24/7 support."}],["$","p",null,{"children":["$","$L7",null,{"href":"/","style":{"color":"#00C5F5","textDecoration":"none","fontWeight":500},"children":"← Back to Jacksonville Vending Machines Home"}]}],["$","div",null,{"className":"social-links","children":[["$","a",null,{"href":"https://www.facebook.com/vendsmart","target":"_blank","rel":"noopener noreferrer","aria-label":"Follow us on Facebook","children":["$","i",null,{"className":"fab fa-facebook"}]}],["$","a",null,{"href":"https://www.instagram.com/jacksonvillevendingmachines","target":"_blank","rel":"noopener noreferrer","aria-label":"Follow us on Instagram","children":["$","i",null,{"className":"fab fa-instagram"}]}],["$","a",null,{"href":"https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_ID","target":"_blank","rel":"noopener noreferrer","aria-label":"View our Google Business Profile","children":["$","i",null,{"className":"fab fa-google"}]}],["$","a",null,{"href":"https://www.yelp.com/biz/vendsmart-jacksonville","target":"_blank","rel":"noopener noreferrer","aria-label":"Read our Yelp reviews","children":["$","i",null,{"className":"fab fa-yelp"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Services"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L7",null,{"href":"/services","children":"Smart Vending Machines"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/setting-up-a-micro-market-in-your-jacksonville-office","children":"Micro-Markets"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/coffeeservices","children":"Coffee Services"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/vendingmachine-service","children":"Vending Machine Service"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/smart-coolers","children":"Smart Coolers"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/portfolio","children":"Portfolio"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Locations"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L7",null,{"href":"/jacksonville","children":"Jacksonville Overview"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/downtown-jacksonville","children":"Downtown Jacksonville"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/jacksonville-beach","children":"Jacksonville Beach"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/orange-park","children":"Orange Park"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/ponte-vedra","children":"Ponte Vedra"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/atlantic-beach","children":"Atlantic Beach"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/st-augustine","children":"St. Augustine"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/mandarin","children":"Mandarin"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/lakeside","children":"Lakeside"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L7",null,{"href":"/about-us","children":"About Us"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/customer-reviews-jacksonville","children":"Customer Reviews"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/how-we-help-jacksonville","children":"How We Help"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/vending-in-jacksonville-florida","children":"Vending in Jacksonville"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/vending-machine-faq-jacksonville","children":"FAQ"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/free-vending-machine-placement","children":"Free Placement"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Contact"}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-phone"}]," ",["$","a",null,{"href":"tel:904-456-3851","children":"904-456-3851"}]]}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-envelope"}]," ",["$","a",null,{"href":"mailto:vendsmartjacksonville@gmail.com","children":"vendsmartjacksonville@gmail.com"}]]}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-map-marker-alt"}]," Jacksonville, Florida & Surrounding Areas"]}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-clock"}]," 24/7 Support Available"]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":["$","p",null,{"children":["© 2024 Jacksonville Vending Machines - VendSmart. All rights reserved. | ",["$","$L7",null,{"href":"/privacy-policy","children":"Privacy Policy"}]," | ",["$","$L7",null,{"href":"/terms-of-service","children":"Terms of Service"}]]}]}]]}]}]]}]]}]],null],null],["$L8",null]]]]
+9:T29a1,</div>
+    </section>
+
+    <!-- Area Overview -->
+    <section class="area-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ponte Vedra Vending Services</h2>
+                <p class="section-subtitle">Serving Ponte Vedra with professional vending solutions designed for the unique needs of this vibrant community.</p>
+            </div>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h3>Why Ponte Vedra Businesses Choose VendSmart</h3>
+                    <p>Ponte Vedra is a dynamic community with unique characteristics that require specialized vending solutions. Our team understands the local business environment and provides tailored services that enhance your operations.</p>
+                    
+                    <h4>Key Benefits for Ponte Vedra:</h4>
+                    <ul>
+                        <li><strong>Luxury Focus:</strong> Tailored vending solutions that complement the unique luxury focus of Ponte Vedra</li>
+                        <li><strong>Golf Course Access:</strong> Tailored vending solutions that complement the unique golf course access of Ponte Vedra</li>
+                        <li><strong>Upscale Environment:</strong> Tailored vending solutions that complement the unique upscale environment of Ponte Vedra</li>
+                        <li><strong>Premium Service:</strong> Tailored vending solutions that complement the unique premium service of Ponte Vedra</li>
+                        <li><strong>Local Expertise:</strong> Jacksonville-based team with deep knowledge of Ponte Vedra</li>
+                        <li><strong>Flexible Solutions:</strong> Vending options that adapt to your specific business needs</li>
+                    </ul>
+                </div>
+                <div class="overview-stats">
+                    <div class="stat-item">
+                        <h4>100+</h4>
+                        <p>Ponte Vedra Businesses Served</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>24/7</h4>
+                        <p>Support Available</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>30min</h4>
+                        <p>Average Response Time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Area-Specific Services -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Vending Solutions for Ponte Vedra</h2>
+                <p class="section-subtitle">From traditional vending machines to cutting-edge micro-markets, we offer the perfect solution for every Ponte Vedra business.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Smart Vending Machines</h3>
+                    <p>Advanced vending machines with touch screens, cashless payment options, and real-time inventory tracking for Ponte Vedra businesses.</p>
+                    <div class="service-actions">
+                        <a href="/vending-services-jacksonville"" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Micro-Markets</h3>
+                    <p>Self-service convenience stores perfect for Ponte Vedra businesses, providing fresh food and beverages for employees and customers.</p>
+                    <div class="service-actions">
+                        <a href="/setting-up-a-micro-market-in-your-jacksonville-office"" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3>Coffee Services</h3>
+                    <p>Premium coffee machines and beverage solutions for Ponte Vedra offices, waiting rooms, and hospitality venues.</p>
+                    <div class="service-actions">
+                        <a href="/coffeeservices"" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Types -->
+    <section class="business-types">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ponte Vedra Business Types We Serve</h2>
+                <p class="section-subtitle">Our vending solutions are tailored to meet the specific needs of Ponte Vedra's diverse business community.</p>
+            </div>
+            <div class="business-grid">
+                <div class="business-type">
+            <i class="fas fa-building"></i>
+            <h3>Golf Courses</h3>
+            <p>Professional vending solutions for golf courses in Ponte Vedra.</p>
+        </div>
+                <div class="business-type">
+            <i class="fas fa-building"></i>
+            <h3>Luxury Hotels</h3>
+            <p>Professional vending solutions for luxury hotels in Ponte Vedra.</p>
+        </div>
+                <div class="business-type">
+            <i class="fas fa-building"></i>
+            <h3>Upscale Resorts</h3>
+            <p>Professional vending solutions for upscale resorts in Ponte Vedra.</p>
+        </div>
+                <div class="business-type">
+            <i class="fas fa-building"></i>
+            <h3>Country Clubs</h3>
+            <p>Professional vending solutions for country clubs in Ponte Vedra.</p>
+        </div>
+                <div class="business-type">
+            <i class="fas fa-building"></i>
+            <h3>Premium Properties</h3>
+            <p>Professional vending solutions for premium properties in Ponte Vedra.</p>
+        </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose VendSmart -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Ponte Vedra Businesses Choose VendSmart</h2>
+                <p class="section-subtitle">We understand the unique challenges and opportunities of Ponte Vedra's business environment.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Local Knowledge</h3>
+                    <p>Deep understanding of Ponte Vedra's business landscape and community needs.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Flexible Scheduling</h3>
+                    <p>Service visits that work around your business hours and operational needs.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Quick Response</h3>
+                    <p>Jacksonville-based team providing fast response times and reliable local support.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Performance Analytics</h3>
+                    <p>Real-time data and insights to optimize your vending machine performance and revenue.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Areas -->
+    <section class="related-areas">
+        <div class="container">
+            <div class="section-header">
+                <h2>Vending Services in Other Jacksonville Areas</h2>
+                <p class="section-subtitle">Explore our vending services in other Jacksonville neighborhoods and surrounding areas.</p>
+            </div>
+            <div class="areas-grid">
+                <a href="/vending-services-jacksonville-beach"" class="area-card-link">
+                    <div class="area-card">
+                        <div class="area-icon">
+                            <i class="fas fa-umbrella-beach"></i>
+                        </div>
+                        <h3>Jacksonville Beach</h3>
+                        <p>Explore vending services in Jacksonville Beach.</p>
+                    </div>
+                </a>
+                <a href="/vending-services-atlantic-beach"" class="area-card-link">
+                    <div class="area-card">
+                        <div class="area-icon">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <h3>Atlantic Beach</h3>
+                        <p>Explore vending services in Atlantic Beach.</p>
+                    </div>
+                </a>
+                <a href="/vending-services-st.-augustine"" class="area-card-link">
+                    <div class="area-card">
+                        <div class="area-icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <h3>St. Augustine</h3>
+                        <p>Explore vending services in St. Augustine.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready for Professional Vending Services in Ponte Vedra?</h2>
+            <p>Join the hundreds of Ponte Vedra businesses that trust VendSmart for their vending machine needs. Get a free consultation and discover how our solutions can enhance your workplace.</p>
+            <div class="cta-buttons">
+                <a href="/get-a-free-vending-machine-in-jacksonville-florida"" class="btn btn-secondary">Get Free Machine</a>
+                <a href="/contact"" class="btn btn-outline">Contact Us Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer will be loaded by includes.js -->
+
+    <script src="/includes.js"></script>
+    <script src="/script.js"></script>2:[["$","section",null,{"className":"hero","children":[["$","div",null,{"className":"hero-background","children":[["$","img",null,{"src":"/jacksonville-vending-micro-market.jpg","alt":"Vending Services Ponte Vedra FL | Ponte Vedra Vending Solutions | VendSmart","className":"hero-bg-image"}],["$","div",null,{"className":"hero-overlay"}]]}],["$","div",null,{"className":"hero-container","children":["$","div",null,{"className":"hero-content","children":[["$","h1",null,{"children":"Vending Services Ponte Vedra FL | Ponte Vedra Vending Solutions | VendSmart"}],["$","p",null,{"className":"hero-subtitle","children":"Professional vending services in Ponte Vedra FL. Premium vending services for luxury properties, golf courses, and upscale businesses in Ponte Vedra. Smart vending machines, micro-markets & coffee services. Free placement."}],["$","div",null,{"className":"hero-features","children":[["$","div","0",{"className":"hero-feature","children":[["$","i",null,{"className":"fas fa-check-circle"}],["$","span",null,{"children":"Free Machine Placement"}]]}],["$","div","1",{"className":"hero-feature","children":[["$","i",null,{"className":"fas fa-check-circle"}],["$","span",null,{"children":"24/7 Support"}]]}],["$","div","2",{"className":"hero-feature","children":[["$","i",null,{"className":"fas fa-check-circle"}],["$","span",null,{"children":"Smart Technology"}]]}]]}]]}]}]]}],["$","section",null,{"className":"page-content container","style":{"padding":"2rem 1rem","maxWidth":1200,"margin":"0 auto"},"children":["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$9"}}]}],["$","section",null,{"className":"cta-section","children":["$","div",null,{"className":"container","children":[["$","h2",null,{"children":"Ready to Get Started?"}],["$","p",null,{"children":"Contact VendSmart for free vending machine placement in Jacksonville and surrounding areas."}],["$","div",null,{"className":"cta-buttons","children":[["$","$L7",null,{"href":"/get-a-free-vending-machine-in-jacksonville-florida","className":"btn btn-secondary","children":"Get Free Machine"}],["$","$L7",null,{"href":"/contact","className":"btn btn-outline","children":"Contact Us"}]]}]]}]}]]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Vending Services Ponte Vedra FL | Ponte Vedra Vending Solutions | VendSmart"}],["$","meta","3",{"name":"description","content":"Professional vending services in Ponte Vedra FL. Premium vending services for luxury properties, golf courses, and upscale businesses in Ponte Vedra. Smart vending machines, micro-markets & coffee services. Free placement."}],["$","meta","4",{"name":"keywords","content":"Jacksonville Vending Machines, vending company Jacksonville FL, micro markets Florida, smart vending"}],["$","meta","5",{"property":"og:title","content":"Vending Services Ponte Vedra FL | Ponte Vedra Vending Solutions | VendSmart"}],["$","meta","6",{"property":"og:description","content":"Professional vending services in Ponte Vedra FL. Premium vending services for luxury properties, golf courses, and upscale businesses in Ponte Vedra. Smart vending machines, micro-markets & coffee services. Free placement."}],["$","meta","7",{"property":"og:url","content":"https://jacksonvillevendingmachines.com"}],["$","meta","8",{"name":"twitter:card","content":"summary"}],["$","meta","9",{"name":"twitter:title","content":"Vending Services Ponte Vedra FL | Ponte Vedra Vending Solutions | VendSmart"}],["$","meta","10",{"name":"twitter:description","content":"Professional vending services in Ponte Vedra FL. Premium vending services for luxury properties, golf courses, and upscale businesses in Ponte Vedra. Smart vending machines, micro-markets & coffee services. Free placement."}],["$","link","11",{"rel":"icon","href":"/favicon.ico"}]]
+1:null
