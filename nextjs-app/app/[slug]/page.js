@@ -2,6 +2,15 @@ import Link from 'next/link';
 import { getAllSlugs, getPage } from '@/data/pages';
 import Hero from '@/components/Hero';
 
+/** Strip embedded hero section from page content to avoid double heroes (Hero component is already rendered above). */
+function stripHeroFromContent(html) {
+  if (!html || typeof html !== 'string') return html;
+  return html
+    .replace(/\s*<!-- Hero Section -->\s*/gi, '')
+    .replace(/<section\s+class=["']hero["'][^>]*>[\s\S]*?<\/section>\s*/gi, '')
+    .trim();
+}
+
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
 }
@@ -35,7 +44,7 @@ export default async function SlugPage({ params }) {
       />
       {page.content ? (
         <section className="page-content container" style={{ padding: '2rem 1rem', maxWidth: 1200, margin: '0 auto' }}>
-          <div dangerouslySetInnerHTML={{ __html: page.content }} />
+          <div dangerouslySetInnerHTML={{ __html: stripHeroFromContent(page.content) }} />
         </section>
       ) : (
         <section className="page-content container" style={{ padding: '2rem 1rem', maxWidth: 1200, margin: '0 auto' }}>
