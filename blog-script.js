@@ -1,5 +1,4 @@
 // BLOG-SPECIFIC JAVASCRIPT - ISOLATED FROM MAIN SITE
-// This file handles additional blog functionality that doesn't conflict with Contentful
 
 document.addEventListener('DOMContentLoaded', function() {
     
@@ -18,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
     
-    // Observe blog posts for animation (will be called after Contentful loads)
+    // Observe blog posts for animation
     function observeBlogPosts() {
         const blogPosts = document.querySelectorAll('.blog-post');
         blogPosts.forEach(post => {
@@ -26,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Make observeBlogPosts available globally so Contentful can call it
     window.observeBlogPosts = observeBlogPosts;
     
     // Reading time calculation
@@ -37,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return minutes;
     }
     
-    // Add reading time to posts (will be called after Contentful loads)
+    // Add reading time to posts
     function addReadingTimeToPosts() {
         const blogPosts = document.querySelectorAll('.blog-post');
         blogPosts.forEach(post => {

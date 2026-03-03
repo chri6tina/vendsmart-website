@@ -22,7 +22,7 @@ cd /Users/christinashumpert/vendsmart-website
 git add .
 
 # Create initial commit
-git commit -m "Initial commit: VendSmart website with blog and Contentful integration"
+git commit -m "Initial commit: VendSmart website with blog"
 
 # Add GitHub remote (replace YOUR_USERNAME with your GitHub username)
 git remote add origin https://github.com/YOUR_USERNAME/vendsmart-website.git
@@ -110,13 +110,6 @@ git push origin main
 
 Your website will automatically update!
 
-### Contentful Integration
-
-Your blog will work immediately because:
-- ✅ Contentful credentials are already configured
-- ✅ Sample posts provide fallback content
-- ✅ All JavaScript is properly linked
-
 ## 📋 Post-Deployment Checklist
 
 ### GitHub Pages
@@ -140,9 +133,8 @@ Your blog will work immediately because:
 - [ ] Mobile responsiveness
 - [ ] Images load properly
 
-### Contentful Testing
-- [ ] Blog posts load from Contentful
-- [ ] Sample posts display as fallback
+### Blog Testing
+- [ ] Blog posts display correctly
 - [ ] "Read Full Article" links work
 - [ ] Back button functions
 
@@ -160,9 +152,7 @@ git push origin main
 ```
 
 ### Adding New Blog Posts
-1. **Go to Contentful**
-2. **Create new blog post**
-3. **Publish** - it will automatically appear on your site
+Edit the sample posts in `blog.html` and `blog-post.html` to add new content.
 
 ### File Structure
 ```
@@ -192,9 +182,8 @@ vendsmart-website/
 - Check repository is public
 
 **Blog not working:**
-- Verify Contentful credentials
 - Check browser console for errors
-- Test sample posts
+- Verify blog.html and blog-post.html load correctly
 
 **Images not loading:**
 - Check file paths
@@ -209,8 +198,6 @@ vendsmart-website/
 
 - **GitHub Pages**: [GitHub Pages Documentation](https://pages.github.com/)
 - **Netlify**: [Netlify Documentation](https://docs.netlify.com/)
-- **Contentful**: [Contentful Documentation](https://www.contentful.com/developers/docs/)
-
 ## 🎉 Success!
 
 Once deployed, your site will be:
@@ -218,5 +205,5 @@ Once deployed, your site will be:
 - ✅ **Automatically updated** when you push to GitHub
 - ✅ **Secure with HTTPS**
 - ✅ **Mobile responsive**
-- ✅ **Blog integrated with Contentful**
+- ✅ **Blog with static content**
 - ✅ **Professional and fast** 

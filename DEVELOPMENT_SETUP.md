@@ -147,17 +147,6 @@ git push origin main
 - Use your phone's browser
 - Visit `http://YOUR_IP:3000` (find IP with `ipconfig` or `ifconfig`)
 
-## 🎯 Contentful Integration
-
-### Blog Development
-1. **Set up Contentful** (see `CONTENTFUL_SETUP.md`)
-2. **Test blog functionality** in development
-3. **Verify API calls** in browser console
-
-### Sample Data
-- Blog works with sample data if Contentful not configured
-- Fallback content ensures site always works
-
 ## 🔧 Customization
 
 ### Adding New Pages
@@ -195,16 +184,14 @@ npm run serve -- --port=3001
 3. **Hard refresh** browser
 4. **Restart dev server**
 
-### Contentful Issues
-1. **Check API credentials** in `blog-script.js`
-2. **Verify content** is published in Contentful
-3. **Check browser console** for API errors
+### Blog Issues
+1. **Check blog.html and blog-post.html** for correct post IDs
+2. **Check browser console** for errors
 
 ## 📞 Support
 
 - **Live Server**: [Documentation](https://www.npmjs.com/package/live-server)
 - **Node.js**: [Documentation](https://nodejs.org/docs/)
-- **Contentful**: [Documentation](https://www.contentful.com/developers/docs/)
 
 ---
 
