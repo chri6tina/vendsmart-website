@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { LOCATION_PAGES } from '@/data/locations';
 
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -41,23 +42,11 @@ export default function Nav() {
             <ul className="dropdown-menu" role="menu" aria-label="Locations submenu">
               <li role="none"><Link href="/locations" role="menuitem">All Locations</Link></li>
               <li className="dropdown-divider" role="separator"></li>
-              <li role="none"><Link href="/jacksonville" role="menuitem">Jacksonville</Link></li>
-              <li role="none"><Link href="/downtown-jacksonville" role="menuitem">Downtown</Link></li>
-              <li role="none"><Link href="/jacksonville-beach" role="menuitem">Jacksonville Beach</Link></li>
-              <li role="none"><Link href="/orange-park" role="menuitem">Orange Park</Link></li>
-              <li role="none"><Link href="/ponte-vedra" role="menuitem">Ponte Vedra</Link></li>
-              <li role="none"><Link href="/atlantic-beach" role="menuitem">Atlantic Beach</Link></li>
-              <li role="none"><Link href="/st-augustine" role="menuitem">St. Augustine</Link></li>
-              <li role="none"><Link href="/mandarin" role="menuitem">Mandarin</Link></li>
-              <li role="none"><Link href="/lakeside" role="menuitem">Lakeside</Link></li>
-              <li className="dropdown-divider" role="separator"></li>
-              <li role="none"><Link href="/st-marys" role="menuitem">St. Marys, GA</Link></li>
-              <li role="none"><Link href="/palm-coast" role="menuitem">Palm Coast</Link></li>
-              <li role="none"><Link href="/lake-city" role="menuitem">Lake City</Link></li>
-              <li role="none"><Link href="/yulee" role="menuitem">Yulee</Link></li>
-              <li role="none"><Link href="/baldwin" role="menuitem">Baldwin</Link></li>
-              <li role="none"><Link href="/callahan" role="menuitem">Callahan</Link></li>
-              <li role="none"><Link href="/macclenny" role="menuitem">Macclenny</Link></li>
+              {LOCATION_PAGES.map(({ slug, label }) => (
+                <li key={slug} role="none">
+                  <Link href={`/${slug}`} role="menuitem">{label}</Link>
+                </li>
+              ))}
             </ul>
           </li>
           

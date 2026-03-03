@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { LOCATION_PAGES } from '@/data/locations';
 
 export default function Footer() {
   return (
@@ -30,15 +31,10 @@ export default function Footer() {
           <div className="footer-section">
             <h3>Locations</h3>
             <ul>
-              <li><Link href="/jacksonville">Jacksonville Overview</Link></li>
-              <li><Link href="/downtown-jacksonville">Downtown Jacksonville</Link></li>
-              <li><Link href="/jacksonville-beach">Jacksonville Beach</Link></li>
-              <li><Link href="/orange-park">Orange Park</Link></li>
-              <li><Link href="/ponte-vedra">Ponte Vedra</Link></li>
-              <li><Link href="/atlantic-beach">Atlantic Beach</Link></li>
-              <li><Link href="/st-augustine">St. Augustine</Link></li>
-              <li><Link href="/mandarin">Mandarin</Link></li>
-              <li><Link href="/lakeside">Lakeside</Link></li>
+              <li><Link href="/locations">All Locations</Link></li>
+              {LOCATION_PAGES.slice(0, 10).map(({ slug, label }) => (
+                <li key={slug}><Link href={`/${slug}`}>{label}</Link></li>
+              ))}
             </ul>
           </div>
           <div className="footer-section">
