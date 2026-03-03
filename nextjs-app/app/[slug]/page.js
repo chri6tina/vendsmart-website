@@ -13,6 +13,7 @@ export async function generateMetadata({ params }) {
   return {
     title: page.title,
     description: page.description,
+    alternates: { canonical: `https://jacksonvillevendingmachines.com/${slug}` },
   };
 }
 

@@ -4,9 +4,9 @@
   "description": "VendSmart Vending Solutions Jacksonville - Professional Website",
   "main": "index.html",
   "scripts": {
-    "dev": "live-server --port=3000 --open=/index.html",
-    "start": "live-server --port=3000 --open=/index.html",
-    "build": "echo 'No build process needed for static site'",
+    "dev": "cd nextjs-app && npm run dev",
+    "start": "cd nextjs-app && npm run start",
+    "build": "cd nextjs-app && npm run build",
     "serve": "live-server --port=3000",
     "deploy": "echo 'Ready for deployment to GitHub Pages, Netlify, or Vercel'"
   },

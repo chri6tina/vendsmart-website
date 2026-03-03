@@ -27,9 +27,11 @@ jobs:
           npm ci
           npm run build
 
-      - name: Copy CNAME for custom domain
+      - name: Copy CNAME, sitemap, robots for deployment
         run: |
           if [ -f CNAME ]; then cp CNAME nextjs-app/out/; fi
+          if [ -f sitemap.xml ]; then cp sitemap.xml nextjs-app/out/; fi
+          if [ -f robots.txt ]; then cp robots.txt nextjs-app/out/; fi
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

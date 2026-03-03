@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 export const metadata = {
   title: 'About Us | Jacksonville Vending Machines | VendSmart',
   description: 'Learn about VendSmart, Jacksonville\'s premier vending machine company. 20+ years experience, 500+ machines installed, 24/7 support.',
+  alternates: { canonical: 'https://jacksonvillevendingmachines.com/about-us' },
 };
 
 export default function AboutUs() {

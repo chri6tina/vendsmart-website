@@ -3,6 +3,7 @@ import Hero from '@/components/Hero';
 export const metadata = {
   title: 'Contact Us | Jacksonville Vending Machines | VendSmart',
   description: 'Contact Jacksonville vending machine company VendSmart. Free quotes, 24/7 support. Call 904-456-3851 or request quote online.',
+  alternates: { canonical: 'https://jacksonvillevendingmachines.com/contact' },
 };
 
 export default function Contact() {
