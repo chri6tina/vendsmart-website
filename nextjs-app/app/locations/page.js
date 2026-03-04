@@ -38,7 +38,7 @@ export default function LocationsPage() {
         </div>
       </section>
 
-      <section className="about-section">
+      <section className="about-section locations-areas">
         <div className="container">
           <div className="section-header">
             <h2>Our Service Areas</h2>
