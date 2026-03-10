@@ -49,13 +49,14 @@ export default function Nav() {
               Locations <i className="fas fa-chevron-down" aria-hidden="true"></i>
             </button>
             <ul className="dropdown-menu" role="menu" aria-label="Locations submenu">
-              <li role="none"><Link href="/locations" role="menuitem">All Locations</Link></li>
+              <li role="none"><Link href="/jacksonville" role="menuitem">Jacksonville</Link></li>
+              <li role="none"><Link href="/jacksonville-beach" role="menuitem">Jacksonville Beach</Link></li>
+              <li role="none"><Link href="/orange-park" role="menuitem">Orange Park</Link></li>
+              <li role="none"><Link href="/ponte-vedra" role="menuitem">Ponte Vedra</Link></li>
+              <li role="none"><Link href="/atlantic-beach" role="menuitem">Atlantic Beach</Link></li>
+              <li role="none"><Link href="/st-augustine" role="menuitem">St. Augustine</Link></li>
               <li className="dropdown-divider" role="separator"></li>
-              {LOCATION_PAGES.map(({ slug, label }) => (
-                <li key={slug} role="none">
-                  <Link href={`/${slug}`} role="menuitem">{label}</Link>
-                </li>
-              ))}
+              <li role="none"><Link href="/locations" role="menuitem" style={{ fontWeight: '600', color: 'var(--primary-dark)' }}>View All Locations →</Link></li>
             </ul>
           </li>
 
