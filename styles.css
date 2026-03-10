@@ -1475,6 +1475,17 @@ button:focus-visible {
   justify-content: center;
 }
 
+.cta-section .btn-outline {
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.cta-section .btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  border-color: var(--white);
+}
+
 /* ========== FOOTER ========== */
 .footer {
   background: #1f2937;
