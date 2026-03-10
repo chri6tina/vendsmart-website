@@ -1,56 +1,45 @@
 3:I[4707,[],""]
 5:I[6423,[],""]
-6:I[174,["972","static/chunks/972-cf1bd04210e9dde7.js","185","static/chunks/app/layout-d20438131cb08276.js"],"default"]
-7:I[2972,["972","static/chunks/972-cf1bd04210e9dde7.js","42","static/chunks/app/%5Bslug%5D/page-6215fc8ac5c289c0.js"],""]
+6:I[2627,["972","static/chunks/972-e0022b442a6a7d0f.js","185","static/chunks/app/layout-e158f89bd170564e.js"],"default"]
+7:I[8198,["972","static/chunks/972-e0022b442a6a7d0f.js","185","static/chunks/app/layout-e158f89bd170564e.js"],"default"]
+8:I[2972,["972","static/chunks/972-e0022b442a6a7d0f.js","347","static/chunks/347-8acf563f075582f7.js","42","static/chunks/app/%5Bslug%5D/page-43771424acfd9e0d.js"],""]
 4:["slug","orange-park","d"]
-0:["wjkWTwH7HgKRTrDYEJ7yY",[[["",{"children":[["slug","orange-park","d"],{"children":["__PAGE__?{\"slug\":\"orange-park\"}",{}]}]},"$undefined","$undefined",true],["",{"children":[["slug","orange-park","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/439e9c080256c230.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"LocalBusiness\",\"name\":\"VendSmart Jacksonville\",\"description\":\"Jacksonville vending machines, micro-markets, and coffee services. Free placement for qualified businesses.\",\"url\":\"https://jacksonvillevendingmachines.com\",\"telephone\":\"904-456-3851\",\"email\":\"vendsmartjacksonville@gmail.com\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Jacksonville\",\"addressRegion\":\"FL\",\"addressCountry\":\"US\"},\"areaServed\":\"Jacksonville, FL and surrounding areas\"}"}}],["$","link",null,{"rel":"stylesheet","href":"/styles.css"}],["$","link",null,{"rel":"stylesheet","href":"/blog-styles.css"}]]}],["$","body",null,{"children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","main",null,{"className":"not-found-section","children":["$","div",null,{"className":"container","children":["$","div",null,{"className":"not-found","children":[["$","h1",null,{"children":"404"}],["$","p",null,{"children":"Page not found."}],["$","p",null,{"className":"not-found-subtitle","children":"The page you're looking for doesn't exist or has been moved."}],["$","div",null,{"className":"not-found-links","children":[["$","$L7",null,{"href":"/","className":"btn btn-primary","children":"Back to Home"}],["$","$L7",null,{"href":"/locations","className":"btn btn-outline","children":"View Locations"}]]}]]}]}]}],"notFoundStyles":[]}],["$","footer",null,{"className":"footer","children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Jacksonville Vending Machines - VendSmart"}],["$","p",null,{"children":"Premium vending solutions for Jacksonville, Florida. Smart technology, healthy options, and 24/7 support."}],["$","p",null,{"children":["$","$L7",null,{"href":"/","style":{"color":"#00C5F5","textDecoration":"none","fontWeight":500},"children":"← Back to Jacksonville Vending Machines Home"}]}],["$","div",null,{"className":"social-links","children":[["$","a",null,{"href":"https://www.facebook.com/vendsmart","target":"_blank","rel":"noopener noreferrer","aria-label":"Follow us on Facebook","children":["$","i",null,{"className":"fab fa-facebook"}]}],["$","a",null,{"href":"https://www.instagram.com/jacksonvillevendingmachines","target":"_blank","rel":"noopener noreferrer","aria-label":"Follow us on Instagram","children":["$","i",null,{"className":"fab fa-instagram"}]}],["$","a",null,{"href":"https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_ID","target":"_blank","rel":"noopener noreferrer","aria-label":"View our Google Business Profile","children":["$","i",null,{"className":"fab fa-google"}]}],["$","a",null,{"href":"https://www.yelp.com/biz/vendsmart-jacksonville","target":"_blank","rel":"noopener noreferrer","aria-label":"Read our Yelp reviews","children":["$","i",null,{"className":"fab fa-yelp"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Services"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L7",null,{"href":"/services","children":"Smart Vending Machines"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/setting-up-a-micro-market-in-your-jacksonville-office","children":"Micro-Markets"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/coffeeservices","children":"Coffee Services"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/vendingmachine-service","children":"Vending Machine Service"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/smart-coolers","children":"Smart Coolers"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/portfolio","children":"Portfolio"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Locations"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L7",null,{"href":"/locations","children":"All Locations"}]}],[["$","li","jacksonville",{"children":["$","$L7",null,{"href":"/jacksonville","children":"Jacksonville"}]}],["$","li","downtown-jacksonville",{"children":["$","$L7",null,{"href":"/downtown-jacksonville","children":"Downtown"}]}],["$","li","jacksonville-beach",{"children":["$","$L7",null,{"href":"/jacksonville-beach","children":"Jacksonville Beach"}]}],["$","li","orange-park",{"children":["$","$L7",null,{"href":"/orange-park","children":"Orange Park"}]}],["$","li","ponte-vedra",{"children":["$","$L7",null,{"href":"/ponte-vedra","children":"Ponte Vedra"}]}],["$","li","atlantic-beach",{"children":["$","$L7",null,{"href":"/atlantic-beach","children":"Atlantic Beach"}]}],["$","li","st-augustine",{"children":["$","$L7",null,{"href":"/st-augustine","children":"St. Augustine"}]}],["$","li","mandarin",{"children":["$","$L7",null,{"href":"/mandarin","children":"Mandarin"}]}],["$","li","lakeside",{"children":["$","$L7",null,{"href":"/lakeside","children":"Lakeside"}]}],["$","li","riverside",{"children":["$","$L7",null,{"href":"/riverside","children":"Riverside"}]}]]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L7",null,{"href":"/about-us","children":"About Us"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/customer-reviews-jacksonville","children":"Customer Reviews"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/how-we-help-jacksonville","children":"How We Help"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/vending-in-jacksonville-florida","children":"Vending in Jacksonville"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/vending-machine-faq-jacksonville","children":"FAQ"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/free-vending-machine-placement","children":"Free Placement"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Contact"}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-phone"}]," ",["$","a",null,{"href":"tel:904-456-3851","children":"904-456-3851"}]]}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-envelope"}]," ",["$","a",null,{"href":"mailto:vendsmartjacksonville@gmail.com","children":"vendsmartjacksonville@gmail.com"}]]}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-map-marker-alt"}]," Jacksonville, Florida & Surrounding Areas"]}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-clock"}]," 24/7 Support Available"]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":["$","p",null,{"children":["© 2024 Jacksonville Vending Machines - VendSmart. All rights reserved. | ",["$","$L7",null,{"href":"/privacy-policy","children":"Privacy Policy"}]," | ",["$","$L7",null,{"href":"/terms-of-service","children":"Terms of Service"}]]}]}]]}]}]]}]]}]],null],null],["$L8",null]]]]
-9:T4b49,<!-- Location Overview -->
-    <section id="overview" class="location-overview">
+0:["_hAQ47VrsL7v4k59BbxIS",[[["",{"children":[["slug","orange-park","d"],{"children":["__PAGE__?{\"slug\":\"orange-park\"}",{}]}]},"$undefined","$undefined",true],["",{"children":[["slug","orange-park","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/05a256899f738bd7.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"LocalBusiness\",\"name\":\"VendSmart Jacksonville\",\"description\":\"Jacksonville vending machines, micro-markets, and coffee services. Free placement for qualified businesses.\",\"url\":\"https://jacksonvillevendingmachines.com\",\"telephone\":\"904-456-3851\",\"email\":\"vendsmartjacksonville@gmail.com\",\"image\":\"https://jacksonvillevendingmachines.com/vendsmart-logo-jacksonville-vending.png\",\"priceRange\":\"$$\",\"openingHours\":\"Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Jacksonville\",\"addressRegion\":\"FL\",\"addressCountry\":\"US\"},\"areaServed\":\"Jacksonville, FL and surrounding areas\"}"}}],["$","link",null,{"rel":"stylesheet","href":"/styles.css?v=4"}],["$","link",null,{"rel":"stylesheet","href":"/blog-styles.css?v=3"}]]}],["$","body",null,{"children":[["$","$L6",null,{}],["$","$L7",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","main",null,{"className":"not-found-section","children":["$","div",null,{"className":"container","children":["$","div",null,{"className":"not-found","children":[["$","h1",null,{"children":"404"}],["$","p",null,{"children":"Page not found."}],["$","p",null,{"className":"not-found-subtitle","children":"The page you're looking for doesn't exist or has been moved."}],["$","div",null,{"className":"not-found-links","children":[["$","$L8",null,{"href":"/","className":"btn btn-primary","children":"Back to Home"}],["$","$L8",null,{"href":"/locations","className":"btn btn-outline","children":"View Locations"}]]}]]}]}]}],"notFoundStyles":[]}],["$","footer",null,{"className":"footer","children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Jacksonville Vending Machines - VendSmart"}],["$","p",null,{"children":"Premium vending solutions for Jacksonville, Florida. Smart technology, healthy options, and 24/7 support."}],["$","p",null,{"children":["$","$L8",null,{"href":"/","style":{"color":"#00C5F5","textDecoration":"none","fontWeight":500},"children":"← Back to Jacksonville Vending Machines Home"}]}],["$","div",null,{"className":"social-links","children":[["$","a",null,{"href":"https://www.facebook.com/","target":"_blank","rel":"noopener noreferrer","aria-label":"Follow us on Facebook","children":["$","i",null,{"className":"fab fa-facebook"}]}],["$","a",null,{"href":"https://www.instagram.com/","target":"_blank","rel":"noopener noreferrer","aria-label":"Follow us on Instagram","children":["$","i",null,{"className":"fab fa-instagram"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Services"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L8",null,{"href":"/services","children":"Smart Vending Machines"}]}],["$","li",null,{"children":["$","$L8",null,{"href":"/setting-up-a-micro-market-in-your-jacksonville-office","children":"Micro-Markets"}]}],["$","li",null,{"children":["$","$L8",null,{"href":"/coffeeservices","children":"Coffee Services"}]}],["$","li",null,{"children":["$","$L8",null,{"href":"/vendingmachine-service","children":"Vending Machine Service"}]}],["$","li",null,{"children":["$","$L8",null,{"href":"/smart-coolers","children":"Smart Coolers"}]}],["$","li",null,{"children":["$","$L8",null,{"href":"/portfolio","children":"Portfolio"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Locations"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L8",null,{"href":"/locations","children":"All Locations"}]}],[["$","li","jacksonville",{"children":["$","$L8",null,{"href":"/jacksonville","children":"Jacksonville"}]}],["$","li","downtown-jacksonville",{"children":["$","$L8",null,{"href":"/downtown-jacksonville","children":"Downtown"}]}],["$","li","jacksonville-beach",{"children":["$","$L8",null,{"href":"/jacksonville-beach","children":"Jacksonville Beach"}]}],["$","li","orange-park",{"children":["$","$L8",null,{"href":"/orange-park","children":"Orange Park"}]}],["$","li","ponte-vedra",{"children":["$","$L8",null,{"href":"/ponte-vedra","children":"Ponte Vedra"}]}],["$","li","atlantic-beach",{"children":["$","$L8",null,{"href":"/atlantic-beach","children":"Atlantic Beach"}]}],["$","li","st-augustine",{"children":["$","$L8",null,{"href":"/st-augustine","children":"St. Augustine"}]}],["$","li","mandarin",{"children":["$","$L8",null,{"href":"/mandarin","children":"Mandarin"}]}],["$","li","lakeside",{"children":["$","$L8",null,{"href":"/lakeside","children":"Lakeside"}]}],["$","li","riverside",{"children":["$","$L8",null,{"href":"/riverside","children":"Riverside"}]}]]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L8",null,{"href":"/about-us","children":"About Us"}]}],["$","li",null,{"children":["$","$L8",null,{"href":"/customer-reviews-jacksonville","children":"Customer Reviews"}]}],["$","li",null,{"children":["$","$L8",null,{"href":"/how-we-help-jacksonville","children":"How We Help"}]}],["$","li",null,{"children":["$","$L8",null,{"href":"/vending-in-jacksonville-florida","children":"Vending in Jacksonville"}]}],["$","li",null,{"children":["$","$L8",null,{"href":"/vending-machine-faq-jacksonville","children":"FAQ"}]}],["$","li",null,{"children":["$","$L8",null,{"href":"/free-vending-machine-placement","children":"Free Placement"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Contact"}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-phone"}]," ",["$","a",null,{"href":"tel:904-456-3851","children":"904-456-3851"}]]}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-envelope"}]," ",["$","a",null,{"href":"mailto:vendsmartjacksonville@gmail.com","children":"vendsmartjacksonville@gmail.com"}]]}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-map-marker-alt"}]," Jacksonville, Florida & Surrounding Areas"]}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-clock"}]," 24/7 Support Available"]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":["$","p",null,{"children":["© 2024 Jacksonville Vending Machines - VendSmart. All rights reserved. | ",["$","$L8",null,{"href":"/privacy-policy","children":"Privacy Policy"}]," | ",["$","$L8",null,{"href":"/terms-of-service","children":"Terms of Service"}]]}]}]]}]}]]}]]}]],null],null],["$L9",null]]]]
+a:I[6840,["972","static/chunks/972-e0022b442a6a7d0f.js","347","static/chunks/347-8acf563f075582f7.js","42","static/chunks/app/%5Bslug%5D/page-43771424acfd9e0d.js"],"default"]
+c:I[5778,["972","static/chunks/972-e0022b442a6a7d0f.js","347","static/chunks/347-8acf563f075582f7.js","42","static/chunks/app/%5Bslug%5D/page-43771424acfd9e0d.js"],"default"]
+d:I[2937,["972","static/chunks/972-e0022b442a6a7d0f.js","347","static/chunks/347-8acf563f075582f7.js","42","static/chunks/app/%5Bslug%5D/page-43771424acfd9e0d.js"],"default"]
+b:T55a9,<!-- Location Overview (Minimal) -->
+    
+    <!-- Location Overview (Minimal) -->
+    
+    <!-- Location Overview (Minimal) -->
+    <section id="overview" class="minimal-overview">
         <div class="container">
-            <div class="location-content">
-                <div class="location-text">
+            <div class="minimal-content">
+                <div class="minimal-text">
                     <h2>Vending Solutions for Orange Park</h2>
-                    <p>Orange Park is a thriving suburban community in Clay County, known for its excellent healthcare facilities, retail centers, and family-friendly atmosphere. VendSmart provides specialized vending solutions tailored to the unique needs of Orange Park businesses and their employees.</p>
-                    
-                    <div class="location-features">
-                        <div class="feature-item">
-                            <i class="fas fa-hospital"></i>
-                            <div>
-                                <h3>Healthcare Facilities</h3>
-                                <p>24/7 vending solutions for hospitals, medical centers, clinics, and healthcare workers serving the Orange Park community</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-shopping-cart"></i>
-                            <div>
-                                <h3>Retail & Shopping Centers</h3>
-                                <p>Convenient vending for shopping centers, retail locations, and commercial areas serving Orange Park residents</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-building"></i>
-                            <div>
-                                <h3>Professional Offices</h3>
-                                <p>Smart vending for professional offices, medical practices, and service businesses in the Orange Park area</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <h3>Educational Institutions</h3>
-                                <p>Healthy vending options for schools, colleges, and educational facilities serving Orange Park students and families</p>
-                            </div>
-                        </div>
-                    </div>
+                    <p>Orange Park is a thriving community with diverse businesses and a strong local presence. VendSmart provides personalized vending solutions tailored to the unique character and daily needs of Orange Park's local businesses, offices, and residents.</p>
                 </div>
-                
-                <div class="location-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Orange Park</p>
+                <div class="minimal-grid">
+                    <div class="minimal-card">
+                        <i class="fas fa-store"></i>
+                        <h3>Local Shops & Retail</h3>
+                        <p>Convenient vending for local shops, boutiques, and retail businesses serving the community.</p>
+                    </div>
+                    <div class="minimal-card">
+                        <i class="fas fa-building"></i>
+                        <h3>Professional Offices</h3>
+                        <p>Smart vending matches for professional offices, corporate centers, and service businesses.</p>
+                    </div>
+                    <div class="minimal-card">
+                        <i class="fas fa-industry"></i>
+                        <h3>Facilities & Logistics</h3>
+                        <p>Reliable 24/7 refreshment systems for warehouses, manufacturing plants, and logistics hubs.</p>
+                    </div>
+                    <div class="minimal-card">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Dining & Hospitality</h3>
+                        <p>Vending and micro-market solutions for restaurants, cafes, hotels, and dining establishments.</p>
                     </div>
                 </div>
             </div>
@@ -122,93 +111,149 @@
     </section>
 
     <!-- Orange Park Areas -->
-    <section class="orange-park-areas">
+    
+    <!-- Business Areas We Serve (Dark Theme Accordion) -->
+    <section class="areas-accordion-section">
         <div class="container">
-            <h2>Orange Park Business Areas We Serve</h2>
-            <div class="areas-grid">
-                <div class="area-card">
-                    <i class="fas fa-hospital"></i>
-                    <h3>Healthcare Facilities</h3>
-                    <p>Vending solutions for hospitals, medical centers, and healthcare facilities in Orange Park.</p>
-                    <ul>
+            <div class="section-header centered-header dark-mode">
+                <h2>Orange Park Business Areas We Serve</h2>
+                <p>We provide tailored vending machines, micro-markets, and coffee services for a wide variety of facilities.</p>
+            </div>
+            
+            <div class="accordion-grid">
+                
+                <details class="premium-accordion-item">
+                    <summary class="accordion-header">
+                        <div class="accordion-title-wrapper">
+                            <i class="fas fa-hospital"></i>
+                            <h3>Healthcare Facilities</h3>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Vending solutions for hospitals, medical centers, and healthcare facilities in Orange Park.</p>
+                        <ul>
                         <li>Orange Park Medical Center</li>
                         <li>Medical office buildings</li>
                         <li>Specialty clinics</li>
                         <li>Dental offices</li>
                         <li>Healthcare administration</li>
                     </ul>
-                    <a href="/contact" class="btn btn-outline">Get Quote</a>
-                </div>
-                
-                <div class="area-card">
-                    <i class="fas fa-shopping-cart"></i>
-                    <h3>Shopping & Retail</h3>
-                    <p>Convenient vending for shopping centers, retail locations, and commercial areas.</p>
-                    <ul>
+                        <div class="accordion-cta">
+                            <a href="/contact" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white;">Get Quote for Healthcare Facilities</a>
+                        </div>
+                    </div>
+                </details>
+                <details class="premium-accordion-item">
+                    <summary class="accordion-header">
+                        <div class="accordion-title-wrapper">
+                            <i class="fas fa-shopping-cart"></i>
+                            <h3>Shopping & Retail</h3>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Convenient vending for shopping centers, retail locations, and commercial areas.</p>
+                        <ul>
                         <li>Orange Park Mall</li>
                         <li>Retail strip centers</li>
                         <li>Convenience stores</li>
                         <li>Grocery stores</li>
                         <li>Retail plazas</li>
                     </ul>
-                    <a href="/contact" class="btn btn-outline">Get Quote</a>
-                </div>
-                
-                <div class="area-card">
-                    <i class="fas fa-building"></i>
-                    <h3>Professional Offices</h3>
-                    <p>Smart vending for professional offices, medical practices, and service businesses.</p>
-                    <ul>
+                        <div class="accordion-cta">
+                            <a href="/contact" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white;">Get Quote for Shopping & Retail</a>
+                        </div>
+                    </div>
+                </details>
+                <details class="premium-accordion-item">
+                    <summary class="accordion-header">
+                        <div class="accordion-title-wrapper">
+                            <i class="fas fa-building"></i>
+                            <h3>Professional Offices</h3>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Smart vending for professional offices, medical practices, and service businesses.</p>
+                        <ul>
                         <li>Medical offices and clinics</li>
                         <li>Professional service firms</li>
                         <li>Real estate offices</li>
                         <li>Financial services</li>
                         <li>Consulting and advisory firms</li>
                     </ul>
-                    <a href="/contact" class="btn btn-outline">Get Quote</a>
-                </div>
-                
-                <div class="area-card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>Educational Institutions</h3>
-                    <p>Vending solutions for schools, colleges, and educational facilities in Orange Park.</p>
-                    <ul>
+                        <div class="accordion-cta">
+                            <a href="/contact" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white;">Get Quote for Professional Offices</a>
+                        </div>
+                    </div>
+                </details>
+                <details class="premium-accordion-item">
+                    <summary class="accordion-header">
+                        <div class="accordion-title-wrapper">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Educational Institutions</h3>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Vending solutions for schools, colleges, and educational facilities in Orange Park.</p>
+                        <ul>
                         <li>Orange Park High School</li>
                         <li>Elementary and middle schools</li>
                         <li>Private schools</li>
                         <li>Training centers</li>
                         <li>Educational administration</li>
                     </ul>
-                    <a href="/contact" class="btn btn-outline">Get Quote</a>
-                </div>
-                
-                <div class="area-card">
-                    <i class="fas fa-car"></i>
-                    <h3>Automotive & Services</h3>
-                    <p>Vending solutions for automotive businesses, service centers, and repair facilities.</p>
-                    <ul>
+                        <div class="accordion-cta">
+                            <a href="/contact" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white;">Get Quote for Educational Institutions</a>
+                        </div>
+                    </div>
+                </details>
+                <details class="premium-accordion-item">
+                    <summary class="accordion-header">
+                        <div class="accordion-title-wrapper">
+                            <i class="fas fa-car"></i>
+                            <h3>Automotive & Services</h3>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Vending solutions for automotive businesses, service centers, and repair facilities.</p>
+                        <ul>
                         <li>Auto repair shops</li>
                         <li>Car dealerships</li>
                         <li>Service centers</li>
                         <li>Gas stations and convenience stores</li>
                         <li>Automotive parts stores</li>
                     </ul>
-                    <a href="/contact" class="btn btn-outline">Get Quote</a>
-                </div>
-                
-                <div class="area-card">
-                    <i class="fas fa-industry"></i>
-                    <h3>Manufacturing & Industrial</h3>
-                    <p>Vending solutions for manufacturing facilities, warehouses, and industrial businesses.</p>
-                    <ul>
+                        <div class="accordion-cta">
+                            <a href="/contact" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white;">Get Quote for Automotive & Services</a>
+                        </div>
+                    </div>
+                </details>
+                <details class="premium-accordion-item">
+                    <summary class="accordion-header">
+                        <div class="accordion-title-wrapper">
+                            <i class="fas fa-industry"></i>
+                            <h3>Manufacturing & Industrial</h3>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Vending solutions for manufacturing facilities, warehouses, and industrial businesses.</p>
+                        <ul>
                         <li>Manufacturing facilities</li>
                         <li>Warehouses and distribution centers</li>
                         <li>Industrial parks</li>
                         <li>Construction companies</li>
                         <li>Logistics and transportation</li>
                     </ul>
-                    <a href="/contact" class="btn btn-outline">Get Quote</a>
-                </div>
+                        <div class="accordion-cta">
+                            <a href="/contact" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white;">Get Quote for Manufacturing & Industrial</a>
+                        </div>
+                    </div>
+                </details>
             </div>
         </div>
     </section>
@@ -371,6 +416,6 @@
         </div>
     </section>
 
-    <!-- Footer -->2:[["$","section",null,{"className":"hero","children":[["$","div",null,{"className":"hero-background","children":[["$","img",null,{"src":"/jacksonville-vending-micro-market.jpg","alt":"Orange Park Vending Machines & Micro-Markets | VendSmart","className":"hero-bg-image"}],["$","div",null,{"className":"hero-overlay"}]]}],["$","div",null,{"className":"hero-container","children":["$","div",null,{"className":"hero-content","children":[["$","h1",null,{"children":"Orange Park Vending Machines & Micro-Markets | VendSmart"}],["$","p",null,{"className":"hero-subtitle","children":"Free vending machines and micro-markets for Orange Park businesses. Smart vending solutions for healthcare facilities, retail centers, and suburban businesses. 100% free installation."}],["$","div",null,{"className":"hero-features","children":[["$","div","0",{"className":"hero-feature","children":[["$","i",null,{"className":"fas fa-check-circle"}],["$","span",null,{"children":"Free Machine Placement"}]]}],["$","div","1",{"className":"hero-feature","children":[["$","i",null,{"className":"fas fa-check-circle"}],["$","span",null,{"children":"24/7 Support"}]]}],["$","div","2",{"className":"hero-feature","children":[["$","i",null,{"className":"fas fa-check-circle"}],["$","span",null,{"children":"Smart Technology"}]]}]]}]]}]}]]}],["$","section",null,{"className":"page-content container","style":{"padding":"2rem 1rem","maxWidth":1200,"margin":"0 auto"},"children":["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$9"}}]}],["$","section",null,{"className":"cta-section","children":["$","div",null,{"className":"container","children":[["$","h2",null,{"children":"Ready to Get Started?"}],["$","p",null,{"children":"Contact VendSmart for free vending machine placement in Jacksonville and surrounding areas."}],["$","div",null,{"className":"cta-buttons","children":[["$","$L7",null,{"href":"/get-a-free-vending-machine-in-jacksonville-florida","className":"btn btn-secondary","children":"Get Free Machine"}],["$","$L7",null,{"href":"/contact","className":"btn btn-outline","children":"Contact Us"}]]}]]}]}]]
-8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Orange Park Vending Machines & Micro-Markets | VendSmart"}],["$","meta","3",{"name":"description","content":"Free vending machines and micro-markets for Orange Park businesses. Smart vending solutions for healthcare facilities, retail centers, and suburban businesses. 100% free installation."}],["$","meta","4",{"name":"keywords","content":"Jacksonville Vending Machines, vending company Jacksonville FL, micro markets Florida, smart vending"}],["$","link","5",{"rel":"canonical","href":"https://jacksonvillevendingmachines.com/orange-park"}],["$","meta","6",{"property":"og:title","content":"Orange Park Vending Machines & Micro-Markets | VendSmart"}],["$","meta","7",{"property":"og:description","content":"Free vending machines and micro-markets for Orange Park businesses. Smart vending solutions for healthcare facilities, retail centers, and suburban businesses. 100% free installation."}],["$","meta","8",{"property":"og:url","content":"https://jacksonvillevendingmachines.com"}],["$","meta","9",{"name":"twitter:card","content":"summary"}],["$","meta","10",{"name":"twitter:title","content":"Orange Park Vending Machines & Micro-Markets | VendSmart"}],["$","meta","11",{"name":"twitter:description","content":"Free vending machines and micro-markets for Orange Park businesses. Smart vending solutions for healthcare facilities, retail centers, and suburban businesses. 100% free installation."}],["$","link","12",{"rel":"icon","href":"/favicon.ico"}]]
+    <!-- Footer -->2:[["$","$La",null,{"city":"Orange Park","title":"$undefined","subtitle":"$undefined","features":[{"text":"Free Machine Placement","icon":"fa-check-circle"},{"text":"24/7 Support","icon":"fa-check-circle"},{"text":"Smart Technology","icon":"fa-check-circle"}]}],["$","div",null,{"className":"page-content","children":["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$b"}}]}],["$","$Lc",null,{"city":"Orange Park"}],["$","$Ld",null,{"city":"Orange Park"}],["$","section",null,{"className":"cta-section","children":["$","div",null,{"className":"container","children":[["$","h2",null,{"children":"Ready to Get Started?"}],["$","p",null,{"children":"Contact VendSmart for free vending machine placement in Jacksonville and surrounding areas."}],["$","div",null,{"className":"cta-buttons","children":[["$","$L8",null,{"href":"/get-a-free-vending-machine-in-jacksonville-florida","className":"btn btn-secondary","children":"Get Free Machine"}],["$","$L8",null,{"href":"/contact","className":"btn btn-outline","children":"Contact Us"}]]}]]}]}]]
+9:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Orange Park Vending Machines & Micro-Markets | VendSmart"}],["$","meta","3",{"name":"description","content":"Free vending machines and micro-markets for Orange Park businesses. Smart vending solutions for healthcare facilities, retail centers, and suburban businesses. 100% free installation."}],["$","meta","4",{"name":"keywords","content":"Jacksonville Vending Machines, vending company Jacksonville FL, micro markets Florida, smart vending"}],["$","link","5",{"rel":"canonical","href":"https://jacksonvillevendingmachines.com/orange-park"}],["$","meta","6",{"property":"og:title","content":"Orange Park Vending Machines & Micro-Markets | VendSmart"}],["$","meta","7",{"property":"og:description","content":"Free vending machines and micro-markets for Orange Park businesses. Smart vending solutions for healthcare facilities, retail centers, and suburban businesses. 100% free installation."}],["$","meta","8",{"property":"og:url","content":"https://jacksonvillevendingmachines.com"}],["$","meta","9",{"property":"og:site_name","content":"VendSmart Jacksonville"}],["$","meta","10",{"property":"og:image","content":"http://localhost:3000/vendsmart-logo-jacksonville-vending.png"}],["$","meta","11",{"property":"og:image:width","content":"1200"}],["$","meta","12",{"property":"og:image:height","content":"630"}],["$","meta","13",{"property":"og:type","content":"website"}],["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","15",{"name":"twitter:title","content":"Orange Park Vending Machines & Micro-Markets | VendSmart"}],["$","meta","16",{"name":"twitter:description","content":"Free vending machines and micro-markets for Orange Park businesses. Smart vending solutions for healthcare facilities, retail centers, and suburban businesses. 100% free installation."}],["$","meta","17",{"name":"twitter:image","content":"http://localhost:3000/vendsmart-logo-jacksonville-vending.png"}],["$","meta","18",{"name":"twitter:image:width","content":"1200"}],["$","meta","19",{"name":"twitter:image:height","content":"630"}],["$","link","20",{"rel":"icon","href":"/favicon.ico"}]]
 1:null

@@ -1,9 +1,431 @@
 3:I[4707,[],""]
 5:I[6423,[],""]
-6:I[174,["972","static/chunks/972-cf1bd04210e9dde7.js","185","static/chunks/app/layout-d20438131cb08276.js"],"default"]
-7:I[2972,["972","static/chunks/972-cf1bd04210e9dde7.js","42","static/chunks/app/%5Bslug%5D/page-6215fc8ac5c289c0.js"],""]
+6:I[2627,["972","static/chunks/972-e0022b442a6a7d0f.js","185","static/chunks/app/layout-e158f89bd170564e.js"],"default"]
+7:I[8198,["972","static/chunks/972-e0022b442a6a7d0f.js","185","static/chunks/app/layout-e158f89bd170564e.js"],"default"]
+8:I[2972,["972","static/chunks/972-e0022b442a6a7d0f.js","347","static/chunks/347-8acf563f075582f7.js","42","static/chunks/app/%5Bslug%5D/page-43771424acfd9e0d.js"],""]
 4:["slug","riverside","d"]
-0:["wjkWTwH7HgKRTrDYEJ7yY",[[["",{"children":[["slug","riverside","d"],{"children":["__PAGE__?{\"slug\":\"riverside\"}",{}]}]},"$undefined","$undefined",true],["",{"children":[["slug","riverside","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/439e9c080256c230.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"LocalBusiness\",\"name\":\"VendSmart Jacksonville\",\"description\":\"Jacksonville vending machines, micro-markets, and coffee services. Free placement for qualified businesses.\",\"url\":\"https://jacksonvillevendingmachines.com\",\"telephone\":\"904-456-3851\",\"email\":\"vendsmartjacksonville@gmail.com\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Jacksonville\",\"addressRegion\":\"FL\",\"addressCountry\":\"US\"},\"areaServed\":\"Jacksonville, FL and surrounding areas\"}"}}],["$","link",null,{"rel":"stylesheet","href":"/styles.css"}],["$","link",null,{"rel":"stylesheet","href":"/blog-styles.css"}]]}],["$","body",null,{"children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","main",null,{"className":"not-found-section","children":["$","div",null,{"className":"container","children":["$","div",null,{"className":"not-found","children":[["$","h1",null,{"children":"404"}],["$","p",null,{"children":"Page not found."}],["$","p",null,{"className":"not-found-subtitle","children":"The page you're looking for doesn't exist or has been moved."}],["$","div",null,{"className":"not-found-links","children":[["$","$L7",null,{"href":"/","className":"btn btn-primary","children":"Back to Home"}],["$","$L7",null,{"href":"/locations","className":"btn btn-outline","children":"View Locations"}]]}]]}]}]}],"notFoundStyles":[]}],["$","footer",null,{"className":"footer","children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Jacksonville Vending Machines - VendSmart"}],["$","p",null,{"children":"Premium vending solutions for Jacksonville, Florida. Smart technology, healthy options, and 24/7 support."}],["$","p",null,{"children":["$","$L7",null,{"href":"/","style":{"color":"#00C5F5","textDecoration":"none","fontWeight":500},"children":"← Back to Jacksonville Vending Machines Home"}]}],["$","div",null,{"className":"social-links","children":[["$","a",null,{"href":"https://www.facebook.com/vendsmart","target":"_blank","rel":"noopener noreferrer","aria-label":"Follow us on Facebook","children":["$","i",null,{"className":"fab fa-facebook"}]}],["$","a",null,{"href":"https://www.instagram.com/jacksonvillevendingmachines","target":"_blank","rel":"noopener noreferrer","aria-label":"Follow us on Instagram","children":["$","i",null,{"className":"fab fa-instagram"}]}],["$","a",null,{"href":"https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_ID","target":"_blank","rel":"noopener noreferrer","aria-label":"View our Google Business Profile","children":["$","i",null,{"className":"fab fa-google"}]}],["$","a",null,{"href":"https://www.yelp.com/biz/vendsmart-jacksonville","target":"_blank","rel":"noopener noreferrer","aria-label":"Read our Yelp reviews","children":["$","i",null,{"className":"fab fa-yelp"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Services"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L7",null,{"href":"/services","children":"Smart Vending Machines"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/setting-up-a-micro-market-in-your-jacksonville-office","children":"Micro-Markets"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/coffeeservices","children":"Coffee Services"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/vendingmachine-service","children":"Vending Machine Service"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/smart-coolers","children":"Smart Coolers"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/portfolio","children":"Portfolio"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Locations"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L7",null,{"href":"/locations","children":"All Locations"}]}],[["$","li","jacksonville",{"children":["$","$L7",null,{"href":"/jacksonville","children":"Jacksonville"}]}],["$","li","downtown-jacksonville",{"children":["$","$L7",null,{"href":"/downtown-jacksonville","children":"Downtown"}]}],["$","li","jacksonville-beach",{"children":["$","$L7",null,{"href":"/jacksonville-beach","children":"Jacksonville Beach"}]}],["$","li","orange-park",{"children":["$","$L7",null,{"href":"/orange-park","children":"Orange Park"}]}],["$","li","ponte-vedra",{"children":["$","$L7",null,{"href":"/ponte-vedra","children":"Ponte Vedra"}]}],["$","li","atlantic-beach",{"children":["$","$L7",null,{"href":"/atlantic-beach","children":"Atlantic Beach"}]}],["$","li","st-augustine",{"children":["$","$L7",null,{"href":"/st-augustine","children":"St. Augustine"}]}],["$","li","mandarin",{"children":["$","$L7",null,{"href":"/mandarin","children":"Mandarin"}]}],["$","li","lakeside",{"children":["$","$L7",null,{"href":"/lakeside","children":"Lakeside"}]}],["$","li","riverside",{"children":["$","$L7",null,{"href":"/riverside","children":"Riverside"}]}]]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L7",null,{"href":"/about-us","children":"About Us"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/customer-reviews-jacksonville","children":"Customer Reviews"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/how-we-help-jacksonville","children":"How We Help"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/vending-in-jacksonville-florida","children":"Vending in Jacksonville"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/vending-machine-faq-jacksonville","children":"FAQ"}]}],["$","li",null,{"children":["$","$L7",null,{"href":"/free-vending-machine-placement","children":"Free Placement"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Contact"}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-phone"}]," ",["$","a",null,{"href":"tel:904-456-3851","children":"904-456-3851"}]]}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-envelope"}]," ",["$","a",null,{"href":"mailto:vendsmartjacksonville@gmail.com","children":"vendsmartjacksonville@gmail.com"}]]}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-map-marker-alt"}]," Jacksonville, Florida & Surrounding Areas"]}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-clock"}]," 24/7 Support Available"]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":["$","p",null,{"children":["© 2024 Jacksonville Vending Machines - VendSmart. All rights reserved. | ",["$","$L7",null,{"href":"/privacy-policy","children":"Privacy Policy"}]," | ",["$","$L7",null,{"href":"/terms-of-service","children":"Terms of Service"}]]}]}]]}]}]]}]]}]],null],null],["$L8",null]]]]
-2:[["$","section",null,{"className":"hero","children":[["$","div",null,{"className":"hero-background","children":[["$","img",null,{"src":"/jacksonville-vending-micro-market.jpg","alt":"Riverside Jacksonville Vending Machines | VendSmart","className":"hero-bg-image"}],["$","div",null,{"className":"hero-overlay"}]]}],["$","div",null,{"className":"hero-container","children":["$","div",null,{"className":"hero-content","children":[["$","h1",null,{"children":"Riverside Jacksonville Vending Machines | VendSmart"}],["$","p",null,{"className":"hero-subtitle","children":"Vending machines and micro-markets in Riverside, Jacksonville. Smart vending, fresh food, coffee services, and 24/7 support. Free installation."}],["$","div",null,{"className":"hero-features","children":[["$","div","0",{"className":"hero-feature","children":[["$","i",null,{"className":"fas fa-check-circle"}],["$","span",null,{"children":"Free Machine Placement"}]]}],["$","div","1",{"className":"hero-feature","children":[["$","i",null,{"className":"fas fa-check-circle"}],["$","span",null,{"children":"24/7 Support"}]]}],["$","div","2",{"className":"hero-feature","children":[["$","i",null,{"className":"fas fa-check-circle"}],["$","span",null,{"children":"Smart Technology"}]]}]]}]]}]}]]}],["$","section",null,{"className":"page-content container","style":{"padding":"2rem 1rem","maxWidth":1200,"margin":"0 auto"},"children":[["$","p",null,{"children":"Vending machines and micro-markets in Riverside, Jacksonville. Smart vending, fresh food, coffee services, and 24/7 support. Free installation."}],["$","div",null,{"style":{"marginTop":"2rem"},"children":[["$","$L7",null,{"href":"/get-a-free-vending-machine-in-jacksonville-florida","className":"btn btn-primary","children":"Get Free Machine"}],["$","$L7",null,{"href":"/contact","className":"btn btn-secondary","style":{"marginLeft":"1rem"},"children":"Contact Us"}]]}]]}],["$","section",null,{"className":"cta-section","children":["$","div",null,{"className":"container","children":[["$","h2",null,{"children":"Ready to Get Started?"}],["$","p",null,{"children":"Contact VendSmart for free vending machine placement in Jacksonville and surrounding areas."}],["$","div",null,{"className":"cta-buttons","children":[["$","$L7",null,{"href":"/get-a-free-vending-machine-in-jacksonville-florida","className":"btn btn-secondary","children":"Get Free Machine"}],["$","$L7",null,{"href":"/contact","className":"btn btn-outline","children":"Contact Us"}]]}]]}]}]]
-8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Riverside Jacksonville Vending Machines | VendSmart"}],["$","meta","3",{"name":"description","content":"Vending machines and micro-markets in Riverside, Jacksonville. Smart vending, fresh food, coffee services, and 24/7 support. Free installation."}],["$","meta","4",{"name":"keywords","content":"Jacksonville Vending Machines, vending company Jacksonville FL, micro markets Florida, smart vending"}],["$","link","5",{"rel":"canonical","href":"https://jacksonvillevendingmachines.com/riverside"}],["$","meta","6",{"property":"og:title","content":"Riverside Jacksonville Vending Machines | VendSmart"}],["$","meta","7",{"property":"og:description","content":"Vending machines and micro-markets in Riverside, Jacksonville. Smart vending, fresh food, coffee services, and 24/7 support. Free installation."}],["$","meta","8",{"property":"og:url","content":"https://jacksonvillevendingmachines.com"}],["$","meta","9",{"name":"twitter:card","content":"summary"}],["$","meta","10",{"name":"twitter:title","content":"Riverside Jacksonville Vending Machines | VendSmart"}],["$","meta","11",{"name":"twitter:description","content":"Vending machines and micro-markets in Riverside, Jacksonville. Smart vending, fresh food, coffee services, and 24/7 support. Free installation."}],["$","link","12",{"rel":"icon","href":"/favicon.ico"}]]
+0:["_hAQ47VrsL7v4k59BbxIS",[[["",{"children":[["slug","riverside","d"],{"children":["__PAGE__?{\"slug\":\"riverside\"}",{}]}]},"$undefined","$undefined",true],["",{"children":[["slug","riverside","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/05a256899f738bd7.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"LocalBusiness\",\"name\":\"VendSmart Jacksonville\",\"description\":\"Jacksonville vending machines, micro-markets, and coffee services. Free placement for qualified businesses.\",\"url\":\"https://jacksonvillevendingmachines.com\",\"telephone\":\"904-456-3851\",\"email\":\"vendsmartjacksonville@gmail.com\",\"image\":\"https://jacksonvillevendingmachines.com/vendsmart-logo-jacksonville-vending.png\",\"priceRange\":\"$$\",\"openingHours\":\"Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Jacksonville\",\"addressRegion\":\"FL\",\"addressCountry\":\"US\"},\"areaServed\":\"Jacksonville, FL and surrounding areas\"}"}}],["$","link",null,{"rel":"stylesheet","href":"/styles.css?v=4"}],["$","link",null,{"rel":"stylesheet","href":"/blog-styles.css?v=3"}]]}],["$","body",null,{"children":[["$","$L6",null,{}],["$","$L7",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","main",null,{"className":"not-found-section","children":["$","div",null,{"className":"container","children":["$","div",null,{"className":"not-found","children":[["$","h1",null,{"children":"404"}],["$","p",null,{"children":"Page not found."}],["$","p",null,{"className":"not-found-subtitle","children":"The page you're looking for doesn't exist or has been moved."}],["$","div",null,{"className":"not-found-links","children":[["$","$L8",null,{"href":"/","className":"btn btn-primary","children":"Back to Home"}],["$","$L8",null,{"href":"/locations","className":"btn btn-outline","children":"View Locations"}]]}]]}]}]}],"notFoundStyles":[]}],["$","footer",null,{"className":"footer","children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Jacksonville Vending Machines - VendSmart"}],["$","p",null,{"children":"Premium vending solutions for Jacksonville, Florida. Smart technology, healthy options, and 24/7 support."}],["$","p",null,{"children":["$","$L8",null,{"href":"/","style":{"color":"#00C5F5","textDecoration":"none","fontWeight":500},"children":"← Back to Jacksonville Vending Machines Home"}]}],["$","div",null,{"className":"social-links","children":[["$","a",null,{"href":"https://www.facebook.com/","target":"_blank","rel":"noopener noreferrer","aria-label":"Follow us on Facebook","children":["$","i",null,{"className":"fab fa-facebook"}]}],["$","a",null,{"href":"https://www.instagram.com/","target":"_blank","rel":"noopener noreferrer","aria-label":"Follow us on Instagram","children":["$","i",null,{"className":"fab fa-instagram"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Services"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L8",null,{"href":"/services","children":"Smart Vending Machines"}]}],["$","li",null,{"children":["$","$L8",null,{"href":"/setting-up-a-micro-market-in-your-jacksonville-office","children":"Micro-Markets"}]}],["$","li",null,{"children":["$","$L8",null,{"href":"/coffeeservices","children":"Coffee Services"}]}],["$","li",null,{"children":["$","$L8",null,{"href":"/vendingmachine-service","children":"Vending Machine Service"}]}],["$","li",null,{"children":["$","$L8",null,{"href":"/smart-coolers","children":"Smart Coolers"}]}],["$","li",null,{"children":["$","$L8",null,{"href":"/portfolio","children":"Portfolio"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Locations"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L8",null,{"href":"/locations","children":"All Locations"}]}],[["$","li","jacksonville",{"children":["$","$L8",null,{"href":"/jacksonville","children":"Jacksonville"}]}],["$","li","downtown-jacksonville",{"children":["$","$L8",null,{"href":"/downtown-jacksonville","children":"Downtown"}]}],["$","li","jacksonville-beach",{"children":["$","$L8",null,{"href":"/jacksonville-beach","children":"Jacksonville Beach"}]}],["$","li","orange-park",{"children":["$","$L8",null,{"href":"/orange-park","children":"Orange Park"}]}],["$","li","ponte-vedra",{"children":["$","$L8",null,{"href":"/ponte-vedra","children":"Ponte Vedra"}]}],["$","li","atlantic-beach",{"children":["$","$L8",null,{"href":"/atlantic-beach","children":"Atlantic Beach"}]}],["$","li","st-augustine",{"children":["$","$L8",null,{"href":"/st-augustine","children":"St. Augustine"}]}],["$","li","mandarin",{"children":["$","$L8",null,{"href":"/mandarin","children":"Mandarin"}]}],["$","li","lakeside",{"children":["$","$L8",null,{"href":"/lakeside","children":"Lakeside"}]}],["$","li","riverside",{"children":["$","$L8",null,{"href":"/riverside","children":"Riverside"}]}]]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L8",null,{"href":"/about-us","children":"About Us"}]}],["$","li",null,{"children":["$","$L8",null,{"href":"/customer-reviews-jacksonville","children":"Customer Reviews"}]}],["$","li",null,{"children":["$","$L8",null,{"href":"/how-we-help-jacksonville","children":"How We Help"}]}],["$","li",null,{"children":["$","$L8",null,{"href":"/vending-in-jacksonville-florida","children":"Vending in Jacksonville"}]}],["$","li",null,{"children":["$","$L8",null,{"href":"/vending-machine-faq-jacksonville","children":"FAQ"}]}],["$","li",null,{"children":["$","$L8",null,{"href":"/free-vending-machine-placement","children":"Free Placement"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h3",null,{"children":"Contact"}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-phone"}]," ",["$","a",null,{"href":"tel:904-456-3851","children":"904-456-3851"}]]}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-envelope"}]," ",["$","a",null,{"href":"mailto:vendsmartjacksonville@gmail.com","children":"vendsmartjacksonville@gmail.com"}]]}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-map-marker-alt"}]," Jacksonville, Florida & Surrounding Areas"]}],["$","p",null,{"children":[["$","i",null,{"className":"fas fa-clock"}]," 24/7 Support Available"]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":["$","p",null,{"children":["© 2024 Jacksonville Vending Machines - VendSmart. All rights reserved. | ",["$","$L8",null,{"href":"/privacy-policy","children":"Privacy Policy"}]," | ",["$","$L8",null,{"href":"/terms-of-service","children":"Terms of Service"}]]}]}]]}]}]]}]]}]],null],null],["$L9",null]]]]
+a:I[6840,["972","static/chunks/972-e0022b442a6a7d0f.js","347","static/chunks/347-8acf563f075582f7.js","42","static/chunks/app/%5Bslug%5D/page-43771424acfd9e0d.js"],"default"]
+c:I[5778,["972","static/chunks/972-e0022b442a6a7d0f.js","347","static/chunks/347-8acf563f075582f7.js","42","static/chunks/app/%5Bslug%5D/page-43771424acfd9e0d.js"],"default"]
+d:I[2937,["972","static/chunks/972-e0022b442a6a7d0f.js","347","static/chunks/347-8acf563f075582f7.js","42","static/chunks/app/%5Bslug%5D/page-43771424acfd9e0d.js"],"default"]
+b:T56a3,<!-- Location Overview (Minimal) -->
+    <section id="overview" class="minimal-overview">
+        <div class="container">
+            <div class="minimal-content">
+                <div class="minimal-text">
+                    <h2>Vending Solutions for Riverside</h2>
+                    <p>Riverside is a charming coastal community known for its laid-back atmosphere, local businesses, and beautiful beaches. VendSmart provides personalized vending solutions tailored to the unique character and needs of Riverside's local businesses and community.</p>
+                </div>
+                <div class="minimal-grid">
+                    <div class="minimal-card">
+                        <i class="fas fa-store"></i>
+                        <h3>Local Shops & Retail</h3>
+                        <p>Convenient vending for local shops, boutiques, and retail businesses serving the community.</p>
+                    </div>
+                    <div class="minimal-card">
+                        <i class="fas fa-umbrella-beach"></i>
+                        <h3>Beachfront Businesses</h3>
+                        <p>Vending solutions for hotels, restaurants, and businesses catering to beach visitors.</p>
+                    </div>
+                    <div class="minimal-card">
+                        <i class="fas fa-building"></i>
+                        <h3>Professional Offices</h3>
+                        <p>Smart vending for professional offices, medical practices, and service businesses.</p>
+                    </div>
+                    <div class="minimal-card">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Local Restaurants</h3>
+                        <p>Vending solutions for local restaurants, cafes, and dining establishments in the area.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Riverside Services -->
+    <section class="atlantic-beach-services">
+        <div class="container">
+            <h2>Vending Services in Riverside</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Smart Vending Machines</h3>
+                    <p>Modern vending machines with contactless payments, real-time monitoring, and healthy snack options perfect for Riverside locations.</p>
+                    <ul>
+                        <li>Contactless payment systems (Apple Pay, Google Pay, credit cards)</li>
+                        <li>Real-time inventory monitoring and alerts</li>
+                        <li>Healthy and organic snack options</li>
+                        <li>Energy drinks and premium beverages</li>
+                        <li>24/7 remote support and maintenance</li>
+                        <li>Mobile app integration for easy ordering</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-store"></i>
+                    <h3>Micro-Markets</h3>
+                    <p>Self-service convenience stores that transform your space into a modern retail experience with fresh food and smart checkout.</p>
+                    <ul>
+                        <li>Self-checkout kiosks with touch-screen technology</li>
+                        <li>Fresh food options including salads and sandwiches</li>
+                        <li>Smart coolers with temperature monitoring</li>
+                        <li>Employee loyalty programs and discounts</li>
+                        <li>Detailed sales analytics and reporting</li>
+                        <li>Professional installation and setup</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Coffee Services</h3>
+                    <p>Professional coffee solutions including single-serve machines, traditional coffee makers, and premium coffee products for your business.</p>
+                    <ul>
+                        <li>Single-serve coffee machines (Keurig, Nespresso)</li>
+                        <li>Traditional coffee makers and supplies</li>
+                        <li>Premium coffee beans and tea selections</li>
+                        <li>Creamers, sweeteners, and condiments</li>
+                        <li>Regular maintenance and cleaning service</li>
+                        <li>Custom coffee programs for your brand</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-snowflake"></i>
+                    <h3>Smart Coolers</h3>
+                    <p>Advanced cooling technology with real-time monitoring, inventory tracking, and contactless payments for fresh food and beverages.</p>
+                    <ul>
+                        <li>Temperature monitoring with real-time alerts</li>
+                        <li>Automated inventory tracking and restocking</li>
+                        <li>Contactless payment integration</li>
+                        <li>Fresh food storage for salads and sandwiches</li>
+                        <li>Energy-efficient cooling systems</li>
+                        <li>Analytics dashboard for sales insights</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Riverside Areas -->
+    
+    <!-- Business Areas We Serve (Dark Theme Accordion) -->
+    <section class="areas-accordion-section">
+        <div class="container">
+            <div class="section-header centered-header dark-mode">
+                <h2>Riverside Business Areas We Serve</h2>
+                <p>We provide tailored vending machines, micro-markets, and coffee services for a wide variety of facilities.</p>
+            </div>
+            
+            <div class="accordion-grid">
+                
+                <details class="premium-accordion-item">
+                    <summary class="accordion-header">
+                        <div class="accordion-title-wrapper">
+                            <i class="fas fa-store"></i>
+                            <h3>Local Shops & Retail</h3>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Convenient vending for local shops, boutiques, and retail businesses in Riverside.</p>
+                        <ul>
+                        <li>Local boutiques and shops</li>
+                        <li>Convenience stores</li>
+                        <li>Grocery stores</li>
+                        <li>Retail plazas</li>
+                        <li>Beachside shops</li>
+                    </ul>
+                        <div class="accordion-cta">
+                            <a href="/contact" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white;">Get Quote for Local Shops & Retail</a>
+                        </div>
+                    </div>
+                </details>
+                <details class="premium-accordion-item">
+                    <summary class="accordion-header">
+                        <div class="accordion-title-wrapper">
+                            <i class="fas fa-umbrella-beach"></i>
+                            <h3>Beachfront Businesses</h3>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Vending solutions for beachfront hotels, restaurants, and businesses.</p>
+                        <ul>
+                        <li>Beachfront hotels and motels</li>
+                        <li>Beachside restaurants</li>
+                        <li>Beach equipment rentals</li>
+                        <li>Beach access points</li>
+                        <li>Beachfront amenities</li>
+                    </ul>
+                        <div class="accordion-cta">
+                            <a href="/contact" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white;">Get Quote for Beachfront Businesses</a>
+                        </div>
+                    </div>
+                </details>
+                <details class="premium-accordion-item">
+                    <summary class="accordion-header">
+                        <div class="accordion-title-wrapper">
+                            <i class="fas fa-building"></i>
+                            <h3>Professional Offices</h3>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Smart vending for professional offices, medical practices, and service businesses.</p>
+                        <ul>
+                        <li>Medical offices and clinics</li>
+                        <li>Professional service firms</li>
+                        <li>Real estate offices</li>
+                        <li>Financial services</li>
+                        <li>Consulting and advisory firms</li>
+                    </ul>
+                        <div class="accordion-cta">
+                            <a href="/contact" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white;">Get Quote for Professional Offices</a>
+                        </div>
+                    </div>
+                </details>
+                <details class="premium-accordion-item">
+                    <summary class="accordion-header">
+                        <div class="accordion-title-wrapper">
+                            <i class="fas fa-utensils"></i>
+                            <h3>Local Restaurants</h3>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Vending solutions for local restaurants, cafes, and dining establishments.</p>
+                        <ul>
+                        <li>Local restaurants</li>
+                        <li>Cafes and coffee shops</li>
+                        <li>Bars and pubs</li>
+                        <li>Takeout and delivery</li>
+                        <li>Food trucks and stands</li>
+                    </ul>
+                        <div class="accordion-cta">
+                            <a href="/contact" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white;">Get Quote for Local Restaurants</a>
+                        </div>
+                    </div>
+                </details>
+                <details class="premium-accordion-item">
+                    <summary class="accordion-header">
+                        <div class="accordion-title-wrapper">
+                            <i class="fas fa-home"></i>
+                            <h3>Residential Areas</h3>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Vending solutions for residential communities and neighborhood businesses.</p>
+                        <ul>
+                        <li>Apartment complexes</li>
+                        <li>Condominium buildings</li>
+                        <li>Neighborhood centers</li>
+                        <li>Community facilities</li>
+                        <li>Residential amenities</li>
+                    </ul>
+                        <div class="accordion-cta">
+                            <a href="/contact" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white;">Get Quote for Residential Areas</a>
+                        </div>
+                    </div>
+                </details>
+                <details class="premium-accordion-item">
+                    <summary class="accordion-header">
+                        <div class="accordion-title-wrapper">
+                            <i class="fas fa-car"></i>
+                            <h3>Automotive & Services</h3>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Vending solutions for automotive businesses, service centers, and repair facilities.</p>
+                        <ul>
+                        <li>Auto repair shops</li>
+                        <li>Car dealerships</li>
+                        <li>Service centers</li>
+                        <li>Gas stations and convenience stores</li>
+                        <li>Automotive parts stores</li>
+                    </ul>
+                        <div class="accordion-cta">
+                            <a href="/contact" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white;">Get Quote for Automotive & Services</a>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Riverside Benefits -->
+    
+    <!-- Why Choose Us (Advanced Minimalist Grid) -->
+    <section class="atlantic-beach-benefits advanced-features-section">
+        <div class="container">
+            <div class="section-header centered-header">
+                <h2>Why Choose VendSmart for Riverside?</h2>
+                <p>Riverside businesses choose VendSmart for our local expertise, community-focused service, and commitment to supporting the unique character of our partners.</p>
+            </div>
+            
+            <div class="advanced-features-grid">
+                <div class="advanced-feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Zero Upfront Costs</h3>
+                    <p>100% free premium vending machine placement and installation for qualified locations.</p>
+                </div>
+                
+                <div class="advanced-feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Local Expertise</h3>
+                    <p>Jacksonville-based company with dedicated service routes right here in Riverside.</p>
+                </div>
+                
+                <div class="advanced-feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support and rapid emergency repair service available.</p>
+                </div>
+                
+                <div class="advanced-feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>White-Glove Setup</h3>
+                    <p>Professional, clean installation managed entirely by our team with zero business disruption.</p>
+                </div>
+                
+                <div class="advanced-feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>Custom Selection</h3>
+                    <p>Tailor your machine's inventory to exactly match your team's unique tastes and dietary needs.</p>
+                </div>
+                
+                <div class="advanced-feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Smart Restocking</h3>
+                    <p>Automated telemetry tracking ensures your machines are restocked before they ever run out.</p>
+                </div>
+            </div>
+            
+            <div class="centered-cta-wrapper">
+                <a href="/get-a-free-vending-machine-in-jacksonville-florida" class="btn btn-primary">Get Free Vending Machine</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Riverside Stats -->
+    <section class="atlantic-beach-stats">
+        <div class="container">
+            <h2>Riverside by the Numbers</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Riverside Businesses Served</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support Available</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Free Installation</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Customer Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services Section -->
+    <section class="related-services">
+        <div class="container">
+            <h2>Vending Services Available in Riverside</h2>
+            <p>Discover the comprehensive range of vending solutions we offer to Riverside businesses:</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <h3>Beach Resort Vending</h3>
+                    <p>Specialized vending solutions for Riverside resorts and beachfront businesses, offering refreshments and snacks for visitors and staff.</p>
+                    <div class="service-actions">
+                        <a href="/vending-machines-for-hotels" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Retail Vending Solutions</h3>
+                    <p>Perfect for shopping centers and retail locations in Riverside, providing convenient access to snacks and beverages for customers and employees.</p>
+                    <div class="service-actions">
+                        <a href="/vending-machines-for-retail" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Office Building Solutions</h3>
+                    <p>Modern vending machines and micro-markets for Riverside office buildings, enhancing workplace convenience and employee satisfaction.</p>
+                    <div class="service-actions">
+                        <a href="/vending-machines-for-office-buildings" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3>Coffee Services</h3>
+                    <p>Premium coffee solutions for Riverside businesses, featuring high-quality coffee machines and regular maintenance services.</p>
+                    <div class="service-actions">
+                        <a href="/coffeeservices" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Micro-Markets</h3>
+                    <p>Advanced micro-market solutions for Riverside businesses, offering fresh food options and modern payment systems.</p>
+                    <div class="service-actions">
+                        <a href="/setting-up-a-micro-market-in-your-jacksonville-office" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Vending Machine Service</h3>
+                    <p>Comprehensive maintenance and repair services for all vending machines in Riverside, ensuring optimal performance and reliability.</p>
+                    <div class="service-actions">
+                        <a href="/vendingmachine-service" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready for Riverside Vending Solutions?</h2>
+            <p>Get a free vending machine for your Riverside business today</p>
+            <div class="cta-buttons">
+                <a href="/contact" class="btn btn-primary">Get Free Machine</a>
+                <a href="/get-a-free-vending-machine-in-jacksonville-florida" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->2:[["$","$La",null,{"city":"Riverside","title":"$undefined","subtitle":"$undefined","features":[{"text":"Free Machine Placement","icon":"fa-check-circle"},{"text":"24/7 Support","icon":"fa-check-circle"},{"text":"Smart Technology","icon":"fa-check-circle"}]}],["$","div",null,{"className":"page-content","children":["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$b"}}]}],["$","$Lc",null,{"city":"Riverside"}],["$","$Ld",null,{"city":"Riverside"}],["$","section",null,{"className":"cta-section","children":["$","div",null,{"className":"container","children":[["$","h2",null,{"children":"Ready to Get Started?"}],["$","p",null,{"children":"Contact VendSmart for free vending machine placement in Jacksonville and surrounding areas."}],["$","div",null,{"className":"cta-buttons","children":[["$","$L8",null,{"href":"/get-a-free-vending-machine-in-jacksonville-florida","className":"btn btn-secondary","children":"Get Free Machine"}],["$","$L8",null,{"href":"/contact","className":"btn btn-outline","children":"Contact Us"}]]}]]}]}]]
+9:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Riverside Jacksonville Vending Machines | VendSmart"}],["$","meta","3",{"name":"description","content":"Vending machines and micro-markets in Riverside, Jacksonville. Smart vending, fresh food, coffee services, and 24/7 support. Free installation."}],["$","meta","4",{"name":"keywords","content":"Jacksonville Vending Machines, vending company Jacksonville FL, micro markets Florida, smart vending"}],["$","link","5",{"rel":"canonical","href":"https://jacksonvillevendingmachines.com/riverside"}],["$","meta","6",{"property":"og:title","content":"Riverside Jacksonville Vending Machines | VendSmart"}],["$","meta","7",{"property":"og:description","content":"Vending machines and micro-markets in Riverside, Jacksonville. Smart vending, fresh food, coffee services, and 24/7 support. Free installation."}],["$","meta","8",{"property":"og:url","content":"https://jacksonvillevendingmachines.com"}],["$","meta","9",{"property":"og:site_name","content":"VendSmart Jacksonville"}],["$","meta","10",{"property":"og:image","content":"http://localhost:3000/vendsmart-logo-jacksonville-vending.png"}],["$","meta","11",{"property":"og:image:width","content":"1200"}],["$","meta","12",{"property":"og:image:height","content":"630"}],["$","meta","13",{"property":"og:type","content":"website"}],["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","15",{"name":"twitter:title","content":"Riverside Jacksonville Vending Machines | VendSmart"}],["$","meta","16",{"name":"twitter:description","content":"Vending machines and micro-markets in Riverside, Jacksonville. Smart vending, fresh food, coffee services, and 24/7 support. Free installation."}],["$","meta","17",{"name":"twitter:image","content":"http://localhost:3000/vendsmart-logo-jacksonville-vending.png"}],["$","meta","18",{"name":"twitter:image:width","content":"1200"}],["$","meta","19",{"name":"twitter:image:height","content":"630"}],["$","link","20",{"rel":"icon","href":"/favicon.ico"}]]
 1:null
