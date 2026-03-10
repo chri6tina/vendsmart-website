@@ -1,11 +1,15 @@
 'use client';
 
+import { useState } from 'react';
+
 export default function Hero({
   city = "Jacksonville",
   state = "FL",
   title,
   subtitle
 }) {
+  const [status, setStatus] = useState(null);
+
   // Use a default background image, or let it be passed as a prop later if needed
   const bgImage = "/jacksonville-vending-micro-market.jpg";
 
@@ -14,6 +18,49 @@ export default function Hero({
   );
 
   const displaySubtitle = subtitle ? subtitle : `Smart vending machines, micro-markets, and coffee services with free placement for qualified businesses. Serving ${city} and surrounding areas with cutting-edge technology and exceptional service.`;
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('submitting');
+
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      // 1. Send to Telegram API
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: data.name,
+          email: data.email,
+          phone: data.phone || 'N/A', // Add phone if added to hero, else N/A
+          company: data.business_name,
+          employees: data.employees,
+          serviceType: data.service_type,
+          source: data.source,
+          message: 'Lead captured directly from the Hero Section form.'
+        }),
+      });
+
+      // 2. Fallback to Formspree for dual-delivery
+      await fetch('https://formspree.io/f/mqkenwnv', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        e.target.reset();
+      } else {
+        setStatus('error');
+      }
+    } catch (err) {
+      console.error(err);
+      setStatus('error');
+    }
+  };
 
   return (
     <section className="hero bg-mesh">
@@ -56,30 +103,43 @@ export default function Hero({
               <h3>Get a Free Machine</h3>
               <p>Fill out the form below to see if your business qualifies for a free vending machine placement.</p>
             </div>
-            <form action="https://formspree.io/f/mqkenwnv" method="POST">
+            <form onSubmit={handleSubmit}>
               <input type="hidden" name="source" value={`${city} Hero Form`} />
+
+              {status === 'success' && (
+                <div style={{ background: '#dcfce7', color: '#166534', padding: '12px', borderRadius: '6px', marginBottom: '1rem', fontSize: '0.9rem', fontWeight: 'bold' }}>
+                  ✅ Request received! We will be in touch shortly.
+                </div>
+              )}
+
+              {status === 'error' && (
+                <div style={{ background: '#fee2e2', color: '#991b1b', padding: '12px', borderRadius: '6px', marginBottom: '1rem', fontSize: '0.9rem', fontWeight: 'bold' }}>
+                  ❌ Could not send. Please contact us directly.
+                </div>
+              )}
+
               <div className="form-group">
                 <div className="input-icon-wrapper">
                   <i className="fas fa-user input-icon"></i>
-                  <input type="text" name="name" className="form-control" placeholder="Your Name" required />
+                  <input type="text" name="name" className="form-control" placeholder="Your Name" required disabled={status === 'submitting'} />
                 </div>
               </div>
               <div className="form-group">
                 <div className="input-icon-wrapper">
                   <i className="fas fa-envelope input-icon"></i>
-                  <input type="email" name="email" className="form-control" placeholder="Email Address" required />
+                  <input type="email" name="email" className="form-control" placeholder="Email Address" required disabled={status === 'submitting'} />
                 </div>
               </div>
               <div className="form-group">
                 <div className="input-icon-wrapper">
                   <i className="fas fa-building input-icon"></i>
-                  <input type="text" name="business_name" className="form-control" placeholder="Business Name" required />
+                  <input type="text" name="business_name" className="form-control" placeholder="Business Name" required disabled={status === 'submitting'} />
                 </div>
               </div>
               <div className="form-group">
                 <div className="input-icon-wrapper">
                   <i className="fas fa-users input-icon"></i>
-                  <select name="employees" className="form-control" required style={{ appearance: 'none' }} defaultValue="">
+                  <select name="employees" className="form-control" required style={{ appearance: 'none' }} defaultValue="" disabled={status === 'submitting'}>
                     <option value="" disabled>Number of Employees</option>
                     <option value="1-50">1 - 50 Employees</option>
                     <option value="51-100">51 - 100 Employees</option>
@@ -90,7 +150,7 @@ export default function Hero({
               <div className="form-group">
                 <div className="input-icon-wrapper">
                   <i className="fas fa-cogs input-icon"></i>
-                  <select name="service_type" className="form-control" required style={{ appearance: 'none' }} defaultValue="">
+                  <select name="service_type" className="form-control" required style={{ appearance: 'none' }} defaultValue="" disabled={status === 'submitting'}>
                     <option value="" disabled>Type of Service Needed</option>
                     <option value="Vending Machines">Vending Machines</option>
                     <option value="Micro-Markets">Micro-Markets</option>
@@ -99,8 +159,8 @@ export default function Hero({
                   </select>
                 </div>
               </div>
-              <button type="submit" className="btn btn-primary btn-block pulse-cta">
-                Request Free Placement <i className="fas fa-arrow-right" style={{ marginLeft: '8px' }}></i>
+              <button type="submit" className="btn btn-primary btn-block pulse-cta" disabled={status === 'submitting'}>
+                {status === 'submitting' ? 'Sending...' : 'Request Free Placement'} <i className="fas fa-arrow-right" style={{ marginLeft: '8px' }}></i>
               </button>
               <div className="hero-social-proof">
                 <span className="stars">★★★★★</span> Trusted by 50+ {city} Businesses
