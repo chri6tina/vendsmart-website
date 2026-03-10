@@ -3,9 +3,9 @@
 import { useState, useEffect } from 'react';
 
 const slides = [
-  { img: '/haha-us360-mini-black.png', alt: 'Haha US360 Mini - Compact smart vending machine', caption: 'Haha US360 Mini' },
-  { img: '/haha-pro-black.png', alt: 'Haha Pro - Professional smart vending machine', caption: 'Haha Pro' },
-  { img: '/haha-ultra-black.png', alt: 'Haha Ultra - Premium smart vending machine', caption: 'Haha Ultra' },
+  { img: '/haha-us360-mini-black.png', alt: 'VendSmart US360 Mini - Compact smart vending machine', caption: 'VendSmart US360 Mini' },
+  { img: '/haha-pro-black.png', alt: 'VendSmart Pro - Professional smart vending machine', caption: 'VendSmart Pro' },
+  { img: '/haha-ultra-black.png', alt: 'VendSmart Ultra - Premium smart vending machine', caption: 'VendSmart Ultra' },
 ];
 
 export default function Carousel() {
@@ -23,7 +23,7 @@ export default function Carousel() {
       <div className="container">
         <div className="section-header">
           <h2>Smart Vending Machines</h2>
-          <p className="section-subtitle">Explore our Haha AI vending machine lineup – smart technology for modern businesses</p>
+          <p className="section-subtitle">Explore our VendSmart premium vending machine lineup – advanced technology for modern businesses</p>
         </div>
         <div className="carousel">
           <div className="carousel-track-container">

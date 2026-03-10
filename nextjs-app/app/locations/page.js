@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { LOCATION_PAGES } from '@/data/locations';
+import Hero from '@/components/Hero';
 
 export const metadata = {
   title: 'Vending Machine Locations - Jacksonville & Surrounding Areas | VendSmart',
@@ -9,34 +10,10 @@ export const metadata = {
 export default function LocationsPage() {
   return (
     <>
-      <section className="hero">
-        <div className="hero-background">
-          <img src="/jacksonville-vending-micro-market.jpg" alt="Jacksonville vending machine locations" className="hero-bg-image" />
-          <div className="hero-overlay"></div>
-        </div>
-        <div className="hero-container">
-          <div className="hero-content">
-            <h1>Vending Machine Locations</h1>
-            <p className="hero-subtitle">
-              Smart vending machines and micro-markets throughout Jacksonville, Florida and surrounding areas. Free placement for qualified businesses.
-            </p>
-            <div className="hero-features">
-              <div className="hero-feature">
-                <i className="fas fa-check-circle"></i>
-                <span>Free Machine Placement</span>
-              </div>
-              <div className="hero-feature">
-                <i className="fas fa-check-circle"></i>
-                <span>24/7 Support</span>
-              </div>
-              <div className="hero-feature">
-                <i className="fas fa-check-circle"></i>
-                <span>Jacksonville & Beyond</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        title={<>Vending Machine <span className="text-gradient-primary">Locations</span></>}
+        subtitle="Smart vending machines and micro-markets throughout Jacksonville, Florida and surrounding areas. Free placement for qualified businesses."
+      />
 
       <section className="about-section locations-areas">
         <div className="container">

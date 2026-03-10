@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import { getAllSlugs, getPage } from '@/data/pages';
 import Hero from '@/components/Hero';
+import AboutSection from '@/components/AboutSection';
+import BentoServices from '@/components/BentoServices';
+import { LOCATION_PAGES } from '@/data/locations';
 
 /** Strip embedded hero section from page content to avoid double heroes (Hero component is already rendered above). */
 function stripHeroFromContent(html) {
@@ -31,11 +34,15 @@ export default async function SlugPage({ params }) {
   const page = getPage(slug);
   if (!page) return null;
 
+  const locationMatch = LOCATION_PAGES.find(loc => loc.slug === slug);
+  const city = locationMatch ? locationMatch.label : "Jacksonville";
+
   return (
     <>
       <Hero
-        title={page.title}
-        subtitle={page.description}
+        city={city}
+        title={locationMatch ? undefined : page.title}
+        subtitle={locationMatch ? undefined : page.description}
         features={[
           { text: 'Free Machine Placement', icon: 'fa-check-circle' },
           { text: '24/7 Support', icon: 'fa-check-circle' },
@@ -43,11 +50,11 @@ export default async function SlugPage({ params }) {
         ]}
       />
       {page.content ? (
-        <section className="page-content container" style={{ padding: '2rem 1rem', maxWidth: 1200, margin: '0 auto' }}>
+        <div className="page-content">
           <div dangerouslySetInnerHTML={{ __html: stripHeroFromContent(page.content) }} />
-        </section>
+        </div>
       ) : (
-        <section className="page-content container" style={{ padding: '2rem 1rem', maxWidth: 1200, margin: '0 auto' }}>
+        <section className="page-content container" style={{ padding: '2rem 1rem', maxWidth: 1200, margin: '0 auto', textAlign: 'center' }}>
           <p>{page.description}</p>
           <div style={{ marginTop: '2rem' }}>
             <Link href="/get-a-free-vending-machine-in-jacksonville-florida" className="btn btn-primary">Get Free Machine</Link>
@@ -55,6 +62,8 @@ export default async function SlugPage({ params }) {
           </div>
         </section>
       )}
+      <AboutSection city={city} />
+      <BentoServices city={city} />
       <section className="cta-section">
         <div className="container">
           <h2>Ready to Get Started?</h2>

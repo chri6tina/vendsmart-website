@@ -1,13 +1,22 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import { LOCATION_PAGES } from '@/data/locations';
 
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [locationsOpen, setLocationsOpen] = useState(false);
+  const pathname = usePathname();
+
+  // Close all mobile menus and dropdowns when the route changes
+  useEffect(() => {
+    setMobileOpen(false);
+    setServicesOpen(false);
+    setLocationsOpen(false);
+  }, [pathname]);
 
   return (
     <nav className="navbar" role="navigation" aria-label="Main navigation">
@@ -20,7 +29,7 @@ export default function Nav() {
 
         <ul className={`nav-menu ${mobileOpen ? 'active' : ''}`} role="menubar">
           <li role="none"><Link href="/" role="menuitem">Home</Link></li>
-          
+
           <li className={`dropdown ${servicesOpen ? 'active' : ''}`} role="none">
             <button className="dropdown-toggle" aria-expanded={servicesOpen} aria-haspopup="true" role="menuitem" onClick={() => { setServicesOpen(!servicesOpen); setLocationsOpen(false); }}>
               Services <i className="fas fa-chevron-down" aria-hidden="true"></i>
@@ -34,7 +43,7 @@ export default function Nav() {
               <li role="none"><Link href="/services" role="menuitem">All Services</Link></li>
             </ul>
           </li>
-          
+
           <li className={`dropdown ${locationsOpen ? 'active' : ''}`} role="none">
             <button className="dropdown-toggle" aria-expanded={locationsOpen} aria-haspopup="true" role="menuitem" onClick={() => { setLocationsOpen(!locationsOpen); setServicesOpen(false); }}>
               Locations <i className="fas fa-chevron-down" aria-hidden="true"></i>
@@ -49,7 +58,7 @@ export default function Nav() {
               ))}
             </ul>
           </li>
-          
+
           <li role="none"><Link href="/products" role="menuitem">Products</Link></li>
           <li role="none"><Link href="/contact" className="cta-button" role="menuitem">Contact Us</Link></li>
         </ul>

@@ -11,10 +11,8 @@ export default function Footer() {
             <p>Premium vending solutions for Jacksonville, Florida. Smart technology, healthy options, and 24/7 support.</p>
             <p><Link href="/" style={{ color: '#00C5F5', textDecoration: 'none', fontWeight: 500 }}>← Back to Jacksonville Vending Machines Home</Link></p>
             <div className="social-links">
-              <a href="https://www.facebook.com/vendsmart" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><i className="fab fa-facebook"></i></a>
-              <a href="https://www.instagram.com/jacksonvillevendingmachines" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i className="fab fa-instagram"></i></a>
-              <a href="https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_ID" target="_blank" rel="noopener noreferrer" aria-label="View our Google Business Profile"><i className="fab fa-google"></i></a>
-              <a href="https://www.yelp.com/biz/vendsmart-jacksonville" target="_blank" rel="noopener noreferrer" aria-label="Read our Yelp reviews"><i className="fab fa-yelp"></i></a>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><i className="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i className="fab fa-instagram"></i></a>
             </div>
           </div>
           <div className="footer-section">
