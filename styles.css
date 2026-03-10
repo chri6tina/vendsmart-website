@@ -285,16 +285,16 @@ button:focus-visible {
 }
 
 .phone-link {
-  color: var(--primary);
+  color: #000;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   display: flex;
   align-items: center;
   gap: 0.35rem;
 }
 
 .phone-link:hover {
-  color: var(--primary-dark);
+  color: var(--primary);
 }
 
 /* Hamburger */
