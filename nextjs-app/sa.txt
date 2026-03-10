@@ -1,0 +1,445 @@
+<!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="/jacksonville-vending-micro-market.jpg" alt="St. Augustine vending machines and micro-markets" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Vending Machine Services in St. Augustine</h1>
+                <p class="hero-subtitle">Premium vending solutions for St. Augustine businesses with Jacksonville-based expertise</p>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Free Machine Placement</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Smart Technology</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="/get-a-free-vending-machine-in-jacksonville-florida" class="btn btn-primary">Get Free Machine</a>
+                    <a href="/contact" class="btn btn-secondary">Request Quote</a>
+                </div>
+                <div class="hero-links">
+                    <p>St. Augustine Vending Machines - Popular services: <a href="/coffeeservices">Coffee Services</a> | <a href="/setting-up-a-micro-market-in-your-jacksonville-office">Micro-Markets</a> | <a href="/locations">All Locations</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Location Overview (Minimal) -->
+    
+    <!-- Location Overview (Minimal) -->
+    
+    <!-- Location Overview (Minimal) -->
+    <section id="overview" class="minimal-overview">
+        <div class="container">
+            <div class="minimal-content">
+                <div class="minimal-text">
+                    <h2>Vending Solutions for St. Augustine</h2>
+                    <p>St. Augustine is a thriving community with diverse businesses and a strong local presence. VendSmart provides personalized vending solutions tailored to the unique character and daily needs of St. Augustine's local businesses, offices, and residents.</p>
+                </div>
+                <div class="minimal-grid">
+                    <div class="minimal-card">
+                        <i class="fas fa-store"></i>
+                        <h3>Local Shops & Retail</h3>
+                        <p>Convenient vending for local shops, boutiques, and retail businesses serving the community.</p>
+                    </div>
+                    <div class="minimal-card">
+                        <i class="fas fa-building"></i>
+                        <h3>Professional Offices</h3>
+                        <p>Smart vending matches for professional offices, corporate centers, and service businesses.</p>
+                    </div>
+                    <div class="minimal-card">
+                        <i class="fas fa-industry"></i>
+                        <h3>Facilities & Logistics</h3>
+                        <p>Reliable 24/7 refreshment systems for warehouses, manufacturing plants, and logistics hubs.</p>
+                    </div>
+                    <div class="minimal-card">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Dining & Hospitality</h3>
+                        <p>Vending and micro-market solutions for restaurants, cafes, hotels, and dining establishments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- St. Augustine Services -->
+    <section class="st-augustine-services">
+        <div class="container">
+            <h2>Vending Services in St. Augustine</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Smart Vending Machines</h3>
+                    <p>Modern vending machines with contactless payments, real-time monitoring, and healthy snack options perfect for St. Augustine locations.</p>
+                    <ul>
+                        <li>Contactless payment systems (Apple Pay, Google Pay, credit cards)</li>
+                        <li>Real-time inventory monitoring and alerts</li>
+                        <li>Healthy and organic snack options</li>
+                        <li>Energy drinks and premium beverages</li>
+                        <li>24/7 remote support and maintenance</li>
+                        <li>Mobile app integration for easy ordering</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-store"></i>
+                    <h3>Micro-Markets</h3>
+                    <p>Self-service convenience stores that transform your space into a modern retail experience with fresh food and smart checkout.</p>
+                    <ul>
+                        <li>Self-checkout kiosks with touch-screen technology</li>
+                        <li>Fresh food options including salads and sandwiches</li>
+                        <li>Smart coolers with temperature monitoring</li>
+                        <li>Employee loyalty programs and discounts</li>
+                        <li>Detailed sales analytics and reporting</li>
+                        <li>Professional installation and setup</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Coffee Services</h3>
+                    <p>Professional coffee solutions including single-serve machines, traditional coffee makers, and premium coffee products for your business.</p>
+                    <ul>
+                        <li>Single-serve coffee machines (Keurig, Nespresso)</li>
+                        <li>Traditional coffee makers and supplies</li>
+                        <li>Premium coffee beans and tea selections</li>
+                        <li>Creamers, sweeteners, and condiments</li>
+                        <li>Regular maintenance and cleaning service</li>
+                        <li>Custom coffee programs for your brand</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-snowflake"></i>
+                    <h3>Smart Coolers</h3>
+                    <p>Advanced cooling technology with real-time monitoring, inventory tracking, and contactless payments for fresh food and beverages.</p>
+                    <ul>
+                        <li>Temperature monitoring with real-time alerts</li>
+                        <li>Automated inventory tracking and restocking</li>
+                        <li>Contactless payment integration</li>
+                        <li>Fresh food storage for salads and sandwiches</li>
+                        <li>Energy-efficient cooling systems</li>
+                        <li>Analytics dashboard for sales insights</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- St. Augustine Areas -->
+    
+    <!-- Business Areas We Serve (Dark Theme Accordion) -->
+    <section class="areas-accordion-section">
+        <div class="container">
+            <div class="section-header centered-header dark-mode">
+                <h2>St. Augustine Business Areas We Serve</h2>
+                <p>We provide tailored vending machines, micro-markets, and coffee services for a wide variety of facilities.</p>
+            </div>
+            
+            <div class="accordion-grid">
+                
+                <details class="premium-accordion-item">
+                    <summary class="accordion-header">
+                        <div class="accordion-title-wrapper">
+                            <i class="fas fa-landmark"></i>
+                            <h3>Historic District</h3>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Vending solutions for businesses in the historic district of St. Augustine.</p>
+                        <ul>
+                        <li>St. George Street businesses</li>
+                        <li>Historic district shops</li>
+                        <li>Tourist information centers</li>
+                        <li>Historic attractions</li>
+                        <li>Museums and galleries</li>
+                    </ul>
+                        <div class="accordion-cta">
+                            <a href="/contact" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white;">Get Quote for Historic District</a>
+                        </div>
+                    </div>
+                </details>
+                <details class="premium-accordion-item">
+                    <summary class="accordion-header">
+                        <div class="accordion-title-wrapper">
+                            <i class="fas fa-hotel"></i>
+                            <h3>Tourism & Hospitality</h3>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Vending solutions for hotels, bed & breakfasts, and hospitality businesses.</p>
+                        <ul>
+                        <li>Historic hotels and inns</li>
+                        <li>Bed & breakfast establishments</li>
+                        <li>Resort and vacation rentals</li>
+                        <li>Conference centers</li>
+                        <li>Tourist accommodations</li>
+                    </ul>
+                        <div class="accordion-cta">
+                            <a href="/contact" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white;">Get Quote for Tourism & Hospitality</a>
+                        </div>
+                    </div>
+                </details>
+                <details class="premium-accordion-item">
+                    <summary class="accordion-header">
+                        <div class="accordion-title-wrapper">
+                            <i class="fas fa-store"></i>
+                            <h3>Local Shops & Retail</h3>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Convenient vending for local shops, boutiques, and retail businesses.</p>
+                        <ul>
+                        <li>Local boutiques and shops</li>
+                        <li>Convenience stores</li>
+                        <li>Grocery stores</li>
+                        <li>Retail plazas</li>
+                        <li>Souvenir and gift shops</li>
+                    </ul>
+                        <div class="accordion-cta">
+                            <a href="/contact" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white;">Get Quote for Local Shops & Retail</a>
+                        </div>
+                    </div>
+                </details>
+                <details class="premium-accordion-item">
+                    <summary class="accordion-header">
+                        <div class="accordion-title-wrapper">
+                            <i class="fas fa-utensils"></i>
+                            <h3>Restaurants & Dining</h3>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Vending solutions for restaurants, cafes, and dining establishments.</p>
+                        <ul>
+                        <li>Historic restaurants</li>
+                        <li>Cafes and coffee shops</li>
+                        <li>Bars and pubs</li>
+                        <li>Takeout and delivery</li>
+                        <li>Food trucks and stands</li>
+                    </ul>
+                        <div class="accordion-cta">
+                            <a href="/contact" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white;">Get Quote for Restaurants & Dining</a>
+                        </div>
+                    </div>
+                </details>
+                <details class="premium-accordion-item">
+                    <summary class="accordion-header">
+                        <div class="accordion-title-wrapper">
+                            <i class="fas fa-building"></i>
+                            <h3>Professional Offices</h3>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Smart vending for professional offices, medical practices, and service businesses.</p>
+                        <ul>
+                        <li>Medical offices and clinics</li>
+                        <li>Professional service firms</li>
+                        <li>Real estate offices</li>
+                        <li>Financial services</li>
+                        <li>Consulting and advisory firms</li>
+                    </ul>
+                        <div class="accordion-cta">
+                            <a href="/contact" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white;">Get Quote for Professional Offices</a>
+                        </div>
+                    </div>
+                </details>
+                <details class="premium-accordion-item">
+                    <summary class="accordion-header">
+                        <div class="accordion-title-wrapper">
+                            <i class="fas fa-car"></i>
+                            <h3>Automotive & Services</h3>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Vending solutions for automotive businesses, service centers, and repair facilities.</p>
+                        <ul>
+                        <li>Auto repair shops</li>
+                        <li>Car dealerships</li>
+                        <li>Service centers</li>
+                        <li>Gas stations and convenience stores</li>
+                        <li>Automotive parts stores</li>
+                    </ul>
+                        <div class="accordion-cta">
+                            <a href="/contact" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white;">Get Quote for Automotive & Services</a>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- St. Augustine Benefits -->
+    <section class="st-augustine-benefits">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <h2>Why Choose VendSmart for St. Augustine?</h2>
+                    <p>St. Augustine businesses choose VendSmart for our local expertise, tourism-focused service, and commitment to supporting the unique character of America's oldest city.</p>
+                    
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>100% free vending machine placement with no upfront costs</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Local Jacksonville company with St. Augustine area expertise</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>24/7 support and emergency service available</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Professional installation with minimal business disruption</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Customized product selection for your team's preferences</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Regular maintenance and restocking included</span>
+                        </div>
+                    </div>
+                    
+                    <div class="benefits-cta">
+                        <a href="/contact" class="btn btn-primary">Get Free Vending Machine</a>
+                        <a href="/get-a-free-vending-machine-in-jacksonville-florida" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="location-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-chart-line"></i>
+                        <p>St. Augustine Success</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- St. Augustine Stats -->
+    <section class="st-augustine-stats">
+        <div class="container">
+            <h2>St. Augustine by the Numbers</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">St. Augustine Businesses Served</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support Available</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Free Installation</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Customer Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services Section -->
+    <section class="related-services">
+        <div class="container">
+            <h2>Vending Services Available in St. Augustine</h2>
+            <p>Discover the comprehensive range of vending solutions we offer to St. Augustine businesses:</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>Tourism & Hospitality Vending</h3>
+                    <p>Specialized vending solutions for St. Augustine's tourism industry, offering refreshments and snacks for visitors and staff at historic sites.</p>
+                    <div class="service-actions">
+                        <a href="/vending-machines-for-hotels" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Retail Vending Solutions</h3>
+                    <p>Perfect for shopping centers and retail locations in St. Augustine, providing convenient access to snacks and beverages for customers and employees.</p>
+                    <div class="service-actions">
+                        <a href="/vending-machines-for-retail" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Office Building Solutions</h3>
+                    <p>Modern vending machines and micro-markets for St. Augustine office buildings, enhancing workplace convenience and employee satisfaction.</p>
+                    <div class="service-actions">
+                        <a href="/vending-machines-for-office-buildings" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3>Coffee Services</h3>
+                    <p>Premium coffee solutions for St. Augustine businesses, featuring high-quality coffee machines and regular maintenance services.</p>
+                    <div class="service-actions">
+                        <a href="/coffeeservices" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Micro-Markets</h3>
+                    <p>Advanced micro-market solutions for St. Augustine businesses, offering fresh food options and modern payment systems.</p>
+                    <div class="service-actions">
+                        <a href="/setting-up-a-micro-market-in-your-jacksonville-office" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Vending Machine Service</h3>
+                    <p>Comprehensive maintenance and repair services for all vending machines in St. Augustine, ensuring optimal performance and reliability.</p>
+                    <div class="service-actions">
+                        <a href="/vendingmachine-service" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready for St. Augustine Vending Solutions?</h2>
+            <p>Get a free vending machine for your St. Augustine business today</p>
+            <div class="cta-buttons">
+                <a href="/contact" class="btn btn-primary">Get Free Machine</a>
+                <a href="/get-a-free-vending-machine-in-jacksonville-florida" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
