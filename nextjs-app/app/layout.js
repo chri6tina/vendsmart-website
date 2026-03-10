@@ -42,8 +42,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
-        <link rel="stylesheet" href="/styles.css?v=5" />
-        <link rel="stylesheet" href="/blog-styles.css?v=4" />
+        <link rel="stylesheet" href="/styles.css?v=6" />
+        <link rel="stylesheet" href="/blog-styles.css?v=5" />
       </head>
       <body>
         <ScrollReveal />
